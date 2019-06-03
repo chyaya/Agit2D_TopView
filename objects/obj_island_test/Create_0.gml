@@ -11,8 +11,10 @@ globalvar zoom;
 //For drawing
 zoom = 4;
 
+assert_equal(room_height, room_width);
+
 //Size of the world (i.e grid size)
-world_size = room_width / 16;
+world_size = room_height / 16;
 sealevel = 0.5
 
 
@@ -24,7 +26,7 @@ instance_create((1+world_size)*zoom,100+(1+world_size)*zoom,obj_draw_texture)
 instance_create((1+world_size)*2*zoom,100,obj_draw_windspeed)
 
 //========Elevation=========
-elevation_grid = ds_grid_create(world_size, world_size)
+elevation_grid = ds_grid_create(world_size,world_size)
 perlin_noise(elevation_grid,1,4,1.75);  //Fill grid with perlin noise. 1-4 octaves, 1.75 persistance
 
 cos_window_mask(elevation_grid,0.7);  //Use a circular mask, to make an island
