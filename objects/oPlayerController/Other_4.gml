@@ -35,11 +35,13 @@ m_ActionNames[ACTION_Y] = "";
 
 alarm[0] = room_speed;
 
-m_MinimapGrid = ds_grid_create(global.FOW_AreaW, global.FOW_AreaH);
+m_MinimapWidth = room_width / TILE_SIZE;
+m_MinimapHeight = room_height / TILE_SIZE;
+m_MinimapGrid = ds_grid_create(m_MinimapWidth, m_MinimapHeight);
 
-for (var i = 0; i < global.FOW_AreaW;  i++;)
+for (var i = 0; i < m_MinimapWidth;  i++;)
 {
-	for (var j = 0; j < global.FOW_AreaH; j++;)
+	for (var j = 0; j < m_MinimapHeight; j++;)
     {
 		m_MinimapGrid[# i, j] = false;
 	}

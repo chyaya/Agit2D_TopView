@@ -1,4 +1,4 @@
-global.UseFOW = true;
+global.UseFOW = false;
 global.ShowDebug_AI = false;
 global.UseDebugCmd = true;
 

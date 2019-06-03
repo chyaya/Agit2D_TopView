@@ -10,7 +10,7 @@
     "option_windows_copyright_info": "(c) 2018 CompanyName",
     "option_windows_description_info": "A GameMaker Studio 2 Game",
     "option_windows_display_cursor": true,
-    "option_windows_display_name": "AfterLife 2D - OddOneGames",
+    "option_windows_display_name": "Agit 2D (Top View) - OddOneGames",
     "option_windows_enable_steam": false,
     "option_windows_executable_name": "${project_name}",
     "option_windows_icon": "${options_dir}\\windows\\icons\\icon.ico",

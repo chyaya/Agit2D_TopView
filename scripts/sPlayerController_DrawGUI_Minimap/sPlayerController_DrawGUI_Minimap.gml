@@ -5,9 +5,9 @@ var offsetSize = 150;
 var startX = offsetSize;
 var startY = view_hport[0] - offsetSize - room_height/cellSize*rectSize;
 
-for (var i = 0; i < global.FOW_AreaW;  i++;)
+for (var i = 0; i < m_MinimapWidth;  i++;)
 {
-	for (var j = 0; j < global.FOW_AreaH; j++;)
+	for (var j = 0; j < m_MinimapHeight; j++;)
     {
 		var x1 = startX + i*rectSize;
 		var y1 = startY + j*rectSize;

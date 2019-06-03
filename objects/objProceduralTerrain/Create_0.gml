@@ -19,11 +19,13 @@ sealevel = 0.5
 
 
 //Drawing objects
+/*
 instance_create(0,100+0,obj_draw_elevation)
 instance_create((1+world_size)*zoom,100+0,obj_draw_heatmap)
 instance_create(0,100+(1+world_size)*zoom,obj_draw_moisture)
 instance_create((1+world_size)*zoom,100+(1+world_size)*zoom,obj_draw_texture)
 instance_create((1+world_size)*2*zoom,100,obj_draw_windspeed)
+*/
 
 //========Elevation=========
 elevation_grid = ds_grid_create(world_size,world_size)
@@ -86,56 +88,102 @@ for (ix = 0; ix<world_size; ix++)
         ds_grid_set(moisture_grid,ix,iy, moisture_filtered[ix,iy])
 }
 
+enum Tiles {
+	WATER,
+	LAND,
+	MOUNTAIN,
+}
+
 //=====Assign land types============
 land[0,0] = 125; // Sea   HSV
 land[0,1] = 210; // Sea
 land[0,2] = 180; // Sea
 land[0,3] = "Shallows"
+land[0,4] = 73;
+land[0,5] = 74;
+land[0,6] = 73;
+land[0,7] = Tiles.WATER;
 
 land[1,0] = 30; // Sand
 land[1,1] = 60; // Sand
 land[1,2] = 150; // Sand
 land[1,3] = "Sand"
+land[1,4] = 54;
+land[1,5] = 54;
+land[1,6] = 54;
+land[1,7] = Tiles.LAND;
 
 land[2,0] = 90; // Forest
 land[2,1] = 160; // Forest
 land[2,2] = 120; // Forest
 land[2,3] = "Forest"
+land[2,4] = 52;
+land[2,5] = 52;
+land[2,6] = 52;
+land[2,7] = Tiles.LAND;
 
 land[3,0] = 50; // Jungle
 land[3,1] = 110; // Jungle
 land[3,2] = 120; // Jungle
 land[3,3] = "Jungle"
+land[3,4] = 53;
+land[3,5] = 53;
+land[3,6] = 53;
+land[3,7] = Tiles.LAND;
 
 land[4,0] = 160; // Mountain
 land[4,1] = 0; // Mountain
 land[4,2] = 160; // Mountain
 land[4,3] = "High mountain"
+land[4,4] = 16;
+land[4,5] = 16;
+land[4,6] = 17;
+land[4,7] = Tiles.MOUNTAIN;
 
 land[5,0] = 240; // Mountain tops
 land[5,1] = 0; // Mountain tops 
 land[5,2] = 240; // Mountain tops
 land[5,3] = "Mountain top"
+land[5,4] = 16;
+land[5,5] = 16;
+land[5,6] = 17;
+land[5,7] = Tiles.MOUNTAIN;
 
 land[6,0] = 125; //  Sea   RGB
 land[6,1] = 170; //  Sea
 land[6,2] = 145; //  Sea
 land[6,3] = "Sea"
+land[6,4] = 70;
+land[6,5] = 71;
+land[6,6] = 70;
+land[6,7] = Tiles.WATER;
 
 land[7,0] = 35; // Tundra   RGB
 land[7,1] = 50; // Tundra
 land[7,2] = 120; // Tundra
 land[7,3] = "Tundra"
+land[7,4] = 56;
+land[7,5] = 56;
+land[7,6] = 56;
+land[7,7] = Tiles.LAND;
 
 land[8,0] = 140; // Mid Mountain
 land[8,1] = 0; // Mountain
 land[8,2] = 140; // Mountain
 land[8,3] = "Rocky"
+land[8,4] = 16;
+land[8,5] = 16;
+land[8,6] = 17;
+land[8,7] = Tiles.MOUNTAIN;
 
 land[9,0] = 140; // deep Sea   RGB
 land[9,1] = 160; // deep Sea
 land[9,2] = 120; // deep Sea
 land[9,3] = "Deep sea"
+land[9,4] = 72;
+land[9,5] = 72;
+land[9,6] = 72;
+land[9,7] = Tiles.WATER;
 
 
 land_grid = ds_grid_create(world_size,world_size)
@@ -177,34 +225,27 @@ for (ix = 0; ix<world_size; ix++)  //This is where creativity is needed. Decide 
 }
 
 
+var _l = layer_get_id("Tiles");
+var _m = layer_tilemap_get_id(_l); // Uncomment for tiles!
 
-// Set Tile
-
-//Shading
-smoother_elevation = average_filter(elevation_grid,4);
-
-var s_grid = ds_grid_create(world_size,world_size)
-for (ix = 0; ix<world_size; ix++)
-    for (iy = 0; iy<world_size; iy++)
-        ds_grid_set(s_grid,ix,iy,smoother_elevation[ix,iy])
-    
-
-hx = gradient_x(s_grid);
-hy = gradient_y(s_grid);
-ds_grid_destroy(s_grid)
-//
-
-for (ix = 0; ix<world_size; ix++){
-    for (iy = 0; iy<world_size; iy++){
-    
-        shading = 0.4/(0.4+sqrt(hx[ix,iy]*hx[ix,iy]+hy[ix,iy]*hy[ix,iy]))
-    
-        draw_set_color(make_color_hsv(land[ds_grid_get(land_grid,ix,iy),0],land[ds_grid_get(land_grid,ix,iy),1],shading*land[ds_grid_get(land_grid,ix,iy),2]))
-        draw_rectangle(x+ix*zoom,y+iy*zoom,x+ix*zoom+zoom,y+iy*zoom+zoom,0)
+for (ix = 0; ix < world_size; ix++)
+{
+    for (iy = 0; iy < world_size; iy++)
+	{
+		var t = ds_grid_get(land_grid,ix,iy);
+		var u = iy > 0 ? ds_grid_get(land_grid,ix,iy - 1) : t;
+		var d = iy < world_size - 1 ? ds_grid_get(land_grid,ix,iy + 1) : t;
+		
+		var select = 4;
+		
+		if(land[t, 4] != land[t, 5] && land[t, 7] != land[u, 7] && land[t, 4] != land[u, 4])
+			select = 5;
+			
+		if(land[t, 4] != land[t, 6] && land[t, 7] != land[d, 7] && land[t, 4] != land[d, 4])
+			select = 6;
+		
+		tilemap_set(_m, land[t, select], ix, iy); // Uncomment for tiles!
     }
 }
 
-draw_set_color(c_white)
-if mouse_x>x && mouse_x<x+world_size*zoom && mouse_y>y && mouse_y<y+world_size*zoom
-    draw_text(0,0,string_hash_to_newline("Land type: "+string(land[ds_grid_get(land_grid,(mouse_x-x)/zoom,(mouse_y-y)/zoom),3])+"#Elevation: "+string(ds_grid_get(elevation_grid,(mouse_x-x)/zoom,(mouse_y-y)/zoom)) + "#Temperature: "+string(ds_grid_get(heat_grid,(mouse_x-x)/zoom,(mouse_y-y)/zoom))+ "#Moisture: "+string(ds_grid_get(moisture_grid,(mouse_x-x)/zoom,(mouse_y-y)/zoom))))
-
+instance_create_layer(room_width/2, room_height/2, "Instances", oGhost);     // Create the player!

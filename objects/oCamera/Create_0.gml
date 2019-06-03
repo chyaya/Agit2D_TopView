@@ -1,4 +1,4 @@
-m_Zoom = 4.0;
+m_Zoom = 3.0;
 m_LastZoom = m_Zoom;
 m_ZoomSpeed = 1.1;
 

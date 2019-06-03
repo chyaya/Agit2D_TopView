@@ -439,6 +439,14 @@
             }
         },
         {
+            "Key": "28b7688a-df95-4f67-ac38-8ad9d22b36ee",
+            "Value": {
+                "id": "aa696bb8-3457-4966-9fa1-fcdf913d8b75",
+                "resourcePath": "views\\28b7688a-df95-4f67-ac38-8ad9d22b36ee.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "28fc977b-e1d7-4f0a-8812-e074bce0f7e0",
             "Value": {
                 "id": "36d51943-c5c5-48f2-ad8d-d9ee5611efbe",
@@ -836,6 +844,14 @@
                 "id": "e459327f-0802-4a22-8a6f-03bcc481f0a8",
                 "resourcePath": "objects\\oBSP_CollisionParent\\oBSP_CollisionParent.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4d7e4aa6-78c4-4259-b5ee-3b6921c029a4",
+            "Value": {
+                "id": "1cea048a-9f81-4176-9d40-e6e9ab4ecd2a",
+                "resourcePath": "tilesets\\tileset2\\tileset2.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {
@@ -2527,6 +2543,14 @@
             }
         },
         {
+            "Key": "e6cc274b-b0ad-44e2-91ba-55c69be38796",
+            "Value": {
+                "id": "99369b69-9709-4c79-9ff3-883d7777ad1c",
+                "resourcePath": "sprites\\sprTile2\\sprTile2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e7507a6f-8a0e-4c04-933e-b579032d12a9",
             "Value": {
                 "id": "7b488471-f361-45cd-a501-e5aed9c40445",
@@ -2684,6 +2708,14 @@
                 "id": "46ec7425-8440-4708-929f-514b0e88a141",
                 "resourcePath": "views\\f493555c-44d9-430b-828d-3bf811161cd1.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f5165867-924d-4713-9897-da416bad30dd",
+            "Value": {
+                "id": "e932f307-e8f9-4d8e-959e-efbf701198f6",
+                "resourcePath": "objects\\objProceduralTerrain\\objProceduralTerrain.yy",
+                "resourceType": "GMObject"
             }
         },
         {
