@@ -1,6 +1,7 @@
 var repeatCount = argument_count > 0 ? argument[0] : 100;
 var w = room_width / oPathFinder.cellSize;
 var h = room_height / oPathFinder.cellSize;
+var cellSize = oPathFinder.cellSize;
 
 repeat(repeatCount)
 {
@@ -10,7 +11,7 @@ repeat(repeatCount)
 	if(aStar_get_blocked(_x, _y))
 		continue;
 		
-	return [_x*oPathFinder.cellSize, _y*oPathFinder.cellSize];
+	return [_x*cellSize + cellSize/2, _y*cellSize + cellSize/2];
 }
 
 return [-1, -1];

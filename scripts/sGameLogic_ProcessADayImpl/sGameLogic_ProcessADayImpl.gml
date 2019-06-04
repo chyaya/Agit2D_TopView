@@ -1,7 +1,7 @@
 var playerPos = sGameLogic_FindSpawnPos();
 
-oPlayerController.m_PlayerObject.x = playerPos[0];
-oPlayerController.m_PlayerObject.y = playerPos[1];
+oWoman.x = playerPos[0];
+oWoman.y = playerPos[1];
 
 with(oTree)
 {
@@ -14,7 +14,7 @@ with(oTree)
 
 
 var nTree = instance_number(oTree);
-var nSpawnTree = clamp(50 - nTree, 0, 3);
+var nSpawnTree = clamp(50 - nTree, 0, 5);
 
 repeat(nSpawnTree)
 {
@@ -26,10 +26,10 @@ repeat(nSpawnTree)
 }
 
 
-var nZombie = instance_number(oZombie);
-var nSpawnZombie = clamp(20 - nZombie, 0, 3);
+var nRobot = instance_number(oRobot);
+var nSpawnRobot = clamp(12 - nRobot, 0, 3);
 
-repeat(nSpawnTree)
+repeat(nSpawnRobot)
 {
-	sGameLogic_SpawnObject("Instances", oZombie);
+	sGameLogic_SpawnObject("Instances", oRobot);
 }
