@@ -1,0 +1,1 @@
+oWorldManager.m_PauseTime = true;
