@@ -36,6 +36,7 @@ if(m_PlayerObject.object_index != oGhost)
 	text_y += line_h;
 }
 
+/*
 var soulTextColor = c_white;
 
 if(m_CurSoulPoint <= m_UnpossessCost)
@@ -50,3 +51,4 @@ draw_text_color(text_x, text_y, "Soul:",
 draw_text_color(text_x + offset, text_y, string(m_CurSoulPoint) + "/" + string(m_MaxSoulPoint),
 	soulTextColor, soulTextColor, soulTextColor, soulTextColor, 1);
 text_y += line_h;
+*/

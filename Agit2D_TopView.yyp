@@ -247,6 +247,14 @@
             }
         },
         {
+            "Key": "139f1b74-9165-4e49-a2ac-15f358327900",
+            "Value": {
+                "id": "076822f7-1ccc-4bce-a51f-a558c68eee11",
+                "resourcePath": "scripts\\NineSliceBoxStretch\\NineSliceBoxStretch.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "140e7623-02eb-4b20-b3de-b646332b609f",
             "Value": {
                 "id": "ab39ce51-e3a4-4f86-91ec-c24894a927e1",
@@ -1071,6 +1079,14 @@
             }
         },
         {
+            "Key": "5c579908-a355-4531-b33d-f3b8bb497f1f",
+            "Value": {
+                "id": "7c2a440e-e049-4042-bf1f-27620b3aa494",
+                "resourcePath": "scripts\\sPlayerController_DrawGUI_Tab_CraftList\\sPlayerController_DrawGUI_Tab_CraftList.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5cdedd87-b514-42a2-9f23-e7221b86a31c",
             "Value": {
                 "id": "17e76cf7-51b6-44a6-aeac-93f2c181203c",
@@ -1514,7 +1530,7 @@
             "Key": "8af089ba-fbe2-4981-9501-5291ba29fc71",
             "Value": {
                 "id": "916602dc-5c5e-45b7-9371-2b26b4d8312e",
-                "resourcePath": "scripts\\sPlayerController_DrawGUI_Inventory\\sPlayerController_DrawGUI_Inventory.yy",
+                "resourcePath": "scripts\\sPlayerController_DrawGUI_Tab_Inventory\\sPlayerController_DrawGUI_Tab_Inventory.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1879,6 +1895,14 @@
             }
         },
         {
+            "Key": "aa0a9d2e-f07a-4ec9-967b-1db23617dfa7",
+            "Value": {
+                "id": "f2f41370-c685-4219-9938-7f23c3331240",
+                "resourcePath": "views\\aa0a9d2e-f07a-4ec9-967b-1db23617dfa7.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "aa1873ff-58fc-419e-99ef-f7ad92ccd5a5",
             "Value": {
                 "id": "fa4c9602-1ba2-48b6-a4df-32bf1c29a9b0",
@@ -2052,6 +2076,22 @@
                 "id": "f91fa9cc-273a-46b2-a1d2-cc097782d921",
                 "resourcePath": "sprites\\sprShoes\\sprShoes.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b8512ab9-71a1-4131-9c31-61a1facfa5e2",
+            "Value": {
+                "id": "1758d6b8-dac9-4d7a-818b-deb11efdfe05",
+                "resourcePath": "scripts\\NineSliceBox\\NineSliceBox.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b890f3c3-8641-4086-a25d-7ae9cc199130",
+            "Value": {
+                "id": "3996eae6-586e-450b-9f05-679d3f8266e5",
+                "resourcePath": "scripts\\sPlayerController_DrawGUI_TabList\\sPlayerController_DrawGUI_TabList.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2818,6 +2858,8 @@
         "df5fb48c-1e68-4010-b2fb-eb1a42576d4f",
         "a345fb79-61a8-41cb-bfd0-9bcd02f1da97",
         "8af089ba-fbe2-4981-9501-5291ba29fc71",
+        "b890f3c3-8641-4086-a25d-7ae9cc199130",
+        "5c579908-a355-4531-b33d-f3b8bb497f1f",
         "63041d90-dbd1-46c3-9b82-8796ecf052aa",
         "eafab41e-4f15-478f-adf7-1f2bb49d4911",
         "ae593c41-5eea-4fe1-8802-655a92cc4f6c",
@@ -2909,7 +2951,9 @@
         "dedbd404-bd18-44cb-8341-264093327f07",
         "52418a37-d637-4d3f-9fb0-3b0fd4141e99",
         "c137071e-3d19-4f34-9a04-3d9a22f5d05f",
-        "77f862ff-e867-417a-b9e8-8743e21f5728"
+        "77f862ff-e867-417a-b9e8-8743e21f5728",
+        "b8512ab9-71a1-4131-9c31-61a1facfa5e2",
+        "139f1b74-9165-4e49-a2ac-15f358327900"
     ],
     "tutorial": ""
 }

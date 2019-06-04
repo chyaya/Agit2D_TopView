@@ -1,4 +1,5 @@
-if(m_CurSoulPoint <= 0 && m_GameOver == false)
+/*
+if(m_GameOver == false)
 {
 	m_GameOver = true;
 	
@@ -7,6 +8,7 @@ if(m_CurSoulPoint <= 0 && m_GameOver == false)
 		m_PlayerObject.m_CurHealth = 0;
 	}
 }
+*/
 
 m_Input_AxisL_Up = false;
 m_Input_AxisL_Down = false;
@@ -77,16 +79,15 @@ if(m_PlayerObject != noone)
 sPlayerController_CaptureInteractObject();
 
 
-if(m_Input_Btn_RT == true)
-{
-	sPlayerController_DoActionImpl(true, "Drop");
-}
-
-
 //if(keyboard_check_pressed(ord("F")))
 //{
 //	sUtil_CreateNotify(m_PlayerObjectX, m_PlayerObjectY, "Hello");
 //}
+
+if(m_Input_Btn_Y)
+{
+	m_ShowInventory = !m_ShowInventory;
+}
 
 
 if(global.UseFOW)

@@ -1,3 +1,6 @@
+assert(false, "not implemented");
+return;
+
 var otherPawn = argument0;
 
 var invenIdx = 1;
@@ -21,7 +24,7 @@ for(; invenIdx <= total_slots; ++invenIdx)
 		
 		with(otherPawn)
 		{
-			sPawn_Inven_RemoveItemByPos(otherInvenIdx);
+			sPawn_Inven_RemoveItemByPos(otherInvenIdx, otherPawn.inv_count[otherInvenIdx]);
 		}
 		
 		sPawn_Inven_AddItem(itemId, 1);

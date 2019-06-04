@@ -248,4 +248,4 @@ for (ix = 0; ix < world_size; ix++)
     }
 }
 
-instance_create_layer(room_width/2, room_height/2, "Instances", oGhost);     // Create the player!
+instance_create_layer(room_width/2, room_height/2, "Instances", oWoman);     // Create the player!

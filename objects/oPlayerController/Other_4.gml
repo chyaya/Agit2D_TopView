@@ -6,18 +6,25 @@ if(global.UseFOW)
 
 if(false == variable_instance_exists(id, "m_PlayerObject"))
 {
-	if(instance_exists(oGhost) == false)
+	if(instance_exists(oWoman) == false)
 	{
 		show_message("no player ghost");	
 	}
 
-	m_PlayerObject = instance_find(oGhost, 0);
+	m_PlayerObject = instance_find(oWoman, 0);
 }
 
 m_InteractionObject = noone;
 
 m_PlayerObjectX = m_PlayerObject.x;
 m_PlayerObjectY = m_PlayerObject.y;
+
+m_SlotsInRow = 10;
+m_SelectedSlotX = 0;
+m_SelectedSlotY = 0;
+
+m_ShowInventory = false;
+m_CurTab = Tab.Inventory;
 
 m_WallMap = layer_tilemap_get_id("Tiles");
 
