@@ -15,7 +15,7 @@ if(m_Phase == CLOSE)
 		m_StartTime = currentSec;
 		m_Phase = PAUSE;
 		
-		//sUtil_GameLogic_ProcessADayImpl();
+		sGameLogic_ProcessADayImpl();
 		
 		with(oPlayerController)
 		{

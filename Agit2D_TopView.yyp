@@ -631,6 +631,14 @@
             }
         },
         {
+            "Key": "2f84c09e-d1ee-40a5-b0b1-696c7d181207",
+            "Value": {
+                "id": "672f6ab3-2618-4471-8447-acc68e422ed9",
+                "resourcePath": "scripts\\OT_Reset\\OT_Reset.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2fe3a016-bc37-42b8-bd94-65fe43792c33",
             "Value": {
                 "id": "ce6ce3e0-8d30-414f-acd4-e1d4e96e481b",
@@ -1167,6 +1175,14 @@
             }
         },
         {
+            "Key": "59bf340c-986e-4dd6-ba89-d2184fb0e96b",
+            "Value": {
+                "id": "ba605244-2b98-4de5-99a7-20d65bcc724a",
+                "resourcePath": "scripts\\OT_Add\\OT_Add.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "5a1351d3-c7f2-42fc-94b4-26df6b27cf37",
             "Value": {
                 "id": "3a0e1c9c-c019-486a-9aeb-68686c1f74c8",
@@ -1599,6 +1615,14 @@
             }
         },
         {
+            "Key": "80a85ae0-4538-4440-ad97-fdab69b0d8af",
+            "Value": {
+                "id": "d2c631c1-c1e8-4216-b612-f7c57414cb16",
+                "resourcePath": "objects\\oOrderTable\\oOrderTable.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "80cb543e-1777-498a-b1f4-01a95d3d8edb",
             "Value": {
                 "id": "86cc7969-9a20-44c0-be2e-401bdcdb7037",
@@ -1775,6 +1799,14 @@
             }
         },
         {
+            "Key": "8faf3bf2-2427-4c8e-adaf-076b53e12105",
+            "Value": {
+                "id": "dbb01337-b467-4327-8e63-632b072c2b19",
+                "resourcePath": "scripts\\OT_Create\\OT_Create.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9139d589-c054-4c06-b285-41b0b8a3c0db",
             "Value": {
                 "id": "7ad5f535-98b2-477b-b3c9-49e4a389f105",
@@ -1868,6 +1900,14 @@
                 "id": "4cd46448-de51-45ce-9533-a5b6df9ec7ab",
                 "resourcePath": "views\\9598bfb0-7358-49d7-b067-c681e36a4ebd.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "95bca7ef-28f3-40a2-b7df-715140a35723",
+            "Value": {
+                "id": "a7736fd2-9a47-4dce-b665-57f568cc7352",
+                "resourcePath": "scripts\\OT_Draw\\OT_Draw.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2051,6 +2091,14 @@
             "Value": {
                 "id": "2ad3aca4-49be-46c7-852a-8312af834782",
                 "resourcePath": "scripts\\aStar_find_path\\aStar_find_path.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a3d14cfd-5625-41b7-91fc-a90aa227f426",
+            "Value": {
+                "id": "7cc5efaf-5880-40e2-80b0-cebe16f2a4dd",
+                "resourcePath": "scripts\\OT_Draw_Silhouettes\\OT_Draw_Silhouettes.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3324,7 +3372,12 @@
         "139f1b74-9165-4e49-a2ac-15f358327900",
         "7758356f-b472-4235-ae59-4742a89c9aa1",
         "d076b1d7-c77c-4c5a-b93e-31b36c76e451",
-        "bc8079e8-b51c-4c25-9c87-5795cf133995"
+        "bc8079e8-b51c-4c25-9c87-5795cf133995",
+        "59bf340c-986e-4dd6-ba89-d2184fb0e96b",
+        "8faf3bf2-2427-4c8e-adaf-076b53e12105",
+        "95bca7ef-28f3-40a2-b7df-715140a35723",
+        "a3d14cfd-5625-41b7-91fc-a90aa227f426",
+        "2f84c09e-d1ee-40a5-b0b1-696c7d181207"
     ],
     "tutorial": ""
 }

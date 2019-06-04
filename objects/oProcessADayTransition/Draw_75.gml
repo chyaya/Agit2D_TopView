@@ -5,7 +5,14 @@ draw_rectangle(0, 0, m_Width, m_Height, false);
 gpu_set_blendmode(bm_subtract);
 
 
-var playerScreenPos = sUtil_Camera_WorldToScreen(oPlayerController.m_PlayerObjectX, oPlayerController.m_PlayerObjectY);
+var offset = 0;
+
+with(oPlayerController.m_PlayerObject)
+{
+	offset = sprite_height/2;	
+}
+
+var playerScreenPos = sUtil_Camera_WorldToScreen(oPlayerController.m_PlayerObjectX, oPlayerController.m_PlayerObjectY - offset);
 
 var circleX = playerScreenPos[0];
 var circleY = playerScreenPos[1];

@@ -1,8 +1,8 @@
 {
-    "id": "59799419-8b83-4086-867f-ee2ca26a0aa1",
+    "id": "95bca7ef-28f3-40a2-b7df-715140a35723",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "sPawn_AI_Step",
+    "name": "OT_Draw",
     "IsCompatibility": false,
     "IsDnD": false
 }

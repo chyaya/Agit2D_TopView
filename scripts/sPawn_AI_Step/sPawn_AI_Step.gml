@@ -40,8 +40,10 @@ if(m_AI_Control)
 			var pathTargetX = aStar_get_cell_coordinate(m_AI_TargetObject.x);
 			var pathTargetY = aStar_get_cell_coordinate(m_AI_TargetObject.y);
 		
-			if(position_get_x(m_PathEndPos) != pathTargetX
-				|| position_get_y(m_PathEndPos) != pathTargetY)
+			var t = current_time;
+		
+			if(t >= m_LastPathFind + 1000
+				&& (position_get_x(m_PathEndPos) != pathTargetX || position_get_y(m_PathEndPos) != pathTargetY))
 			{
 				//show_debug_message(string(current_time) + " path finding");
 			
@@ -53,6 +55,7 @@ if(m_AI_Control)
 				sPawn_EndPath();
 		
 				m_Path = aStar_find_path(pathMyX, pathMyY, pathTargetX, pathTargetY);
+				m_LastPathFind = t;
 		
 				if(m_Path != undefined)
 				{

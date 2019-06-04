@@ -1,5 +1,5 @@
 global.UseFOW = false;
-global.ShowDebug_AI = false;
+global.ShowDebug_AI = true;
 global.UseDebugCmd = true;
 
 audio_group_load(0);

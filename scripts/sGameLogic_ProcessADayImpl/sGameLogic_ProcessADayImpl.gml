@@ -24,3 +24,12 @@ repeat(nSpawnTree)
 		image_yscale = 0.1;
 	}
 }
+
+
+var nZombie = instance_number(oZombie);
+var nSpawnZombie = clamp(20 - nZombie, 0, 3);
+
+repeat(nSpawnTree)
+{
+	sGameLogic_SpawnObject("Instances", oZombie);
+}
