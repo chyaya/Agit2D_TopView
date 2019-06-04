@@ -16,7 +16,6 @@ if(false == variable_instance_exists(id, "m_Level"))
 	m_Level = irandom(2);
 }
 
-
 if(false == variable_instance_exists(id, "m_AttackType"))
 {
 	m_AttackType = irandom(1);
