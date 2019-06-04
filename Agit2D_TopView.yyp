@@ -207,6 +207,14 @@
             }
         },
         {
+            "Key": "11ecd03c-4f76-4fe4-a932-3b7272c62e5a",
+            "Value": {
+                "id": "a0a9b201-3723-475c-a83e-907a3d9b8c82",
+                "resourcePath": "views\\11ecd03c-4f76-4fe4-a932-3b7272c62e5a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "1225e6ed-5307-4638-9e3d-e6af6b0f39bc",
             "Value": {
                 "id": "aca3d88a-6ac6-4eeb-834f-0b80877ef63a",
@@ -751,6 +759,14 @@
             }
         },
         {
+            "Key": "431670b5-6c1a-4123-9bcc-e98e036f5261",
+            "Value": {
+                "id": "280be6e6-20da-432b-9168-cdab4d3d3fd4",
+                "resourcePath": "scripts\\sUtil_Camera_ScreenToWorld\\sUtil_Camera_ScreenToWorld.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "434e8be7-c9bc-4edb-8e1b-e2fd67ee96e4",
             "Value": {
                 "id": "bf4629e3-45c5-4910-aad3-05ceb4f7026c",
@@ -779,6 +795,14 @@
             "Value": {
                 "id": "34ef7e43-779e-4824-9ab3-45646c771f19",
                 "resourcePath": "objects\\o_objects\\o_objects.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "45731c68-9769-48f6-8ec1-3bf56bb3a364",
+            "Value": {
+                "id": "3953257a-3e5c-42b0-adf0-0a6c82ee3e30",
+                "resourcePath": "objects\\oProcessADayTransition\\oProcessADayTransition.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -851,6 +875,14 @@
             "Value": {
                 "id": "178a9c18-1f2e-467f-9d6f-34c89818cbbd",
                 "resourcePath": "scripts\\sPawn_FindPath\\sPawn_FindPath.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4c0698c6-11d7-4a46-8d43-122cbef09a56",
+            "Value": {
+                "id": "b2f1757a-acaa-421f-b3f0-af879793788a",
+                "resourcePath": "scripts\\sUtil_Camera_WorldToScreen\\sUtil_Camera_WorldToScreen.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1791,6 +1823,14 @@
             }
         },
         {
+            "Key": "98deb716-17bc-434e-a217-ff6366e94cba",
+            "Value": {
+                "id": "708d4a77-80cf-43ef-ae36-9e455c928d30",
+                "resourcePath": "views\\98deb716-17bc-434e-a217-ff6366e94cba.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "9930a0fa-63b5-4daa-b8d8-fd4604de47f2",
             "Value": {
                 "id": "65053574-7ab5-458e-b3b1-2f9b7fc794c2",
@@ -2119,6 +2159,14 @@
             }
         },
         {
+            "Key": "b0675267-bdfa-4fe4-a86e-7b71124ba295",
+            "Value": {
+                "id": "c72668bb-1343-4181-bc0b-64c00b9f780d",
+                "resourcePath": "views\\b0675267-bdfa-4fe4-a86e-7b71124ba295.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b06d1cb7-e5e9-40c6-be05-5d7fbceafd58",
             "Value": {
                 "id": "172f7cc0-e656-46d0-a485-d84b148ee98f",
@@ -2340,6 +2388,14 @@
                 "id": "e8b31c99-2d55-4b33-8e54-6bb58358fdee",
                 "resourcePath": "views\\c1d55abf-1312-4781-90ad-7f3cbab69d26.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c3cb09af-6e20-49f7-b574-c694f21f444f",
+            "Value": {
+                "id": "a58f3d5e-43e3-44e5-8193-619129a61d01",
+                "resourcePath": "scripts\\sUtil_GameLogic_ProcessADay\\sUtil_GameLogic_ProcessADay.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3015,6 +3071,14 @@
             }
         },
         {
+            "Key": "fcc1bab1-d39b-44cb-9b83-21aeaf7d5af0",
+            "Value": {
+                "id": "67449166-a0f9-496f-b40e-8913bfc6ec91",
+                "resourcePath": "views\\fcc1bab1-d39b-44cb-9b83-21aeaf7d5af0.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "fd18edab-8a4e-4508-86e5-28dbf08c70ee",
             "Value": {
                 "id": "c6bfc2fc-0a5a-4b4a-b1d7-b3e6f3285bac",
@@ -3044,6 +3108,9 @@
         "1ed232e4-33db-4085-8720-a672e28a0cbc",
         "d666ef52-8966-429f-ac3a-d21c7bb6ef3d",
         "ed78b7e4-ded3-4b7e-ad9b-d57cdc771798",
+        "4c0698c6-11d7-4a46-8d43-122cbef09a56",
+        "431670b5-6c1a-4123-9bcc-e98e036f5261",
+        "c3cb09af-6e20-49f7-b574-c694f21f444f",
         "51987040-c25b-48b7-aae6-ed65189cada1",
         "ebe8c012-704f-4282-bb73-9a8a0fd5ebd9",
         "18092258-e9e2-480b-a61a-24ac0424da87",

@@ -1,3 +1,3 @@
 shader_set(sh_daynight);
-shader_set_uniform_f(uniform_color, var_color[9], var_color[10], var_color[11]);
+shader_set_uniform_f(uniform_color, cur_color[0], cur_color[1], cur_color[2]);
 
