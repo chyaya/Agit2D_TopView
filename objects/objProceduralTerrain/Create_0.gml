@@ -1,3 +1,23 @@
+//=====Assign land types============
+enum Tiles {
+	WATER,
+	LAND,
+	MOUNTAIN,
+}
+
+var i = 0;
+create_tile_info(i++, 125, 210, 180, "Shallows", 73, 74, 73, Tiles.WATER, true);
+create_tile_info(i++, 30, 60, 150, "Sand", 54, 54, 54, Tiles.LAND, false);
+create_tile_info(i++, 90, 160, 120, "Forest", 52, 52, 52, Tiles.LAND, false);
+create_tile_info(i++, 50, 110, 120, "Jungle", 53, 53, 53, Tiles.LAND, false);
+create_tile_info(i++, 160, 0, 160, "High mountain", 16, 16, 17, Tiles.MOUNTAIN, true);
+create_tile_info(i++, 240, 0, 240, "Mountain top", 16, 16, 17, Tiles.MOUNTAIN, true);
+create_tile_info(i++, 125, 170, 145, "Sea", 70, 71, 70, Tiles.WATER, true);
+create_tile_info(i++, 35, 50, 120, "Tundra", 56, 56, 56, Tiles.LAND, false);
+create_tile_info(i++, 140, 0, 140, "Rocky", 16, 16, 17, Tiles.MOUNTAIN, true);
+create_tile_info(i++, 140, 160, 120, "Deep sea", 72, 72, 72, Tiles.WATER, true);
+
+
 globalvar elevation_grid;
 globalvar heat_grid;
 globalvar moisture_grid;
@@ -5,7 +25,6 @@ globalvar land_grid;
 globalvar wind_grid;
 globalvar world_size;
 globalvar sealevel;
-globalvar land;
 globalvar zoom;
 
 //For drawing
@@ -88,104 +107,6 @@ for (ix = 0; ix<world_size; ix++)
         ds_grid_set(moisture_grid,ix,iy, moisture_filtered[ix,iy])
 }
 
-enum Tiles {
-	WATER,
-	LAND,
-	MOUNTAIN,
-}
-
-//=====Assign land types============
-land[0,0] = 125; // Sea   HSV
-land[0,1] = 210; // Sea
-land[0,2] = 180; // Sea
-land[0,3] = "Shallows"
-land[0,4] = 73;
-land[0,5] = 74;
-land[0,6] = 73;
-land[0,7] = Tiles.WATER;
-
-land[1,0] = 30; // Sand
-land[1,1] = 60; // Sand
-land[1,2] = 150; // Sand
-land[1,3] = "Sand"
-land[1,4] = 54;
-land[1,5] = 54;
-land[1,6] = 54;
-land[1,7] = Tiles.LAND;
-
-land[2,0] = 90; // Forest
-land[2,1] = 160; // Forest
-land[2,2] = 120; // Forest
-land[2,3] = "Forest"
-land[2,4] = 52;
-land[2,5] = 52;
-land[2,6] = 52;
-land[2,7] = Tiles.LAND;
-
-land[3,0] = 50; // Jungle
-land[3,1] = 110; // Jungle
-land[3,2] = 120; // Jungle
-land[3,3] = "Jungle"
-land[3,4] = 53;
-land[3,5] = 53;
-land[3,6] = 53;
-land[3,7] = Tiles.LAND;
-
-land[4,0] = 160; // Mountain
-land[4,1] = 0; // Mountain
-land[4,2] = 160; // Mountain
-land[4,3] = "High mountain"
-land[4,4] = 16;
-land[4,5] = 16;
-land[4,6] = 17;
-land[4,7] = Tiles.MOUNTAIN;
-
-land[5,0] = 240; // Mountain tops
-land[5,1] = 0; // Mountain tops 
-land[5,2] = 240; // Mountain tops
-land[5,3] = "Mountain top"
-land[5,4] = 16;
-land[5,5] = 16;
-land[5,6] = 17;
-land[5,7] = Tiles.MOUNTAIN;
-
-land[6,0] = 125; //  Sea   RGB
-land[6,1] = 170; //  Sea
-land[6,2] = 145; //  Sea
-land[6,3] = "Sea"
-land[6,4] = 70;
-land[6,5] = 71;
-land[6,6] = 70;
-land[6,7] = Tiles.WATER;
-
-land[7,0] = 35; // Tundra   RGB
-land[7,1] = 50; // Tundra
-land[7,2] = 120; // Tundra
-land[7,3] = "Tundra"
-land[7,4] = 56;
-land[7,5] = 56;
-land[7,6] = 56;
-land[7,7] = Tiles.LAND;
-
-land[8,0] = 140; // Mid Mountain
-land[8,1] = 0; // Mountain
-land[8,2] = 140; // Mountain
-land[8,3] = "Rocky"
-land[8,4] = 16;
-land[8,5] = 16;
-land[8,6] = 17;
-land[8,7] = Tiles.MOUNTAIN;
-
-land[9,0] = 140; // deep Sea   RGB
-land[9,1] = 160; // deep Sea
-land[9,2] = 120; // deep Sea
-land[9,3] = "Deep sea"
-land[9,4] = 72;
-land[9,5] = 72;
-land[9,6] = 72;
-land[9,7] = Tiles.WATER;
-
-
 land_grid = ds_grid_create(world_size,world_size)
 
 for (ix = 0; ix<world_size; ix++)  //This is where creativity is needed. Decide on land type based on attriburtes
@@ -236,15 +157,29 @@ for (ix = 0; ix < world_size; ix++)
 		var u = iy > 0 ? ds_grid_get(land_grid,ix,iy - 1) : t;
 		var d = iy < world_size - 1 ? ds_grid_get(land_grid,ix,iy + 1) : t;
 		
-		var select = 4;
+		var brush = 0;
 		
-		if(land[t, 4] != land[t, 5] && land[t, 7] != land[u, 7] && land[t, 4] != land[u, 4])
-			select = 5;
+		if(Tile_Brush[t] != Tile_Brush_Up[t]
+			&& Tile_Category[t] != Tile_Category[u]
+			&& Tile_Brush[t] != Tile_Brush[u])
+		{
+			brush = Tile_Brush_Up[t];
+		}
+		else if(Tile_Brush[t] != Tile_Brush_Down[t]
+			&& Tile_Category[t] != Tile_Category[d]
+			&& Tile_Brush[t] != Tile_Brush[d])
+		{
+			brush = Tile_Brush_Down[t];
+		}
+		else 
+		{
+			brush = Tile_Brush[t];
+		}
+		
+		
+		tilemap_set(_m, brush, ix, iy); // Uncomment for tiles!
 			
-		if(land[t, 4] != land[t, 6] && land[t, 7] != land[d, 7] && land[t, 4] != land[d, 4])
-			select = 6;
-		
-		tilemap_set(_m, land[t, select], ix, iy); // Uncomment for tiles!
+		aStar_set_blocked(ix, iy, Tile_Block[t]);
     }
 }
 

@@ -15,7 +15,7 @@ if(false == m_PauseTime)
 	
 	if(m_LastTimeInDay > m_TimeInDay)
 	{
-		sUtil_GameLogic_ProcessADay();	
+		sGameLogic_ProcessADay();	
 	
 		//show_debug_message("It's another day!");
 	}

@@ -15,23 +15,13 @@
             "m_owner": "3da06032-8c3a-462c-b3df-f228c3da6694"
         },
         {
-            "id": "6d1f0436-f1c4-4a8d-8383-e92eb6ba3cf0",
+            "id": "2872dc17-8d66-4d1e-beb5-571dd3085b3b",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 4,
-            "eventtype": 7,
-            "m_owner": "3da06032-8c3a-462c-b3df-f228c3da6694"
-        },
-        {
-            "id": "86a2e045-1b67-42ff-a1eb-f454f8967c5c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 5,
-            "eventtype": 7,
+            "enumb": 0,
+            "eventtype": 1,
             "m_owner": "3da06032-8c3a-462c-b3df-f228c3da6694"
         }
     ],
