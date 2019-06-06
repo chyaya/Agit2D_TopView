@@ -27,7 +27,7 @@ var obj = noone;
 
 with(instance_create_layer(_deploy_x, _deploy_y, "Instances", oBlank))
 {
-	m_Level = _lvl;
+	//m_Level = _lvl;
 	m_CurHealth = 0;
 	
 	instance_change(irandom(1) == 0 ? oMan : oWoman, true);

@@ -14,6 +14,8 @@ if(m_GameOver)
 	}
 	else
 	{
-		draw_text_color(view_wport[0]/2, view_hport[0]/2, "You Die", c_red, c_red, c_black, c_black, 1);
+		draw_text_color(view_wport[0]/2, view_hport[0]/2, "Game Over", c_red, c_red, c_black, c_black, 1);
 	}
+	
+	draw_set_alpha(1);
 }

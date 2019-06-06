@@ -10,9 +10,6 @@ var line_h = 40, offset = 250;
 
 if(m_PlayerObject.object_index != oGhost)
 {
-	draw_text(text_x, text_y, "Level:");
-	draw_text(text_x + offset, text_y,
-		string(m_PlayerObject.m_Level));
 	text_y += line_h;
 	
 	draw_text(text_x, text_y, "Health:");

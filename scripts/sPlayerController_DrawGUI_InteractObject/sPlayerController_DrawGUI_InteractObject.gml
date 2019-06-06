@@ -20,7 +20,7 @@ if(m_InteractionObject != noone)
 		var yPos = view_hport[0]/2 + 250;
 		
 		draw_text_color(view_wport[0]/2, yPos,
-			m_InteractionObject.m_Name + "(lv:" + string(m_InteractionObject.m_Level) + ")", color, color, color, color, 1);	
+			m_InteractionObject.m_Name, color, color, color, color, 1);	
 		yPos += 50;
 		
 		draw_text(view_wport[0]/2, yPos, "Health:" + string(m_InteractionObject.m_MaxHealth));

@@ -1,4 +1,4 @@
-if(m_PlayerObject.object_index == oGhost)
+if(m_PlayerObject != noone && m_PlayerObject.object_index == oGhost)
 {
 	if(room == room_Boss)
 	{

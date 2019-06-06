@@ -4,7 +4,6 @@
 // Inherit the parent event
 event_inherited();
 
-m_Level = 666;
 m_CurHealth = 666;
 m_MaxHealth = 666;
 m_Damage = 13;

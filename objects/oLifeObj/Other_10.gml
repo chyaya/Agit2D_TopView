@@ -2,9 +2,27 @@
 
 sUtil_PlayRandomSound(m_Sound_Dead);
 
-if(oPlayerController.m_PlayerObject == self)
+with(oPlayerController)
 {
-	sUtil_DoUnpossess(oPlayerController);
-}	
+	if(m_InteractionObject == other)
+	{
+		m_InteractionObject = noone;
+	}
+	
+	if(m_PlayerObject == other)
+	{
+		m_PlayerObject = noone;
+		
+		m_GameOver = true;
+	}
+}
 
-sPawn_Dead();
+with(oPawn)
+{
+	if(m_AI_TargetObject == other)
+	{
+		m_AI_TargetObject = noone;
+	}
+}
+
+instance_destroy();
