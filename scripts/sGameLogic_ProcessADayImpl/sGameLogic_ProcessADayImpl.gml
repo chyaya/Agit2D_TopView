@@ -1,9 +1,9 @@
 var playerPos = sGameLogic_FindSpawnPos();
 
-if(instance_number(oWoman) > 0)
+if(instance_number(oPlayer) > 0)
 {
-	oWoman.x = playerPos[0];
-	oWoman.y = playerPos[1];
+	oPlayer.x = playerPos[0];
+	oPlayer.y = playerPos[1];
 }
 
 with(oTree)

@@ -1,6 +1,6 @@
 draw_set_alpha(1.0);
 draw_set_color(c_white);
-draw_set_font(fontNormal);
+draw_set_font(fontGUINormal);
 draw_set_halign(fa_right);
 draw_set_valign(fa_bottom);
 
@@ -51,7 +51,7 @@ while (ss <= total_slots) { //Draw the item icons.
 				slot_size, slot_size);
 				
 			if(inv_count[ss] > 1)
-				draw_text(_x + slot_size - 5, _y+slot_size - 3, string(inv_count[ss]));
+				draw_text(_x + slot_size - 5, _y+slot_size, string(inv_count[ss]));
 	    }
 	    xx+=1;
 	    ss+=1;

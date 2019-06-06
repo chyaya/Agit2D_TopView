@@ -15,10 +15,5 @@ assert_not_equal(itemCount, 0);
 
 if(sPawn_Inven_RemoveItemByPos(itemPos, itemCount) != 0)
 	return;
-
-with(instance_create_layer(_x, _y, "Props", oBlank))
-{
-	m_ItemId = itemId;
-
-	instance_change(oItem, true);
-}
+	
+sGameLogic_CreateItem(_x, _y, itemId);

@@ -7,3 +7,5 @@ if(false == variable_instance_exists(id, "m_ItemId"))
 }
 
 sprite_index = global.Item_Sprite[m_ItemId];
+
+m_ActiveTime = current_time + irandom_range(400, 600);

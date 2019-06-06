@@ -1,8 +1,17 @@
-var itemId = 0;
+enum ItemType
+{
+	NONE,
+	
+	Wood,
+	Stone,
+	Iron,
+	
+	MAX
+}
 
-inv_create_item(itemId++,spr_no_item, "", noone, noone); //Don't remove this one!
-inv_create_item(itemId++,sprWeapon, "Weapon", sItem_Weapon_OnAddOrRemove, noone);
-inv_create_item(itemId++,sprArmor, "Armor", sItem_Armor_OnAddOrRemove, noone);
-inv_create_item(itemId++,sprShoes, "Shoes", sItem_Shoes_OnAddOrRemove, noone);
-inv_create_item(itemId++,sprPortion, "Portion", noone, sItem_Portion_OnUse);
+inv_create_item(0, spr_no_item, "", 0, noone, noone); //Don't remove this one!
+
+inv_create_item(ItemType.Wood, sprWood, "Wood", 100, noone, noone);
+inv_create_item(ItemType.Stone, sprStone, "Stone", 100, noone, noone);
+inv_create_item(ItemType.Iron, sprIron, "Iron", 100, noone, noone);
 

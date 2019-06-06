@@ -25,21 +25,6 @@ case "Attack":
 case "Down":
 	room_goto_next();
 	break;
-case "PickUp":
-
-	with(m_PlayerObject)
-	{
-		if(sPawn_Inven_AddItem(other.m_InteractionObject.m_ItemId, 1) == 0)
-		{
-			instance_destroy(other.m_InteractionObject);
-			other.m_InteractionObject = noone;
-		}
-		else
-		{
-			sUtil_CreateNotify(x, y, "Inventory is full", 0, -30);
-		}
-	}
-	break;
 case "Use":
 	with(m_PlayerObject)
 	{

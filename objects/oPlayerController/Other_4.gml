@@ -6,12 +6,12 @@ if(global.UseFOW)
 
 if(false == variable_instance_exists(id, "m_PlayerObject"))
 {
-	if(instance_exists(oWoman) == false)
+	if(instance_exists(oPlayer) == false)
 	{
 		show_message("no player ghost");	
 	}
 
-	m_PlayerObject = instance_find(oWoman, 0);
+	m_PlayerObject = instance_find(oPlayer, 0);
 	m_PlayerObject.m_AI_Control = false;
 }
 

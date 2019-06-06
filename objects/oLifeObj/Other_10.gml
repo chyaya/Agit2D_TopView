@@ -25,4 +25,12 @@ with(oPawn)
 	}
 }
 
+with(oHit)
+{
+	if(m_OwnerObj == other)
+	{
+		m_OwnerObj = noone;
+	}
+}
+
 instance_destroy();

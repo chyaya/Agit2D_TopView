@@ -1,8 +1,8 @@
 {
-    "id": "1aa02443-afe3-4a16-97ad-19d32f7b0173",
+    "id": "c6b38ad7-7331-413d-995a-b00174ad3854",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "sPawn_Inven_DrawUI",
+    "name": "sGameLogic_CreateItem",
     "IsCompatibility": false,
     "IsDnD": false
 }

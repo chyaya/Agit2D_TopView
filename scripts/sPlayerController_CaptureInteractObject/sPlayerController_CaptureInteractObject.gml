@@ -1,3 +1,5 @@
+return;
+
 var newMouseOverObject = noone;
 
 var interactionObjectList = ds_list_create();

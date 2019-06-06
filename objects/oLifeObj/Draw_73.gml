@@ -1,5 +1,7 @@
 event_inherited();
 
+var old_image_xscale = image_xscale;
+image_xscale = 1;
 
 #macro BAR_HEIGHT 1
 
@@ -18,3 +20,5 @@ if(m_CurHealth > 0 && m_CurHealth < m_MaxHealth)
 	if(healthRate > 0)
 		draw_rectangle(barX, barY, barX + sprite_width*healthRate, barY + BAR_HEIGHT, false);
 }
+
+image_xscale = old_image_xscale;

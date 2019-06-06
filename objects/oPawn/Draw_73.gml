@@ -1,8 +1,5 @@
 event_inherited();
 
-var old_image_xscale = image_xscale;
-image_xscale = 1;
-
 if(global.ShowDebug_AI && oPlayerController.m_PlayerObject != self)
 {
 	if(m_AI_Control && m_AI_PlayerVisible)
@@ -30,5 +27,3 @@ if(global.ShowDebug_AI && oPlayerController.m_PlayerObject != self)
 
 
 }
-
-image_xscale = old_image_xscale;
