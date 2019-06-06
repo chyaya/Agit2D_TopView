@@ -12,6 +12,7 @@ if(false == variable_instance_exists(id, "m_PlayerObject"))
 	}
 
 	m_PlayerObject = instance_find(oWoman, 0);
+	m_PlayerObject.m_AI_Control = false;
 }
 
 m_InteractionObject = noone;

@@ -9,9 +9,7 @@
         "9b11a717-d22c-4602-b8bf-c48dea43c6d9",
         "7591f6a4-9265-43c1-a0c3-0224c8ea7016",
         "2dc7b830-8315-4bdf-bd53-abd60306b779",
-        "12f8d348-17e7-4083-83b2-60cd26e30ce7",
-        "80cb543e-1777-498a-b1f4-01a95d3d8edb",
-        "d0f62b4f-2e3d-4d17-825b-bb3fcfcaef51"
+        "12f8d348-17e7-4083-83b2-60cd26e30ce7"
     ],
     "filterType": "GMObject",
     "folderName": "Prop",

@@ -30,7 +30,7 @@
             "mvc": "1.0",
             "objectId": "7a688a40-48fe-4cef-91f2-de3e41004582",
             "propertyId": "34514553-8ed0-4562-86c9-f2d1c848d480",
-            "value": "sprRobotIdle"
+            "value": "sprRobotDead"
         },
         {
             "id": "65799b4e-e679-4965-9f79-51a38ca5f40d",

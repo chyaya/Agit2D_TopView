@@ -1,5 +1,3 @@
-event_inherited();
-
 m_DirX = 0;
 m_DirY = 0;
 
@@ -27,25 +25,11 @@ m_Damage = stats[?"damage"];
 m_MoveSpeed = stats[?"moveSpeed"];
 ds_map_destroy(stats);
 
-if(false == variable_instance_exists(id, "m_CurHealth"))
-{
-	m_CurHealth = m_MaxHealth;
-}
-m_LastHealth = m_CurHealth;
-
-if(m_CurHealth == 0)
-{
-	sPawn_Dead();
-}
-	
 m_RottenSprFrame = 0;
 m_LastImageIndex = -1;
-
-m_Sound_Idle = ds_list_create();
-m_Sound_Hit = ds_list_create();
-m_Sound_Dead = ds_list_create();
 
 m_LastPathFind = 0;
 
 sPawn_Inven_Init(30);
 
+event_inherited();

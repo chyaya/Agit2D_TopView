@@ -4,8 +4,11 @@ if(m_Hit == true)
 if(other == m_OwnerObj)
 	return;
 	
-if(other.m_AI_Control == m_OwnerObj.m_AI_Control)
-	return;
+if(object_is_ancestor(other.object_index, oPawn))
+{
+	if(other.m_AI_Control == m_OwnerObj.m_AI_Control)
+		return;	
+}
 	
 if(other.object_index == oGhost)
 	return;
