@@ -1,7 +1,7 @@
 if(m_Hit == true)
 	return;
-
-if(other == m_OwnerObj)
+	
+if(noone == m_OwnerObj || other == m_OwnerObj)
 	return;
 	
 if(object_is_ancestor(other.object_index, oPawn))
