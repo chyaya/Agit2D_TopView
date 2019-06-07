@@ -22,7 +22,7 @@ for(var i = total_slots; i > 0; --i)
 		break;
 	}
 	
-	assert_greater_than(inv_count[i], 0);
+	assert_greater_than_or_equal(inv_count[i], 0);
 }
 
 return itemCount;

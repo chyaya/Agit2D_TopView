@@ -24,6 +24,13 @@ with(m_PlayerObject)
 	}
 	
 	var pos = sUtil_GetBuildingDeployPos(_x, _y, craftId);
-	instance_create_layer(pos[0], pos[1], layer, object);
+	
+	
+	with(instance_create_layer(pos[0], pos[1], layer, oBlank))
+	{
+		m_CraftId = craftId;
+	
+		instance_change(object, true);
+	}
 }
 
