@@ -8,7 +8,7 @@ draw_set_font(fontGUINormal);
 var text_x = 10, text_y = 10;
 var line_h = 40, offset = 250;
 
-if(m_PlayerObject.object_index != oGhost)
+if(m_PlayerObject != noone && m_PlayerObject.object_index != oGhost)
 {
 	text_y += line_h;
 	

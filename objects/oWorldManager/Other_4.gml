@@ -4,7 +4,7 @@
 
 audio_group_load(footstep);
 
-//audio_play_sound(sndZelda, 0, true);
+audio_play_sound(sndZelda, 0, true);
 
 /*
 if(file_exists(SAVE_FILENAME))
