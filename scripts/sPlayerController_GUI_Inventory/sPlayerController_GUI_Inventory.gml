@@ -18,14 +18,16 @@ if(m_Input_AxisL_Step)
 m_SelectedSlotX = clamp(m_SelectedSlotX, 0, m_SlotsInRow - 1);
 m_SelectedSlotY = clamp(m_SelectedSlotY, 0, m_PlayerObject.total_slots/m_SlotsInRow - 1);
 		
+var itemId = ItemType.NONE;
+		
 with(m_PlayerObject)
 {
 	selected = other.m_SelectedSlotX + other.m_SlotsInRow*other.m_SelectedSlotY + 1;
 	
-	if(global.Item_OnUse[inv[selected]] != noone)
-	{
-		other.m_ActionNames[ACTION_A] = "Use";
-	}
+	itemId = inv[selected];
 }
 
-
+if(global.Item_OnUse[itemId] != noone)
+{
+	other.m_ActionNames[ACTION_A] = "Use";
+}

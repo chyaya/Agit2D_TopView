@@ -2935,6 +2935,14 @@
             }
         },
         {
+            "Key": "d47b1f5d-6c6b-4a0a-aea3-575445ac0fb1",
+            "Value": {
+                "id": "d76c9b6b-4791-4806-bdc7-c0c8e561fa93",
+                "resourcePath": "fonts\\fontGUINormal\\fontGUINormal.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "d59427d1-61d9-467d-ad1f-7bddedb96505",
             "Value": {
                 "id": "f14d14b9-e18e-4cb5-b882-a98801828584",
@@ -3068,14 +3076,6 @@
                 "id": "a592d36e-bf34-4124-8de0-e6d066c617f4",
                 "resourcePath": "scripts\\position_create\\position_create.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "e3b87911-ccd1-47d7-8777-212976b367b9",
-            "Value": {
-                "id": "fc8fbe96-4307-4df2-9fc8-cabb1693aaed",
-                "resourcePath": "fonts\\fontGUINormal\\fontGUINormal.yy",
-                "resourceType": "GMFont"
             }
         },
         {

@@ -4,13 +4,25 @@ if(m_PlayerObject == noone)
 var viewW = view_wport[0];
 var viewH = view_hport[0];
 
+var selectedItemId = ItemType.NONE;
+
 with(m_PlayerObject)
 {
 	var slotSize = 64;
 	var gapSize = 16;
 	var row = other.m_SlotsInRow;
 	sPawn_Inven_DrawUI((viewW - row*slotSize - (row - 1)*gapSize)*0.5, 300, slotSize, row, gapSize);
+	
+	selectedItemId = inv[selected];
 }
+
+
+draw_set_font(fontGUINormal);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
+draw_text(view_wport[0]/2, view_hport[0]/2 + 150, global.Item_Text[selectedItemId]);
+
+draw_text(view_wport[0]/2, view_hport[0]/2 + 200, global.Item_Desc[selectedItemId]);
 
 /*
 with(m_PlayerObject)

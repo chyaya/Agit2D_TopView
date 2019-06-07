@@ -1,6 +1,6 @@
 #macro BUTTON_SIZE		48
 #macro TEXT_GAP			15
-#macro TEXT_OFFSET_Y	(BUTTON_SIZE/2 - 3)
+#macro TEXT_OFFSET_Y	(BUTTON_SIZE/2)
 
 draw_set_font(fontGUINormal);
 draw_set_valign(fa_center);
