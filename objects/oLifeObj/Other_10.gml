@@ -1,5 +1,8 @@
 /// @description Dead
 
+// Inherit the parent event
+event_inherited();
+
 sUtil_PlayRandomSound(m_Sound_Dead);
 
 with(oPlayerController)

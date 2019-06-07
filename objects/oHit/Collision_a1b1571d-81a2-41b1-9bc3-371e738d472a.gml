@@ -4,6 +4,9 @@ if(m_Hit == true)
 if(noone == m_OwnerObj || other == m_OwnerObj)
 	return;
 	
+if(false == instance_exists(m_OwnerObj))
+	return;
+	
 if(object_is_ancestor(other.object_index, oPawn))
 {
 	if(other.m_AI_Control == m_OwnerObj.m_AI_Control)
