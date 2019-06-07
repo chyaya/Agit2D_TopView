@@ -1,6 +1,6 @@
 m_ActionNames[ACTION_A] = "";
-m_ActionNames[ACTION_B] = "";
 m_ActionNames[ACTION_X] = "";
+m_ActionNames[ACTION_Y] = "";
 	
 if(m_Input_AxisL_Step)
 {

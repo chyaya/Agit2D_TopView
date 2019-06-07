@@ -87,10 +87,7 @@ if(false == m_ShowInventory)
 			}
 	
 			sPawn_Move(1.0);
-		}
-	
-		m_PlayerObjectX = m_PlayerObject.x;
-		m_PlayerObjectY = m_PlayerObject.y;	
+		}	
 	}
 }
 else
@@ -123,6 +120,12 @@ else
 		break;
 		
 	}
+}
+
+if(noone != m_PlayerObject)
+{
+	m_PlayerObjectX = m_PlayerObject.x;
+	m_PlayerObjectY = m_PlayerObject.y;	
 }
 
 sPlayerController_CaptureInteractObject();

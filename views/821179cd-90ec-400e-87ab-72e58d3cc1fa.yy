@@ -8,7 +8,8 @@
         "0d57b746-7438-4b14-a99b-a993f3770902",
         "51a62678-4fd5-42de-b0f9-52fb4dbce8cb",
         "5803e97f-2a05-4cfb-b9e0-54dedc6667ff",
-        "00c94366-f6dd-4bb0-8d61-91532e0bc77c"
+        "00c94366-f6dd-4bb0-8d61-91532e0bc77c",
+        "a1f39b24-5eaf-4f00-b8a4-75ba2c317f71"
     ],
     "filterType": "GMSprite",
     "folderName": "origin",

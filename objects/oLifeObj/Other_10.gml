@@ -17,6 +17,7 @@ with(oPlayerController)
 		m_PlayerObject = noone;
 		
 		m_GameOver = true;
+		m_ShowInventory = false;
 	}
 }
 
