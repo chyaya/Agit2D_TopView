@@ -607,6 +607,14 @@
             }
         },
         {
+            "Key": "2b4b8ba2-57ff-4e05-9b4a-d7ed895cffdc",
+            "Value": {
+                "id": "2957b9fa-f36e-4ad5-92c1-c18b847c46a6",
+                "resourcePath": "scripts\\sUtil_GetBuildingDeployPos\\sUtil_GetBuildingDeployPos.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2b67cce5-ba98-44ce-ab10-bc795504d22b",
             "Value": {
                 "id": "9fe82d65-d0e6-4a9b-9844-243cf270af61",
@@ -707,6 +715,14 @@
             "Value": {
                 "id": "dcbff880-94fc-4cde-b7ca-434699d949ee",
                 "resourcePath": "scripts\\sPawn_Inven_RemoveItemByPos\\sPawn_Inven_RemoveItemByPos.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2ff334cf-92c3-4d6e-919f-7f251c432e91",
+            "Value": {
+                "id": "77013a11-83bd-461a-923f-686d9aa47371",
+                "resourcePath": "scripts\\sPlayerController_DeployBuilding\\sPlayerController_DeployBuilding.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3613,6 +3629,7 @@
         "431670b5-6c1a-4123-9bcc-e98e036f5261",
         "23808050-c86b-404c-b0de-b6037f299474",
         "77483527-6b37-407b-92ac-3cefba212cea",
+        "2b4b8ba2-57ff-4e05-9b4a-d7ed895cffdc",
         "51987040-c25b-48b7-aae6-ed65189cada1",
         "ebe8c012-704f-4282-bb73-9a8a0fd5ebd9",
         "18092258-e9e2-480b-a61a-24ac0424da87",
@@ -3622,6 +3639,7 @@
         "da71ca88-8eb4-41cb-94a7-22e56f9a0a4b",
         "09155728-4df8-49f9-9467-afac805824a3",
         "58caf547-4a55-4dba-af2a-7410c2ab7112",
+        "2ff334cf-92c3-4d6e-919f-7f251c432e91",
         "2c215347-9393-4900-9879-ab1a5ada0269",
         "5af7a7ed-f451-404a-9c08-174874e579d1",
         "083ece2a-7739-43df-a24b-7d283771c89f",

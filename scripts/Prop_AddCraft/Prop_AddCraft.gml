@@ -1,6 +1,7 @@
 var craftId = argument[0];
 
 var i = 1;
+global.Craft_Sprite[craftId] = argument[i++];
 global.Craft_Text[craftId] = argument[i++];
 global.Craft_Result[craftId] = argument[i++];
 global.Craft_Material_ItemId[craftId] = argument[i++];

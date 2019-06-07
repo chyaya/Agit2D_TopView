@@ -28,4 +28,12 @@ case Action.Build:
 case Action.CancelDeploy:
 	m_Mode = Mode.Move;
 	break;
+case Action.Deploy:
+	with(m_PlayerObject)
+	{
+		sPlayerController_DeployBuilding(
+			x + m_TargetOffsetX, y + m_TargetOffsetY, other.m_SelectedCraftIndex);
+	}
+	m_Mode = Mode.Move;
+	break;
 }
