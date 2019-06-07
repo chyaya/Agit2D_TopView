@@ -19,7 +19,7 @@ while(inv_count[itemPos] > 0 && itemCount > 0)
 }
 	
 	
-assert_greater_than(inv_count[itemPos], 0);
+assert_greater_than_or_equal(inv_count[itemPos], 0);
 	
 if(inv_count[itemPos] == 0)
 	inv[itemPos] = 0;

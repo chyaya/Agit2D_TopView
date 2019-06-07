@@ -10,5 +10,5 @@ if(itemId == 0)
 if(sPawn_Inven_RemoveItemByPos(itemPos, 1) == 0)
 {
 	if(global.Item_OnUse[itemId] != noone)
-		script_execute(global.Item_OnUse[itemId], self);
+		script_execute(global.Item_OnUse[itemId], self, itemId);
 }
