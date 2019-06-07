@@ -24,7 +24,7 @@ m_SlotsInRow = 10;
 m_SelectedSlotX = 0;
 m_SelectedSlotY = 0;
 
-m_ShowInventory = false;
+m_Mode = Mode.Move;
 m_CurTab = Tab.Inventory;
 m_SelectedCraftIndex = 1;
 
@@ -37,10 +37,10 @@ m_GamepadZoom = false;
 #macro ACTION_X 2
 #macro ACTION_Y 3
 
-m_ActionNames[ACTION_A] = "";
-m_ActionNames[ACTION_B] = "";
-m_ActionNames[ACTION_X] = "";
-m_ActionNames[ACTION_Y] = "";
+m_Actions[ACTION_A] = Action.NONE;
+m_Actions[ACTION_B] = Action.NONE;
+m_Actions[ACTION_X] = Action.NONE;
+m_Actions[ACTION_Y] = Action.NONE;
 
 alarm[0] = room_speed;
 

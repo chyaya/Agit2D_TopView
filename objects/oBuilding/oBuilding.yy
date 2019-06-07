@@ -1,14 +1,14 @@
 {
-    "id": "7eac5cdf-0d36-4dde-85ff-1913c2f25fc5",
+    "id": "8cd01493-a5ed-4ae6-a55b-5b1462feed00",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oWorkbench",
+    "name": "oBuilding",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "8cd01493-a5ed-4ae6-a55b-5b1462feed00",
+    "parentObjectId": "47099ade-3615-4ea2-9301-b2e7b3f768f1",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "aa598880-e6ea-4ccf-9e70-15b1fda3bb41",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

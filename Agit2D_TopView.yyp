@@ -1975,6 +1975,14 @@
             }
         },
         {
+            "Key": "8cd01493-a5ed-4ae6-a55b-5b1462feed00",
+            "Value": {
+                "id": "c2bcd5a3-ecf3-44b2-9d4c-7147e7477e48",
+                "resourcePath": "objects\\oBuilding\\oBuilding.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8d425326-68de-40ae-b884-1bcc23f80aa2",
             "Value": {
                 "id": "eefbe642-b2f2-45cf-ac04-15ea5aa38146",

@@ -3,7 +3,7 @@ draw_set_color(c_white);
 sPlayerController_DrawGUI_GhostScreenEffect();
 sPlayerController_DrawGUI_InteractObject();
 
-if(m_ShowInventory)
+if(m_Mode == Mode.Bag)
 {
 	sPlayerController_DrawGUI_TabList();
 	sPlayerController_DrawGUI_Stats();

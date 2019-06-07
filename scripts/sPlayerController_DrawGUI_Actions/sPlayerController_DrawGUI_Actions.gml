@@ -8,19 +8,19 @@ draw_set_valign(fa_center);
 var pad_x = view_wport[0] - 350, pad_y = view_hport[0] - 200;
 draw_sprite_stretched(sprGUI_GamepadY, -1, pad_x + 50, pad_y, BUTTON_SIZE, BUTTON_SIZE);
 draw_set_halign(fa_right);
-draw_text(pad_x + 50 - TEXT_GAP, pad_y + TEXT_OFFSET_Y, m_ActionNames[ACTION_Y]);
+draw_text(pad_x + 50 - TEXT_GAP, pad_y + TEXT_OFFSET_Y, m_ActionName[m_Actions[ACTION_Y]]);
 
 draw_sprite_stretched(sprGUI_GamepadX, -1, pad_x, pad_y + 50, BUTTON_SIZE, BUTTON_SIZE);
 draw_set_halign(fa_right);
-draw_text(pad_x - TEXT_GAP, pad_y + 50 + TEXT_OFFSET_Y, m_ActionNames[ACTION_X]);
+draw_text(pad_x - TEXT_GAP, pad_y + 50 + TEXT_OFFSET_Y, m_ActionName[m_Actions[ACTION_X]]);
 
 draw_sprite_stretched(sprGUI_GamepadA, -1, pad_x + 50, pad_y + 100, BUTTON_SIZE, BUTTON_SIZE);
 draw_set_halign(fa_left);
-draw_text(pad_x + 50 + BUTTON_SIZE + TEXT_GAP, pad_y + 100 + TEXT_OFFSET_Y, m_ActionNames[ACTION_A]);
+draw_text(pad_x + 50 + BUTTON_SIZE + TEXT_GAP, pad_y + 100 + TEXT_OFFSET_Y, m_ActionName[m_Actions[ACTION_A]]);
 
 draw_sprite_stretched(sprGUI_GamepadB, -1, pad_x + 100, pad_y + 50, BUTTON_SIZE, BUTTON_SIZE);
 draw_set_halign(fa_left);
-draw_text(pad_x + 100 + BUTTON_SIZE + TEXT_GAP, pad_y + 50 + TEXT_OFFSET_Y, m_ActionNames[ACTION_B]);
+draw_text(pad_x + 100 + BUTTON_SIZE + TEXT_GAP, pad_y + 50 + TEXT_OFFSET_Y, m_ActionName[m_Actions[ACTION_B]]);
 
 //pad_x = 300;
 //pad_y = view_hport[0] - 400;

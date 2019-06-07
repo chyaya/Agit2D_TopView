@@ -9,10 +9,10 @@ if(m_GameOver == false)
 	}
 }
 */
-m_ActionNames[ACTION_A] = "";
-m_ActionNames[ACTION_B] = "";
-m_ActionNames[ACTION_X] = "";
-m_ActionNames[ACTION_Y] = "";
+m_Actions[ACTION_A] = Action.NONE;
+m_Actions[ACTION_B] = Action.NONE;
+m_Actions[ACTION_X] = Action.NONE;
+m_Actions[ACTION_Y] = Action.NONE;
 
 m_Input_AxisL_Up = false;
 m_Input_AxisL_Down = false;
@@ -55,13 +55,14 @@ else if(m_Input_AxisL_Active_Next_Step_Time != 0 && m_Input_AxisL_Active_Next_St
 m_Input_AxisL_Active_Last = m_Input_AxisL_Active;
 
 
-if(false == m_ShowInventory)
+switch(m_Mode)
 {
-	m_ActionNames[ACTION_B] = "Open Bag";
+case Mode.Move:
+	m_Actions[ACTION_B] = Action.OpenBag;
 	
 	if(noone != m_PlayerObject)
 	{
-		m_ActionNames[ACTION_X] = "Attack";
+		m_Actions[ACTION_X] = Action.Attack;
 		
 		with(m_PlayerObject)
 		{
@@ -89,10 +90,10 @@ if(false == m_ShowInventory)
 			sPawn_Move(1.0);
 		}	
 	}
-}
-else
-{
-	m_ActionNames[ACTION_B] = "Close Bag";
+	break;
+	
+case Mode.Bag:
+	m_Actions[ACTION_B] = Action.CloseBag;
 	
 	with(m_PlayerObject)
 	{
@@ -120,6 +121,7 @@ else
 		break;
 		
 	}
+	break;
 }
 
 if(noone != m_PlayerObject)
@@ -129,17 +131,6 @@ if(noone != m_PlayerObject)
 }
 
 sPlayerController_CaptureInteractObject();
-
-
-//if(keyboard_check_pressed(ord("F")))
-//{
-//	sUtil_CreateNotify(m_PlayerObjectX, m_PlayerObjectY, "Hello");
-//}
-
-if(m_Input_Btn_B)
-{
-	m_ShowInventory = !m_ShowInventory;
-}
 
 
 if(global.UseFOW)

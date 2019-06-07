@@ -1,6 +1,6 @@
-m_ActionNames[ACTION_A] = "";
-m_ActionNames[ACTION_X] = "";
-m_ActionNames[ACTION_Y] = "";
+m_Actions[ACTION_A] = Action.NONE;
+m_Actions[ACTION_X] = Action.NONE;
+m_Actions[ACTION_Y] = Action.NONE;
 	
 if(m_Input_AxisL_Step)
 {
@@ -29,5 +29,5 @@ with(m_PlayerObject)
 
 if(global.Item_OnUse[itemId] != noone)
 {
-	other.m_ActionNames[ACTION_A] = "Use";
+	other.m_Actions[ACTION_A] = Action.Use;
 }
