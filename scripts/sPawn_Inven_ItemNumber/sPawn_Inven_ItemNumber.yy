@@ -1,8 +1,8 @@
 {
-    "id": "18092258-e9e2-480b-a61a-24ac0424da87",
+    "id": "fb81213f-cf56-4cb0-b73d-f60d17cbc449",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "sPlayerController_CaptureGamepad",
+    "name": "sPawn_Inven_ItemNumber",
     "IsCompatibility": false,
     "IsDnD": false
 }

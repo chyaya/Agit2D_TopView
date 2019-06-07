@@ -20,9 +20,9 @@ with(m_PlayerObject)
 draw_set_font(fontGUINormal);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-draw_text(view_wport[0]/2, view_hport[0]/2 + 150, global.Item_Text[selectedItemId]);
+sUtil_DrawTextShadow(view_wport[0]/2, view_hport[0]/2 + 150, global.Item_Text[selectedItemId]);
 
-draw_text(view_wport[0]/2, view_hport[0]/2 + 200, global.Item_Desc[selectedItemId]);
+sUtil_DrawTextShadow(view_wport[0]/2, view_hport[0]/2 + 200, global.Item_Desc[selectedItemId]);
 
 /*
 with(m_PlayerObject)

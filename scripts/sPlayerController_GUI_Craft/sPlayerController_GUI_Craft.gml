@@ -10,5 +10,11 @@ if(m_Input_AxisL_Step)
 		++m_SelectedCraftIndex;
 }
 
-
 m_SelectedCraftIndex = clamp(m_SelectedCraftIndex, 1, array_length_1d(global.Craft_Text) - 1);
+
+
+if(sPlayerController_CanBuild(m_SelectedCraftIndex))
+{
+	m_Actions[ACTION_A] = Action.Build;
+}
+	

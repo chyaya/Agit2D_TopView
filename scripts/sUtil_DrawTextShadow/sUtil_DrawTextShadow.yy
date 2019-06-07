@@ -1,8 +1,8 @@
 {
-    "id": "18092258-e9e2-480b-a61a-24ac0424da87",
+    "id": "77483527-6b37-407b-92ac-3cefba212cea",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "sPlayerController_CaptureGamepad",
+    "name": "sUtil_DrawTextShadow",
     "IsCompatibility": false,
     "IsDnD": false
 }

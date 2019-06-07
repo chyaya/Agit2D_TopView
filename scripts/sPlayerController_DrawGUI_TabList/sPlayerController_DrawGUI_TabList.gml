@@ -31,5 +31,5 @@ for(var i = 0; i < Tab.MAX; ++i)
 	draw_set_halign(fa_center);
 	draw_set_font(fontGUINormal);
 	
-	draw_text(xx + boxW/2, yy+boxH/2, names[i]);
+	sUtil_DrawTextShadow(xx + boxW/2, yy+boxH/2, names[i]);
 }

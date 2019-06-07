@@ -1,5 +1,6 @@
 m_DirX = 0;
 m_DirY = 0;
+m_TargetAngle = 0;
 
 m_Path = undefined;
 m_PathEndPos = position_create(-100, -100);

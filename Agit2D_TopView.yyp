@@ -1263,6 +1263,14 @@
             }
         },
         {
+            "Key": "58caf547-4a55-4dba-af2a-7410c2ab7112",
+            "Value": {
+                "id": "72bce0d2-a759-4854-bfe9-09aa0edbea17",
+                "resourcePath": "scripts\\sPlayerController_CanBuild\\sPlayerController_CanBuild.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "58f376a4-a5a4-4093-9f6a-e6437fbb1b1f",
             "Value": {
                 "id": "4cc6bba6-eeb7-4308-9024-fccfee166c76",
@@ -1651,6 +1659,14 @@
             "Value": {
                 "id": "2acd7aab-2259-4d13-be61-704c5ada6558",
                 "resourcePath": "scripts\\aStar_get_height\\aStar_get_height.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "77483527-6b37-407b-92ac-3cefba212cea",
+            "Value": {
+                "id": "0dc82651-63a0-495e-9fb1-4ad89b2cb09f",
+                "resourcePath": "scripts\\sUtil_DrawTextShadow\\sUtil_DrawTextShadow.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2556,6 +2572,14 @@
                 "id": "26874ca0-a0dd-4d55-97f4-f4116b7461d9",
                 "resourcePath": "scripts\\sFOW_Bresenhams\\sFOW_Bresenhams.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b75fb1cd-bb25-4a3c-b14e-7c5c204f7578",
+            "Value": {
+                "id": "7238838e-fbcf-4962-816e-1ca6055c882f",
+                "resourcePath": "sprites\\sprAnglePointer\\sprAnglePointer.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3511,6 +3535,14 @@
             }
         },
         {
+            "Key": "fb81213f-cf56-4cb0-b73d-f60d17cbc449",
+            "Value": {
+                "id": "ec7f480d-5def-43b5-b053-7e441ecff94c",
+                "resourcePath": "scripts\\sPawn_Inven_ItemNumber\\sPawn_Inven_ItemNumber.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fbaec8d5-4a8f-4aa8-9f76-cceea1e884b2",
             "Value": {
                 "id": "9c641939-ce14-406e-9749-39f93da57b5c",
@@ -3580,6 +3612,7 @@
         "4c0698c6-11d7-4a46-8d43-122cbef09a56",
         "431670b5-6c1a-4123-9bcc-e98e036f5261",
         "23808050-c86b-404c-b0de-b6037f299474",
+        "77483527-6b37-407b-92ac-3cefba212cea",
         "51987040-c25b-48b7-aae6-ed65189cada1",
         "ebe8c012-704f-4282-bb73-9a8a0fd5ebd9",
         "18092258-e9e2-480b-a61a-24ac0424da87",
@@ -3588,6 +3621,7 @@
         "c67b5f71-2a75-44bd-8675-7cf81f24ff9d",
         "da71ca88-8eb4-41cb-94a7-22e56f9a0a4b",
         "09155728-4df8-49f9-9467-afac805824a3",
+        "58caf547-4a55-4dba-af2a-7410c2ab7112",
         "2c215347-9393-4900-9879-ab1a5ada0269",
         "5af7a7ed-f451-404a-9c08-174874e579d1",
         "083ece2a-7739-43df-a24b-7d283771c89f",
@@ -3618,6 +3652,7 @@
         "b06d1cb7-e5e9-40c6-be05-5d7fbceafd58",
         "1aa02443-afe3-4a16-97ad-19d32f7b0173",
         "349720dc-dd1b-4066-90d2-a94d69ee50cd",
+        "fb81213f-cf56-4cb0-b73d-f60d17cbc449",
         "6c3b5d31-9aa9-461f-a16e-b16d7fd6cb26",
         "8a40ec99-3ca7-49b9-943e-898d85771bd0",
         "4ee8b7f7-222c-4a6e-8696-ed7ed2208e14",

@@ -28,6 +28,10 @@ enum Action {
 	CloseBag,
 	Use,
 	Build,
+	Deploy,
+	CancelDeploy,
+	
+	MAX
 }
 
 m_ActionName = [
@@ -36,5 +40,8 @@ m_ActionName = [
 	"가방 열기",
 	"가방 닫기",
 	"사용",
-	"짓기",
+	"건설",
+	"배치",
+	"배치 취소",
+	""
 ];

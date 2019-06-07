@@ -22,4 +22,10 @@ case Action.OpenBag:
 case Action.CloseBag:
 	m_Mode = Mode.Move;
 	break;
+case Action.Build:
+	m_Mode = Mode.Building;
+	break;
+case Action.CancelDeploy:
+	m_Mode = Mode.Move;
+	break;
 }

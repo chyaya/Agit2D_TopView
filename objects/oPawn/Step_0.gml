@@ -8,6 +8,11 @@ event_inherited();
 if(m_DirX != 0 || m_DirY != 0)
 {
 	direction = sUtil_DirToAngle(m_DirX, m_DirY);
+	
+	if(m_AI_Control)
+	{
+		m_TargetAngle = direction;	
+	}
 }
 
 

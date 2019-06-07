@@ -32,6 +32,8 @@ m_Input_Btn_LB = false;
 m_Input_Btn_RB = false;
 m_Input_Btn_LT = false;
 m_Input_Btn_RT = false;
+m_Input_AxisR_Active = false;
+m_Input_AxisR_Angle = 0;
 
 
 sPlayerController_CaptureKeyboard();
@@ -57,8 +59,19 @@ m_Input_AxisL_Active_Last = m_Input_AxisL_Active;
 
 switch(m_Mode)
 {
+case Mode.Building:
 case Mode.Move:
-	m_Actions[ACTION_B] = Action.OpenBag;
+	
+	if(m_Mode == Mode.Move)
+	{
+		m_Actions[ACTION_B] = Action.OpenBag;	
+	}
+	else
+	{
+		m_Actions[ACTION_A] = Action.Deploy;
+		m_Actions[ACTION_B] = Action.CancelDeploy;
+	}
+	
 	
 	if(noone != m_PlayerObject)
 	{
@@ -88,10 +101,18 @@ case Mode.Move:
 			}
 	
 			sPawn_Move(1.0);
+			
+			if(other.m_Input_AxisR_Active)
+			{
+				m_TargetAngle = other.m_Input_AxisR_Angle;
+			}
+			else if(m_DirX != 0 || m_DirY != 0)
+			{
+				m_TargetAngle = point_direction(0, 0, m_DirX, m_DirY);
+			}
 		}	
 	}
 	break;
-	
 case Mode.Bag:
 	m_Actions[ACTION_B] = Action.CloseBag;
 	

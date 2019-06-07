@@ -1,4 +1,4 @@
-#macro AXIS_THRESHOLD 0.25
+#macro AXIS_THRESHOLD 0.4
 
 if(gamepad_get_device_count() > 0)
 {
@@ -81,6 +81,14 @@ if(gamepad_get_device_count() > 0)
 		{
 			m_Input_Btn_RT	= true;
 		}
+			
+		var haxis = gamepad_axis_value(0, gp_axisrh);
+		var vaxis = gamepad_axis_value(0, gp_axisrv);
+		
+		m_Input_AxisR_Active = point_distance(0, 0, haxis, vaxis) > AXIS_THRESHOLD;
+		
+		if(m_Input_AxisR_Active)
+			m_Input_AxisR_Angle = point_direction(0, 0, haxis, vaxis);
 	}
 	
 	if(gamepad_button_check_pressed(0, gp_start))
@@ -92,5 +100,4 @@ if(gamepad_get_device_count() > 0)
 	{
 		m_Input_Btn_Select = true;
 	}
-	
 }
