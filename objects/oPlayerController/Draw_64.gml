@@ -1,7 +1,6 @@
 draw_set_color(c_white);
 
 sPlayerController_DrawGUI_GhostScreenEffect();
-sPlayerController_DrawGUI_Actions();
 sPlayerController_DrawGUI_InteractObject();
 
 if(m_ShowInventory)
@@ -19,6 +18,8 @@ if(m_ShowInventory)
 		break;
 	}
 }
+
+sPlayerController_DrawGUI_Actions();
 
 sPlayerController_DrawGUI_GameOver();
 

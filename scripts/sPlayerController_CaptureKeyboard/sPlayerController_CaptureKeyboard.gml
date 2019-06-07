@@ -4,31 +4,35 @@ if(m_GameOver == false)
 	if(keyboard_check(ord("W")))
 	{
 		m_Input_AxisL_Up = true;
+		m_Input_DPad_Up = true;
 	}
 
 	if(keyboard_check(ord("S")))
 	{
 		m_Input_AxisL_Down = true;
+		m_Input_DPad_Down = true;
 	}
 
 	if(keyboard_check(ord("A")))
 	{
 		m_Input_AxisL_Left = true;
+		m_Input_DPad_Left = true;
 	}
 
 	if(keyboard_check(ord("D")))
 	{
 		m_Input_AxisL_Right = true;
+		m_Input_DPad_Right = true;
 	}
 	
 	if(keyboard_check_pressed(ord("Q")))
 	{
-		m_Input_DPad_Left = true;
+		m_Input_Btn_LB	= true;
 	}
-	
+		
 	if(keyboard_check_pressed(ord("E")))
 	{
-		m_Input_DPad_Right = true;
+		m_Input_Btn_RB	= true;
 	}
 	
 	if(keyboard_check_pressed(vk_pagedown))

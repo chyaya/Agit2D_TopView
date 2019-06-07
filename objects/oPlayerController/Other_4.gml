@@ -26,6 +26,7 @@ m_SelectedSlotY = 0;
 
 m_ShowInventory = false;
 m_CurTab = Tab.Inventory;
+m_SelectedCraftIndex = 1;
 
 m_WallMap = layer_tilemap_get_id("Tiles");
 

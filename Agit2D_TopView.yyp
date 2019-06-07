@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "10d879a3-19c8-4f0c-a15b-210b99224c5a",
+            "Value": {
+                "id": "c68276c8-478a-4b06-b4c8-474db8c9c8ea",
+                "resourcePath": "scripts\\sPlayerController_GUI_Inventory\\sPlayerController_GUI_Inventory.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1172ed6c-7e18-43db-94f2-0612383045bb",
             "Value": {
                 "id": "4648fecb-7d30-47d0-aa31-3fa766335375",
@@ -479,6 +487,14 @@
             }
         },
         {
+            "Key": "23808050-c86b-404c-b0de-b6037f299474",
+            "Value": {
+                "id": "1e542def-0c1e-4c83-bb65-ca44568fe726",
+                "resourcePath": "scripts\\sUtil_GamePad_PressAnyButton\\sUtil_GamePad_PressAnyButton.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2405de54-57c7-4f7e-bfae-e69e140dcd36",
             "Value": {
                 "id": "7de3bc44-4048-4bac-ab6d-88ecd9b07d9f",
@@ -491,6 +507,14 @@
             "Value": {
                 "id": "e7cfb9a1-fe30-4c2d-8173-d39c31632254",
                 "resourcePath": "views\\24352d26-34ab-42e1-955c-a154dad2b775.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "24a0fbdf-0b93-4e6b-b027-769d7e371799",
+            "Value": {
+                "id": "7531ad6d-22ef-45d8-8db9-a87f86194574",
+                "resourcePath": "views\\24a0fbdf-0b93-4e6b-b027-769d7e371799.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -508,6 +532,14 @@
                 "id": "f06fd401-0474-4435-ae8b-617759748745",
                 "resourcePath": "scripts\\@__global_object_depths\\__global_object_depths.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "2613ddef-918e-4a7d-8111-4af443f59252",
+            "Value": {
+                "id": "b70f61f8-ee41-4d18-a7ef-af3e196d0f3f",
+                "resourcePath": "views\\2613ddef-918e-4a7d-8111-4af443f59252.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -919,6 +951,14 @@
             }
         },
         {
+            "Key": "47d71769-9146-4cf7-a9d9-07d8bda30a3b",
+            "Value": {
+                "id": "d8ff1347-fd70-4773-8036-bf9e912aabca",
+                "resourcePath": "scripts\\sPlayerController_GUI_Craft\\sPlayerController_GUI_Craft.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "47fc86bc-30d9-42bd-9fc7-6803ff59f6ff",
             "Value": {
                 "id": "0731cb25-33e3-4c85-b114-e2a07b94fb57",
@@ -1175,6 +1215,14 @@
             }
         },
         {
+            "Key": "57bbdef5-bbd9-4d1c-af67-d4a10d235dad",
+            "Value": {
+                "id": "2beff705-1f72-4331-ab79-02ac235deb0e",
+                "resourcePath": "scripts\\Prop_AddCraft\\Prop_AddCraft.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "57c88fe1-c81e-4ba4-a78c-b3a5846023f1",
             "Value": {
                 "id": "bddbf7fb-73af-4523-968b-a22a085edefe",
@@ -1396,6 +1444,14 @@
                 "id": "08ea7b0a-36d7-4d42-b332-1cbc09eaee0a",
                 "resourcePath": "objects\\o_background\\o_background.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "6a172440-bb00-40be-a1d4-f8d3419fa34a",
+            "Value": {
+                "id": "eecb703c-f8d2-499d-9d8a-ddd6a2a7b54a",
+                "resourcePath": "scripts\\Prop_Crafts\\Prop_Crafts.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3427,6 +3483,7 @@
         "ed78b7e4-ded3-4b7e-ad9b-d57cdc771798",
         "4c0698c6-11d7-4a46-8d43-122cbef09a56",
         "431670b5-6c1a-4123-9bcc-e98e036f5261",
+        "23808050-c86b-404c-b0de-b6037f299474",
         "51987040-c25b-48b7-aae6-ed65189cada1",
         "ebe8c012-704f-4282-bb73-9a8a0fd5ebd9",
         "18092258-e9e2-480b-a61a-24ac0424da87",
@@ -3444,6 +3501,8 @@
         "8af089ba-fbe2-4981-9501-5291ba29fc71",
         "b890f3c3-8641-4086-a25d-7ae9cc199130",
         "5c579908-a355-4531-b33d-f3b8bb497f1f",
+        "10d879a3-19c8-4f0c-a15b-210b99224c5a",
+        "47d71769-9146-4cf7-a9d9-07d8bda30a3b",
         "63041d90-dbd1-46c3-9b82-8796ecf052aa",
         "eafab41e-4f15-478f-adf7-1f2bb49d4911",
         "ae593c41-5eea-4fe1-8802-655a92cc4f6c",
@@ -3496,6 +3555,8 @@
         "1bcb2f02-5f65-408c-9e88-b3a79a61435f",
         "1de9b0d8-d437-4212-9422-ef69d136131d",
         "0a189db4-4811-41c6-82ac-4fc041668cd0",
+        "6a172440-bb00-40be-a1d4-f8d3419fa34a",
+        "57bbdef5-bbd9-4d1c-af67-d4a10d235dad",
         "e12fcfe4-f759-449b-8c62-84ea89809e58",
         "1f002dd3-f2fb-4c78-91d3-31bec3b54364",
         "0e273861-5e65-41a4-b182-2936c1c25814",

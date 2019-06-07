@@ -29,51 +29,89 @@ m_Input_Btn_RB = false;
 m_Input_Btn_LT = false;
 m_Input_Btn_RT = false;
 
+
 sPlayerController_CaptureKeyboard();
 sPlayerController_CaptureGamepad();
 
-if(m_PlayerObject != noone)
+m_Input_AxisL_Active = m_Input_AxisL_Up || m_Input_AxisL_Down || m_Input_AxisL_Left || m_Input_AxisL_Right;
+m_Input_AxisL_Step = false;
+
+if(m_Input_AxisL_Active && !m_Input_AxisL_Active_Last)
+{
+	m_Input_AxisL_Active_Next_Step_Time = current_time + 300;
+	m_Input_AxisL_Step = true;
+}
+else if(m_Input_AxisL_Active_Next_Step_Time != 0 && m_Input_AxisL_Active_Next_Step_Time < current_time)
+{
+	m_Input_AxisL_Active_Next_Step_Time = current_time + 100;
+	m_Input_AxisL_Step = true;
+}
+
+m_Input_AxisL_Active_Last = m_Input_AxisL_Active;
+
+
+if(false == m_ShowInventory)
+{
+	if(noone != m_PlayerObject)
+	{
+		with(m_PlayerObject)
+		{
+			m_DirY = 0;
+			m_DirX = 0;
+	
+			if(other.m_Input_AxisL_Up)
+			{
+				m_DirY -= 1;
+			}
+			else if(other.m_Input_AxisL_Down)
+			{
+				m_DirY += 1;
+			}
+	
+			if(other.m_Input_AxisL_Left)
+			{
+				m_DirX -= 1;
+			}
+			else if(other.m_Input_AxisL_Right)
+			{
+				m_DirX += 1;
+			}
+	
+			sPawn_Move(1.0);
+		}
+	
+		m_PlayerObjectX = m_PlayerObject.x;
+		m_PlayerObjectY = m_PlayerObject.y;	
+	}
+}
+else
 {
 	with(m_PlayerObject)
 	{
-		m_DirY = 0;
 		m_DirX = 0;
-	
-		if(other.m_Input_AxisL_Up)
-		{
-			m_DirY -= 1;
-		}
-		else if(other.m_Input_AxisL_Down)
-		{
-			m_DirY += 1;
-		}
-	
-		if(other.m_Input_AxisL_Left)
-		{
-			m_DirX -= 1;
-		}
-		else if(other.m_Input_AxisL_Right)
-		{
-			m_DirX += 1;
-		}
-		
-		if(other.m_Input_DPad_Left || other.m_Input_Btn_LB)
-		{
-			selected--;
-		}
-		
-		if(other.m_Input_DPad_Right || other.m_Input_Btn_RB)
-		{
-			selected++;
-		}
-		
-		selected = clamp(selected, 1, total_slots);
-	
-		sPawn_Move(1.0);
+		m_DirY = 0;
 	}
 	
-	m_PlayerObjectX = m_PlayerObject.x;
-	m_PlayerObjectY = m_PlayerObject.y;	
+	if(m_Input_Btn_LB)
+	{
+		m_CurTab = max(m_CurTab - 1, 0);
+	}
+
+	if(m_Input_Btn_RB)
+	{
+		m_CurTab = min(m_CurTab + 1, Tab.MAX - 1);
+	}
+	
+	switch(m_CurTab)
+	{
+	case Tab.Inventory:
+		sPlayerController_GUI_Inventory();
+		break;
+	case Tab.Craft:
+		sPlayerController_GUI_Craft();
+		break;
+		
+	}
 }
 
 sPlayerController_CaptureInteractObject();

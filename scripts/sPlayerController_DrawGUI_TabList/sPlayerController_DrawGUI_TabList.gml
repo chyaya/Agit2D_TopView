@@ -13,12 +13,12 @@ var boxW = 250;
 var boxH = 64;
 var gapW = 10;
 
-var _x = (viewW - Tab.Max*boxW - (Tab.Max - 1)*gapW)/2;
+var _x = (viewW - Tab.MAX*boxW - (Tab.MAX - 1)*gapW)/2;
 var _y = 100;
 
 var names = ["Inventory", "Craft"];
 
-for(var i = 0; i < Tab.Max; ++i)
+for(var i = 0; i < Tab.MAX; ++i)
 {
 	var xx = _x + i*(boxW + gapW);
 	var yy = _y;
