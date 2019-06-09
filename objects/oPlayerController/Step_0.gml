@@ -150,6 +150,22 @@ case Mode.Bag:
 	break;
 case Mode.UseBuilding:
 	m_Actions[ACTION_B] = Action.UnuseBuilding;
+	m_Actions[ACTION_B] = Action.UnuseBuilding;
+	
+	with(m_InteractionObject)
+	{
+		if(other.m_Input_AxisL_Step)
+		{
+			if(other.m_Input_AxisL_Up || other.m_Input_DPad_Up)
+				--m_SelectedCraftIndex;
+			else if(other.m_Input_AxisL_Down || other.m_Input_DPad_Down)
+				++m_SelectedCraftIndex;
+		}
+
+		m_SelectedCraftIndex = clamp(m_SelectedCraftIndex, 0, array_length_1d(m_CraftList) - 1);
+	}
+	
+	
 	break;
 }
 

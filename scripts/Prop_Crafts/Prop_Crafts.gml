@@ -11,7 +11,7 @@ enum Craft
 }
 
 
-Prop_AddCraft(Craft.NONE, noone, [], []);
+Prop_AddCraft(Craft.NONE, noone, 0, [], []);
 
-Prop_AddCraft(Craft.WoodenTool, Item.WoodenTool, [Item.Wood, Item.Stone], [1, 1]);
-Prop_AddCraft(Craft.CopperTool, Item.CopperTool, [Item.Wood], [2]);
+Prop_AddCraft(Craft.WoodenTool, Item.WoodenTool, 3000, [Item.Wood, Item.Stone], [1, 1]);
+Prop_AddCraft(Craft.CopperTool, Item.CopperTool, 5000, [Item.Wood], [2]);

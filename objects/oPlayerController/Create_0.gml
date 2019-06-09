@@ -33,6 +33,9 @@ enum Action {
 	CancelDeploy,
 	UseBuilding,
 	UnuseBuilding,
+	CraftItem_One,
+	CraftItem_Half,
+	CraftItem_All,
 	
 	MAX
 }

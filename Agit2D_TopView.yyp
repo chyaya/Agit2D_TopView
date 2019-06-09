@@ -2935,6 +2935,14 @@
             }
         },
         {
+            "Key": "c9f7d688-686d-4964-8a0f-dd0afe74a2c2",
+            "Value": {
+                "id": "2c29c9ad-366b-448c-9739-95ca4dd44d64",
+                "resourcePath": "scripts\\sUtil_CircularProgress\\sUtil_CircularProgress.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "caae5ed2-ccb1-4f72-bdee-5be99420d515",
             "Value": {
                 "id": "fd6589f3-6e78-4b05-a4c5-edcf3e969d92",
@@ -3694,6 +3702,7 @@
         "23808050-c86b-404c-b0de-b6037f299474",
         "77483527-6b37-407b-92ac-3cefba212cea",
         "2b4b8ba2-57ff-4e05-9b4a-d7ed895cffdc",
+        "c9f7d688-686d-4964-8a0f-dd0afe74a2c2",
         "51987040-c25b-48b7-aae6-ed65189cada1",
         "ebe8c012-704f-4282-bb73-9a8a0fd5ebd9",
         "18092258-e9e2-480b-a61a-24ac0424da87",
