@@ -2,7 +2,7 @@ var _x = argument0;
 var _y = argument1;
 var craftId = argument2;
 
-if(false == sPlayerController_CanBuild(craftId))
+if(false == sPlayerController_CanBuild_MaterialEnough(craftId))
 	return;
 
 var object = global.Craft_Result[craftId];

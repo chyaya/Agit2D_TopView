@@ -35,7 +35,15 @@ case Action.Deploy:
 		_x = x + m_TargetOffsetX;
 		_y = y + m_TargetOffsetY;
 	}
-	sPlayerController_DeployBuilding(_x, _y, m_SelectedCraftIndex);
-	m_Mode = Mode.Move;
+	
+	if(sPlayerController_CanBuild_Depoly(m_SelectedCraftIndex, _x, _y))
+	{
+		sPlayerController_DeployBuilding(_x, _y, m_SelectedCraftIndex);
+		m_Mode = Mode.Move;	
+	}
+	else
+	{
+		sUtil_CreateNotify(_x, _y, "I can't build there.", 0, -30)	
+	}
 	break;
 }

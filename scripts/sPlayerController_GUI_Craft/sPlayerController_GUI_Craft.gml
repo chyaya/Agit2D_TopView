@@ -13,7 +13,7 @@ if(m_Input_AxisL_Step)
 m_SelectedCraftIndex = clamp(m_SelectedCraftIndex, 1, array_length_1d(global.Craft_Text) - 1);
 
 
-if(sPlayerController_CanBuild(m_SelectedCraftIndex))
+if(sPlayerController_CanBuild_MaterialEnough(m_SelectedCraftIndex))
 {
 	m_Actions[ACTION_A] = Action.Build;
 }

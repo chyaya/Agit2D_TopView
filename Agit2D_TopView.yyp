@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "024a0c85-3bb7-426b-a976-0ed3a3cae9f8",
+            "Value": {
+                "id": "5286f5f2-3ce1-4718-b2cc-1bd3f65e5735",
+                "resourcePath": "scripts\\sPlayerController_CanBuild_Depoly\\sPlayerController_CanBuild_Depoly.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0263e826-547e-4ee9-b00a-643bfe4ab5ae",
             "Value": {
                 "id": "f7ac9ac4-98c9-4aed-8c84-c1190cd41cb4",
@@ -1282,7 +1290,7 @@
             "Key": "58caf547-4a55-4dba-af2a-7410c2ab7112",
             "Value": {
                 "id": "72bce0d2-a759-4854-bfe9-09aa0edbea17",
-                "resourcePath": "scripts\\sPlayerController_CanBuild\\sPlayerController_CanBuild.yy",
+                "resourcePath": "scripts\\sPlayerController_CanBuild_MaterialEnough\\sPlayerController_CanBuild_MaterialEnough.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3647,6 +3655,7 @@
         "da71ca88-8eb4-41cb-94a7-22e56f9a0a4b",
         "09155728-4df8-49f9-9467-afac805824a3",
         "58caf547-4a55-4dba-af2a-7410c2ab7112",
+        "024a0c85-3bb7-426b-a976-0ed3a3cae9f8",
         "2ff334cf-92c3-4d6e-919f-7f251c432e91",
         "2c215347-9393-4900-9879-ab1a5ada0269",
         "5af7a7ed-f451-404a-9c08-174874e579d1",

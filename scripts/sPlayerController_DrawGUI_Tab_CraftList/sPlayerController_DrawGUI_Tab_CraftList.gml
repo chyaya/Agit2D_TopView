@@ -56,7 +56,7 @@ for(var craftId = 1; craftId < array_length_1d(global.Craft_Text); ++craftId)
 		m_SelectedCraftIndex == craftId ? spr_selected_slot : spr_slot,
 		xx, yy, _w, _h, 3);
 		
-	var color = sPlayerController_CanBuild(craftId) ? c_white : c_red;
+	var color = sPlayerController_CanBuild_MaterialEnough(craftId) ? c_white : c_red;
 	draw_set_color(color);
 	
 	sUtil_DrawTextShadow(xx + _w/2, yy + _h/2, global.Craft_Text[craftId]);
