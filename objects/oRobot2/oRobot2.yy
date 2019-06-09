@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oRobot2",
     "eventList": [
-        
+        {
+            "id": "92933e46-231b-4820-9d37-ff8994e99d81",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "677ab9d3-90b8-4bb5-835e-5bf489270336"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [

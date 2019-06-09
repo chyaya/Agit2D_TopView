@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oCow",
     "eventList": [
-        
+        {
+            "id": "b28b23e7-51d1-4d76-a2c0-52d218053076",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "b069ff1a-5fd1-45a5-8178-87755ad1da8f"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [

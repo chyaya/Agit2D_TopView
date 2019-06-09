@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oChicken",
     "eventList": [
-        
+        {
+            "id": "d162868e-35a0-433f-b555-17cb6749bfd5",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "75a5cdca-f0b4-4d39-b752-e60c607fc2fd"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [

@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oColaCan",
     "eventList": [
-        
+        {
+            "id": "99411d98-f06d-49d1-8754-79bf6c462a78",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "d2b8b1b7-db51-4a7e-b93a-23936ceefe84"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

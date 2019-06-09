@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oRockBlack",
     "eventList": [
-        
+        {
+            "id": "cb4011c3-12a6-4468-8428-7f4b606dedba",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "dd31405d-e3c0-478d-a958-6490324bae3c"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [

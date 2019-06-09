@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oRockBlue",
     "eventList": [
-        
+        {
+            "id": "6318676f-922d-47c4-a12d-87cdff1d861d",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "67b45397-04e5-4bc2-a678-fe81f0e9c329"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
