@@ -79,8 +79,21 @@ for(var index=0;index<global.ot_size;index++)
 		{
 			// Get the instance in the list
 			var i = ds_list_find_value(l,count--);
+		
+			with(i)
+			{
+				if(m_OutlineEnable)
+				{
+					shader_set(shSilhouette);
+					draw_sprite_ext(sprite_index, -1, x + 1, y, image_xscale, image_yscale, image_angle, m_OutlineColor, 1);
+					draw_sprite_ext(sprite_index, -1, x - 1, y, image_xscale, image_yscale, image_angle, m_OutlineColor, 1);
+					draw_sprite_ext(sprite_index, -1, x, y + 1, image_xscale, image_yscale, image_angle, m_OutlineColor, 1);
+					draw_sprite_ext(sprite_index, -1, x, y - 1, image_xscale, image_yscale, image_angle, m_OutlineColor, 1);
+					shader_reset();
+				}
 			
-			draw_sprite_ext(i.sprite_index, i.image_index,i.x,i.y, i.image_xscale, i.image_yscale, i.image_angle, i.image_blend, i.image_alpha);
+				draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);
+			}
 		}
 		// This list had something in it... so clear it!		(don't clear as we still need it for silhouettes)
 		//ds_list_clear(l);

@@ -1,5 +1,3 @@
-return;
-
 var newMouseOverObject = noone;
 
 var interactionObjectList = ds_list_create();
@@ -13,16 +11,9 @@ for (var i = 0; i < interactionObjectNum; ++i;)
 	if(curObj == m_PlayerObject)
 		continue;
 	
-	if(object_is_ancestor(curObj.object_index, oBase) == false)
+	if(object_is_ancestor(curObj.object_index, oBuilding) == false)
 		continue;	
 		
-		/*
-	if(object_is_ancestor(curObj.object_index, oPawn))
-	{
-		if(curObj.m_CurHealth == 0 && curObj.m_Rotten)
-			continue;
-	}
-	*/
 		
 	newMouseOverObject = curObj;
 }
