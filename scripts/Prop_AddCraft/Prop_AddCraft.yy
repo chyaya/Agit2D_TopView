@@ -1,5 +1,5 @@
 {
-    "id": "57bbdef5-bbd9-4d1c-af67-d4a10d235dad",
+    "id": "4947352a-db17-44ee-8869-a255d501e238",
     "modelName": "GMScript",
     "mvc": "1.0",
     "name": "Prop_AddCraft",

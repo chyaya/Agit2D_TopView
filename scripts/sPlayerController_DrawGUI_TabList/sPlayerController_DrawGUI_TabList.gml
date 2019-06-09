@@ -16,7 +16,7 @@ var gapW = 10;
 var _x = (viewW - Tab.MAX*boxW - (Tab.MAX - 1)*gapW)/2;
 var _y = 100;
 
-var names = ["Inventory", "Craft"];
+var names = ["Inventory", "Construct"];
 
 for(var i = 0; i < Tab.MAX; ++i)
 {

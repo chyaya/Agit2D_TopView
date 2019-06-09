@@ -1,8 +1,8 @@
 {
-    "id": "f8d56df8-0736-48dc-93a3-510613b6fe77",
+    "id": "6a172440-bb00-40be-a1d4-f8d3419fa34a",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "Prop_Crafts",
+    "name": "Prop_Constructs",
     "IsCompatibility": false,
     "IsDnD": false
 }

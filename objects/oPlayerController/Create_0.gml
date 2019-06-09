@@ -1,6 +1,6 @@
 enum Tab {
 	Inventory,
-	Craft,
+	Construct,
 	
 	MAX
 }
@@ -12,7 +12,8 @@ m_Input_AxisL_Active_Next_Step_Time = 0;
 enum Mode {
 	Move,
 	Bag,
-	Building,
+	DeployBuilding,
+	UseBuilding,
 	
 	MAX
 }
@@ -26,10 +27,12 @@ enum Action {
 	Attack,	
 	OpenBag,
 	CloseBag,
-	Use,
-	Build,
+	UseItem,
+	SelectDeploy,
 	Deploy,
 	CancelDeploy,
+	UseBuilding,
+	UnuseBuilding,
 	
 	MAX
 }
@@ -43,5 +46,6 @@ m_ActionName = [
 	"건설",
 	"배치",
 	"배치 취소",
-	""
+	"건물 사용",
+	"건물 닫기",
 ];

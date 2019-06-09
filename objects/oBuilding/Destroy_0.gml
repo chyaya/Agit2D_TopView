@@ -1,5 +1,5 @@
-var materialItemId = global.Craft_Material_ItemId[m_CraftId];
-var materialCount = global.Craft_Material_Count[m_CraftId];
+var materialItemId = global.Construct_Material_ItemId[m_ConstructId];
+var materialCount = global.Construct_Material_Count[m_ConstructId];
 	
 for(var i = 0; i < array_length_1d(materialItemId); ++i)
 {

@@ -1,19 +1,19 @@
 var _x = argument0;
 var _y = argument1;
-var craftId = argument2;
+var constructId = argument2;
 
-if(false == sPlayerController_CanBuild_MaterialEnough(craftId))
+if(false == sPlayerController_CanConstruct_MaterialEnough(constructId))
 	return;
 
-var object = global.Craft_Result[craftId];
+var object = global.Construct_Result[constructId];
 	
 if(object == noone)
 	return;
 
 with(m_PlayerObject)
 {	
-	var materialItemId = global.Craft_Material_ItemId[craftId];
-	var materialCount = global.Craft_Material_Count[craftId];
+	var materialItemId = global.Construct_Material_ItemId[constructId];
+	var materialCount = global.Construct_Material_Count[constructId];
 	
 	for(var i = 0; i < array_length_1d(materialItemId); ++i)
 	{
@@ -23,12 +23,12 @@ with(m_PlayerObject)
 		assert_equal(result, 0);
 	}
 	
-	var pos = sUtil_GetBuildingDeployPos(_x, _y, craftId);
+	var pos = sUtil_GetBuildingDeployPos(_x, _y, constructId);
 	
 	
 	with(instance_create_layer(pos[0], pos[1], layer, oBlank))
 	{
-		m_CraftId = craftId;
+		m_ConstructId = constructId;
 	
 		instance_change(object, true);
 	}

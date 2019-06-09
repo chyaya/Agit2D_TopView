@@ -1,35 +1,23 @@
 {
-    "id": "8cd01493-a5ed-4ae6-a55b-5b1462feed00",
+    "id": "d4faa0bb-fa27-483f-b860-e16a2e9dd63f",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oBuilding",
+    "name": "oBuildingCraft",
     "eventList": [
         {
-            "id": "57f0fccc-90a1-4034-bf82-492e8f1c6be3",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 1,
-            "m_owner": "8cd01493-a5ed-4ae6-a55b-5b1462feed00"
-        },
-        {
-            "id": "1d6f7b64-9297-4a5b-a2bf-a332ed48f18b",
+            "id": "f1580608-bfce-498a-b8d6-7aae8571fb60",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "8cd01493-a5ed-4ae6-a55b-5b1462feed00"
+            "m_owner": "d4faa0bb-fa27-483f-b860-e16a2e9dd63f"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
-    "overriddenProperties": [
-        
-    ],
-    "parentObjectId": "47099ade-3615-4ea2-9301-b2e7b3f768f1",
+    "overriddenProperties": null,
+    "parentObjectId": "8cd01493-a5ed-4ae6-a55b-5b1462feed00",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -43,9 +31,7 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": [
-        
-    ],
+    "properties": null,
     "solid": false,
     "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true

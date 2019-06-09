@@ -4,4 +4,7 @@
 // Inherit the parent event
 event_inherited();
 
-sGameLogic_CreateItem(x, y, Item.Iron, random_range(5, 7));
+m_CraftList = [
+	Craft.WoodenTool,
+	Craft.CopperTool,
+];

@@ -4,11 +4,20 @@
     "mvc": "1.0",
     "name": "oWorkbench",
     "eventList": [
-        
+        {
+            "id": "085f16c7-e660-47cf-97d0-82bcc3ae2994",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "7eac5cdf-0d36-4dde-85ff-1913c2f25fc5"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "8cd01493-a5ed-4ae6-a55b-5b1462feed00",
+    "parentObjectId": "d4faa0bb-fa27-483f-b860-e16a2e9dd63f",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,

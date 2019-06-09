@@ -59,12 +59,17 @@ m_Input_AxisL_Active_Last = m_Input_AxisL_Active;
 
 switch(m_Mode)
 {
-case Mode.Building:
+case Mode.DeployBuilding:
 case Mode.Move:
 	
 	if(m_Mode == Mode.Move)
 	{
 		m_Actions[ACTION_B] = Action.OpenBag;	
+		
+		if(m_InteractionObject != noone)
+		{
+			m_Actions[ACTION_A] = Action.UseBuilding;
+		}
 	}
 	else
 	{
@@ -137,11 +142,14 @@ case Mode.Bag:
 	case Tab.Inventory:
 		sPlayerController_GUI_Inventory();
 		break;
-	case Tab.Craft:
-		sPlayerController_GUI_Craft();
+	case Tab.Construct:
+		sPlayerController_GUI_Construct();
 		break;
 		
 	}
+	break;
+case Mode.UseBuilding:
+	m_Actions[ACTION_B] = Action.UnuseBuilding;
 	break;
 }
 

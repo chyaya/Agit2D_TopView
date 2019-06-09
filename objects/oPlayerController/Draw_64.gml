@@ -13,10 +13,14 @@ if(m_Mode == Mode.Bag)
 	case Tab.Inventory:
 		sPlayerController_DrawGUI_Tab_Inventory();
 		break;
-	case Tab.Craft:
-		sPlayerController_DrawGUI_Tab_CraftList();
+	case Tab.Construct:
+		sPlayerController_DrawGUI_Tab_ConstructList();
 		break;
 	}
+}
+else if(m_Mode == Mode.UseBuilding)
+{
+	sPlayerController_DrawGUI_UseBuilding_Craft();
 }
 
 sPlayerController_DrawGUI_Actions();

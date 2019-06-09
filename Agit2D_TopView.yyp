@@ -74,7 +74,7 @@
             "Key": "024a0c85-3bb7-426b-a976-0ed3a3cae9f8",
             "Value": {
                 "id": "5286f5f2-3ce1-4718-b2cc-1bd3f65e5735",
-                "resourcePath": "scripts\\sPlayerController_CanBuild_Depoly\\sPlayerController_CanBuild_Depoly.yy",
+                "resourcePath": "scripts\\sPlayerController_CanConstruct_Depoly\\sPlayerController_CanConstruct_Depoly.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -196,6 +196,14 @@
                 "id": "e94e00aa-d7cb-4ee4-9e75-e9a8be40a711",
                 "resourcePath": "sprites\\sprite68\\sprite68.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "0d623d73-dccc-4b16-902f-783c42c6c5d7",
+            "Value": {
+                "id": "2721fff5-c7da-4569-bb57-26b99f270588",
+                "resourcePath": "scripts\\sPlayerController_CanCraft_MaterialEnough\\sPlayerController_CanCraft_MaterialEnough.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -994,7 +1002,7 @@
             "Key": "47d71769-9146-4cf7-a9d9-07d8bda30a3b",
             "Value": {
                 "id": "d8ff1347-fd70-4773-8036-bf9e912aabca",
-                "resourcePath": "scripts\\sPlayerController_GUI_Craft\\sPlayerController_GUI_Craft.yy",
+                "resourcePath": "scripts\\sPlayerController_GUI_Construct\\sPlayerController_GUI_Construct.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1011,6 +1019,14 @@
             "Value": {
                 "id": "b80b6dda-8c8d-4c7b-a0ff-cef9e15d8f76",
                 "resourcePath": "scripts\\sPawn_Inven_UseItemByPos\\sPawn_Inven_UseItemByPos.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4947352a-db17-44ee-8869-a255d501e238",
+            "Value": {
+                "id": "7e495fb5-a2ba-44a6-ab34-304863f5d2ca",
+                "resourcePath": "scripts\\Prop_AddCraft\\Prop_AddCraft.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1258,7 +1274,7 @@
             "Key": "57bbdef5-bbd9-4d1c-af67-d4a10d235dad",
             "Value": {
                 "id": "2beff705-1f72-4331-ab79-02ac235deb0e",
-                "resourcePath": "scripts\\Prop_AddCraft\\Prop_AddCraft.yy",
+                "resourcePath": "scripts\\Prop_AddConstruct\\Prop_AddConstruct.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1290,7 +1306,7 @@
             "Key": "58caf547-4a55-4dba-af2a-7410c2ab7112",
             "Value": {
                 "id": "72bce0d2-a759-4854-bfe9-09aa0edbea17",
-                "resourcePath": "scripts\\sPlayerController_CanBuild_MaterialEnough\\sPlayerController_CanBuild_MaterialEnough.yy",
+                "resourcePath": "scripts\\sPlayerController_CanConstruct_MaterialEnough\\sPlayerController_CanConstruct_MaterialEnough.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1370,7 +1386,7 @@
             "Key": "5c579908-a355-4531-b33d-f3b8bb497f1f",
             "Value": {
                 "id": "7c2a440e-e049-4042-bf1f-27620b3aa494",
-                "resourcePath": "scripts\\sPlayerController_DrawGUI_Tab_CraftList\\sPlayerController_DrawGUI_Tab_CraftList.yy",
+                "resourcePath": "scripts\\sPlayerController_DrawGUI_Tab_ConstructList\\sPlayerController_DrawGUI_Tab_ConstructList.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1506,7 +1522,7 @@
             "Key": "6a172440-bb00-40be-a1d4-f8d3419fa34a",
             "Value": {
                 "id": "eecb703c-f8d2-499d-9d8a-ddd6a2a7b54a",
-                "resourcePath": "scripts\\Prop_Crafts\\Prop_Crafts.yy",
+                "resourcePath": "scripts\\Prop_Constructs\\Prop_Constructs.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2591,6 +2607,14 @@
             }
         },
         {
+            "Key": "b566c0ca-9b42-49cf-8bc3-099663c1cf3a",
+            "Value": {
+                "id": "dac56306-6260-464e-9051-318b1009e729",
+                "resourcePath": "views\\b566c0ca-9b42-49cf-8bc3-099663c1cf3a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "b5ca72e0-86bf-40a3-8fa7-30803215e34d",
             "Value": {
                 "id": "26874ca0-a0dd-4d55-97f4-f4116b7461d9",
@@ -3063,6 +3087,14 @@
             }
         },
         {
+            "Key": "d4faa0bb-fa27-483f-b860-e16a2e9dd63f",
+            "Value": {
+                "id": "0056bb02-94ba-4088-bce6-271e78dbb6bf",
+                "resourcePath": "objects\\oBuildingCraft\\oBuildingCraft.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d59427d1-61d9-467d-ad1f-7bddedb96505",
             "Value": {
                 "id": "f14d14b9-e18e-4cb5-b882-a98801828584",
@@ -3100,6 +3132,14 @@
                 "id": "689dfd7f-e7ce-4aec-b873-0196cc3bd552",
                 "resourcePath": "sounds\\sndFootstep4\\sndFootstep4.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "d81c55c8-9588-433a-a7e3-ffa57fefd929",
+            "Value": {
+                "id": "57ef5ca3-dcb8-4c46-8347-cd0f88afcda7",
+                "resourcePath": "scripts\\sPlayerController_DrawGUI_UseBuilding_Craft\\sPlayerController_DrawGUI_UseBuilding_Craft.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3543,6 +3583,14 @@
             }
         },
         {
+            "Key": "f8d56df8-0736-48dc-93a3-510613b6fe77",
+            "Value": {
+                "id": "2f0da576-0cf0-4352-b68a-28ff555d202b",
+                "resourcePath": "scripts\\Prop_Crafts\\Prop_Crafts.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f920e219-bf10-4a11-b8ef-2104c7146e60",
             "Value": {
                 "id": "104cd3e7-e751-4ee4-b1ae-c935f8a7b547",
@@ -3657,15 +3705,17 @@
         "58caf547-4a55-4dba-af2a-7410c2ab7112",
         "024a0c85-3bb7-426b-a976-0ed3a3cae9f8",
         "2ff334cf-92c3-4d6e-919f-7f251c432e91",
+        "0d623d73-dccc-4b16-902f-783c42c6c5d7",
         "2c215347-9393-4900-9879-ab1a5ada0269",
         "5af7a7ed-f451-404a-9c08-174874e579d1",
         "083ece2a-7739-43df-a24b-7d283771c89f",
         "ea5454a5-7e02-47ed-9c41-4bd24b6be422",
         "df5fb48c-1e68-4010-b2fb-eb1a42576d4f",
         "a345fb79-61a8-41cb-bfd0-9bcd02f1da97",
-        "8af089ba-fbe2-4981-9501-5291ba29fc71",
         "b890f3c3-8641-4086-a25d-7ae9cc199130",
+        "8af089ba-fbe2-4981-9501-5291ba29fc71",
         "5c579908-a355-4531-b33d-f3b8bb497f1f",
+        "d81c55c8-9588-433a-a7e3-ffa57fefd929",
         "10d879a3-19c8-4f0c-a15b-210b99224c5a",
         "47d71769-9146-4cf7-a9d9-07d8bda30a3b",
         "63041d90-dbd1-46c3-9b82-8796ecf052aa",
@@ -3717,13 +3767,15 @@
         "7c206a2d-9fd1-4f41-a4c6-fc42c9e06f85",
         "236aa508-e959-400a-a5db-4045957715be",
         "d601fa46-153d-43c5-bfb4-9b6d4cc19fdd",
+        "0a189db4-4811-41c6-82ac-4fc041668cd0",
         "6e4bd5aa-8939-4330-8445-5c2217ebf9e7",
         "00a63f12-78d3-4c5b-8ab9-d3c57ce28b31",
         "1bcb2f02-5f65-408c-9e88-b3a79a61435f",
         "1de9b0d8-d437-4212-9422-ef69d136131d",
-        "0a189db4-4811-41c6-82ac-4fc041668cd0",
         "6a172440-bb00-40be-a1d4-f8d3419fa34a",
         "57bbdef5-bbd9-4d1c-af67-d4a10d235dad",
+        "f8d56df8-0736-48dc-93a3-510613b6fe77",
+        "4947352a-db17-44ee-8869-a255d501e238",
         "e12fcfe4-f759-449b-8c62-84ea89809e58",
         "1f002dd3-f2fb-4c78-91d3-31bec3b54364",
         "0e273861-5e65-41a4-b182-2936c1c25814",

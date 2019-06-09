@@ -4,7 +4,7 @@ if(m_PlayerObject == noone)
 var viewW = view_wport[0];
 var viewH = view_hport[0];
 
-var selectedItemId = ItemType.NONE;
+var selectedItemId = Item.NONE;
 
 with(m_PlayerObject)
 {

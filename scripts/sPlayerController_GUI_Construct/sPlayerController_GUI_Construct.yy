@@ -1,8 +1,8 @@
 {
-    "id": "f8d56df8-0736-48dc-93a3-510613b6fe77",
+    "id": "47d71769-9146-4cf7-a9d9-07d8bda30a3b",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "Prop_Crafts",
+    "name": "sPlayerController_GUI_Construct",
     "IsCompatibility": false,
     "IsDnD": false
 }

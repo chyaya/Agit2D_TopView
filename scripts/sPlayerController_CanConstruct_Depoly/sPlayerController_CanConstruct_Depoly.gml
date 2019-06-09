@@ -1,4 +1,4 @@
-var craftId = argument0;
+var constructId = argument0;
 var _x = argument1;
 var _y = argument2;
 

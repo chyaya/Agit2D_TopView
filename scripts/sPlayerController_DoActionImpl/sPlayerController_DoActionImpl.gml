@@ -10,7 +10,7 @@ switch(action)
 case Action.Attack:
 	sUtil_DoAttack(m_PlayerObject, room_speed*0.2);
 	break;
-case Action.Use:
+case Action.UseItem:
 	with(m_PlayerObject)
 	{
 		sPawn_Inven_UseItemByPos(selected);
@@ -22,8 +22,8 @@ case Action.OpenBag:
 case Action.CloseBag:
 	m_Mode = Mode.Move;
 	break;
-case Action.Build:
-	m_Mode = Mode.Building;
+case Action.SelectDeploy:
+	m_Mode = Mode.DeployBuilding;
 	break;
 case Action.CancelDeploy:
 	m_Mode = Mode.Move;
@@ -36,14 +36,20 @@ case Action.Deploy:
 		_y = y + m_TargetOffsetY;
 	}
 	
-	if(sPlayerController_CanBuild_Depoly(m_SelectedCraftIndex, _x, _y))
+	if(sPlayerController_CanConstruct_Depoly(m_SelectedConstructIndex, _x, _y))
 	{
-		sPlayerController_DeployBuilding(_x, _y, m_SelectedCraftIndex);
+		sPlayerController_DeployBuilding(_x, _y, m_SelectedConstructIndex);
 		m_Mode = Mode.Move;	
 	}
 	else
 	{
 		sUtil_CreateNotify(_x, _y, "I can't build there.", 0, -30)	
 	}
+	break;
+case Action.UseBuilding:
+	m_Mode = Mode.UseBuilding;
+	break;
+case Action.UnuseBuilding:
+	m_Mode = Mode.Move;
 	break;
 }

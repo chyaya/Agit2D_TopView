@@ -1,19 +1,19 @@
 
 event_inherited();
 
-if(m_Mode == Mode.Building)
+if(m_Mode == Mode.DeployBuilding)
 {
 	with(m_PlayerObject)
 	{
 		var pos = sUtil_GetBuildingDeployPos(
-			x + m_TargetOffsetX, y + m_TargetOffsetY, other.m_SelectedCraftIndex);
-		var sprite = global.Craft_Sprite[other.m_SelectedCraftIndex];
+			x + m_TargetOffsetX, y + m_TargetOffsetY, other.m_SelectedConstructIndex);
+		var sprite = global.Construct_Sprite[other.m_SelectedConstructIndex];
 
 		var color = c_white;
 		
 		with(other)
 		{
-			if(sPlayerController_CanBuild_Depoly(m_SelectedCraftIndex, pos[0], pos[1]))
+			if(sPlayerController_CanConstruct_Depoly(m_SelectedConstructIndex, pos[0], pos[1]))
 			{
 				color = c_green;
 			}

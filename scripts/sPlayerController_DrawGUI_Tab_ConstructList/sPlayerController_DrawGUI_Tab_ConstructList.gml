@@ -17,8 +17,8 @@ NineSliceBoxStretch(
 	spr_slot,
 	materialX, materialY, 300, 400, 3);
 
-var materialItemId = global.Craft_Material_ItemId[m_SelectedCraftIndex];
-var materialCount = global.Craft_Material_Count[m_SelectedCraftIndex];
+var materialItemId = global.Construct_Material_ItemId[m_SelectedConstructIndex];
+var materialCount = global.Construct_Material_Count[m_SelectedConstructIndex];
 	
 draw_set_valign(fa_middle);
 draw_set_halign(fa_left);
@@ -47,18 +47,18 @@ draw_set_valign(fa_middle);
 draw_set_halign(fa_center);
 draw_set_font(fontGUINormal);
 
-for(var craftId = 1; craftId < array_length_1d(global.Craft_Text); ++craftId)
+for(var constructId = 1; constructId < array_length_1d(global.Construct_Text); ++constructId)
 {
 	var xx = _x;
-	var yy = _y+((craftId-1)*(_h + gapH)); 
+	var yy = _y+((constructId-1)*(_h + gapH)); 
 	
 	NineSliceBoxStretch(
-		m_SelectedCraftIndex == craftId ? spr_selected_slot : spr_slot,
+		m_SelectedConstructIndex == constructId ? spr_selected_slot : spr_slot,
 		xx, yy, _w, _h, 3);
 		
-	var color = sPlayerController_CanBuild_MaterialEnough(craftId) ? c_white : c_red;
+	var color = sPlayerController_CanConstruct_MaterialEnough(constructId) ? c_white : c_red;
 	draw_set_color(color);
 	
-	sUtil_DrawTextShadow(xx + _w/2, yy + _h/2, global.Craft_Text[craftId]);
+	sUtil_DrawTextShadow(xx + _w/2, yy + _h/2, global.Construct_Text[constructId]);
 }
 

@@ -18,7 +18,7 @@ if(m_Input_AxisL_Step)
 m_SelectedSlotX = clamp(m_SelectedSlotX, 0, m_SlotsInRow - 1);
 m_SelectedSlotY = clamp(m_SelectedSlotY, 0, m_PlayerObject.total_slots/m_SlotsInRow - 1);
 		
-var itemId = ItemType.NONE;
+var itemId = Item.NONE;
 		
 with(m_PlayerObject)
 {
@@ -29,5 +29,5 @@ with(m_PlayerObject)
 
 if(global.Item_OnUse[itemId] != noone)
 {
-	other.m_Actions[ACTION_A] = Action.Use;
+	other.m_Actions[ACTION_A] = Action.UseItem;
 }

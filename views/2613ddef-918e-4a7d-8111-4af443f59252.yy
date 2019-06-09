@@ -8,7 +8,7 @@
         "57bbdef5-bbd9-4d1c-af67-d4a10d235dad"
     ],
     "filterType": "GMScript",
-    "folderName": "Craft",
+    "folderName": "Constructs",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

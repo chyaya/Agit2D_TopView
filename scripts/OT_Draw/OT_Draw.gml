@@ -84,12 +84,13 @@ for(var index=0;index<global.ot_size;index++)
 			{
 				if(m_OutlineEnable)
 				{
+					var oldShader = shader_current();
 					shader_set(shSilhouette);
 					draw_sprite_ext(sprite_index, -1, x + 1, y, image_xscale, image_yscale, image_angle, m_OutlineColor, 1);
 					draw_sprite_ext(sprite_index, -1, x - 1, y, image_xscale, image_yscale, image_angle, m_OutlineColor, 1);
 					draw_sprite_ext(sprite_index, -1, x, y + 1, image_xscale, image_yscale, image_angle, m_OutlineColor, 1);
 					draw_sprite_ext(sprite_index, -1, x, y - 1, image_xscale, image_yscale, image_angle, m_OutlineColor, 1);
-					shader_reset();
+					shader_set(oldShader);
 				}
 			
 				draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, image_blend, image_alpha);

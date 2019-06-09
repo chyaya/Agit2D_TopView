@@ -10,9 +10,10 @@
         "ea5454a5-7e02-47ed-9c41-4bd24b6be422",
         "df5fb48c-1e68-4010-b2fb-eb1a42576d4f",
         "a345fb79-61a8-41cb-bfd0-9bcd02f1da97",
-        "8af089ba-fbe2-4981-9501-5291ba29fc71",
         "b890f3c3-8641-4086-a25d-7ae9cc199130",
-        "5c579908-a355-4531-b33d-f3b8bb497f1f"
+        "8af089ba-fbe2-4981-9501-5291ba29fc71",
+        "5c579908-a355-4531-b33d-f3b8bb497f1f",
+        "d81c55c8-9588-433a-a7e3-ffa57fefd929"
     ],
     "filterType": "GMScript",
     "folderName": "Draw",
