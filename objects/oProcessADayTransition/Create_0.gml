@@ -14,5 +14,5 @@ m_CurrentCircleRaduis = m_MaxCircleRadius;
 
 m_StartTime = current_time*0.001;
 m_CloseTime = 1.5;
-m_PauseTime = 2;
+m_PauseTime = 0.5;
 m_OpenTime = 1.5;

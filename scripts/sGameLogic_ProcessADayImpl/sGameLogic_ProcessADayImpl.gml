@@ -1,38 +1,13 @@
-//var playerPos = sGameLogic_FindSpawnPos();
+sGameLogic_Respawn(oTree, 5, 50);
+sGameLogic_Respawn(oRockGray, 5, 50);
+sGameLogic_Respawn(oRockBlack, 5, 50);
+sGameLogic_Respawn(oRockYellow, 5, 50);
+sGameLogic_Respawn(oRockBlue, 5, 50);
+sGameLogic_Respawn(oColaCan, 5, 50);
+sGameLogic_Respawn(oGrass, 5, 50);
+sGameLogic_Respawn(oGrass2, 5, 50);
 
-//if(instance_number(oPlayer) > 0)
-//{
-//	oPlayer.x = playerPos[0];
-//	oPlayer.y = playerPos[1];
-//}
-
-with(oTree)
-{
-	if(image_xscale < 2)
-	{
-		image_xscale += 0.5;	
-		image_yscale += 0.5;
-	}
-}
-
-
-var nTree = instance_number(oTree);
-var nSpawnTree = clamp(50 - nTree, 0, 5);
-
-repeat(nSpawnTree)
-{
-	with(sGameLogic_SpawnObject("Instances", oTree))
-	{
-		image_xscale = 0.1;
-		image_yscale = 0.1;
-	}
-}
-
-
-var nRobot = instance_number(oRobot);
-var nSpawnRobot = clamp(12 - nRobot, 0, 3);
-
-repeat(nSpawnRobot)
-{
-	sGameLogic_SpawnObject("Instances", oRobot);
-}
+sGameLogic_Respawn(oChicken, 2, 5);
+sGameLogic_Respawn(oCow, 2, 5);
+sGameLogic_Respawn(oRobot, 2, 5);
+sGameLogic_Respawn(oRobot2, 2, 5);

@@ -9,7 +9,10 @@
         "7f0dc30c-eb3e-4804-8dc8-5daab30c50c6",
         "d1582eb5-7b57-4a62-bbdb-5b3ff14207c0",
         "426d6d85-3fd4-4f49-9b2b-07338ceec291",
-        "095566ef-cfac-44d9-82b5-fdca50458889"
+        "095566ef-cfac-44d9-82b5-fdca50458889",
+        "f683fad3-4ed4-4e70-9c7b-1b21a3bb4d39",
+        "96d564e9-5ba4-4e9e-8be4-f4d082d2b7f1",
+        "c200b00c-f503-4914-b508-1b5500d82d27"
     ],
     "filterType": "GMSprite",
     "folderName": "pawn",

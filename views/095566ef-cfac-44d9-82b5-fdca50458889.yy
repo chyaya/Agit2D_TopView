@@ -9,7 +9,7 @@
         "e48dab8c-4d1c-4baa-bdbc-87d9f6597a68"
     ],
     "filterType": "GMSprite",
-    "folderName": "robot",
+    "folderName": "robot1",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
