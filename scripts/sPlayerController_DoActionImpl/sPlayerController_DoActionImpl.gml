@@ -52,4 +52,26 @@ case Action.UseBuilding:
 case Action.UnuseBuilding:
 	m_Mode = Mode.Move;
 	break;
+case Action.SelectCraft_One:
+case Action.SelectCraft_HalfOfAll:
+case Action.SelectCraft_All:
+	var craftId = 0;
+	with(m_InteractionObject)
+	{
+		craftId = m_CraftList[m_SelectedCraftIndex];
+	}
+	
+	if(sPlayerController_CanCraft_MaterialEnough(craftId))
+	{
+		sPlayerController_Craft_RemoveMaterial(craftId);
+	
+		with(m_InteractionObject)
+		{
+			m_CraftingCount = 1;
+			m_CraftingStartTime = current_time;
+		}
+		
+		m_Mode = Mode.Move;
+	}
+	break;
 }

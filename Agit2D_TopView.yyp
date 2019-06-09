@@ -1031,6 +1031,14 @@
             }
         },
         {
+            "Key": "49dd994d-baf5-45b9-b201-25dd9734ebf1",
+            "Value": {
+                "id": "0df7c31b-e996-44e7-ba8e-e0fd228b0ada",
+                "resourcePath": "scripts\\sPlayerController_Craft_RemoveMaterial\\sPlayerController_Craft_RemoveMaterial.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4ae0a539-e019-4c83-97de-85d439352d40",
             "Value": {
                 "id": "c7dc3e7c-25a1-4c03-8c75-21d17a620738",
@@ -3715,6 +3723,7 @@
         "024a0c85-3bb7-426b-a976-0ed3a3cae9f8",
         "2ff334cf-92c3-4d6e-919f-7f251c432e91",
         "0d623d73-dccc-4b16-902f-783c42c6c5d7",
+        "49dd994d-baf5-45b9-b201-25dd9734ebf1",
         "2c215347-9393-4900-9879-ab1a5ada0269",
         "5af7a7ed-f451-404a-9c08-174874e579d1",
         "083ece2a-7739-43df-a24b-7d283771c89f",

@@ -33,9 +33,9 @@ enum Action {
 	CancelDeploy,
 	UseBuilding,
 	UnuseBuilding,
-	CraftItem_One,
-	CraftItem_Half,
-	CraftItem_All,
+	SelectCraft_One,
+	SelectCraft_HalfOfAll,
+	SelectCraft_All,
 	
 	MAX
 }
@@ -51,4 +51,7 @@ m_ActionName = [
 	"배치 취소",
 	"건물 사용",
 	"건물 닫기",
+	"제작",
+	"반절 제작",
+	"모두 제작",
 ];

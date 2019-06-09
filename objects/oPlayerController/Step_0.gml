@@ -150,7 +150,9 @@ case Mode.Bag:
 	break;
 case Mode.UseBuilding:
 	m_Actions[ACTION_B] = Action.UnuseBuilding;
-	m_Actions[ACTION_B] = Action.UnuseBuilding;
+	m_Actions[ACTION_A] = Action.SelectCraft_One;
+	m_Actions[ACTION_X] = Action.SelectCraft_HalfOfAll;
+	m_Actions[ACTION_Y] = Action.SelectCraft_All;
 	
 	with(m_InteractionObject)
 	{

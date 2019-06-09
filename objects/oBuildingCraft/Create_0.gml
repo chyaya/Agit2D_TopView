@@ -7,5 +7,5 @@ event_inherited();
 m_CraftList = [];
 m_SelectedCraftIndex = 0;
 
-m_CraftingCount = 1;
-m_CraftingStartTime = current_time;
+m_CraftingCount = 0;
+m_CraftingStartTime = 0;

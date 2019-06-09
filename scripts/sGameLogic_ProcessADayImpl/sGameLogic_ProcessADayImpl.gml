@@ -1,10 +1,10 @@
-var playerPos = sGameLogic_FindSpawnPos();
+//var playerPos = sGameLogic_FindSpawnPos();
 
-if(instance_number(oPlayer) > 0)
-{
-	oPlayer.x = playerPos[0];
-	oPlayer.y = playerPos[1];
-}
+//if(instance_number(oPlayer) > 0)
+//{
+//	oPlayer.x = playerPos[0];
+//	oPlayer.y = playerPos[1];
+//}
 
 with(oTree)
 {
