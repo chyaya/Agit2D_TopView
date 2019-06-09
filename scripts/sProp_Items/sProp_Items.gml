@@ -17,10 +17,13 @@ enum Item
 	RobotBlackbox,
 	
 	Fruit,
+	BakedFruit,
 	Apple,
+	BakedApple,
 
 	WoodenTool,
 	CopperTool,
+	IronTool,
 	
 	MAX
 }
@@ -40,7 +43,10 @@ inv_create_item(Item.RobotPart, sprRobotParts, "로봇 부품", 100, "로봇에�
 inv_create_item(Item.RobotBlackbox, sprRobotBlackbox, "블랙박스", 100, "기계의 기록이 저장되어있다", noone, noone, 0);
 
 inv_create_item(Item.Fruit, sprFruit, "열매", 100, "생명력 + 5", sItem_Portion_OnUse, noone, 5);
+inv_create_item(Item.BakedFruit, sprBakedFruit, "구운 열매", 100, "생명력 + 10", sItem_Portion_OnUse, noone, 10);
 inv_create_item(Item.Apple, sprApple, "사과", 10, "생명력 + 10", sItem_Portion_OnUse, noone, 10);
+inv_create_item(Item.BakedApple, sprBakedApple, "구운 사과", 10, "생명력 + 20", sItem_Portion_OnUse, noone, 20);
 
 inv_create_item(Item.WoodenTool, sprWeapon, "나무도구", 10, "나무로 만든 채집 도구", noone, noone, 10);
 inv_create_item(Item.CopperTool, sprWeapon, "구리도구", 10, "구리로 만든 채집 도구", noone, noone, 10);
+inv_create_item(Item.IronTool, sprWeapon, "강철도구", 10, "강철로 만든 채집 도구", noone, noone, 10);

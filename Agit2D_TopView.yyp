@@ -471,6 +471,14 @@
             }
         },
         {
+            "Key": "1b4508a7-907c-4cf8-a66d-e732fef3ecec",
+            "Value": {
+                "id": "9fd3fd99-0c54-464b-b07d-cd1bdf38e8d7",
+                "resourcePath": "sprites\\sprBakedFruit\\sprBakedFruit.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1b4ea305-22d6-4725-82e0-758e5bfc3f0a",
             "Value": {
                 "id": "af5ddd1f-6e33-453d-856e-81c09cdbaa22",
@@ -516,6 +524,14 @@
                 "id": "c88c209a-0e91-428e-81a4-144ade57701e",
                 "resourcePath": "views\\1ede7fba-3d1d-4285-bb53-162e075e957b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "1eedbc93-9bdd-4be0-a2f3-1aec459c3902",
+            "Value": {
+                "id": "86fcc77c-06a8-4bcb-aa3d-043324257de7",
+                "resourcePath": "sprites\\sprBakedApple\\sprBakedApple.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2356,6 +2372,14 @@
                 "id": "499a6515-26a9-4610-84a4-9e6bb919f1fc",
                 "resourcePath": "sprites\\sprCopperStone\\sprCopperStone.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "97b7eca4-27d8-4361-9ce4-3fc042da0a49",
+            "Value": {
+                "id": "4bff3fac-8b8b-41c4-a578-ea120b6064a1",
+                "resourcePath": "objects\\oBonfire\\oBonfire.yy",
+                "resourceType": "GMObject"
             }
         },
         {
