@@ -8,7 +8,7 @@ var selectedItemId = Item.NONE;
 
 with(m_PlayerObject)
 {
-	var slotSize = 64;
+	var slotSize = 80;
 	var gapSize = 16;
 	var row = other.m_SlotsInRow;
 	sPawn_Inven_DrawUI((viewW - row*slotSize - (row - 1)*gapSize)*0.5, 300, slotSize, row, gapSize);
@@ -20,9 +20,17 @@ with(m_PlayerObject)
 draw_set_font(fontGUINormal);
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
-sUtil_DrawTextShadow(view_wport[0]/2, view_hport[0]/2 + 150, global.Item_Text[selectedItemId]);
+draw_sprite_ext(global.Item_Sprite[selectedItemId], 0, view_wport[0] - 320, view_hport[0]/2 - 120, 8, 8, 0, c_white, 1);
+sUtil_DrawTextShadow(view_wport[0] - 320, view_hport[0]/2 - 25, global.Item_Text[selectedItemId]);
+sUtil_DrawTextShadow(view_wport[0] - 320, view_hport[0]/2 + 25, global.Item_Desc[selectedItemId]);
 
-sUtil_DrawTextShadow(view_wport[0]/2, view_hport[0]/2 + 200, global.Item_Desc[selectedItemId]);
+
+///////////////////////////////
+
+
+draw_sprite_ext(sprWomanIdle,
+	(current_time / 1000 * sprite_get_speed(sprWomanIdle)) mod sprite_get_number(sprWomanIdle) ,
+	320, view_hport[0]/2, 12, 12, 0, c_white, 1.0);
 
 /*
 with(m_PlayerObject)

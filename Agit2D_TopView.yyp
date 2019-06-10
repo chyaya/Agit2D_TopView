@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "1012a61f-c130-409c-9f28-5eff1087ce2a",
+            "Value": {
+                "id": "f814ace8-fb52-4b38-88c9-cc92516fadba",
+                "resourcePath": "objects\\oInventory\\oInventory.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "10d879a3-19c8-4f0c-a15b-210b99224c5a",
             "Value": {
                 "id": "c68276c8-478a-4b06-b4c8-474db8c9c8ea",

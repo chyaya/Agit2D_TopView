@@ -20,7 +20,7 @@ m_InteractionObject = noone;
 m_PlayerObjectX = m_PlayerObject.x;
 m_PlayerObjectY = m_PlayerObject.y;
 
-m_SlotsInRow = 10;
+m_SlotsInRow = 5;
 m_SelectedSlotX = 0;
 m_SelectedSlotY = 0;
 
