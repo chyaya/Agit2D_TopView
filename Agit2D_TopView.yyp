@@ -1271,6 +1271,14 @@
             }
         },
         {
+            "Key": "50a29cc4-9a9e-46b6-83c9-aef939dd9a13",
+            "Value": {
+                "id": "f9c1d9ad-5641-453f-9e0e-49bc7d1f58a2",
+                "resourcePath": "objects\\oBlastFurnace\\oBlastFurnace.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "51987040-c25b-48b7-aae6-ed65189cada1",
             "Value": {
                 "id": "ffa72bea-fcfc-43a5-98bb-0adf85ed69c1",
