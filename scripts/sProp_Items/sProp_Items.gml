@@ -77,7 +77,7 @@ enum Item
 	
 	
 	//로봇 제조기 
-	TypeABuleprint,
+	TypeAHangar,
 	UltraLightArmorParts,
 	LightArmorParts,
 	HeavyArmorParts,
@@ -157,7 +157,7 @@ inv_create_item(Item.Semiconductor, sprWeapon, "반도체", 200, "기계 부품�
 inv_create_item(Item.ElectricWire, sprWeapon, "전선", 100, "동력을 전달 할 수 있는 전기선", noone, noone, 0);
 
 
-inv_create_item(Item.TypeABuleprint, sprWeapon, "TypeA설계도부품", 100, "A형 로봇 보관함을 만들 수 있는 설계도", noone, noone, 0);
+inv_create_item(Item.TypeAHangar, sprWeapon, "TypeA 격납고", 100, "A형 로봇 보관함을 만들 수 있는 설계도", noone, noone, 0);
 inv_create_item(Item.UltraLightArmorParts, sprWeapon, "초경량장갑부품", 100, "약하지만 가벼운 장갑", noone, noone, 0);
 inv_create_item(Item.LightArmorParts, sprWeapon, "경량장갑부품", 100, "벨런스가 잘 맞는 장갑", noone, noone, 0);
 inv_create_item(Item.HeavyArmorParts, sprWeapon, "중량장갑부품", 60, "무겁지만 튼튼한 장갑", noone, noone, 0);

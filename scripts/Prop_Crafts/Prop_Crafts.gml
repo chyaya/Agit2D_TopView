@@ -60,7 +60,7 @@ enum Craft
 	
 	
 	//로봇 제조기 
-	TypeABuleprint,
+	TypeAHangar,
 	UltraLightArmorParts,
 	LightArmorParts,
 	HeavyArmorParts,
@@ -128,7 +128,7 @@ Prop_AddCraft(Craft.GunPowder, Item.GunPowder, 1000, [Item.Stone, Item.Coal], [4
 Prop_AddCraft(Craft.Semiconductor, Item.Semiconductor, 2000, [Item.RobotBlackbox], [1]);
 Prop_AddCraft(Craft.ElectricWire, Item.ElectricWire, 2000, [Item.RobotPart], [1]);
 
-Prop_AddCraft(Craft.TypeABuleprint, Item.TypeABuleprint, 5000, [Item.Paper, Item.Coal], [1, 1]);
+Prop_AddCraft(Craft.TypeAHangar, Item.TypeAHangar, 5000, [Item.Paper, Item.Coal], [1, 1]);
 Prop_AddCraft(Craft.UltraLightArmorParts, Item.UltraLightArmorParts, 5000, [Item.IronIngot, Item.Semiconductor, Item.ElectricWire], [1, 1, 2]);
 Prop_AddCraft(Craft.LightArmorParts, Item.LightArmorParts, 5000, [Item.IronIngot, Item.Semiconductor, Item.ElectricWire], [2, 3, 2]);
 Prop_AddCraft(Craft.HeavyArmorParts, Item.HeavyArmorParts, 5000, [Item.IronIngot, Item.Semiconductor, Item.ElectricWire], [4, 2, 2]);
