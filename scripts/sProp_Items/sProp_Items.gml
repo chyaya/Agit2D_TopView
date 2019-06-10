@@ -4,6 +4,7 @@ enum Item
 {
 	NONE,
 	
+	//자원 
 	Wood,
 	Stone,
 	Coal,
@@ -16,11 +17,14 @@ enum Item
 	RobotPart,
 	RobotBlackbox,
 	
+	
+	//굽기
 	Fruit,
 	BakedFruit,
 	Apple,
 	BakedApple,
 
+	//작업대 
 	WoodenTool,
 	CopperTool,
 	IronTool,
@@ -46,25 +50,33 @@ enum Item
 	IronShell,
 	ExplosionShell,
 	
+	
+	//용광로 
 	StoneBrick,
 	CopperIngot,
 	IronIngot,
 	Pipe,
 	
-	CastleWallBuleprint,
-	CastleDoorBuleprint,
-	DefenseTowerBuleprint,
-	WatchTowerBuleprint,
+	//축성연구소 
+	CastleWall,
+	CastleDoor,
+	DefenseTower,
+	WatchTower,
 	
+	//세공소 
 	Thread,
 	Cotton,
+	Paper,
 	Leather,
 	Bolt,
 	GunPowder, 
 	
+	//정밀분쇄기
 	Semiconductor,
 	ElectricWire,
 	
+	
+	//로봇 제조기 
 	TypeABuleprint,
 	UltraLightArmorParts,
 	LightArmorParts,
@@ -86,7 +98,7 @@ inv_create_item(Item.Wood, sprWood, "장작", 100, "통나무를 쪼개서 만�
 inv_create_item(Item.Stone, sprStone, "돌맹이", 100, "작고 동그란 돌맹이", noone, noone, 0);
 inv_create_item(Item.Coal, sprCoal, "석탄", 100, "검은 석탄 덩어리", noone, noone, 0);
 inv_create_item(Item.CopperStone, sprCopperStone, "구리", 100, "주황색의 무른 금속", noone, noone, 0);
-inv_create_item(Item.IronStone, sprIronStone, "구리", 100, "파란 빛이 감도는 금속", noone, noone, 0);
+inv_create_item(Item.IronStone, sprIronStone, "철광석", 100, "파란 빛이 감도는 금속", noone, noone, 0);
 inv_create_item(Item.Aluminium, sprAluminium, "알루미늄 조각", 100, "콜라캔에서 얻은 금속", noone, noone, 0);
 inv_create_item(Item.Fiber, sprFiber, "섬유", 100, "식물성 섬유", noone, noone, 0);
 inv_create_item(Item.Meat, sprMeat, "고기", 100, "언제나 옳은 그것", noone, noone, 0);
@@ -129,13 +141,14 @@ inv_create_item(Item.CopperIngot, sprWeapon, "구리주괴", 50, "구리를 녹�
 inv_create_item(Item.IronIngot, sprWeapon, "철주괴", 50, "철을 녹여만든 주괴 입니다.", noone, noone, 0);
 inv_create_item(Item.Pipe, sprWeapon, "파이프", 50, "골라캔을 녹여서 나온 쇳물을 거푸집에 넣어 만든 파이프 입니다.", noone, noone, 0);
 
-inv_create_item(Item.CastleWallBuleprint, sprWeapon, "성벽설계도", 50, "성벽을 만들때 꼭 필요한 재료입니다.", noone, noone, 0);
-inv_create_item(Item.CastleDoorBuleprint, sprWeapon, "성문설계도", 10, "성물을 만들때 꼭 필요한 재료입니다.", noone, noone, 0);
-inv_create_item(Item.DefenseTowerBuleprint, sprWeapon, "방어타워설계도", 10, "방어타워를 만들때 꼭 필요한 재료입니다.", noone, noone, 0);
-inv_create_item(Item.WatchTowerBuleprint, sprWeapon, "감시타워설계도", 10, "주위에 방어타워의 사거리를 늘려주는 감시타워를 만든는 재료입니다. ", noone, noone, 0);
+inv_create_item(Item.CastleWall, sprWeapon, "성벽", 50, "성벽을 세울 수 있습니다.", noone, noone, 0);
+inv_create_item(Item.CastleDoor, sprWeapon, "성문", 10, "성문을 세울 수 있습니다.", noone, noone, 0);
+inv_create_item(Item.DefenseTower, sprWeapon, "방어타워", 10, "자동으로 적을 공격하는 방어 타워를 건설 할 수 있습니다.", noone, noone, 0);
+inv_create_item(Item.WatchTower, sprWeapon, "감시타워", 10, "주위에 방어타워의 사거리를 늘려주는 감시타워를 설치할 수 있습니다. ", noone, noone, 0);
 
 inv_create_item(Item.Thread, sprWeapon, "실타래", 100, "잘 정재된 얇은 실타래", noone, noone, 0);
 inv_create_item(Item.Cotton, sprWeapon, "면", 100, "옷감으로 많이 선호하는 면조각", noone, noone, 0);
+inv_create_item(Item.Paper, sprWeapon, "종이", 100, "뭔가를 쓸 수 있는 종이", noone, noone, 0);
 inv_create_item(Item.Leather, sprWeapon, "가죽", 60, "부드럽게 연마된 가죽", noone, noone, 0);
 inv_create_item(Item.Bolt, sprWeapon, "철못", 200, "나무나 철판을 연결할 수 있는 못 ", noone, noone, 0);
 inv_create_item(Item.GunPowder, sprWeapon, "화약", 100, "강한 폭발력을 가진 화약, 단독으로 사용하기엔 위험하다.", noone, noone, 0);
