@@ -31,6 +31,28 @@ sUtil_DrawTextShadow(view_wport[0] - 320, view_hport[0]/2 + 25, global.Item_Desc
 draw_sprite_ext(sprWomanIdle,
 	(current_time / 1000 * sprite_get_speed(sprWomanIdle)) mod sprite_get_number(sprWomanIdle) ,
 	320, view_hport[0]/2, 12, 12, 0, c_white, 1.0);
+	
+with(m_PlayerObject)
+{
+	var _x = 185;
+	var _y = 600;
+	
+	sInven_DrawUI(m_Inven_Equip, _x, _y, slotSize, 3, gapSize);
+
+	draw_set_halign(fa_center);
+	draw_set_valign(fa_top);
+
+	_x += slotSize/2;
+	_y += slotSize + gapSize;
+	
+	sUtil_DrawTextShadow(_x, _y, "방어구");
+	
+	_x += slotSize + gapSize;
+	sUtil_DrawTextShadow(_x, _y, "신발");
+	
+	_x += slotSize + gapSize;
+	sUtil_DrawTextShadow(_x, _y, "가방");
+}
 
 /*
 with(m_PlayerObject)
