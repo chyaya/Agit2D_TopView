@@ -33,6 +33,4 @@ m_LastImageIndex = -1;
 
 m_LastPathFind = 0;
 
-sPawn_Inven_Init(30);
-
 event_inherited();

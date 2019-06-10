@@ -61,7 +61,7 @@ with(m_InteractionObject)
 	
 		with(other.m_PlayerObject)
 		{
-			color = sPawn_Inven_ItemNumber(materialItemId[i]) >= materialCount[i] ? c_white : c_red;
+			color = sInven_ItemNumber(m_Inven_Bag, materialItemId[i]) >= materialCount[i] ? c_white : c_red;
 		}
 	
 		draw_set_color(color);

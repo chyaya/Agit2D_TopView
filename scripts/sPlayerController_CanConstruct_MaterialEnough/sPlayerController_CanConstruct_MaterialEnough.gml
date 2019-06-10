@@ -9,7 +9,7 @@ with(m_PlayerObject)
 	{
 		var itemId = materialItemId[i];
 		
-		if(sPawn_Inven_ItemNumber(itemId) < materialCount[i])
+		if(sInven_ItemNumber(m_Inven_Bag, itemId) < materialCount[i])
 			return false;
 	}
 }

@@ -415,6 +415,14 @@
             }
         },
         {
+            "Key": "144c13be-3356-495d-ad4a-b653e977dbcc",
+            "Value": {
+                "id": "e2d13851-731e-4301-95bd-e00e4a99d0ea",
+                "resourcePath": "scripts\\Test\\Test.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "14f3ef2c-bfe5-47c8-9e16-af619426765e",
             "Value": {
                 "id": "1b12dc80-f652-4329-9567-70f5107f813d",
@@ -466,7 +474,7 @@
             "Key": "1aa02443-afe3-4a16-97ad-19d32f7b0173",
             "Value": {
                 "id": "2a20f4dd-903c-4044-9b18-da1eaf64e500",
-                "resourcePath": "scripts\\sPawn_Inven_DrawUI\\sPawn_Inven_DrawUI.yy",
+                "resourcePath": "scripts\\sInven_DrawUI\\sInven_DrawUI.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -535,6 +543,14 @@
             }
         },
         {
+            "Key": "1edf4a5c-a473-4c5d-a9dc-0c0eefcce50d",
+            "Value": {
+                "id": "18b7d71a-b404-40a2-abe2-17fb1bf4729c",
+                "resourcePath": "scripts\\sInven_GetTotalSlotNum\\sInven_GetTotalSlotNum.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1eedbc93-9bdd-4be0-a2f3-1aec459c3902",
             "Value": {
                 "id": "86fcc77c-06a8-4bcb-aa3d-043324257de7",
@@ -554,7 +570,7 @@
             "Key": "1fd6a40c-6304-403a-9140-a1f71a2b76bc",
             "Value": {
                 "id": "696d7d6c-2ee7-4553-a64f-4aeae51874f8",
-                "resourcePath": "scripts\\sPawn_Inven_DropItemByPos\\sPawn_Inven_DropItemByPos.yy",
+                "resourcePath": "scripts\\sInven_DropItemByPos\\sInven_DropItemByPos.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -810,7 +826,7 @@
             "Key": "2fede171-345f-4d1d-9e85-c8b070c1c917",
             "Value": {
                 "id": "dcbff880-94fc-4cde-b7ca-434699d949ee",
-                "resourcePath": "scripts\\sPawn_Inven_RemoveItemByPos\\sPawn_Inven_RemoveItemByPos.yy",
+                "resourcePath": "scripts\\sInven_RemoveItemByPos\\sInven_RemoveItemByPos.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -858,7 +874,7 @@
             "Key": "349720dc-dd1b-4066-90d2-a94d69ee50cd",
             "Value": {
                 "id": "dcd16ee6-4814-44bf-9235-65f84c2b6be8",
-                "resourcePath": "scripts\\sPawn_Inven_LootPawn\\sPawn_Inven_LootPawn.yy",
+                "resourcePath": "scripts\\sInven_LootPawn\\sInven_LootPawn.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -994,7 +1010,7 @@
             "Key": "425ef221-d5b7-462a-992e-434211d6cca4",
             "Value": {
                 "id": "63e670e9-8165-4cbd-9db3-8f6da162299a",
-                "resourcePath": "scripts\\sPawn_Inven_Init\\sPawn_Inven_Init.yy",
+                "resourcePath": "scripts\\sInven_Create\\sInven_Create.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1122,7 +1138,7 @@
             "Key": "4881c8ff-1517-4873-add2-af2e3eeace9f",
             "Value": {
                 "id": "b80b6dda-8c8d-4c7b-a0ff-cef9e15d8f76",
-                "resourcePath": "scripts\\sPawn_Inven_UseItemByPos\\sPawn_Inven_UseItemByPos.yy",
+                "resourcePath": "scripts\\sInven_UseItemByPos\\sInven_UseItemByPos.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1146,7 +1162,7 @@
             "Key": "4ae0a539-e019-4c83-97de-85d439352d40",
             "Value": {
                 "id": "c7dc3e7c-25a1-4c03-8c75-21d17a620738",
-                "resourcePath": "scripts\\sPawn_Inven_AddItem\\sPawn_Inven_AddItem.yy",
+                "resourcePath": "scripts\\sInven_AddItem\\sInven_AddItem.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1599,6 +1615,14 @@
             }
         },
         {
+            "Key": "62f05ad3-b3f6-4502-b371-a7981542143e",
+            "Value": {
+                "id": "96ceea22-b2a1-4117-ae7d-27b6e145c13f",
+                "resourcePath": "scripts\\sInven_Destroy\\sInven_Destroy.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "63041d90-dbd1-46c3-9b82-8796ecf052aa",
             "Value": {
                 "id": "024e77f1-61c2-4832-96c3-61e194b98791",
@@ -1612,6 +1636,14 @@
                 "id": "a500e99b-638b-432e-878a-d5e3d67b868e",
                 "resourcePath": "sprites\\sprRobotParts\\sprRobotParts.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6446fd13-77e4-43b0-a7ec-663a3d7276e9",
+            "Value": {
+                "id": "a8ba3641-6457-4072-ae49-f8a3b4c7cfcc",
+                "resourcePath": "scripts\\sInven_GetSelectedPos\\sInven_GetSelectedPos.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1763,6 +1795,14 @@
             "Value": {
                 "id": "9f85ad8e-a1db-41e8-9b4e-902bb7dfedc5",
                 "resourcePath": "scripts\\sMacro_TileIndex\\sMacro_TileIndex.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6fbc446f-aca4-4496-bf70-0fe305194e4c",
+            "Value": {
+                "id": "8990cb55-6327-423b-a584-dd51051b40d0",
+                "resourcePath": "scripts\\sInven_SetSelectedPos\\sInven_SetSelectedPos.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2802,7 +2842,7 @@
             "Key": "b06d1cb7-e5e9-40c6-be05-5d7fbceafd58",
             "Value": {
                 "id": "172f7cc0-e656-46d0-a485-d84b148ee98f",
-                "resourcePath": "scripts\\sPawn_Inven_GetFirstSlotOf\\sPawn_Inven_GetFirstSlotOf.yy",
+                "resourcePath": "scripts\\sInven_GetFirstSlotOf\\sInven_GetFirstSlotOf.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2860,6 +2900,14 @@
                 "id": "5ea58307-4e4a-4fc0-b5c4-fdd4fac2d780",
                 "resourcePath": "sprites\\sprMeat\\sprMeat.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b55b4d0a-9398-4113-9805-b2b31e19cc4a",
+            "Value": {
+                "id": "2668168a-cfab-4fae-9188-e55179f0453e",
+                "resourcePath": "scripts\\sInven_GetItemId\\sInven_GetItemId.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2930,7 +2978,7 @@
             "Key": "b894faf5-c921-4a9e-a449-e1009e88b1a6",
             "Value": {
                 "id": "d9de8b93-0d0c-46ee-990f-eeed3864c1f5",
-                "resourcePath": "scripts\\sPawn_Inven_CheckIfIn\\sPawn_Inven_CheckIfIn.yy",
+                "resourcePath": "scripts\\sInven_CheckIfIn\\sInven_CheckIfIn.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3031,6 +3079,14 @@
             }
         },
         {
+            "Key": "c11ff8d0-313e-4f63-b08b-dd7cce2ab230",
+            "Value": {
+                "id": "07e22ed3-730b-4044-b106-d9b813f393e8",
+                "resourcePath": "views\\c11ff8d0-313e-4f63-b08b-dd7cce2ab230.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "c137071e-3d19-4f34-9a04-3d9a22f5d05f",
             "Value": {
                 "id": "6a691751-b031-47e2-8f6c-2101ba03c578",
@@ -3082,7 +3138,7 @@
             "Key": "c4b5e6a4-f54d-4333-b922-9389b7366b09",
             "Value": {
                 "id": "c4c11016-79cc-4885-a6e9-a06e9ed7478d",
-                "resourcePath": "scripts\\sPawn_Inven_CheckSlotFor\\sPawn_Inven_CheckSlotFor.yy",
+                "resourcePath": "scripts\\sInven_CheckSlotFor\\sInven_CheckSlotFor.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3658,7 +3714,7 @@
             "Key": "e9dc936b-7541-49ee-8885-50b8d16d010c",
             "Value": {
                 "id": "ace52690-1b90-4930-823d-a65812ba66bb",
-                "resourcePath": "scripts\\sPawn_Inven_RemoveItemById\\sPawn_Inven_RemoveItemById.yy",
+                "resourcePath": "scripts\\sInven_RemoveItemById\\sInven_RemoveItemById.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3946,7 +4002,7 @@
             "Key": "fb81213f-cf56-4cb0-b73d-f60d17cbc449",
             "Value": {
                 "id": "ec7f480d-5def-43b5-b053-7e441ecff94c",
-                "resourcePath": "scripts\\sPawn_Inven_ItemNumber\\sPawn_Inven_ItemNumber.yy",
+                "resourcePath": "scripts\\sInven_ItemNumber\\sInven_ItemNumber.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -4000,6 +4056,7 @@
         }
     ],
     "script_order": [
+        "144c13be-3356-495d-ad4a-b653e977dbcc",
         "6f9d1225-dcf6-4ffa-b3ea-46c675de6272",
         "c3cb09af-6e20-49f7-b574-c694f21f444f",
         "3a62173b-0118-4f07-be1d-b73a1422b82d",
@@ -4049,16 +4106,12 @@
         "d81c55c8-9588-433a-a7e3-ffa57fefd929",
         "10d879a3-19c8-4f0c-a15b-210b99224c5a",
         "47d71769-9146-4cf7-a9d9-07d8bda30a3b",
-        "63041d90-dbd1-46c3-9b82-8796ecf052aa",
-        "eafab41e-4f15-478f-adf7-1f2bb49d4911",
-        "ae593c41-5eea-4fe1-8802-655a92cc4f6c",
-        "8b543db5-be5e-4d03-8624-82d77dbc0865",
-        "59799419-8b83-4086-867f-ee2ca26a0aa1",
-        "9a5114f0-46d6-4835-80c2-0c1ba2641302",
-        "94111e66-f9b3-41f4-b633-62b80b3f4b2e",
-        "4b48257f-5472-4a69-94a8-4be7b641313b",
-        "9e30a3ac-1ef2-4421-af11-b1e756c2f831",
+        "6446fd13-77e4-43b0-a7ec-663a3d7276e9",
+        "6fbc446f-aca4-4496-bf70-0fe305194e4c",
+        "b55b4d0a-9398-4113-9805-b2b31e19cc4a",
+        "1edf4a5c-a473-4c5d-a9dc-0c0eefcce50d",
         "425ef221-d5b7-462a-992e-434211d6cca4",
+        "62f05ad3-b3f6-4502-b371-a7981542143e",
         "4ae0a539-e019-4c83-97de-85d439352d40",
         "1fd6a40c-6304-403a-9140-a1f71a2b76bc",
         "2fede171-345f-4d1d-9e85-c8b070c1c917",
@@ -4070,6 +4123,15 @@
         "1aa02443-afe3-4a16-97ad-19d32f7b0173",
         "349720dc-dd1b-4066-90d2-a94d69ee50cd",
         "fb81213f-cf56-4cb0-b73d-f60d17cbc449",
+        "63041d90-dbd1-46c3-9b82-8796ecf052aa",
+        "eafab41e-4f15-478f-adf7-1f2bb49d4911",
+        "ae593c41-5eea-4fe1-8802-655a92cc4f6c",
+        "8b543db5-be5e-4d03-8624-82d77dbc0865",
+        "59799419-8b83-4086-867f-ee2ca26a0aa1",
+        "9a5114f0-46d6-4835-80c2-0c1ba2641302",
+        "94111e66-f9b3-41f4-b633-62b80b3f4b2e",
+        "4b48257f-5472-4a69-94a8-4be7b641313b",
+        "9e30a3ac-1ef2-4421-af11-b1e756c2f831",
         "6c3b5d31-9aa9-461f-a16e-b16d7fd6cb26",
         "8a40ec99-3ca7-49b9-943e-898d85771bd0",
         "4ee8b7f7-222c-4a6e-8696-ed7ed2208e14",

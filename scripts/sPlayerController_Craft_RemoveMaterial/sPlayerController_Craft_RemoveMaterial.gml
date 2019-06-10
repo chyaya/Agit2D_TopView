@@ -7,6 +7,6 @@ with(m_PlayerObject)
 	
 	for(var i = 0; i < array_length_1d(materialItemId); ++i)
 	{
-		sPawn_Inven_RemoveItemById(materialItemId[i], materialCount[i]);
+		sInven_RemoveItemById(m_Inven_Bag, materialItemId[i], materialCount[i]);
 	}
 }

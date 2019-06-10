@@ -3,7 +3,7 @@ if(m_ActiveTime > current_time)
 
 with(other)
 {
-	if(sPawn_Inven_AddItem(other.m_ItemId, 1) == 0)
+	if(sInven_AddItem(m_Inven_Bag, other.m_ItemId, 1) == 0)
 	{
 		var itemName = global.Item_Text[other.m_ItemId];
 		

@@ -17,7 +17,7 @@ with(m_PlayerObject)
 	
 	for(var i = 0; i < array_length_1d(materialItemId); ++i)
 	{
-		var result = sPawn_Inven_RemoveItemById(
+		var result = sInven_RemoveItemById(m_Inven_Bag,
 			materialItemId[i], materialCount[i]);
 	
 		assert_equal(result, 0);
