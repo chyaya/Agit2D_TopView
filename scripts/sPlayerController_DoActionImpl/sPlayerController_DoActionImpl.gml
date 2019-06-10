@@ -55,19 +55,37 @@ case Action.UnuseBuilding:
 case Action.SelectCraft_One:
 case Action.SelectCraft_HalfOfAll:
 case Action.SelectCraft_All:
+
 	var craftId = 0;
+	
 	with(m_InteractionObject)
 	{
 		craftId = m_CraftList[m_SelectedCraftIndex];
 	}
-	
-	if(sPlayerController_CanCraft_MaterialEnough(craftId))
+
+	var maxCount = 1;
+
+	if(action != Action.SelectCraft_One)
 	{
-		sPlayerController_Craft_RemoveMaterial(craftId);
+		maxCount = sPlayerController_Craft_MaxCraftCount(craftId);
+	
+		if(maxCount > 0)
+		{
+			if(action == Action.SelectCraft_HalfOfAll)
+				maxCount = ceil(maxCount/2);
+		}
+	}
+	
+	if(sPlayerController_CanCraft_MaterialEnough(craftId, maxCount))
+	{
+		repeat(maxCount)
+		{
+			sPlayerController_Craft_RemoveMaterial(craftId);
+		}
 	
 		with(m_InteractionObject)
 		{
-			m_CraftingCount = 1;
+			m_CraftingCount = maxCount;
 			m_CraftingStartTime = current_time;
 		}
 		

@@ -14,5 +14,7 @@ if(m_CraftingCount > 0)
 		--m_CraftingCount;
 		
 		sGameLogic_CreateItem(x, y, global.Craft_Result[craftId], 1);
+		
+		m_CraftingStartTime = current_time;
 	}
 }

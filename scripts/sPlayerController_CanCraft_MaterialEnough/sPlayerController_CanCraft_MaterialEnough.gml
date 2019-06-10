@@ -1,4 +1,5 @@
 var craftId = argument0;
+var count = argument1;
 
 with(m_PlayerObject)
 {
@@ -9,7 +10,7 @@ with(m_PlayerObject)
 	{
 		var itemId = materialItemId[i];
 		
-		if(sInven_ItemNumber(m_Inven_Bag, itemId) < materialCount[i])
+		if(sInven_ItemNumber(m_Inven_Bag, itemId) < materialCount[i]*count)
 			return false;
 	}
 }

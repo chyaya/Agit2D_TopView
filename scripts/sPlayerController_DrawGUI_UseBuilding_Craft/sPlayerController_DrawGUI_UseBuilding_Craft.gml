@@ -90,7 +90,7 @@ with(m_InteractionObject)
 		
 		with(other)
 		{
-			color = sPlayerController_CanCraft_MaterialEnough(cid) ? c_white : c_red;
+			color = sPlayerController_CanCraft_MaterialEnough(cid, 1) ? c_white : c_red;
 		}
 		
 		draw_set_color(color);

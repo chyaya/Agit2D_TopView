@@ -3503,6 +3503,14 @@
             }
         },
         {
+            "Key": "d9e682bc-89a2-45a1-b09b-6e443e1e4c72",
+            "Value": {
+                "id": "97d07def-b6f1-411e-bf68-3da6134aa59a",
+                "resourcePath": "scripts\\sPlayerController_DrawGUI_Actions_GetName\\sPlayerController_DrawGUI_Actions_GetName.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "da71ca88-8eb4-41cb-94a7-22e56f9a0a4b",
             "Value": {
                 "id": "f24a96e2-1475-4b94-a7de-0cfc639eddd0",
@@ -3788,6 +3796,14 @@
                 "id": "8270db1b-ac67-4f6f-96cb-215b744da7e2",
                 "resourcePath": "sprites\\spr_player\\spr_player.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ed7f05ed-c0f9-4560-ab15-00f6004c7823",
+            "Value": {
+                "id": "d46d9d13-e0ce-4715-acd8-2a9e4cfca606",
+                "resourcePath": "scripts\\sPlayerController_Craft_MaxCraftCount\\sPlayerController_Craft_MaxCraftCount.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -4094,9 +4110,11 @@
         "2ff334cf-92c3-4d6e-919f-7f251c432e91",
         "0d623d73-dccc-4b16-902f-783c42c6c5d7",
         "49dd994d-baf5-45b9-b201-25dd9734ebf1",
+        "ed7f05ed-c0f9-4560-ab15-00f6004c7823",
         "2c215347-9393-4900-9879-ab1a5ada0269",
         "5af7a7ed-f451-404a-9c08-174874e579d1",
         "083ece2a-7739-43df-a24b-7d283771c89f",
+        "d9e682bc-89a2-45a1-b09b-6e443e1e4c72",
         "ea5454a5-7e02-47ed-9c41-4bd24b6be422",
         "df5fb48c-1e68-4010-b2fb-eb1a42576d4f",
         "a345fb79-61a8-41cb-bfd0-9bcd02f1da97",
