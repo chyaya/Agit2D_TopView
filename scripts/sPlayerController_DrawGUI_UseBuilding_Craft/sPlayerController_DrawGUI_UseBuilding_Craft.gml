@@ -32,7 +32,6 @@ with(m_InteractionObject)
 	var _y = 300;
 	var gapH = 15;
 
-
 	var materialX = (viewW + _w)/2 + 100;
 	var materialY = 300;
 	var materialH = 32;
@@ -69,7 +68,6 @@ with(m_InteractionObject)
 		sUtil_DrawTextShadow(xx + 20, yy + _h/2, global.Item_Text[materialItemId[i]]);
 		sUtil_DrawTextShadow(xx + 200, yy + _h/2, "x" + string(materialCount[i]));
 	}
-
 
 	draw_set_valign(fa_middle);
 	draw_set_halign(fa_center);

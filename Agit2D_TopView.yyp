@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "005e729c-e9ff-4655-8487-51f6e892a79d",
+            "Value": {
+                "id": "4dfd61a9-fea3-464e-9dbb-a5e6e049fffd",
+                "resourcePath": "scripts\\sItem_Bag_OnUse\\sItem_Bag_OnUse.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "007683a0-1edb-4163-bb8e-cb7f2c483fa2",
             "Value": {
                 "id": "f73c89fb-52fd-4b89-98f2-89782d1f08fc",
@@ -60,14 +68,6 @@
                 "id": "d9559e88-0477-4acb-8c20-6a1361a0cb05",
                 "resourcePath": "sprites\\sprCastleWall\\sprCastleWall.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "005e729c-e9ff-4655-8487-51f6e892a79d",
-            "Value": {
-                "id": "4dfd61a9-fea3-464e-9dbb-a5e6e049fffd",
-                "resourcePath": "scripts\\sItem_Bag_OnUse\\sItem_Bag_OnUse.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -1116,6 +1116,14 @@
                 "id": "2443f08a-63dc-4e0a-8ae8-6d7d0edbc12e",
                 "resourcePath": "sprites\\sprGUI_DpadDown\\sprGUI_DpadDown.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "3b812cb3-c7a3-4062-879b-90249d57f829",
+            "Value": {
+                "id": "ad9f5a15-0d75-4e39-a0c3-7ee8bc352cf2",
+                "resourcePath": "scripts\\sUtil_DrawScroll\\sUtil_DrawScroll.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -4641,6 +4649,7 @@
         "77483527-6b37-407b-92ac-3cefba212cea",
         "2b4b8ba2-57ff-4e05-9b4a-d7ed895cffdc",
         "c9f7d688-686d-4964-8a0f-dd0afe74a2c2",
+        "3b812cb3-c7a3-4062-879b-90249d57f829",
         "51987040-c25b-48b7-aae6-ed65189cada1",
         "ebe8c012-704f-4282-bb73-9a8a0fd5ebd9",
         "18092258-e9e2-480b-a61a-24ac0424da87",

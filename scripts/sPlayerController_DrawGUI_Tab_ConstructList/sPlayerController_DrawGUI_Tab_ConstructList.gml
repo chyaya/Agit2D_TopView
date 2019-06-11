@@ -2,7 +2,7 @@ var viewW = view_wport[0];
 var viewH = view_hport[0];
 
 var _w = 400;
-var _h = 48;
+var _h = 64;
 var _x = (viewW - _w)/2;
 var _y = 300;
 var gapH = 15;
@@ -46,10 +46,35 @@ draw_set_valign(fa_middle);
 draw_set_halign(fa_center);
 draw_set_font(fontGUINormal);
 
-for(var constructId = 1; constructId < array_length_1d(global.Construct_Text); ++constructId)
+var _listPage = 7;
+var _listMax = array_length_1d(global.Construct_Text) - 1;
+var _listH = _listPage*(_h + gapH) - gapH;
+
+if(false == variable_instance_exists(id, "m_ConstructList_ListIndex"))
 {
+	m_ConstructList_ListIndex = 0;
+}
+
+var curSelectedListIndex = m_SelectedConstructIndex - 1;
+if(curSelectedListIndex < m_ConstructList_ListIndex)
+{
+	m_ConstructList_ListIndex = curSelectedListIndex;
+}
+
+if(curSelectedListIndex >= m_ConstructList_ListIndex + _listPage)
+{
+	m_ConstructList_ListIndex = curSelectedListIndex - _listPage + 1;
+}
+
+var _listIndex = m_ConstructList_ListIndex;
+
+
+for(var i = _listIndex; i < min(_listIndex + _listPage, _listMax); ++i)
+{
+	var constructId = i + 1;
+	
 	var xx = _x;
-	var yy = _y+((constructId-1)*(_h + gapH)); 
+	var yy = _y+((i - _listIndex)*(_h + gapH)); 
 	
 	NineSliceBoxStretch(
 		m_SelectedConstructIndex == constructId ? spr_selected_slot : spr_slot,
@@ -60,4 +85,6 @@ for(var constructId = 1; constructId < array_length_1d(global.Construct_Text); +
 	
 	sUtil_DrawTextShadow(xx + _w/2, yy + _h/2, global.Construct_Text[constructId]);
 }
+
+sUtil_DrawScroll(_x + _w + 10, _y, 10, _listH, _listIndex, _listPage, _listMax);
 
