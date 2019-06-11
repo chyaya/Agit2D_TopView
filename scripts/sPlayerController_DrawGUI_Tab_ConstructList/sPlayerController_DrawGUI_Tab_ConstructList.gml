@@ -2,11 +2,10 @@ var viewW = view_wport[0];
 var viewH = view_hport[0];
 
 var _w = 400;
-var _h = 64;
+var _h = 48;
 var _x = (viewW - _w)/2;
 var _y = 300;
 var gapH = 15;
-
 
 var materialX = (viewW + _w)/2 + 100;
 var materialY = 300;
