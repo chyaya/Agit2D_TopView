@@ -1,1 +1,1 @@
-return argument0[|Inven.UsableSlotNumber] += argument1;
+argument0[|Inven.UsableSlotNumber] += argument1;

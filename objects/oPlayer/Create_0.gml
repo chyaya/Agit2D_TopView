@@ -24,14 +24,11 @@ m_EquipName = [
 	"",
 ];
 
-
-
-
-m_Inven_Equip = sInven_Create(Equip.MAX);
-assert_equal(sInven_GetTotalSlotNum(m_Inven_Equip), Equip.MAX);
+m_Inven_Equip = sInven_Create(Equip.MAX - 1, Equip.MAX - 1);
+assert_equal(sInven_GetTotalSlotNum(m_Inven_Equip), Equip.MAX - 1);
 sInven_SetSelectedPos(m_Inven_Equip, 0);	// 장착창은 선택을 사용하지 않는다.
 
-m_Inven_Bag = sInven_Create(30);
+m_Inven_Bag = sInven_Create(10, 30);
 assert_equal(sInven_GetTotalSlotNum(m_Inven_Bag), 30);
 
 
