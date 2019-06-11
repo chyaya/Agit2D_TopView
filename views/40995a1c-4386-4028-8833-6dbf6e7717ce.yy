@@ -7,9 +7,12 @@
         "aa598880-e6ea-4ccf-9e70-15b1fda3bb41",
         "c7505277-cabb-43a0-8d18-0a8bb90ee8af",
         "ecfc502b-3756-4717-b08b-c410e375ade4",
-        "c72a5f1b-115c-49ff-81e4-232755358082",
+        "b12bc1cc-48a5-4ad0-a5d6-9e3b0a4e4f7f",
         "e0756bae-fe8f-440b-a242-a9bbc0108f83",
-        "5db013a9-e73a-440d-8d53-e8d574d930e5"
+        "3293147f-5535-4501-bf5f-4817f19ab91e",
+        "5db013a9-e73a-440d-8d53-e8d574d930e5",
+        "d6f0a06d-9051-486e-9133-5b859e5cf747",
+        "11bd305a-a48b-4293-9c9b-caec189f356e"
     ],
     "filterType": "GMSprite",
     "folderName": "building",

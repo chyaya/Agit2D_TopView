@@ -9,7 +9,12 @@
         "51a62678-4fd5-42de-b0f9-52fb4dbce8cb",
         "5803e97f-2a05-4cfb-b9e0-54dedc6667ff",
         "00c94366-f6dd-4bb0-8d61-91532e0bc77c",
-        "a1f39b24-5eaf-4f00-b8a4-75ba2c317f71"
+        "a1f39b24-5eaf-4f00-b8a4-75ba2c317f71",
+        "dd61226e-0314-427e-b4d7-affa37668666",
+        "b167304e-e23e-4eeb-a59b-b72bf5645cc9",
+        "fe967b0e-bf46-444d-95ef-a4b92f7c9f7a",
+        "fda170e5-e2a1-41fb-b264-a363b3e5abdc",
+        "b263e148-589f-4129-8e71-f7efe96b1408"
     ],
     "filterType": "GMSprite",
     "folderName": "origin",
