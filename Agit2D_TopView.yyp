@@ -1103,6 +1103,14 @@
             }
         },
         {
+            "Key": "3ce46e14-5ebd-4d6f-a414-8c54111383e6",
+            "Value": {
+                "id": "462e05ca-1fe4-410d-ba9b-bc4785a5c5f2",
+                "resourcePath": "objects\\oWatchTower\\oWatchTower.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3da06032-8c3a-462c-b3df-f228c3da6694",
             "Value": {
                 "id": "1b692ac5-1e42-4edc-bbae-4c0c369db801",
@@ -1644,6 +1652,14 @@
                 "id": "72bce0d2-a759-4854-bfe9-09aa0edbea17",
                 "resourcePath": "scripts\\sPlayerController_CanConstruct_MaterialEnough\\sPlayerController_CanConstruct_MaterialEnough.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "58cb7df8-ec29-418e-817d-40af4c87bc2d",
+            "Value": {
+                "id": "df8c9fbe-8011-4d4e-9d16-34718e427847",
+                "resourcePath": "objects\\oDefenseTower\\oDefenseTower.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3591,6 +3607,14 @@
             }
         },
         {
+            "Key": "c9a7d91f-378a-4c2c-9b73-bbb15a259e48",
+            "Value": {
+                "id": "2b147a7f-4765-4f19-9726-76dbce137c27",
+                "resourcePath": "objects\\oCastleWall\\oCastleWall.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c9e49153-35fb-43d8-ab06-257b6fe59134",
             "Value": {
                 "id": "338abe3d-836f-48dc-8cc9-5c8233cb32c4",
@@ -4164,6 +4188,14 @@
                 "id": "8ef4730e-09f7-402b-ac6d-39d1b8099e52",
                 "resourcePath": "scripts\\sPlayerController_CaptureKeyboard\\sPlayerController_CaptureKeyboard.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ec788a92-6258-4acf-8717-8b0cc8bade79",
+            "Value": {
+                "id": "6e423ecb-d965-49ef-8280-939203db1b6c",
+                "resourcePath": "objects\\oCastleDoor\\oCastleDoor.yy",
+                "resourceType": "GMObject"
             }
         },
         {
