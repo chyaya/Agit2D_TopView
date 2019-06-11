@@ -73,12 +73,33 @@ with(m_InteractionObject)
 	draw_set_halign(fa_center);
 	draw_set_font(fontGUINormal);
 
-	for(var craftIndex = 0; craftIndex < array_length_1d(m_CraftList); ++craftIndex)
+	var _listPage = 7;
+	var _listMax = array_length_1d(m_CraftList);
+	var _listH = _listPage*(_h + gapH) - gapH;
+
+	if(false == variable_instance_exists(id, "m_ConstructList_ListIndex"))
+	{
+		m_ConstructList_ListIndex = 0;
+	}
+
+	if(m_SelectedCraftIndex < m_ConstructList_ListIndex)
+	{
+		m_ConstructList_ListIndex = m_SelectedCraftIndex;
+	}
+
+	if(m_SelectedCraftIndex >= m_ConstructList_ListIndex + _listPage)
+	{
+		m_ConstructList_ListIndex = m_SelectedCraftIndex - _listPage + 1;
+	}
+
+	var _listIndex = m_ConstructList_ListIndex;
+
+	for(var craftIndex = _listIndex; craftIndex < min(_listIndex + _listPage, _listMax); ++craftIndex)
 	{
 		var cid = m_CraftList[craftIndex];
 		
 		var xx = _x;
-		var yy = _y+((craftIndex)*(_h + gapH)); 
+		var yy = _y+((craftIndex - _listIndex)*(_h + gapH)); 
 	
 		NineSliceBoxStretch(
 			m_SelectedCraftIndex == craftIndex ? spr_selected_slot : spr_slot,
@@ -97,6 +118,8 @@ with(m_InteractionObject)
 	
 		sUtil_DrawTextShadow(xx + _w/2, yy + _h/2, text);
 	}
+	
+	sUtil_DrawScroll(_x + _w + 10, _y, 10, _listH, _listIndex, _listPage, _listMax);
 }
 
 
