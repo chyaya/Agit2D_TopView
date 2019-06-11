@@ -6,7 +6,11 @@
     "children": [
         "97b7eca4-27d8-4361-9ce4-3fc042da0a49",
         "7eac5cdf-0d36-4dde-85ff-1913c2f25fc5",
-        "50a29cc4-9a9e-46b6-83c9-aef939dd9a13"
+        "50a29cc4-9a9e-46b6-83c9-aef939dd9a13",
+        "bf91c170-ebe7-452f-8942-a33b37c48b54",
+        "1877a3d4-a8a1-47f9-af78-78d99ba11270",
+        "1bc5bcff-1a32-49d9-99b5-154b6409fdcb",
+        "873259d0-da15-4d6e-bd43-6e2a0832f170"
     ],
     "filterType": "GMObject",
     "folderName": "Building",
