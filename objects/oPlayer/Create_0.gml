@@ -38,3 +38,7 @@ for(var i = 0; i < Equip.MAX; ++i)
 {
 	m_LastEquipItemIds[i] = 0;
 }
+
+m_QuickSlotMap = noone;
+m_SelectedQuickSlotItemId = 0;
+m_LastQuickSlotItemId = 0;

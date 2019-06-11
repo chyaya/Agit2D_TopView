@@ -3,6 +3,8 @@ draw_set_color(c_white);
 sPlayerController_DrawGUI_GhostScreenEffect();
 sPlayerController_DrawGUI_InteractObject();
 
+sPlayerController_DrawGUI_QuickSlot();
+
 if(m_Mode == Mode.Bag)
 {
 	sPlayerController_DrawGUI_TabList();

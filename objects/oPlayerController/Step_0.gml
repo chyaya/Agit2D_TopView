@@ -115,6 +115,32 @@ case Mode.Move:
 			{
 				m_TargetAngle = point_direction(0, 0, m_DirX, m_DirY);
 			}
+			
+			if(other.m_Input_Btn_LB)
+			{
+				var prev;
+				
+				if(m_SelectedQuickSlotItemId == 0)
+					prev = ds_map_find_first(m_QuickSlotMap);
+				else
+					prev = ds_map_find_previous(m_QuickSlotMap, m_SelectedQuickSlotItemId);
+				
+				if(prev != undefined)
+					m_SelectedQuickSlotItemId = prev;
+			}
+			
+			if(other.m_Input_Btn_RB)
+			{
+				var next;
+				
+				if(m_SelectedQuickSlotItemId == 0)
+					next = ds_map_find_first(m_QuickSlotMap);
+				else
+					next = ds_map_find_next(m_QuickSlotMap, m_SelectedQuickSlotItemId);
+				
+				if(next != undefined)
+					m_SelectedQuickSlotItemId = next;
+			}
 		}	
 	}
 	break;
@@ -212,3 +238,4 @@ sPlayerController_DoAction();
 
 
 audio_listener_set_position(self, x, y, 0);
+
