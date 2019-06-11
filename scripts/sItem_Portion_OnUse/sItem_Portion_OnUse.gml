@@ -1,5 +1,8 @@
 var pawn = argument0;
-var itemId = argument1;
+var inven = argument1;
+var itemPos = argument2;
+
+var itemId = sInven_GetItemId(inven, itemPos);
 
 var valueUp = global.Item_UserParam[itemId];
 pawn.m_CurHealth += valueUp;
