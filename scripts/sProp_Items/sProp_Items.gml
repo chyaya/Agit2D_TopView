@@ -116,8 +116,8 @@ inv_create_item(Item.CopperTool, sprCopperTool, "구리도구", 1, "채집 / 채
 inv_create_item(Item.IronTool, sprIronTool, "강철도구", 1, "채집 / 채광 공격력 3 증가합니다.", noone, noone, 3);
 
 inv_create_item(Item.WoodenSword, sprWoodenSword, "나무 검", 1, "몬스터 공격력이 2 증가합니다.", noone, noone, 2);
-inv_create_item(Item.CopperSword, sprCopperSword, "구리도구", 1, "몬스터 공격력이 4 증가합니다.", noone, noone, 4);
-inv_create_item(Item.IronSword, sprIronSword, "강철도구", 1, "몬스터 공격력이 6 증가합니다.", noone, noone, 6);
+inv_create_item(Item.CopperSword, sprCopperSword, "구리 검", 1, "몬스터 공격력이 4 증가합니다.", noone, noone, 4);
+inv_create_item(Item.IronSword, sprIronSword, "강철 검", 1, "몬스터 공격력이 6 증가합니다.", noone, noone, 6);
 
 inv_create_item(Item.OldWaistBag, sprOldWaistBag, "낡은 허리가방", 1, "가방 공간이 2칸 늘어납니다.", noone, noone, 2);
 inv_create_item(Item.LeatherWaistBag, sprLeatherWaistBag, "가죽 허리가방", 1, "가방 공간이 3칸 늘어납니다.", noone, noone, 3);
