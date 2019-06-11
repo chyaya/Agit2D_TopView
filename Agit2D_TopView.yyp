@@ -42,7 +42,7 @@
             "Key": "005e729c-e9ff-4655-8487-51f6e892a79d",
             "Value": {
                 "id": "4dfd61a9-fea3-464e-9dbb-a5e6e049fffd",
-                "resourcePath": "scripts\\sItem_BagEquip_OnUse\\sItem_BagEquip_OnUse.yy",
+                "resourcePath": "scripts\\sItem_Bag_OnUse\\sItem_Bag_OnUse.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -218,7 +218,7 @@
             "Key": "0caefb6d-a11a-44f0-a514-bb1437e6c84f",
             "Value": {
                 "id": "5384e4da-a122-47b8-bd75-132b356665fa",
-                "resourcePath": "scripts\\sItem_ShoesEquip_OnUse\\sItem_ShoesEquip_OnUse.yy",
+                "resourcePath": "scripts\\sItem_Shoes_OnUse\\sItem_Shoes_OnUse.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3042,7 +3042,7 @@
             "Key": "bba2851b-a076-45e9-aa3c-601367dcebb0",
             "Value": {
                 "id": "ea7b93ce-1593-456c-968d-fa0f05ba39fa",
-                "resourcePath": "scripts\\sItem_ArmorEquip_OnUse\\sItem_ArmorEquip_OnUse.yy",
+                "resourcePath": "scripts\\sItem_Armor_OnUse\\sItem_Armor_OnUse.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3703,6 +3703,14 @@
             }
         },
         {
+            "Key": "e7240272-cc38-430a-9a95-a4e8f74ee842",
+            "Value": {
+                "id": "ccd484c4-a6ce-4383-b9d9-c9143cf51273",
+                "resourcePath": "scripts\\sItem_Bag_OnActive\\sItem_Bag_OnActive.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "e7507a6f-8a0e-4c04-933e-b579032d12a9",
             "Value": {
                 "id": "7b488471-f361-45cd-a501-e5aed9c40445",
@@ -3868,6 +3876,14 @@
                 "id": "48391bd9-a98b-4c92-a483-6aef7bec4edb",
                 "resourcePath": "views\\eed11eff-b82a-40bf-9b11-b6b96b6a4bc2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ef351d94-65fc-45c9-80be-b8f44c67c431",
+            "Value": {
+                "id": "ebb07f85-7e5d-410b-899b-e23310540e9a",
+                "resourcePath": "scripts\\sInven_AddUsableSlotNum\\sInven_AddUsableSlotNum.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -4169,6 +4185,7 @@
         "b55b4d0a-9398-4113-9805-b2b31e19cc4a",
         "9b6a6937-0a48-4a36-a530-eb8112309d09",
         "1edf4a5c-a473-4c5d-a9dc-0c0eefcce50d",
+        "ef351d94-65fc-45c9-80be-b8f44c67c431",
         "425ef221-d5b7-462a-992e-434211d6cca4",
         "62f05ad3-b3f6-4502-b371-a7981542143e",
         "4ae0a539-e019-4c83-97de-85d439352d40",
@@ -4255,6 +4272,7 @@
         "86b4f796-e994-472d-87db-a801fa25c32e",
         "f7d75b2a-7adc-4705-8242-eab9e54f1eca",
         "f6ff6d53-1e6d-4cae-a008-7e3c81532ce2",
+        "e7240272-cc38-430a-9a95-a4e8f74ee842",
         "e77993bc-1341-4314-aae2-e1af13a20087",
         "cd2a4fb3-e2b4-4536-aaff-d0a8133a5d31",
         "005e729c-e9ff-4655-8487-51f6e892a79d",

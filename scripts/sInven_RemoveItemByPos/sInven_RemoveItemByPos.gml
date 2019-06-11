@@ -15,8 +15,8 @@ if(itemId == 0)
 	
 while(inv_count[|itemPos] > 0 && itemCount > 0)
 {
-	if(global.Item_OnAddOrRemove[itemId] != noone)
-		script_execute(global.Item_OnAddOrRemove[itemId], self, -1);
+	//if(global.Item_OnAddOrRemove[itemId] != noone)
+	//	script_execute(global.Item_OnAddOrRemove[itemId], self, -1);
 		
 	inv_count[|itemPos] -= 1;
 	itemCount -= 1;

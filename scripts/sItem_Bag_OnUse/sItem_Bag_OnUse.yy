@@ -1,8 +1,8 @@
 {
-    "id": "0caefb6d-a11a-44f0-a514-bb1437e6c84f",
+    "id": "005e729c-e9ff-4655-8487-51f6e892a79d",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "sItem_ShoesEquip_OnUse",
+    "name": "sItem_Bag_OnUse",
     "IsCompatibility": false,
     "IsDnD": false
 }

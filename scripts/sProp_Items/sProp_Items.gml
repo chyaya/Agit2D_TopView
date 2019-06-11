@@ -119,19 +119,19 @@ inv_create_item(Item.WoodenSword, sprWeapon, "나무 검", 1, "몬스터 공격�
 inv_create_item(Item.CopperSword, sprWeapon, "구리도구", 1, "몬스터 공격력이 4 증가합니다.", noone, noone, 4);
 inv_create_item(Item.IronSword, sprWeapon, "강철도구", 1, "몬스터 공격력이 6 증가합니다.", noone, noone, 6);
 
-inv_create_item(Item.OldWaistBag, sprWeapon, "낡은 허리가방", 1, "가방 공간이 2칸 늘어납니다.", sItem_BagEquip_OnUse, noone, 2);
-inv_create_item(Item.LeatherWaistBag, sprWeapon, "가죽 허리가방", 1, "가방 공간이 3칸 늘어납니다.", sItem_BagEquip_OnUse, noone, 3);
-inv_create_item(Item.SturdyWaistBag, sprWeapon, "튼튼한 허리가방", 1, "가방 공간이 4칸 늘어납니다.", sItem_BagEquip_OnUse, noone, 4);
-inv_create_item(Item.OldBackpack, sprWeapon, "낡은 배낭", 1, "가방 공간이 3칸 늘어납니다.", sItem_BagEquip_OnUse, noone, 3);
-inv_create_item(Item.LeatherBackpack, sprWeapon, "가죽 배낭", 1, "가방 공간이 4칸 늘어납니다.", sItem_BagEquip_OnUse, noone, 4);
-inv_create_item(Item.SturdyBackpack, sprWeapon, "튼튼한 배낭", 1, "가방 공간이 5칸 늘어납니다.", sItem_BagEquip_OnUse, noone, 5);
+inv_create_item(Item.OldWaistBag, sprWeapon, "낡은 허리가방", 1, "가방 공간이 2칸 늘어납니다.", sItem_Bag_OnUse, noone, 2);
+inv_create_item(Item.LeatherWaistBag, sprWeapon, "가죽 허리가방", 1, "가방 공간이 3칸 늘어납니다.", sItem_Bag_OnUse, noone, 3);
+inv_create_item(Item.SturdyWaistBag, sprWeapon, "튼튼한 허리가방", 1, "가방 공간이 4칸 늘어납니다.", sItem_Bag_OnUse, noone, 4);
+inv_create_item(Item.OldBackpack, sprWeapon, "낡은 배낭", 1, "가방 공간이 3칸 늘어납니다.", sItem_Bag_OnUse, noone, 3);
+inv_create_item(Item.LeatherBackpack, sprWeapon, "가죽 배낭", 1, "가방 공간이 4칸 늘어납니다.", sItem_Bag_OnUse, noone, 4);
+inv_create_item(Item.SturdyBackpack, sprWeapon, "튼튼한 배낭", 1, "가방 공간이 5칸 늘어납니다.", sItem_Bag_OnUse, noone, 5);
 
-inv_create_item(Item.TShirt, sprWeapon, "면옷", 1, "방어력이 1 증가합니다.", sItem_ArmorEquip_OnUse, noone, 1);
-inv_create_item(Item.LeatherClothes, sprWeapon, "가죽옷", 1, "방어력이 3 증가합니다.", sItem_ArmorEquip_OnUse, noone, 3);
-inv_create_item(Item.IronArmor, sprWeapon, "철갑옷", 1, "방어력이 5 증가합니다.", sItem_ArmorEquip_OnUse, noone, 5);
+inv_create_item(Item.TShirt, sprWeapon, "면옷", 1, "방어력이 1 증가합니다.", sItem_Armor_OnUse, sItem_Armor_OnActive, 1);
+inv_create_item(Item.LeatherClothes, sprWeapon, "가죽옷", 1, "방어력이 3 증가합니다.", sItem_Armor_OnUse, sItem_Armor_OnActive, 3);
+inv_create_item(Item.IronArmor, sprWeapon, "철갑옷", 1, "방어력이 5 증가합니다.", sItem_Armor_OnUse, sItem_Armor_OnActive, 5);
 
-inv_create_item(Item.ClothShoes, sprWeapon, "천신발", 1, "이동속도가 20 증가합니다.", sItem_ShoesEquip_OnUse, noone, 20);
-inv_create_item(Item.SportsShoes, sprWeapon, "운동화", 1, "이동속도가 30 증가합니다.", sItem_ShoesEquip_OnUse, noone, 30);
+inv_create_item(Item.ClothShoes, sprWeapon, "천신발", 1, "이동속도가 20 증가합니다.", sItem_Shoes_OnUse, sItem_Shoes_OnActive, 20);
+inv_create_item(Item.SportsShoes, sprWeapon, "운동화", 1, "이동속도가 30 증가합니다.", sItem_Shoes_OnUse, sItem_Shoes_OnActive, 30);
 
 inv_create_item(Item.IronShell, sprWeapon, "철포탄", 20, "무거운 포탄입니다.", noone, noone, 0);
 inv_create_item(Item.ExplosionShell, sprWeapon, "폭발탄", 20, "터지면 무서운 포탄입니다.", noone, noone, 0);
