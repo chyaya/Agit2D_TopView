@@ -119,7 +119,8 @@ with(m_InteractionObject)
 		sUtil_DrawTextShadow(xx + _w/2, yy + _h/2, text);
 	}
 	
-	sUtil_DrawScroll(_x + _w + 10, _y, 10, _listH, _listIndex, _listPage, _listMax);
+	if(_listPage < _listMax)
+		sUtil_DrawScroll(_x + _w + 10, _y, 10, _listH, _listIndex, _listPage, _listMax);
 }
 
 

@@ -86,5 +86,6 @@ for(var i = _listIndex; i < min(_listIndex + _listPage, _listMax); ++i)
 	sUtil_DrawTextShadow(xx + _w/2, yy + _h/2, global.Construct_Text[constructId]);
 }
 
-sUtil_DrawScroll(_x + _w + 10, _y, 10, _listH, _listIndex, _listPage, _listMax);
+if(_listPage < _listMax)
+	sUtil_DrawScroll(_x + _w + 10, _y, 10, _listH, _listIndex, _listPage, _listMax);
 
