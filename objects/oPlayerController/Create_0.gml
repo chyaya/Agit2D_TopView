@@ -55,3 +55,23 @@ m_ActionName = [
 	"반절 제작",
 	"모두 제작",
 ];
+
+
+enum Equip
+{
+	NONE,
+	
+	Armor,
+	Shoes,
+	Bag,
+	
+	MAX
+}
+
+m_EquipName = [
+	"",
+	"방어구",
+	"신발",
+	"가방",
+	"",
+];
