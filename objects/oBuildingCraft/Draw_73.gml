@@ -6,8 +6,7 @@ event_inherited();
 
 if(m_CraftingCount > 0)
 {
-	var craftId = m_CraftList[m_SelectedCraftId];
-	var craftTime = global.Craft_Time[craftId];
+	var craftTime = global.Craft_Time[m_SelectedCraftId];
 	var deltaTime = current_time - m_CraftingStartTime;
 	var rate = deltaTime / craftTime;
 
@@ -22,7 +21,7 @@ if(m_CraftingCount > 0)
 		0, 8, maxSegment, segment, 90, 360, -1, c_green); 
 	draw_set_alpha(1.0);
 	
-	var itemId = global.Craft_Result[craftId];
+	var itemId = global.Craft_Result[m_SelectedCraftId];
 	
 	draw_sprite(global.Item_Sprite[itemId], 0, _x, _y);
 	
