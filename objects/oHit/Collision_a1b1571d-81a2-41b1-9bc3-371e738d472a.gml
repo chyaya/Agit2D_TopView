@@ -18,9 +18,11 @@ if(other.object_index == oGhost)
 	
 if(other.m_CurHealth <= 0)
 	return;
+	
+var damage = other.m_IsResource ? m_GatheringDamage : m_CombatDamage;
 
-sUtil_CreateNotify(other.x, other.y, string(m_Damage), 0, -30, 5, 0);
-
-other.m_CurHealth = other.m_CurHealth - m_Damage;
+other.m_CurHealth = other.m_CurHealth - damage;
 other.m_CurHealth = clamp(other.m_CurHealth, 0, other.m_MaxHealth);
 m_Hit = true;
+
+sUtil_CreateNotify(other.x, other.y, string(damage), 0, -30, 5, 0);

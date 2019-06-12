@@ -7,7 +7,8 @@ var _y = attackObj.y - attackObj.sprite_height/2;
 with (instance_create_layer(_x, _y, "Instances", oBlank))
 {
 	m_OwnerObj = attackObj.id;
-	m_Damage = attackObj.m_Damage;
+	m_CombatDamage = attackObj.m_CombatDamage;
+	m_GatheringDamage = attackObj.m_GatheringDamage;
 		
 	var attackRes = noone;
 		

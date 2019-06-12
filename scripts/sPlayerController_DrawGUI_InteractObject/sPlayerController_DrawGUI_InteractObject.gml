@@ -25,7 +25,9 @@ if(m_InteractionObject != noone)
 		
 		draw_text(view_wport[0]/2, yPos, "Health:" + string(m_InteractionObject.m_MaxHealth));
 		yPos += 40;
-		draw_text(view_wport[0]/2, yPos, "Damage:" + string(m_InteractionObject.m_Damage));
+		draw_text(view_wport[0]/2, yPos, "Combat Damage:" + string(m_InteractionObject.m_CombatDamage));
+		yPos += 40;
+		draw_text(view_wport[0]/2, yPos, "Gathering Damage:" + string(m_InteractionObject.m_GatheringDamage));
 		yPos += 40;
 		draw_text(view_wport[0]/2, yPos, "Speed:" + string(m_InteractionObject.m_MoveSpeed));
 		yPos += 40;
