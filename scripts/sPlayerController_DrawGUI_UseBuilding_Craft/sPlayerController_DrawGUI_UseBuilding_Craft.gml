@@ -41,11 +41,10 @@ with(m_InteractionObject)
 		spr_slot,
 		materialX, materialY, 300, 400, 3);
 	
+	var craftList = sBuilding_GetVisibleCraftList(other.m_CraftVisible);
 
-	var craftId = m_CraftList[m_SelectedCraftIndex];
-
-	var materialItemId = global.Craft_Material_ItemId[craftId];
-	var materialCount = global.Craft_Material_Count[craftId];
+	var materialItemId = global.Craft_Material_ItemId[m_SelectedCraftId];
+	var materialCount = global.Craft_Material_Count[m_SelectedCraftId];
 	
 	draw_set_valign(fa_middle);
 	draw_set_halign(fa_left);
@@ -74,47 +73,50 @@ with(m_InteractionObject)
 	draw_set_font(fontGUINormal);
 
 	var _listPage = 7;
-	var _listMax = array_length_1d(m_CraftList);
+	var _listMax = array_length_1d(craftList);
 	var _listH = _listPage*(_h + gapH) - gapH;
 
 	if(false == variable_instance_exists(id, "m_ConstructList_ListIndex"))
 	{
 		m_ConstructList_ListIndex = 0;
 	}
+	
+	var curSelectedListIndex = sBuilding_FindVisibleCraftIndex(other.m_CraftVisible, m_SelectedCraftId);
+	assert_greater_than_or_equal(curSelectedListIndex, 0);
 
-	if(m_SelectedCraftIndex < m_ConstructList_ListIndex)
+	if(curSelectedListIndex < m_ConstructList_ListIndex)
 	{
-		m_ConstructList_ListIndex = m_SelectedCraftIndex;
+		m_ConstructList_ListIndex = curSelectedListIndex;
 	}
 
-	if(m_SelectedCraftIndex >= m_ConstructList_ListIndex + _listPage)
+	if(curSelectedListIndex >= m_ConstructList_ListIndex + _listPage)
 	{
-		m_ConstructList_ListIndex = m_SelectedCraftIndex - _listPage + 1;
+		m_ConstructList_ListIndex = curSelectedListIndex - _listPage + 1;
 	}
 
 	var _listIndex = m_ConstructList_ListIndex;
 
-	for(var craftIndex = _listIndex; craftIndex < min(_listIndex + _listPage, _listMax); ++craftIndex)
+	for(var i = _listIndex; i < min(_listIndex + _listPage, _listMax); ++i)
 	{
-		var cid = m_CraftList[craftIndex];
+		var craftId = craftList[i];
 		
 		var xx = _x;
-		var yy = _y+((craftIndex - _listIndex)*(_h + gapH)); 
+		var yy = _y+((i - _listIndex)*(_h + gapH)); 
 	
 		NineSliceBoxStretch(
-			m_SelectedCraftIndex == craftIndex ? spr_selected_slot : spr_slot,
+			m_SelectedCraftId == craftId ? spr_selected_slot : spr_slot,
 			xx, yy, _w, _h, 3);
 		
 		var color;
 		
 		with(other)
 		{
-			color = sPlayerController_CanCraft_MaterialEnough(cid, 1) ? c_white : c_red;
+			color = sPlayerController_CanCraft_MaterialEnough(craftId, 1) ? c_white : c_red;
 		}
 		
 		draw_set_color(color);
 		
-		var text = global.Item_Text[global.Craft_Result[cid]];
+		var text = global.Item_Text[global.Craft_Result[craftId]];
 	
 		sUtil_DrawTextShadow(xx + _w/2, yy + _h/2, text);
 	}

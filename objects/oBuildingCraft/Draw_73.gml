@@ -6,7 +6,7 @@ event_inherited();
 
 if(m_CraftingCount > 0)
 {
-	var craftId = m_CraftList[m_SelectedCraftIndex];
+	var craftId = m_CraftList[m_SelectedCraftId];
 	var craftTime = global.Craft_Time[craftId];
 	var deltaTime = current_time - m_CraftingStartTime;
 	var rate = deltaTime / craftTime;

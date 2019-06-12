@@ -34,3 +34,18 @@ with(m_PlayerObject)
 	}
 }
 
+for(var i = 1; i < array_length_1d(global.Construct_Require_Building); ++i)
+{
+	if(global.Construct_Require_Building[i] == object)
+	{
+		if(false == m_ConstructVisible[i])
+		{
+			m_ConstructVisible[i] = true;
+			
+			with(m_PlayerObject)
+			{	
+				sUtil_CreateNotify(x, y, global.Construct_Text[i], 0, -30);
+			}
+		}
+	}
+}
