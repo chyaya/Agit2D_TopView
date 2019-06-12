@@ -12,17 +12,26 @@ else
 	if(interactionObjectNum > 0)
 	{
 		var playerObj = interactionObjectList[|0];
+		
+		var emptySlot = 0;
+		with(playerObj)
+		{
+			emptySlot = sInven_CountEmptySlot(m_Inven_Bag);
+		}
 	
-		var dx = playerObj.x - x;
-		var dy = playerObj.y - y;
-		var length = sqrt(dx*dx + dy*dy);
+		if(emptySlot > 0)
+		{
+			var dx = playerObj.x - x;
+			var dy = playerObj.y - y;
+			var length = sqrt(dx*dx + dy*dy);
 	
-		var vx = dx/length;
-		var vy = dy/length;
+			var vx = dx/length;
+			var vy = dy/length;
 	
 
-		x += vx*length*0.2;
-		y += vy*length*0.2;
+			x += vx*length*0.2;
+			y += vy*length*0.2;
+		}
 	}
 
 	ds_list_destroy(interactionObjectList);

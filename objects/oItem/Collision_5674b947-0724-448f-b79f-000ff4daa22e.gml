@@ -22,3 +22,5 @@ with(other)
 			"Inventory is full", 0, -30);
 	}
 }
+
+m_ActiveTime = current_time + irandom_range(2000, 2500);
