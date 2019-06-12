@@ -7,4 +7,5 @@ event_inherited();
 m_CraftList = [
 	Craft.BakedFruit,
 	Craft.BakedApple,
+	Craft.BakedMeet,
 ];
