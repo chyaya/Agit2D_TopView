@@ -12,7 +12,6 @@ enum Item
 	IronStone,
 	Aluminium,
 	Fiber,
-	Meat,
 	RoughLeather,
 	RobotPart,
 	RobotBlackbox,
@@ -23,6 +22,8 @@ enum Item
 	BakedFruit,
 	Apple,
 	BakedApple,
+	Meat,
+	BakedMeat,
 
 	//작업대 
 	WoodenTool,
@@ -101,15 +102,17 @@ inv_create_item(Item.CopperStone, sprCopperStone, "구리", 100, "주황색의 �
 inv_create_item(Item.IronStone, sprIronStone, "철광석", 100, "파란 빛이 감도는 금속", noone, noone, noone, 0);
 inv_create_item(Item.Aluminium, sprAluminium, "알루미늄 조각", 100, "콜라캔에서 얻은 금속", noone, noone, noone, 0);
 inv_create_item(Item.Fiber, sprFiber, "섬유", 100, "식물성 섬유", noone, noone, noone, 0);
-inv_create_item(Item.Meat, sprMeat, "고기", 100, "언제나 옳은 그것", noone, noone, noone, 0);
 inv_create_item(Item.RoughLeather, sprRoughLeather, "동물가죽", 100, "거친 동물 가죽", noone, noone, noone, 0);
 inv_create_item(Item.RobotPart, sprRobotParts, "로봇 부품", 100, "로봇에게서 떨어져나온 부품", noone, noone, noone, 0);
 inv_create_item(Item.RobotBlackbox, sprRobotBlackbox, "블랙박스", 100, "기계의 기록이 저장되어있다", noone, noone, noone, 0);
 
-inv_create_item(Item.Fruit, sprFruit, "열매", 100, "생명력 + 5", sItem_Portion_OnUse, noone, noone, 5);
-inv_create_item(Item.BakedFruit, sprBakedFruit, "구운 열매", 100, "생명력 + 10", sItem_Portion_OnUse, noone, noone, 10);
-inv_create_item(Item.Apple, sprApple, "사과", 10, "생명력 + 10", sItem_Portion_OnUse, noone, noone, 10);
-inv_create_item(Item.BakedApple, sprBakedApple, "구운 사과", 10, "생명력 + 20", sItem_Portion_OnUse, noone, noone, 20);
+inv_create_item(Item.Fruit, sprFruit, "열매", 100, "생명력 + 1", sItem_Portion_OnUse, noone, noone, 1);
+inv_create_item(Item.BakedFruit, sprBakedFruit, "구운 열매", 100, "생명력 + 3", sItem_Portion_OnUse, noone, noone, 3);
+inv_create_item(Item.Apple, sprApple, "사과", 10, "생명력 + 2", sItem_Portion_OnUse, noone, noone, 2);
+inv_create_item(Item.BakedApple, sprBakedApple, "구운 사과", 10, "생명력 + 4", sItem_Portion_OnUse, noone, noone, 4);
+inv_create_item(Item.Meat, sprMeat, "고기", 100, "생명력 + 5", sItem_Portion_OnUse, noone, noone, 5);
+inv_create_item(Item.BakedMeat, sprBakedMeat, "고기", 100, "생명력 + 5", sItem_Portion_OnUse, noone, noone, 7);
+
 
 inv_create_item(Item.WoodenTool, sprWoodenTool, "나무도구", 1, "채집 / 채광 공격력 1 증가합니다.", noone, noone, sItem_Tool_OnQuickSlot, 1);
 inv_create_item(Item.CopperTool, sprCopperTool, "구리도구", 1, "채집 / 채광 공격력 2 증가합니다.", noone, noone, sItem_Tool_OnQuickSlot, 2);

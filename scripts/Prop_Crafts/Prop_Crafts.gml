@@ -7,6 +7,7 @@ enum Craft
 	//굽기 
 	BakedFruit,
 	BakedApple,
+	BakedMeet,
 	
 	//작업대 
 	WoodenTool,
@@ -83,10 +84,11 @@ Prop_AddCraft(Craft.NONE, noone, 0, [], [], noone);
 // Bonfire
 Prop_AddCraft(Craft.BakedFruit, Item.BakedFruit, 3000, [Item.Fruit], [1], noone);
 Prop_AddCraft(Craft.BakedApple, Item.BakedApple, 3000, [Item.Apple], [1], noone);
+Prop_AddCraft(Craft.BakedMeet, Item.BakedMeat, 3000, [Item.Meat], [1], noone);
 
 Prop_AddCraft(Craft.WoodenTool, Item.WoodenTool, 3000, [Item.Wood, Item.Stone], [1, 1], noone);
-Prop_AddCraft(Craft.CopperTool, Item.CopperTool, 3000, [Item.Wood, Item.CopperStone], [1, 1], oBlastFurnace);
-Prop_AddCraft(Craft.IronTool, Item.IronTool, 3000, [Item.Wood, Item.CopperStone], [1, 1], oBlastFurnace);
+Prop_AddCraft(Craft.CopperTool, Item.CopperTool, 3000, [Item.Wood, Item.CopperStone], [1, 1], noone);
+Prop_AddCraft(Craft.IronTool, Item.IronTool, 3000, [Item.Wood, Item.IronIngot], [1, 1], noone);
 
 Prop_AddCraft(Craft.WoodenSword,Item.WoodenSword, 3000, [Item.Wood], [3], noone);
 Prop_AddCraft(Craft.CopperSword,Item.CopperSword, 3000, [Item.Wood, Item.CopperIngot], [2, 1], oBlastFurnace);
