@@ -64,6 +64,22 @@
             "objectId": "f1a3b0d1-b175-4e5a-9201-4515c58dfdb7",
             "propertyId": "b443090f-23b9-45b5-85f1-c9c6ccd3b28c",
             "value": "Woman"
+        },
+        {
+            "id": "91cf578d-07fd-42f5-88ee-188dcba02e31",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "47099ade-3615-4ea2-9301-b2e7b3f768f1",
+            "propertyId": "ecb97ee2-a940-49f1-97c3-59abda905c43",
+            "value": "50"
+        },
+        {
+            "id": "74ea1761-72e9-4e60-b0b9-034c20f38167",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "47099ade-3615-4ea2-9301-b2e7b3f768f1",
+            "propertyId": "24a45e8d-424d-4a0a-b112-e6c52317513a",
+            "value": "3"
         }
     ],
     "parentObjectId": "7a688a40-48fe-4cef-91f2-de3e41004582",
