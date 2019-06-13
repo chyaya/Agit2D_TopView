@@ -86,4 +86,17 @@ case Action.SelectCraft_All:
 		m_Mode = Mode.Move;
 	}
 	break;
+case Action.Mount:
+	m_PlayerObject.m_Mount = m_InteractionObject;
+	m_InteractionObject.m_Pilot = m_PlayerObject;
+	break;
+case Action.Unmount:
+	m_PlayerObject.x = m_PlayerObject.m_Mount.x;
+	m_PlayerObject.y = m_PlayerObject.m_Mount.y;
+	m_PlayerObject.m_Mount.m_DirX = 0;
+	m_PlayerObject.m_Mount.m_DirY = 0;
+
+	m_PlayerObject.m_Mount.m_Pilot = noone;
+	m_PlayerObject.m_Mount = noone;
+	break;
 }

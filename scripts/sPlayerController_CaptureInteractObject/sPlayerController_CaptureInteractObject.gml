@@ -11,12 +11,21 @@ for (var i = 0; i < interactionObjectNum; ++i;)
 	if(curObj == m_PlayerObject)
 		continue;
 	
-	if(object_is_ancestor(curObj.object_index, oBuilding) == false)
-		continue;	
-		
-	if(curObj.m_CraftingCount > 0)
+	if(object_is_ancestor(curObj.object_index, oBuildingCraft) == true)
+	{
+		if(curObj.m_CraftingCount > 0)
+			continue;
+	}
+	else if(object_is_ancestor(curObj.object_index, oMount) == true)
+	{
+		if(curObj.m_Pilot != noone)
+			continue;	
+	}
+	else
+	{
 		continue;
-		
+	}
+	
 	newMouseOverObject = curObj;
 }
 

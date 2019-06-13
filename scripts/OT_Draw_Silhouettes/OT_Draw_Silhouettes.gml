@@ -8,8 +8,12 @@ gpu_set_blendmode_ext(bm_dest_alpha,bm_inv_dest_alpha);		// draw_set_blend_mode_
 
 // if the silhouettes were black, we wouldn't need a shader as we could just colour the sprite black
 // but in order to have a coloured "mask" of a sprite, we need a very simple shader
-shader_set(sh_silhouette_shader);
 
+
+//*****************************
+//shader_set(sh_silhouette_shader);
+//*****************************
+/*
 // render everything in the OT
 for(var index=0;index<global.ot_size;index++)
 {
@@ -25,7 +29,7 @@ for(var index=0;index<global.ot_size;index++)
             var i = ds_list_find_value(l,count--);    
             
             // Draw the silhouette
-			if( i.silhouette_colour!=$000001 ){
+			if( i.silhouette_colour!= $000001 ){
 				draw_sprite_ext( i.sprite_index, i.image_index, i.x,i.y, 1,1,0,i.silhouette_colour,0.5);
 			}
             
@@ -40,3 +44,4 @@ shader_reset();
 gpu_set_blendmode(bm_normal);
 gpu_set_colourwriteenable(true,true,true,true);
 
+*/

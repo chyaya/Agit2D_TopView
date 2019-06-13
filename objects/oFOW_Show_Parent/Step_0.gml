@@ -4,7 +4,7 @@
 
 // See script for argument details.
 
-if(global.UseFOW)
-	sFOW_Update(x, y, obj_FOW_Wall_Parent);
+//if(global.UseFOW)
+//	sFOW_Update(x, y, obj_FOW_Wall_Parent);
 
 
