@@ -33,4 +33,6 @@ m_LastImageIndex = -1;
 
 m_LastPathFind = 0;
 
+m_Mount = noone;
+
 event_inherited();

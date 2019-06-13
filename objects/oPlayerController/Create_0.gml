@@ -36,6 +36,8 @@ enum Action {
 	SelectCraft_One,
 	SelectCraft_HalfOfAll,
 	SelectCraft_All,
+	Mount,
+	Unmount,
 	
 	MAX
 }
@@ -54,6 +56,8 @@ m_ActionName = [
 	"제작",
 	"반절 제작",
 	"모두 제작",
+	"탑승",
+	"내리기",
 ];
 
 

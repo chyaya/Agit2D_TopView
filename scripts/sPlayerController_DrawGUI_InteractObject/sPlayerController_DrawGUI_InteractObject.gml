@@ -37,7 +37,7 @@ if(m_InteractionObject != noone)
 		with(m_InteractionObject)
 		{
 			var slotSize = 64;
-			var offsetx = other.m_InteractionObject.total_slots*0.5*slotSize;
+			//var offsetx = other.m_InteractionObject.total_slots*0.5*slotSize;
 			//sInven_DrawUI(view_wport[0]/2-offsetx, yPos, slotSize);
 		}
 	}

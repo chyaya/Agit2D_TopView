@@ -66,9 +66,24 @@ case Mode.Move:
 	{
 		m_Actions[ACTION_B] = Action.OpenBag;	
 		
-		if(m_InteractionObject != noone)
+		if(m_InteractionObject != noone
+			&& object_is_ancestor(m_InteractionObject.object_index, oBuildingCraft))
 		{
 			m_Actions[ACTION_A] = Action.UseBuilding;
+		}
+		
+		
+		if(m_PlayerObject.m_Mount == noone)
+		{
+			if(m_InteractionObject != noone
+				&& object_is_ancestor(m_InteractionObject.object_index, oMount))
+			{
+				m_Actions[ACTION_Y] = Action.Mount;
+			}
+		}
+		else
+		{
+			m_Actions[ACTION_Y] = Action.Unmount;
 		}
 	}
 	else
@@ -106,6 +121,12 @@ case Mode.Move:
 			}
 	
 			sPawn_Move(1.0);
+			
+			if(m_Mount != noone)
+			{
+				x = m_Mount.x;
+				y = m_Mount.y - m_Mount.sprite_height/2;
+			}
 			
 			if(other.m_Input_AxisR_Active)
 			{
