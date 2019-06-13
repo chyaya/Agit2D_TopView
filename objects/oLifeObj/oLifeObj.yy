@@ -86,8 +86,22 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "20",
-            "varName": "m_Damage",
+            "value": "3",
+            "varName": "m_CombatDamage",
+            "varType": 1
+        },
+        {
+            "id": "046ce2ae-f620-42c5-a6c7-bad362e0456a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "3",
+            "varName": "m_GatheringDamage",
             "varType": 1
         },
         {
@@ -117,6 +131,20 @@
             "value": "0",
             "varName": "m_Defence",
             "varType": 1
+        },
+        {
+            "id": "883f6bf6-8639-4b9c-b6f3-4b9030faadc4",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "m_IsResource",
+            "varType": 3
         }
     ],
     "solid": false,

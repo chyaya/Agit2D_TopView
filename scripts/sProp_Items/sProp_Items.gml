@@ -171,12 +171,3 @@ inv_create_item(Item.BipedWalkingParts, sprBipedWalkingParts, "이족보행부�
 inv_create_item(Item.InfiniteTrackParts, sprInfiniteTrackParts, "궤도부품", 200, "느리지만 안정적으로 움직일 수 있는 하단 파츠. ", noone, noone, noone, 0);
 inv_create_item(Item.FourleggedwalkingParts, sprFourleggedwalkingParts, "사족보행부품", 100, "충격에는 강하지만, 지형에 영향을 많이 받는다.", noone, noone, noone, 0);
 
-
-
-
-
-
-
-
-
-

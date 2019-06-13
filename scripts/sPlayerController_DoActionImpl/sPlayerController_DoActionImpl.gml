@@ -36,9 +36,9 @@ case Action.Deploy:
 		_y = y + m_TargetOffsetY;
 	}
 	
-	if(sPlayerController_CanConstruct_Depoly(m_SelectedConstructIndex, _x, _y))
+	if(sPlayerController_CanConstruct_Depoly(m_SelectedConstructId, _x, _y))
 	{
-		sPlayerController_DeployBuilding(_x, _y, m_SelectedConstructIndex);
+		sPlayerController_DeployBuilding(_x, _y, m_SelectedConstructId);
 		m_Mode = Mode.Move;	
 	}
 	else
@@ -56,13 +56,7 @@ case Action.SelectCraft_One:
 case Action.SelectCraft_HalfOfAll:
 case Action.SelectCraft_All:
 
-	var craftId = 0;
-	
-	with(m_InteractionObject)
-	{
-		craftId = m_CraftList[m_SelectedCraftIndex];
-	}
-
+	var craftId = m_InteractionObject.m_SelectedCraftId;
 	var maxCount = 1;
 
 	if(action != Action.SelectCraft_One)

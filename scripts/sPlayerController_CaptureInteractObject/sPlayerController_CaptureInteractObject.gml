@@ -14,6 +14,8 @@ for (var i = 0; i < interactionObjectNum; ++i;)
 	if(object_is_ancestor(curObj.object_index, oBuilding) == false)
 		continue;	
 		
+	if(curObj.m_CraftingCount > 0)
+		continue;
 		
 	newMouseOverObject = curObj;
 }

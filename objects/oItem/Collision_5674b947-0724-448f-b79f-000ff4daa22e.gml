@@ -7,19 +7,13 @@ with(other)
 	{
 		var itemName = global.Item_Text[other.m_ItemId];
 		
-		sUtil_CreateNotify(
-			x + irandom_range(-20, 20),
-			y + irandom_range(-20, 20),
-			itemName, 0, -30);
+		sUtil_CreateNotify(x, y, itemName, 0, -30);
 		
 		instance_destroy(other);
 	}
 	else
 	{
-		sUtil_CreateNotify(
-			x + irandom_range(-20, 20),
-			y + irandom_range(-20, 20),
-			"Inventory is full", 0, -30);
+		sUtil_CreateNotify(x, y, "Inventory is full", 0, -30);
 	}
 }
 

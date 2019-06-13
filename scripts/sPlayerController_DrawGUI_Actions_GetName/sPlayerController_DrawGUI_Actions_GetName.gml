@@ -7,12 +7,7 @@ if(action != Action.SelectCraft_All
 }
 else
 {
-	var craftId;
-	with(m_InteractionObject)
-	{
-		craftId = m_CraftList[m_SelectedCraftIndex];
-	}
-	
+	var craftId = m_InteractionObject.m_SelectedCraftId;
 	var maxCount = sPlayerController_Craft_MaxCraftCount(craftId);
 	
 	if(maxCount > 0)

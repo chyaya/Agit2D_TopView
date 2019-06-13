@@ -5,15 +5,22 @@ m_Actions[ACTION_Y] = Action.NONE;
 if(m_Input_AxisL_Step)
 {
 	if(m_Input_AxisL_Up || m_Input_DPad_Up)
-		--m_SelectedConstructIndex;
+	{
+		var prevId = sPlayerController_GetPrevVisibleConstructIndex(m_SelectedConstructId);
+		
+		if(prevId > 0)
+			m_SelectedConstructId = prevId;
+	}
 	else if(m_Input_AxisL_Down || m_Input_DPad_Down)
-		++m_SelectedConstructIndex;
+	{
+		var nextId = sPlayerController_GetNextVisibleConstructIndex(m_SelectedConstructId);
+		
+		if(nextId > 0)
+			m_SelectedConstructId = nextId;
+	}
 }
 
-m_SelectedConstructIndex = clamp(m_SelectedConstructIndex, 1, array_length_1d(global.Construct_Text) - 1);
-
-
-if(sPlayerController_CanConstruct_MaterialEnough(m_SelectedConstructIndex))
+if(sPlayerController_CanConstruct_MaterialEnough(m_SelectedConstructId))
 {
 	m_Actions[ACTION_A] = Action.SelectDeploy;
 }

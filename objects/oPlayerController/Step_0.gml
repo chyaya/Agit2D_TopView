@@ -185,12 +185,20 @@ case Mode.UseBuilding:
 		if(other.m_Input_AxisL_Step)
 		{
 			if(other.m_Input_AxisL_Up || other.m_Input_DPad_Up)
-				--m_SelectedCraftIndex;
+			{
+				var prevId = sBuilding_GetPrevVisibleCraftIndex(other.m_CraftVisible, m_SelectedCraftId);
+		
+				if(prevId > 0)
+					m_SelectedCraftId = prevId;
+			}
 			else if(other.m_Input_AxisL_Down || other.m_Input_DPad_Down)
-				++m_SelectedCraftIndex;
+			{
+				var nextId = sBuilding_GetNextVisibleCraftIndex(other.m_CraftVisible, m_SelectedCraftId);
+		
+				if(nextId > 0)
+					m_SelectedCraftId = nextId;
+			}
 		}
-
-		m_SelectedCraftIndex = clamp(m_SelectedCraftIndex, 0, array_length_1d(m_CraftList) - 1);
 	}
 	
 	

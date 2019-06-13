@@ -56,3 +56,15 @@ m_ActionName = [
 	"모두 제작",
 ];
 
+
+m_CraftVisible = [];
+for(var i = 1; i < array_length_1d(global.Craft_Result); ++i)
+{
+	m_CraftVisible[i] = global.Craft_Require_Building[i] == noone ? 1 : 0;	
+}
+	
+m_ConstructVisible = [];
+for(var i = 1; i < array_length_1d(global.Construct_Result); ++i)
+{
+	m_ConstructVisible[i] = global.Construct_Require_Building[i] == noone ? 1 : 0;	
+}

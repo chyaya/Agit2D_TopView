@@ -6,7 +6,7 @@ draw_set_valign(fa_top);
 draw_set_font(fontGUINormal);
 
 var text_x = 10, text_y = 10;
-var line_h = 40, offset = 250;
+var line_h = 40, offset = 280;
 
 if(m_PlayerObject != noone && m_PlayerObject.object_index != oGhost)
 {
@@ -17,9 +17,14 @@ if(m_PlayerObject != noone && m_PlayerObject.object_index != oGhost)
 		string(m_PlayerObject.m_CurHealth) + "/" + string(m_PlayerObject.m_MaxHealth));
 	text_y += line_h;
 	
-	draw_text(text_x, text_y, "Damage:");
+	draw_text(text_x, text_y, "Combat Damage:");
 	draw_text(text_x + offset, text_y,
-		string(m_PlayerObject.m_Damage));
+		string(m_PlayerObject.m_CombatDamage));
+	text_y += line_h;
+	
+	draw_text(text_x, text_y, "Gathering Damage:");
+	draw_text(text_x + offset, text_y,
+		string(m_PlayerObject.m_GatheringDamage));
 	text_y += line_h;
 	
 	draw_text(text_x, text_y, "Speed:");
