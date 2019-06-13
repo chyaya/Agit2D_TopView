@@ -9,5 +9,5 @@ sGameLogic_Respawn(oGrass2, 5, 50);
 
 sGameLogic_Respawn(oChicken, 2, 5);
 sGameLogic_Respawn(oCow, 2, 5);
-sGameLogic_Respawn(oRobot, 2, 5);
-sGameLogic_Respawn(oRobot2, 1, 5);
+sGameLogic_Respawn(oRobot, 2, 15);
+sGameLogic_Respawn(oRobot2, 1, 10);
