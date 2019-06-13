@@ -22,12 +22,11 @@ while (ii <= total_slots) and itemCount > 0
 	}
 	
 	if(inv[|ii] == itemId && inv_count[|ii] < global.Item_MaxCount[itemId])
-	{
-		//if(global.Item_OnAddOrRemove[inv[|ii]] != noone)
-		//	script_execute(global.Item_OnAddOrRemove[inv[|ii]], self, 1);
-			
-		inv_count[|ii] += 1;
-		itemCount -= 1;
+	{	
+		var remain = min(global.Item_MaxCount[itemId] - inv_count[|ii], itemCount);
+		
+		inv_count[|ii] += remain;
+		itemCount -= remain;
 	}
 	
     ii++

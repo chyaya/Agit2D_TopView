@@ -9,6 +9,9 @@ if(m_GameOver == false)
 	}
 }
 */
+
+
+
 m_Actions[ACTION_A] = Action.NONE;
 m_Actions[ACTION_B] = Action.NONE;
 m_Actions[ACTION_X] = Action.NONE;
@@ -36,8 +39,11 @@ m_Input_AxisR_Active = false;
 m_Input_AxisR_Angle = 0;
 
 
-sPlayerController_CaptureKeyboard();
-sPlayerController_CaptureGamepad();
+if(obj_console.my_console[?"active"] == false)
+{
+	sPlayerController_CaptureKeyboard();
+	sPlayerController_CaptureGamepad();
+}
 
 m_Input_AxisL_Active = m_Input_AxisL_Up || m_Input_AxisL_Down || m_Input_AxisL_Left || m_Input_AxisL_Right
 						|| m_Input_DPad_Up || m_Input_DPad_Down || m_Input_DPad_Left || m_Input_DPad_Right;
