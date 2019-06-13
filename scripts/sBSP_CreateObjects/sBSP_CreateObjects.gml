@@ -44,7 +44,7 @@ var xx = r[pos, 0] * ts;                                        // The x positio
 var yy = r[pos, 1] * ts;                                        // The y position of the room to spawn in
 var ww = (r[pos, 2] div 2) * ts;                                // Now get the half width of the room
 var hh = (r[pos, 3] div 2) * ts;                                // Now get the half height of the room
-instance_create_layer(xx + ww - 8, yy + hh - 8, argument[5], obj_DEMO_Player);     // Create the player!
+//instance_create_layer(xx + ww - 8, yy + hh - 8, argument[5], obj_DEMO_Player);     // Create the player!
 
 // The following adds the walls, doors and floor tiles for the room using loops.
 // As you can see we have two sprites for horizontal and vertical doors (you can 
@@ -60,6 +60,7 @@ instance_create_layer(xx + ww - 8, yy + hh - 8, argument[5], obj_DEMO_Player);  
 // and uncomment the tile code to use (and make sure you have a layer for tiles in 
 // the room!).
 
+/*
 var _l = layer_get_id("Tiles");
 //var _m = layer_tilemap_get_id(_l); // Uncomment for tiles!
 
@@ -150,3 +151,4 @@ sBSP_PopulateArea(obj_DEMO_Boss, 1, ran, ts, true, argument[6]);
 sBSP_PopulateRooms(obj_DEMO_Enemy, 200, cc, pos, ts, false, true, argument[6]);
 
 
+*/
