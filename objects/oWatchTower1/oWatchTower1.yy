@@ -1,14 +1,14 @@
 {
-    "id": "ec788a92-6258-4acf-8717-8b0cc8bade79",
+    "id": "327dcf93-2ca8-4ecb-9997-60cc3f2c0889",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oCastleDoor",
+    "name": "oWatchTower1",
     "eventList": [
         
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "8cd01493-a5ed-4ae6-a55b-5b1462feed00",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "0f710e46-49f5-4f49-9d22-11e470354fa5",
+    "spriteId": "c30222a1-b7dc-43bb-962b-e8624a414c0d",
     "visible": true
 }

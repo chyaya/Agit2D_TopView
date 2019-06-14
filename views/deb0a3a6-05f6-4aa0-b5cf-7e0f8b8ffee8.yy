@@ -14,7 +14,9 @@
         "c9a7d91f-378a-4c2c-9b73-bbb15a259e48",
         "ec788a92-6258-4acf-8717-8b0cc8bade79",
         "58cb7df8-ec29-418e-817d-40af4c87bc2d",
-        "3ce46e14-5ebd-4d6f-a414-8c54111383e6"
+        "3ce46e14-5ebd-4d6f-a414-8c54111383e6",
+        "327dcf93-2ca8-4ecb-9997-60cc3f2c0889",
+        "f7656203-5d72-41c4-94c9-194bd5328a47"
     ],
     "filterType": "GMObject",
     "folderName": "Building",

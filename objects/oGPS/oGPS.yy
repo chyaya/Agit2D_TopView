@@ -1,8 +1,8 @@
 {
-    "id": "ec788a92-6258-4acf-8717-8b0cc8bade79",
+    "id": "327dcf93-2ca8-4ecb-9997-60cc3f2c0889",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oCastleDoor",
+    "name": "oGPS",
     "eventList": [
         
     ],
@@ -22,8 +22,23 @@
     "physicsShape": 1,
     "physicsShapePoints": null,
     "physicsStartAwake": true,
-    "properties": null,
+    "properties": [
+        {
+            "id": "a639bf52-3ee1-48ff-9a63-c25ff851ada1",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "True",
+            "varName": "m_BlockMove",
+            "varType": 3
+        }
+    ],
     "solid": false,
-    "spriteId": "0f710e46-49f5-4f49-9d22-11e470354fa5",
+    "spriteId": "7662a60f-0859-4330-99dd-5f9d7ecc44c1",
     "visible": true
 }

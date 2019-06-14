@@ -1103,6 +1103,14 @@
             }
         },
         {
+            "Key": "327dcf93-2ca8-4ecb-9997-60cc3f2c0889",
+            "Value": {
+                "id": "984b123c-b899-46bb-9989-db6ccfe0651e",
+                "resourcePath": "objects\\oGPSTransmitter\\oGPSTransmitter.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3293147f-5535-4501-bf5f-4817f19ab91e",
             "Value": {
                 "id": "b03c9dcc-27b5-4b55-9c6c-3809ac55bb16",
@@ -2348,6 +2356,14 @@
                 "id": "409df3c6-1593-4d8c-a592-8021237ac674",
                 "resourcePath": "scripts\\@object_get_depth\\object_get_depth.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7662a60f-0859-4330-99dd-5f9d7ecc44c1",
+            "Value": {
+                "id": "6e7e7fc7-98b0-40c1-8593-a52d00e2ff87",
+                "resourcePath": "sprites\\sprGPSTransmitter\\sprGPSTransmitter.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4892,6 +4908,14 @@
                 "id": "e978e0f3-a5e6-4c53-bec6-919736596e10",
                 "resourcePath": "scripts\\sItem_Armor_OnEquip\\sItem_Armor_OnEquip.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f7656203-5d72-41c4-94c9-194bd5328a47",
+            "Value": {
+                "id": "eb549c9a-5263-4b0b-b20d-ec7e6a75e7f9",
+                "resourcePath": "objects\\oTypeAHangar\\oTypeAHangar.yy",
+                "resourceType": "GMObject"
             }
         },
         {

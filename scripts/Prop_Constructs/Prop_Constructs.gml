@@ -15,7 +15,8 @@ enum Construct
 	CastleDoor,
 	DefenseTower,
 	WatchTower,
-	
+	GPSTransmitter,
+	TypeAHangar,
 	TestExosuit,
 	
 	MAX
@@ -34,7 +35,8 @@ Prop_AddConstruct(Construct.CastleWall, sprCastleWall, "성벽", oCastleWall , [
 Prop_AddConstruct(Construct.CastleDoor, sprCastleDoor, "성문", oCastleDoor, [Item.CastleDoor], [1], oBuildLap);
 Prop_AddConstruct(Construct.DefenseTower, sprDefenseTower, "방어타워", oDefenseTower, [Item.DefenseTower], [1], oBuildLap);
 Prop_AddConstruct(Construct.WatchTower, sprWatchTower, "감시타워", oWatchTower, [Item.WatchTower], [1], oBuildLap);
-//Prop_AddConstruct(constructId++, sprWorkbench, "TypeA 로봇 보관함", oTypeAHangar, [Item.TypeAHangar], [1]);
+Prop_AddConstruct(Construct.GPSTransmitter,sprGPSTransmitter, "GPS 발신기", oGPSTransmitter, [Item.ElectricWire, Item.Semiconductor ], [1, 2], oRobotMaker);
+Prop_AddConstruct(Construct.TypeAHangar, sprTypeAHangar, "TypeA 로봇 보관함", oTypeAHangar, [Item.TypeAHangar], [1], oRobotMaker);
 Prop_AddConstruct(Construct.TestExosuit, sprExosuitIdle, "테스트 엑소슈트", oExosuit, [Item.Aluminium], [1], noone);
 
 
