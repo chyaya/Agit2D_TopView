@@ -1,10 +1,10 @@
-globalvar elevation_grid;
-globalvar heat_grid;
-globalvar wind_grid;
-globalvar land_grid;
-globalvar world_size;
-globalvar land;
-globalvar zoom;
+//globalvar elevation_grid;
+//globalvar heat_grid;
+//globalvar wind_grid;
+//globalvar land_grid;
+//globalvar world_size;
+//globalvar land;
+//globalvar zoom;
 
 zoom = 4;
 

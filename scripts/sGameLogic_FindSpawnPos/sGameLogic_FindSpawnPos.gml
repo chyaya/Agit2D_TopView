@@ -3,7 +3,7 @@ var w = room_width / oPathFinder.cellSize;
 var h = room_height / oPathFinder.cellSize;
 var cellSize = oPathFinder.cellSize;
 
-repeat(repeatCount)
+for(var i = 0; i < repeatCount || repeatCount == 0; ++i)
 {
 	var _x = irandom_range(0, w-1);
 	var _y = irandom_range(0, h-1);

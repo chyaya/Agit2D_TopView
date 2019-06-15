@@ -21,8 +21,8 @@ if console_submit(my_console) {
     * If user enters into the console:
     * show_message "message"
     *****************************/
-    if console_cmd(my_console,"item") {
-    
+    if console_cmd(my_console,"item")
+	{
         /*****************************
         * Get the message value to display
         *****************************/
@@ -31,6 +31,15 @@ if console_submit(my_console) {
         	
 		sInven_AddItem(oPlayerController.m_PlayerObject.m_Inven_Bag, itemId, itemCount);
     }
+	else if console_cmd(my_console, "save")
+	{
+		var json = SaveInstances();
+		var file = file_text_open_write(SAVE_FILENAME);
+		file_text_write_string(file, json);
+		file_text_close(file);
+
+		url_open("save.json");	
+	}
 
 }
 

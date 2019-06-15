@@ -79,17 +79,20 @@ case Mode.Move:
 		}
 		
 		
-		if(m_PlayerObject.m_Mount == noone)
+		if(m_PlayerObject != noone)
 		{
-			if(m_InteractionObject != noone
-				&& object_is_ancestor(m_InteractionObject.object_index, oMount))
+			if(m_PlayerObject.m_Mount == noone)
 			{
-				m_Actions[ACTION_Y] = Action.Mount;
+				if(m_InteractionObject != noone
+					&& object_is_ancestor(m_InteractionObject.object_index, oMount))
+				{
+					m_Actions[ACTION_Y] = Action.Mount;
+				}
 			}
-		}
-		else
-		{
-			m_Actions[ACTION_Y] = Action.Unmount;
+			else
+			{
+				m_Actions[ACTION_Y] = Action.Unmount;
+			}
 		}
 	}
 	else

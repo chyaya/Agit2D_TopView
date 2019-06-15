@@ -1,29 +1,5 @@
-//globalvar elevation_grid;
-//globalvar heat_grid;
-//globalvar moisture_grid;
-//globalvar land_grid;
-//globalvar wind_grid;
-//globalvar world_size;
-//globalvar sealevel;
-//globalvar land;
-//globalvar zoom;
-
-//For drawing
-zoom = 4;
-
-assert_equal(room_height, room_width);
-
-//Size of the world (i.e grid size)
-world_size = room_height / 16;
-sealevel = 0.5
 
 
-//Drawing objects
-instance_create(0,100+0,obj_draw_elevation)
-instance_create((1+world_size)*zoom,100+0,obj_draw_heatmap)
-instance_create(0,100+(1+world_size)*zoom,obj_draw_moisture)
-instance_create((1+world_size)*zoom,100+(1+world_size)*zoom,obj_draw_texture)
-instance_create((1+world_size)*2*zoom,100,obj_draw_windspeed)
 
 //========Elevation=========
 elevation_grid = ds_grid_create(world_size,world_size)
@@ -86,58 +62,6 @@ for (ix = 0; ix<world_size; ix++)
         ds_grid_set(moisture_grid,ix,iy, moisture_filtered[ix,iy])
 }
 
-//=====Assign land types============
-land[0,0] = 125; // Sea   HSV
-land[0,1] = 210; // Sea
-land[0,2] = 180; // Sea
-land[0,3] = "Shallows"
-
-land[1,0] = 30; // Sand
-land[1,1] = 60; // Sand
-land[1,2] = 150; // Sand
-land[1,3] = "Sand"
-
-land[2,0] = 90; // Forest
-land[2,1] = 160; // Forest
-land[2,2] = 120; // Forest
-land[2,3] = "Forest"
-
-land[3,0] = 50; // Jungle
-land[3,1] = 110; // Jungle
-land[3,2] = 120; // Jungle
-land[3,3] = "Jungle"
-
-land[4,0] = 160; // Mountain
-land[4,1] = 0; // Mountain
-land[4,2] = 160; // Mountain
-land[4,3] = "High mountain"
-
-land[5,0] = 240; // Mountain tops
-land[5,1] = 0; // Mountain tops 
-land[5,2] = 240; // Mountain tops
-land[5,3] = "Mountain top"
-
-land[6,0] = 125; //  Sea   RGB
-land[6,1] = 170; //  Sea
-land[6,2] = 145; //  Sea
-land[6,3] = "Sea"
-
-land[7,0] = 35; // Tundra   RGB
-land[7,1] = 50; // Tundra
-land[7,2] = 120; // Tundra
-land[7,3] = "Tundra"
-
-land[8,0] = 140; // Mid Mountain
-land[8,1] = 0; // Mountain
-land[8,2] = 140; // Mountain
-land[8,3] = "Rocky"
-
-land[9,0] = 140; // deep Sea   RGB
-land[9,1] = 160; // deep Sea
-land[9,2] = 120; // deep Sea
-land[9,3] = "Deep sea"
-
-
 land_grid = ds_grid_create(world_size,world_size)
 
 for (ix = 0; ix<world_size; ix++)  //This is where creativity is needed. Decide on land type based on attriburtes
@@ -175,36 +99,4 @@ for (ix = 0; ix<world_size; ix++)  //This is where creativity is needed. Decide 
         else
             ds_grid_set(land_grid,ix,iy,5) //Mountain top
 }
-
-
-
-// Set Tile
-
-//Shading
-smoother_elevation = average_filter(elevation_grid,4);
-
-var s_grid = ds_grid_create(world_size,world_size)
-for (ix = 0; ix<world_size; ix++)
-    for (iy = 0; iy<world_size; iy++)
-        ds_grid_set(s_grid,ix,iy,smoother_elevation[ix,iy])
-    
-
-hx = gradient_x(s_grid);
-hy = gradient_y(s_grid);
-ds_grid_destroy(s_grid)
-//
-
-for (ix = 0; ix<world_size; ix++){
-    for (iy = 0; iy<world_size; iy++){
-    
-        shading = 0.4/(0.4+sqrt(hx[ix,iy]*hx[ix,iy]+hy[ix,iy]*hy[ix,iy]))
-    
-        draw_set_color(make_color_hsv(land[ds_grid_get(land_grid,ix,iy),0],land[ds_grid_get(land_grid,ix,iy),1],shading*land[ds_grid_get(land_grid,ix,iy),2]))
-        draw_rectangle(x+ix*zoom,y+iy*zoom,x+ix*zoom+zoom,y+iy*zoom+zoom,0)
-    }
-}
-
-draw_set_color(c_white)
-if mouse_x>x && mouse_x<x+world_size*zoom && mouse_y>y && mouse_y<y+world_size*zoom
-    draw_text(0,0,string_hash_to_newline("Land type: "+string(land[ds_grid_get(land_grid,(mouse_x-x)/zoom,(mouse_y-y)/zoom),3])+"#Elevation: "+string(ds_grid_get(elevation_grid,(mouse_x-x)/zoom,(mouse_y-y)/zoom)) + "#Temperature: "+string(ds_grid_get(heat_grid,(mouse_x-x)/zoom,(mouse_y-y)/zoom))+ "#Moisture: "+string(ds_grid_get(moisture_grid,(mouse_x-x)/zoom,(mouse_y-y)/zoom))))
 
