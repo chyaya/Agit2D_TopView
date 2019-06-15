@@ -15,13 +15,7 @@
         "0b3b1509-db4b-4dd3-aa88-3100ba3ac63a",
         "971d10cc-fc50-4ba7-885a-a4d958729e0a",
         "9f5f10ac-14d1-43e8-bb21-3ace1b03528c",
-        "d0be277a-c399-4a51-83cb-473cc5c2f7b4",
-        "1eedbc93-9bdd-4be0-a2f3-1aec459c3902",
-        "5bb6f043-3cfc-4a92-9089-f432038521ea",
-        "1b4508a7-907c-4cf8-a66d-e732fef3ecec",
         "0cdbf4ef-e4c1-4e3d-bc76-1b895264a542",
-        "b53621d9-3e75-43ae-95d8-e1a42a0b6b3b",
-        "ad9d870e-288a-422b-a858-011730a8bd6f",
         "2b5c1a23-aafc-4733-96fc-aa8e61e91e56",
         "63072d30-f097-4fd8-a193-26ad5fbf1555",
         "06ce29d2-2d73-4085-afd4-caf9efcda6c9",
@@ -69,7 +63,8 @@
         "32f0964b-a0a3-489d-9311-6437a2ebcc36",
         "e32dc978-29d8-4e5f-956d-008206975ba8",
         "aaf387fa-856f-4a5d-a79a-f6ef29b117c7",
-        "b644df06-e484-4404-bee5-24d1bbe2cc6d"
+        "b644df06-e484-4404-bee5-24d1bbe2cc6d",
+        "7662a60f-0859-4330-99dd-5f9d7ecc44c1"
     ],
     "filterType": "GMSprite",
     "folderName": "item",
