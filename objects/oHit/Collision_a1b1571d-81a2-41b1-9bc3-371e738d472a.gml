@@ -23,7 +23,7 @@ var damage = other.m_IsResource ? m_GatheringDamage : m_CombatDamage;
 
 with(other)
 {
-	sPawn_AddHealth(damage);	
+	sPawn_AddHealth(-damage);	
 }
 
 m_Hit = true;

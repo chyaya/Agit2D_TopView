@@ -17,6 +17,11 @@ if(m_Phase == CLOSE)
 		
 		sGameLogic_ProcessADayImpl();
 		
+		with(oPlayerController.m_PlayerObject)
+		{
+			sPlayer_AddSatiety(-5);
+		}
+		
 		with(oPlayerController)
 		{
 			//PlayerController_SetEnableInput(false);	

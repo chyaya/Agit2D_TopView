@@ -18,6 +18,9 @@ with(oPlayerController)
 		
 		m_GameOver = true;
 		m_Mode = Mode.Move;
+		
+		// 캐릭터가 죽을 경우 저장하면 안된다.
+		oWorldManager.m_DontSave = true;
 	}
 }
 

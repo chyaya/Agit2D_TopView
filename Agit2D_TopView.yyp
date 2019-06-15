@@ -2687,6 +2687,14 @@
             }
         },
         {
+            "Key": "82107fde-b07a-4474-b132-3138c683866d",
+            "Value": {
+                "id": "9dade663-3a7e-4ecb-805a-0e82a60b9793",
+                "resourcePath": "scripts\\sItem_Eat_Satiety_OnUse\\sItem_Eat_Satiety_OnUse.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "821179cd-90ec-400e-87ab-72e58d3cc1fa",
             "Value": {
                 "id": "e247de98-ae98-41ba-ac81-9bf0052fe1de",
@@ -4298,7 +4306,7 @@
             "Key": "cd2a4fb3-e2b4-4536-aaff-d0a8133a5d31",
             "Value": {
                 "id": "29c62fd1-4678-42a5-83cf-9e19251b4344",
-                "resourcePath": "scripts\\sItem_Portion_OnUse\\sItem_Portion_OnUse.yy",
+                "resourcePath": "scripts\\sItem_Eat_Health_OnUse\\sItem_Eat_Health_OnUse.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -5297,6 +5305,7 @@
     ],
     "script_order": [
         "144c13be-3356-495d-ad4a-b653e977dbcc",
+        "3ed500d8-bd18-4dad-889f-193c4e1fbefa",
         "6f9d1225-dcf6-4ffa-b3ea-46c675de6272",
         "c3cb09af-6e20-49f7-b574-c694f21f444f",
         "3a62173b-0118-4f07-be1d-b73a1422b82d",
@@ -5460,6 +5469,7 @@
         "613d3a7a-1735-45d8-af95-3ac6cabd04fb",
         "86b4f796-e994-472d-87db-a801fa25c32e",
         "cd2a4fb3-e2b4-4536-aaff-d0a8133a5d31",
+        "82107fde-b07a-4474-b132-3138c683866d",
         "005e729c-e9ff-4655-8487-51f6e892a79d",
         "bba2851b-a076-45e9-aa3c-601367dcebb0",
         "0caefb6d-a11a-44f0-a514-bb1437e6c84f",
@@ -5512,7 +5522,6 @@
         "02a3688a-c505-4d0e-bd67-6007136d2537",
         "ef62056a-12eb-4805-9786-eb1dc7309c13",
         "954c9cf9-6e50-4d54-8772-56ff999676a3",
-        "3ed500d8-bd18-4dad-889f-193c4e1fbefa",
         "d083dfe0-3343-4306-96b2-bb3529fc5719"
     ],
     "tutorial": ""

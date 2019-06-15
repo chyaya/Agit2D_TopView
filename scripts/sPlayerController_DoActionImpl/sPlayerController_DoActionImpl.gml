@@ -84,7 +84,13 @@ case Action.SelectCraft_All:
 		}
 		
 		m_Mode = Mode.Move;
+		
+		with(m_PlayerObject)
+		{
+			sPlayer_AddSatiety(-2);
+		}
 	}
+	
 	break;
 case Action.Mount:
 	m_PlayerObject.m_Mount = m_InteractionObject;
