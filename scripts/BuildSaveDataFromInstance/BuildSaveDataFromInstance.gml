@@ -45,18 +45,22 @@ for(var i = 0; i < array_length_1d(var_array); i++)
 		var w = ds_grid_width(value);
 		var h = ds_grid_height(value);
 		
-		var grid = [];
-	
-		for (var j = 0; j < h; ++j)
+		var array = [];
+
+		for (var yy = 0; yy < h; ++yy)
 		{	
-			for (var i = 0; i < w; ++i)
+			var d = [];
+			
+			for (var xx = 0; xx < w; ++xx)
 			{
-				var v = ds_grid_get(value, i, j);
-				grid[i + j*h] = v;
-			}	
+				var v = ds_grid_get(value, xx, yy);
+				d[xx] = v;
+			}
+			
+			array[yy] = d;
 		}
-		
-		var gridObj = tj_object("w", w, "h", h, "d", grid);
+			
+		var gridObj = tj_object("w", w, "h", h, "d", array);
 		tj_set(jsonObj, name, gridObj);
 	}
 	else

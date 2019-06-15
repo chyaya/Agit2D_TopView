@@ -13,17 +13,17 @@ global.g_SaveMeta[?oChicken] = ["x", "y"];
 global.g_SaveMeta[?oCow] = ["x", "y"];
 
 // Building
-global.g_SaveMeta[?oBonfire] = ["x", "y"];
-global.g_SaveMeta[?oWorkbench] = ["x", "y"];
-global.g_SaveMeta[?oBlastFurnace] = ["x", "y"];
-global.g_SaveMeta[?oBuildLap] = ["x", "y"];
-global.g_SaveMeta[?oTinkerShop] = ["x", "y"];
-global.g_SaveMeta[?oRobotMixer] = ["x", "y"];
-global.g_SaveMeta[?oRobotMaker] = ["x", "y"];
-global.g_SaveMeta[?oCastleWall] = ["x", "y"];
-global.g_SaveMeta[?oCastleDoor] = ["x", "y"];
-global.g_SaveMeta[?oDefenseTower] = ["x", "y"];
-global.g_SaveMeta[?oWatchTower] = ["x", "y"];
+global.g_SaveMeta[?oBonfire] = ["x", "y", "m_ConstructId"];
+global.g_SaveMeta[?oWorkbench] = ["x", "y", "m_ConstructId"];
+global.g_SaveMeta[?oBlastFurnace] = ["x", "y", "m_ConstructId"];
+global.g_SaveMeta[?oBuildLap] = ["x", "y", "m_ConstructId"];
+global.g_SaveMeta[?oTinkerShop] = ["x", "y", "m_ConstructId"];
+global.g_SaveMeta[?oRobotMixer] = ["x", "y", "m_ConstructId"];
+global.g_SaveMeta[?oRobotMaker] = ["x", "y", "m_ConstructId"];
+global.g_SaveMeta[?oCastleWall] = ["x", "y", "m_ConstructId"];
+global.g_SaveMeta[?oCastleDoor] = ["x", "y", "m_ConstructId"];
+global.g_SaveMeta[?oDefenseTower] = ["x", "y", "m_ConstructId"];
+global.g_SaveMeta[?oWatchTower] = ["x", "y", "m_ConstructId"];
 
 // Resource
 global.g_SaveMeta[?oTree] = ["x", "y"];

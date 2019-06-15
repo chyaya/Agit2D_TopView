@@ -16,8 +16,30 @@ with(instance)
 		var name = var_array[i];
 		var value = tj_get(jsonObj, name);
 		
+		if(ord(name) == ord("#"))
+		{					
+			var w = tj_get(value, "w");
+			var h = tj_get(value, "h");
+			var d = tj_get(value, "d");
+			var grid = ds_grid_create(w, h);
+		
+			for (var yy = 0; yy < h; ++yy)
+			{	
+				var line = d[yy];
 
-		variable_instance_set(self, name, value);
+				for (var xx = 0; xx < w; ++xx)
+				{
+					ds_grid_set(grid, xx, yy, line[xx]);
+				}
+			}
+		
+			var name2 = string_copy(name, 2, string_length(name) - 1);
+			variable_instance_set(self, name2, grid);
+		}
+		else
+		{
+			variable_instance_set(self, name, value);
+		}
 	}
 
 	instance_change(object, true);
