@@ -5,7 +5,7 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_font(fontGUINormal);
 
-var text_x = 10, text_y = 10;
+var text_x = 50, text_y = 10;
 var line_h = 40, offset = 280;
 
 if(m_PlayerObject != noone && m_PlayerObject.object_index != oGhost)
@@ -15,6 +15,11 @@ if(m_PlayerObject != noone && m_PlayerObject.object_index != oGhost)
 	draw_text(text_x, text_y, "Health:");
 	draw_text(text_x + offset, text_y,
 		string(m_PlayerObject.m_CurHealth) + "/" + string(m_PlayerObject.m_MaxHealth));
+	text_y += line_h;
+	
+	draw_text(text_x, text_y, "Satiety:");
+	draw_text(text_x + offset, text_y,
+		string(m_PlayerObject.m_CurSatiety) + "/" + string(m_PlayerObject.m_MaxSatiety));
 	text_y += line_h;
 	
 	draw_text(text_x, text_y, "Combat Damage:");

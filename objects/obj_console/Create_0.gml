@@ -32,6 +32,11 @@ console_preset(my_console);
 * list.
 *****************************/
 console_add(my_console,"item" + s + "<itemId>" + s + "<count>");
+console_add(my_console,"save");
+console_add(my_console,"exit");
+console_add(my_console,"quit");
+console_add(my_console,"reset");
+console_add(my_console,"show_all_construct");
 
 /* */
 /*  */

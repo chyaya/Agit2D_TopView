@@ -27,7 +27,7 @@ if console_submit(my_console) {
         * Get the message value to display
         *****************************/
         var itemId = floor(real(console_value(my_console,1)));
-		var itemCount = floor(real(console_value(my_console,2)));
+		var itemCount = max(1, floor(real(console_value(my_console,2))));
         
 		if(console_value_count(my_console) == 0)
 		{
@@ -58,6 +58,13 @@ if console_submit(my_console) {
 		
 		file_delete(SAVE_FILENAME);	
 		game_restart();
+	}
+	else if console_cmd(my_console, "show_all_construct")
+	{
+		for(var i = 1; i < array_length_1d(global.Construct_Require_Building); ++i)
+		{
+			oPlayerController.m_ConstructVisible[i] = true;
+		}
 	}
 
 }

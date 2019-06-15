@@ -2095,6 +2095,14 @@
             }
         },
         {
+            "Key": "603339dc-148b-48eb-ae54-540c16e32422",
+            "Value": {
+                "id": "5d9cdae3-3e7f-492d-b410-8e43c23901c8",
+                "resourcePath": "scripts\\sPlyaerController_DrawGUI_HUD_Stats\\sPlyaerController_DrawGUI_HUD_Stats.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "613d3a7a-1735-45d8-af95-3ac6cabd04fb",
             "Value": {
                 "id": "ea723e42-43a1-46bd-892b-9690dea06ded",
@@ -5316,6 +5324,7 @@
         "5c579908-a355-4531-b33d-f3b8bb497f1f",
         "d81c55c8-9588-433a-a7e3-ffa57fefd929",
         "9ea9b941-6fae-44b8-bfaf-8b9741c0a157",
+        "603339dc-148b-48eb-ae54-540c16e32422",
         "10d879a3-19c8-4f0c-a15b-210b99224c5a",
         "47d71769-9146-4cf7-a9d9-07d8bda30a3b",
         "c16fb558-df62-4083-97a3-fd73236afdb9",

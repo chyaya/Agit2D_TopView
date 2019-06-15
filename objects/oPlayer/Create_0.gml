@@ -42,3 +42,6 @@ for(var i = 0; i < Equip.MAX; ++i)
 m_QuickSlotMap = noone;
 m_SelectedQuickSlotItemId = 0;
 m_LastQuickSlotItemId = 0;
+
+m_MaxSatiety = 100;
+m_CurSatiety = m_MaxSatiety;

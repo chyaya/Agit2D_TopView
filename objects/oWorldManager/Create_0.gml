@@ -78,7 +78,8 @@ with(oTerrain)
 		
 			tilemap_set(_m, brush, ix, iy); // Uncomment for tiles!
 			
-			aStar_set_blocked(ix, iy, Tile_Block[t]);
+			if(false == aStar_get_blocked(ix, iy))
+				aStar_set_blocked(ix, iy, Tile_Block[t]);
 	    }
 	}
 }
