@@ -2591,6 +2591,14 @@
             }
         },
         {
+            "Key": "7da00271-3d44-46fe-84da-dd70008ea351",
+            "Value": {
+                "id": "3bba6343-15fe-4c77-997a-a40ba621ea3f",
+                "resourcePath": "scripts\\sProp_SaveItemCodeFile\\sProp_SaveItemCodeFile.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7dcb21ee-ce0d-49e7-8a60-011553b19268",
             "Value": {
                 "id": "a19df3a9-8035-46c8-a583-a22e57245a8e",
@@ -5388,6 +5396,7 @@
         "0a189db4-4811-41c6-82ac-4fc041668cd0",
         "6e4bd5aa-8939-4330-8445-5c2217ebf9e7",
         "00a63f12-78d3-4c5b-8ab9-d3c57ce28b31",
+        "7da00271-3d44-46fe-84da-dd70008ea351",
         "6a172440-bb00-40be-a1d4-f8d3419fa34a",
         "57bbdef5-bbd9-4d1c-af67-d4a10d235dad",
         "f8d56df8-0736-48dc-93a3-510613b6fe77",

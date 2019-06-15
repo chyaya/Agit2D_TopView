@@ -28,8 +28,16 @@ if console_submit(my_console) {
         *****************************/
         var itemId = floor(real(console_value(my_console,1)));
 		var itemCount = floor(real(console_value(my_console,2)));
-        	
-		sInven_AddItem(oPlayerController.m_PlayerObject.m_Inven_Bag, itemId, itemCount);
+        
+		if(console_value_count(my_console) == 0)
+		{
+			sProp_SaveItemCodeFile();
+			url_open(ITEM_FILENAME);
+		}
+		else
+		{
+			sInven_AddItem(oPlayerController.m_PlayerObject.m_Inven_Bag, itemId, itemCount);
+		}
     }
 	else if console_cmd(my_console, "save")
 	{
@@ -38,7 +46,18 @@ if console_submit(my_console) {
 		file_text_write_string(file, json);
 		file_text_close(file);
 
-		url_open("save.json");	
+		//url_open(SAVE_FILENAME);	
+	}
+	else if console_cmd(my_console, "exit") || console_cmd(my_console, "quit")
+	{
+		game_end();
+	}
+	else if console_cmd(my_console, "reset")
+	{
+		oWorldManager.m_DontSave = true;
+		
+		file_delete(SAVE_FILENAME);	
+		game_restart();
 	}
 
 }

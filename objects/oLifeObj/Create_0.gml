@@ -17,3 +17,6 @@ if(m_CurHealth == 0)
 m_Sound_Idle = ds_list_create();
 m_Sound_Hit = ds_list_create();
 m_Sound_Dead = ds_list_create();
+
+if(m_BlockMove)
+	aStar_set_blocked(x / aStar_get_cell_size(), y / aStar_get_cell_size(), true);
