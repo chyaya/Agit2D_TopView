@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "0157785b-fc48-49be-b9a4-ff17cd701f4d",
+            "Value": {
+                "id": "a02d92ec-29df-40d3-ae05-d1bb7b6ac9de",
+                "resourcePath": "views\\0157785b-fc48-49be-b9a4-ff17cd701f4d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "016989c8-6504-42a2-a8b4-a6b9b03a7c9d",
             "Value": {
                 "id": "023816ba-cfdb-452e-90fd-1cc7d3e05eff",
@@ -2727,6 +2735,14 @@
             }
         },
         {
+            "Key": "84840c77-e64f-46ad-bb60-27804da90f05",
+            "Value": {
+                "id": "e2b43d37-0ef0-4ce4-b957-ab9da9265387",
+                "resourcePath": "scripts\\sPawn_AddHealth\\sPawn_AddHealth.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "852caa57-1358-4bd9-8127-aaf279ec1bb8",
             "Value": {
                 "id": "261ad088-5955-4f39-8ce9-95e6ab822ecb",
@@ -4351,6 +4367,14 @@
             }
         },
         {
+            "Key": "d083dfe0-3343-4306-96b2-bb3529fc5719",
+            "Value": {
+                "id": "ba177a67-f39d-441d-8458-387ed7e35fee",
+                "resourcePath": "scripts\\sPlayer_AddSatiety\\sPlayer_AddSatiety.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "d0be277a-c399-4a51-83cb-473cc5c2f7b4",
             "Value": {
                 "id": "342cb541-cd6e-47e3-a3b4-b80eb875009e",
@@ -5362,6 +5386,7 @@
         "94111e66-f9b3-41f4-b633-62b80b3f4b2e",
         "4b48257f-5472-4a69-94a8-4be7b641313b",
         "9e30a3ac-1ef2-4421-af11-b1e756c2f831",
+        "84840c77-e64f-46ad-bb60-27804da90f05",
         "d685cfb4-839f-4f47-9f4f-3cc8e0307b9b",
         "57255833-0881-4bfd-a44d-ddc799007a99",
         "bc2ce4bb-16f5-4bc0-a8e7-6095624d5237",
@@ -5487,7 +5512,8 @@
         "02a3688a-c505-4d0e-bd67-6007136d2537",
         "ef62056a-12eb-4805-9786-eb1dc7309c13",
         "954c9cf9-6e50-4d54-8772-56ff999676a3",
-        "3ed500d8-bd18-4dad-889f-193c4e1fbefa"
+        "3ed500d8-bd18-4dad-889f-193c4e1fbefa",
+        "d083dfe0-3343-4306-96b2-bb3529fc5719"
     ],
     "tutorial": ""
 }

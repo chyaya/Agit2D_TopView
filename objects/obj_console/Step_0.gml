@@ -66,7 +66,24 @@ if console_submit(my_console) {
 			oPlayerController.m_ConstructVisible[i] = true;
 		}
 	}
-
+	else if console_cmd(my_console, "add_health")
+	{
+		var value = floor(real(console_value(my_console, 1)));
+		
+		with(oPlayerController.m_PlayerObject)
+		{
+			sPawn_AddHealth(value);
+		}
+	}
+	else if console_cmd(my_console, "add_satiety")
+	{
+		var value = floor(real(console_value(my_console, 1)));
+		
+		with(oPlayerController.m_PlayerObject)
+		{
+			sPlayer_AddSatiety(value);
+		}
+	}
 }
 
 /* */

@@ -51,8 +51,15 @@ if(m_PlayerObject != noone)
 
 	draw_set_colour($51A600);
 	draw_rectangle(text_x, text_y, text_x + barW*satietyRate, text_y + barH, false);
+
+	var satietyTextColor = c_white;
+
+	if(m_PlayerObject.m_CurSatiety <= 0)
+	{
+		satietyTextColor = current_second % 2 ? c_white : c_red;
+	}
 	
-	draw_set_colour(c_white);
+	draw_set_colour(satietyTextColor);
 	draw_text(text_x, text_y,
 		string(m_PlayerObject.m_CurSatiety) + "/" + string(m_PlayerObject.m_MaxSatiety));
 	text_y += line_h;

@@ -21,8 +21,11 @@ if(other.m_CurHealth <= 0)
 	
 var damage = other.m_IsResource ? m_GatheringDamage : m_CombatDamage;
 
-other.m_CurHealth = other.m_CurHealth - damage;
-other.m_CurHealth = clamp(other.m_CurHealth, 0, other.m_MaxHealth);
+with(other)
+{
+	sPawn_AddHealth(damage);	
+}
+
 m_Hit = true;
 
 sUtil_CreateNotify(other.x, other.y, string(damage), 0, -30, 5, 0);

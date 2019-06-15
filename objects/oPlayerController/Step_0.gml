@@ -250,7 +250,7 @@ if(global.UseFOW)
 
 if(other.m_Input_Btn_Start)
 {
-	game_restart();
+	//game_restart();
 }
 		
 if(other.m_Input_Btn_Select)
