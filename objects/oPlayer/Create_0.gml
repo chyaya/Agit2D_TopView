@@ -30,7 +30,7 @@ assert_equal(sInven_GetTotalSlotNum(m_Inven_Equip), Equip.MAX - 1);
 m_Inven_Bag = sInven_Create(10, 30, 5);
 assert_equal(sInven_GetTotalSlotNum(m_Inven_Bag), 30);
 
-sInven_ConnectInvens(m_Inven_Bag, m_Inven_Equip);
+sInven_ConnectInvens(m_Inven_Equip, m_Inven_Bag);
 
 m_LastEquipItemIds = [];
 

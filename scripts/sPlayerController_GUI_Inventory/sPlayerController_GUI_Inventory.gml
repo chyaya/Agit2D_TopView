@@ -26,9 +26,50 @@ if(m_Input_AxisL_Step)
 	}
 }
 
+var oldInven = m_CurrentInven;
+
+if(selectedSlotX < 0)
+{
+	if(m_CurrentInven[|Inven.LeftInven] == undefined)
+	{
+		selectedSlotX = 0;
+	}
+	else
+	{
+		m_CurrentInven = m_CurrentInven[|Inven.LeftInven];
+		selectedSlotX = m_CurrentInven[|Inven.SlotInRowNumber] - 1;
+	}
+}
+else if(selectedSlotX > slotInRow - 1)
+{
+	if(m_CurrentInven[|Inven.RightInven] == undefined)
+	{
+		selectedSlotX = slotInRow - 1;
+	}
+	else
+	{
+		m_CurrentInven = m_CurrentInven[|Inven.RightInven];
+		selectedSlotX = 0;
+	}
+}
+
+if(oldInven != m_CurrentInven)
+{
+	selectedSlotY = 0;
+}
+else
+{
+	var height = sInven_GetTotalSlotNum(m_CurrentInven)/slotInRow - 1;
 	
-selectedSlotX = clamp(selectedSlotX, 0, slotInRow - 1);
-selectedSlotY = clamp(selectedSlotY, 0, sInven_GetTotalSlotNum(m_CurrentInven)/slotInRow - 1);
+	if(selectedSlotY < 0)
+	{
+		selectedSlotY = height;
+	}
+	else if(selectedSlotY > height)
+	{
+		selectedSlotY = 0;	
+	}
+}
 		
 var itemId = Item.NONE;
 		
@@ -39,7 +80,7 @@ with(m_PlayerObject)
 	itemId = sInven_GetItemId(other.m_CurrentInven, other.m_CurrentInvenSlot);
 }
 
-if(global.Item_OnUse[itemId] != noone)
+if(other.m_CurrentInven == m_PlayerObject.m_Inven_Bag && global.Item_OnUse[itemId] != noone)
 {
 	other.m_Actions[ACTION_A] = Action.UseItem;
 }

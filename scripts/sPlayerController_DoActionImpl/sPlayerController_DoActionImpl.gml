@@ -13,7 +13,7 @@ case Action.Attack:
 case Action.UseItem:
 	with(m_PlayerObject)
 	{
-		sInven_UseItemByPos(m_CurrentInven, m_CurrentInvenSlot);
+		sInven_UseItemByPos(other.m_CurrentInven, other.m_CurrentInvenSlot);
 	}
 	break;
 case Action.OpenBag:

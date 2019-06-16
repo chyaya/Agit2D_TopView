@@ -47,4 +47,7 @@ inventory[|Inven.ItemCounts] = itemCounts;
 assert_equal(ds_list_size(inventory[|Inven.ItemIds]), inventory[|Inven.TotalSlotNumber] + 1);
 assert_equal(ds_list_size(inventory[|Inven.ItemCounts]), inventory[|Inven.TotalSlotNumber] + 1);
 
+inventory[|Inven.LeftInven] = undefined;
+inventory[|Inven.RightInven] = undefined;
+
 return inventory;
