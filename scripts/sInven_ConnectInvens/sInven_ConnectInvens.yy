@@ -1,8 +1,8 @@
 {
-    "id": "6fbc446f-aca4-4496-bf70-0fe305194e4c",
+    "id": "81372cec-848b-488a-88d6-12a76f06475e",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "sInven_SetSelectedPos",
+    "name": "sInven_ConnectInvens",
     "IsCompatibility": false,
     "IsDnD": false
 }

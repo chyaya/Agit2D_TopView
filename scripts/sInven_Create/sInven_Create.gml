@@ -4,17 +4,21 @@
 
 var usable_slots = argument0;
 var total_slots = argument1;
+var slot_in_row = argument2;
 
 enum Inven
 {
 	SlotSprite,
 	SlotSelected,
-	Selected,
 	TotalSlotNumber,
 	UsableSlotNumber,
+	SlotInRowNumber,
 	
 	ItemIds,
 	ItemCounts,
+	
+	LeftInven,
+	RightInven,
 };
 
 
@@ -22,9 +26,9 @@ var inventory = ds_list_create();
 
 inventory[|Inven.SlotSprite] = spr_slot;
 inventory[|Inven.SlotSelected] = spr_selected_slot;
-inventory[|Inven.Selected] = 1;
 inventory[|Inven.UsableSlotNumber] = usable_slots;
 inventory[|Inven.TotalSlotNumber] = total_slots;
+inventory[|Inven.SlotInRowNumber] = slot_in_row;
 
 var itemIds = ds_list_create();
 var itemCounts = ds_list_create();

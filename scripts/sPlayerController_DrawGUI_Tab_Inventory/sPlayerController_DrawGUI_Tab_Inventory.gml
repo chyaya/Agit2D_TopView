@@ -10,10 +10,10 @@ with(m_PlayerObject)
 {
 	var slotSize = 80;
 	var gapSize = 16;
-	var row = other.m_SlotsInRow;
+	var row = sInven_GetSlotInRow(m_Inven_Bag);
 	sInven_DrawUI(m_Inven_Bag, (viewW - row*slotSize - (row - 1)*gapSize)*0.5, 300, slotSize, row, gapSize);
 	
-	selectedItemId = sInven_GetItemId(m_Inven_Bag, sInven_GetSelectedPos(m_Inven_Bag));
+	selectedItemId = sInven_GetItemId(other.m_CurrentInven, other.m_CurrentInvenSlot);
 }
 
 

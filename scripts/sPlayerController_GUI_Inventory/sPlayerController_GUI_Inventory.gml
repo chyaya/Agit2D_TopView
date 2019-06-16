@@ -1,31 +1,42 @@
 m_Actions[ACTION_A] = Action.NONE;
 m_Actions[ACTION_X] = Action.NONE;
 m_Actions[ACTION_Y] = Action.NONE;
-	
+
+var slotInRow = sInven_GetSlotInRow(m_CurrentInven);
+var selectedSlotX = (m_CurrentInvenSlot - 1) mod slotInRow;
+var selectedSlotY = floor((m_CurrentInvenSlot - 1) / slotInRow);
+
 if(m_Input_AxisL_Step)
 {
 	if(m_Input_AxisL_Left || m_Input_DPad_Left)
-		--m_SelectedSlotX;
+	{
+		--selectedSlotX;
+	}
 	else if(m_Input_AxisL_Right || m_Input_DPad_Right)
-		++m_SelectedSlotX;
+	{
+		++selectedSlotX;
+	}
 	else if(m_Input_AxisL_Up || m_Input_DPad_Up)
-		--m_SelectedSlotY;
+	{
+		--selectedSlotY;
+	}
 	else if(m_Input_AxisL_Down || m_Input_DPad_Down)
-		++m_SelectedSlotY;
+	{
+		++selectedSlotY;
+	}
 }
 
 	
-m_SelectedSlotX = clamp(m_SelectedSlotX, 0, m_SlotsInRow - 1);
-m_SelectedSlotY = clamp(m_SelectedSlotY, 0, sInven_GetTotalSlotNum(m_PlayerObject.m_Inven_Bag)/m_SlotsInRow - 1);
+selectedSlotX = clamp(selectedSlotX, 0, slotInRow - 1);
+selectedSlotY = clamp(selectedSlotY, 0, sInven_GetTotalSlotNum(m_CurrentInven)/slotInRow - 1);
 		
 var itemId = Item.NONE;
 		
 with(m_PlayerObject)
 {
-	var newPos = other.m_SelectedSlotX + other.m_SlotsInRow*other.m_SelectedSlotY + 1;
-	sInven_SetSelectedPos(m_Inven_Bag, newPos);
+	other.m_CurrentInvenSlot = selectedSlotX + slotInRow*selectedSlotY + 1;
 	
-	itemId = sInven_GetItemId(m_Inven_Bag, newPos);
+	itemId = sInven_GetItemId(other.m_CurrentInven, other.m_CurrentInvenSlot);
 }
 
 if(global.Item_OnUse[itemId] != noone)

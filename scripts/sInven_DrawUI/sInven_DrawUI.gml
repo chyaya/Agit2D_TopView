@@ -12,7 +12,6 @@ var slots_in_row = argument[4];
 var slots_gap = argument_count > 5 ? argument[5] : 0;
 
 var inv = inven[|Inven.ItemIds];
-var selected = inven[|Inven.Selected];
 var inv_count = inven[|Inven.ItemCounts];
 var total_slots = inven[|Inven.TotalSlotNumber];
 var slot_selected = inven[|Inven.SlotSelected];
@@ -23,18 +22,21 @@ var xx = 0
 var yy = 0
 while (ss <= total_slots) { //Draw the background slots.
 	if (xx < slots_in_row) {
-	    if selected = ss {
+	    if oPlayerController.m_CurrentInven == inven
+			&& oPlayerController.m_CurrentInvenSlot == ss
+		{
 			NineSliceBoxStretch(slot_selected,
 				xx*(slot_size + slots_gap) + inventory_x,
 				yy*(slot_size + slots_gap) + inventory_y,
 				slot_size, slot_size, 3);
-	        }
-	    else {
+		}
+	    else
+		{
 	        NineSliceBoxStretch(slot_sprite,
 				xx*(slot_size + slots_gap) + inventory_x,
 				yy*(slot_size + slots_gap) + inventory_y,
 				slot_size, slot_size, 3);
-	        }
+		}
 	    xx+=1;
 	    ss+=1;
 	}
