@@ -16,7 +16,8 @@
         "fda170e5-e2a1-41fb-b264-a363b3e5abdc",
         "b263e148-589f-4129-8e71-f7efe96b1408",
         "14b78015-3e58-470a-a627-a205b847f6f3",
-        "924522f0-d191-438f-a6bc-2212f8b27e78"
+        "924522f0-d191-438f-a6bc-2212f8b27e78",
+        "00f67a20-e685-4117-bfde-d05afddf6f4c"
     ],
     "filterType": "GMSprite",
     "folderName": "origin",
