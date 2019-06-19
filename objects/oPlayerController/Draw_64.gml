@@ -26,7 +26,8 @@ else if(m_Mode == Mode.UseBuilding)
 }
 
 sPlayerController_DrawGUI_Actions();
-sPlyaerController_DrawGUI_HUD_Stats();
+sPlayerController_DrawGUI_HUD_Timeline();
+sPlayerController_DrawGUI_HUD_Stats();
 
 sPlayerController_DrawGUI_GameOver();
 

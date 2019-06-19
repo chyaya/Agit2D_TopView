@@ -39,6 +39,7 @@ console_add(my_console,"reset");
 console_add(my_console,"show_all_construct");
 console_add(my_console,"add_health");
 console_add(my_console,"add_satiety");
+console_add(my_console, "export_tiledata");
 
 /* */
 /*  */

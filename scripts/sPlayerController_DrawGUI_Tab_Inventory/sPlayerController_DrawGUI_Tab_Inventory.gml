@@ -45,13 +45,11 @@ with(m_PlayerObject)
 	_x += slotSize/2;
 	_y += slotSize + gapSize;
 	
-	sUtil_DrawTextShadow(_x, _y, "방어구");
-	
-	_x += slotSize + gapSize;
-	sUtil_DrawTextShadow(_x, _y, "신발");
-	
-	_x += slotSize + gapSize;
-	sUtil_DrawTextShadow(_x, _y, "가방");
+	for(var i = 1; i < Equip.MAX; ++i)
+	{
+		sUtil_DrawTextShadow(_x, _y, m_EquipName[i]);
+		_x += slotSize + gapSize;	
+	}
 }
 
 /*

@@ -1,6 +1,6 @@
 gml_pragma("global", "SaveMeta();");
 
-#macro SAVE_VERSION 6
+#macro SAVE_VERSION 7
 #macro SAVE_FILENAME "save.json"
 
 global.g_SaveMeta = ds_map_create();
@@ -34,6 +34,3 @@ global.g_SaveMeta[?oRockBlue] = ["x", "y"];
 global.g_SaveMeta[?oColaCan] = ["x", "y"];
 global.g_SaveMeta[?oGrass2] = ["x", "y"];
 global.g_SaveMeta[?oGrass] = ["x", "y"];
-
-// Terrain
-global.g_SaveMeta[?oTerrain] = ["x", "y", "#elevation_grid", "#heat_grid", "#moisture_grid", "#land_grid", "#wind_grid"];

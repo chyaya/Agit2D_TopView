@@ -1,4 +1,4 @@
-var s = m_StartupUnixTimeStamp + (current_time*0.001 - m_StartupCurrentTime);
+var s = sWorldManager_GetUnixTime();
 var t = s/m_DayInSecond mod 1;
 return t;
 

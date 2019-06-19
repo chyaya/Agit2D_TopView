@@ -13,7 +13,8 @@
         "5db013a9-e73a-440d-8d53-e8d574d930e5",
         "d6f0a06d-9051-486e-9133-5b859e5cf747",
         "11bd305a-a48b-4293-9c9b-caec189f356e",
-        "10d08f05-de82-4804-ba07-56c8f2abf9f9"
+        "10d08f05-de82-4804-ba07-56c8f2abf9f9",
+        "985ccff5-a1a3-4a9c-9285-4657838408f0"
     ],
     "filterType": "GMSprite",
     "folderName": "building",

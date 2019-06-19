@@ -9,4 +9,4 @@ if(false == variable_instance_exists(id, "m_ConstructId"))
 	m_ConstructId = 0;
 }
 
-sprite_index = global.Construct_Sprite[m_ConstructId];
+//sprite_index = global.Construct_Sprite[m_ConstructId];

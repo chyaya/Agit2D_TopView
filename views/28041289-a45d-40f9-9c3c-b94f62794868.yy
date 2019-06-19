@@ -8,7 +8,7 @@
         "b42c6beb-0908-49b7-81b3-e416d1335578"
     ],
     "filterType": "GMRoom",
-    "folderName": "AfterLife",
+    "folderName": "Agit",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

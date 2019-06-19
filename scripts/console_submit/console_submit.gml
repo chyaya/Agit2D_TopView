@@ -180,9 +180,6 @@ if console[? "active"] {
                         instance_create(mouse_x,mouse_y,asset_get_index(c[1]));
                     }
                 break;
-                //case "screenshot": 
-                //    if no = 1 then background_save(c[? "bg"], c[1]); 
-                //break;
             }
         }
         

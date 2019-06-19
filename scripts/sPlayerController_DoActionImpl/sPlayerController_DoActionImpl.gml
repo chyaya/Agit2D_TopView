@@ -16,6 +16,14 @@ case Action.UseItem:
 		sInven_UseItemByPos(other.m_CurrentInven, other.m_CurrentInvenSlot);
 	}
 	break;
+case Action.RemoveItem:
+	with(m_PlayerObject)
+	{
+		var count = sInven_GetItemCount(other.m_CurrentInven, other.m_CurrentInvenSlot);
+		var result = sInven_RemoveItemByPos(other.m_CurrentInven, other.m_CurrentInvenSlot, count);
+		assert_equal(result, 0);
+	}
+	break;
 case Action.OpenBag:
 	m_Mode = Mode.Bag;
 	break;

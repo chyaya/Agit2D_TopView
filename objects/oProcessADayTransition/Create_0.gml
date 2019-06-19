@@ -16,3 +16,9 @@ m_StartTime = current_time*0.001;
 m_CloseTime = 1.5;
 m_PauseTime = 0.5;
 m_OpenTime = 1.5;
+
+
+if(false == variable_instance_exists(id, "m_EventId"))
+{
+	m_EventId = Event.NONE;
+}

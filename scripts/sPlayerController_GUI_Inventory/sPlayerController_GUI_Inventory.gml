@@ -84,3 +84,8 @@ if(other.m_CurrentInven == m_PlayerObject.m_Inven_Bag && global.Item_OnUse[itemI
 {
 	other.m_Actions[ACTION_A] = Action.UseItem;
 }
+
+if(other.m_CurrentInven == m_PlayerObject.m_Inven_Bag && itemId != Item.NONE)
+{
+	other.m_Actions[ACTION_Y] = Action.RemoveItem;
+}

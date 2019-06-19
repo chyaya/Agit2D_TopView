@@ -1,5 +1,13 @@
 if(instance_exists(oProcessADayTransition))
 	return;
 	
-	
-instance_create_layer(x, y, "Controllers", oProcessADayTransition);
+
+var eventId = ds_list_find_value(m_NextEvents, 0);
+ds_list_delete(m_NextEvents, 0)
+
+with(instance_create_layer(x, y, "Controllers", oBlank))
+{
+	m_EventId = eventId;
+
+	instance_change(oProcessADayTransition, true)
+}

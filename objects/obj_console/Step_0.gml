@@ -84,6 +84,28 @@ if console_submit(my_console) {
 			sPlayer_AddSatiety(value);
 		}
 	}
+	else if console_cmd(my_console, "export_tiledata")
+	{
+		var world_size = room_height / 16;
+		
+		var _l = layer_get_id("Tiles");
+		var _m = layer_tilemap_get_id(_l); // Uncomment for tiles!	
+		
+		var file = file_text_open_write("tiles.txt");
+						
+		for(var _y = 0; _y < world_size; ++_y)
+		{
+			for(var _x = 0; _x < world_size; ++_x)
+			{
+				var t = tilemap_get(_m, _x, _y);
+				
+				file_text_write_string(file, string(t) + ",");
+			}
+			file_text_write_string(file, "\n");
+		}
+		
+		file_text_close(file);
+	}
 }
 
 /* */

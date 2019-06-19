@@ -1,0 +1,1 @@
+return m_StartupUnixTimeStamp + (current_time*0.001 - m_StartupCurrentTime);
