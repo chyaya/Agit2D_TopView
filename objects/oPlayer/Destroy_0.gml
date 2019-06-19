@@ -18,3 +18,5 @@ if(m_QuickSlotMap != noone)
 	ds_map_destroy(m_QuickSlotMap);
 	m_QuickSlotMap = noone;
 }
+
+oPlayerController.m_PlayerObject = noone;

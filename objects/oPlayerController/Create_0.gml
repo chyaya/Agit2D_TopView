@@ -74,3 +74,6 @@ for(var i = 1; i < array_length_1d(global.Construct_Result); ++i)
 {
 	m_ConstructVisible[i] = global.Construct_Require_Building[i] == noone ? 1 : 0;	
 }
+
+
+m_PlayerObject = noone;

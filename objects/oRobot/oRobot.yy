@@ -5,13 +5,13 @@
     "name": "oRobot",
     "eventList": [
         {
-            "id": "1aa8b071-86d9-49dc-b9f2-f6703ac58ad8",
+            "id": "1e8086de-0c0f-4dae-ab29-3089306345b6",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 1,
+            "enumb": 10,
+            "eventtype": 7,
             "m_owner": "62cf4bf0-d5ff-477c-88f4-63a8965d71dd"
         }
     ],

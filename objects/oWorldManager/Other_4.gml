@@ -45,3 +45,6 @@ if(loadFromFile)
 		return;
 	}
 }
+
+
+oPlayerController.m_PlayerObject = oPlayer;
