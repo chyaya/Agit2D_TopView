@@ -2,10 +2,12 @@ enum Tab {
 	Inventory,
 	Construct,
 	Journal,
-	//Map,
+	Map,
 	
 	MAX
 }
+
+m_TabNames = ["Inventory", "Construct", "Journal", "Map"];
 
 m_Input_AxisL_Active_Last = false;
 m_Input_AxisL_Active_Next_Step_Time = 0;

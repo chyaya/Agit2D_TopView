@@ -17,8 +17,8 @@ enum Journal
 
 Prop_AddJournal(Journal.NONE, "", "", []);
 
-Prop_AddJournal(Journal.GoldenTicket, "파괴된 세계",
-@"우리는 왜 이 시계
+Prop_AddJournal(Journal.Prologue, "파괴된 세계",
+@"우리는 왜 이곳에 있는가?
 ",
 []);
 

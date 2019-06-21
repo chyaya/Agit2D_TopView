@@ -11,8 +11,6 @@ var gapW = 10;
 var _x = (viewW - Tab.MAX*boxW - (Tab.MAX - 1)*gapW)/2;
 var _y = 100;
 
-var names = ["Inventory", "Construct", "Journal"];
-
 for(var i = 0; i < Tab.MAX; ++i)
 {
 	var xx = _x + i*(boxW + gapW);
@@ -26,5 +24,5 @@ for(var i = 0; i < Tab.MAX; ++i)
 	draw_set_halign(fa_center);
 	draw_set_font(fontGUINormal);
 	
-	sUtil_DrawTextShadow(xx + boxW/2, yy+boxH/2, names[i]);
+	sUtil_DrawTextShadow(xx + boxW/2, yy+boxH/2, m_TabNames[i]);
 }
