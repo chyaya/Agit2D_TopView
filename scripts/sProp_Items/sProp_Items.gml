@@ -89,6 +89,12 @@ enum Item
 	InfiniteTrackParts,
 	FourleggedwalkingParts,
 	
+	//로봇 제조기 
+	GoldenTicket,
+	BluePrint,
+	NavigationSystem,
+	Drone,
+	Propellant,
 	
 	
 	MAX
@@ -172,3 +178,8 @@ inv_create_item(Item.BipedWalkingParts, sprBipedWalkingParts, "이족보행부�
 inv_create_item(Item.InfiniteTrackParts, sprInfiniteTrackParts, "궤도부품", 200, "느리지만 안정적으로 움직일 수 있는 하단 파츠. ", noone, noone, noone, 0);
 inv_create_item(Item.FourleggedwalkingParts, sprFourleggedwalkingParts, "사족보행부품", 100, "충격에는 강하지만, 지형에 영향을 많이 받는다.", noone, noone, noone, 0);
 
+inv_create_item(Item.GoldenTicket, sprGoldenTicket, "엘레시우스 우주항공 티켓", 1, "오래된 엘레시우스 우주항공 티켓", noone, noone, noone, 0);
+inv_create_item(Item.BluePrint, sprBulePrint, "로켓제작 설계도", 1, "로켓을 제작 방법이 있는 설계도", noone, noone, noone, 0);
+inv_create_item(Item.NavigationSystem, sprNavigationSystem, "자동항법 장치", 1, "목적지까지 로켓을 운행해주는 항법장치, 도착지는 엘레시우스로 설정되어 있다.", noone, noone, noone, 0);
+inv_create_item(Item.Drone, sprDrone, "로켓 제작 드론", 1, "로켓 제작에 특화되어 있는 드론", noone, noone, noone, 0);
+inv_create_item(Item.Propellant, sprLiquidPropellant, "액화 추진체", 1, "로켓의 연료로 사용되는 액화 추진체", noone, noone, noone, 0);
