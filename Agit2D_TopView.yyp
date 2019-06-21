@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "05b9492d-470b-473a-91d7-05a9de0758c7",
+            "Value": {
+                "id": "b061bace-c9b0-43cc-b0f5-e391989e79f5",
+                "resourcePath": "scripts\\sWorldManager_AddRespawn\\sWorldManager_AddRespawn.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "05c217c3-8794-4b92-9be5-180c0cf05e58",
             "Value": {
                 "id": "8d8e2f75-4eb4-4a1a-9c0e-465603ca7431",
@@ -5607,6 +5615,14 @@
             }
         },
         {
+            "Key": "f1780e25-5c33-4a86-8800-11467fe6f1c9",
+            "Value": {
+                "id": "85a35b88-38d9-4d68-8ed2-28e789b9bbda",
+                "resourcePath": "scripts\\sWorldManager_Respawn\\sWorldManager_Respawn.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f19ff745-2a0c-47f4-ac2d-7f55e52c485a",
             "Value": {
                 "id": "07b1ddbc-3aca-4799-91c9-b6dda98cad86",
@@ -6100,6 +6116,8 @@
         "d076b1d7-c77c-4c5a-b93e-31b36c76e451",
         "bc8079e8-b51c-4c25-9c87-5795cf133995",
         "20245c08-9f44-4565-a60e-87336e2b0524",
+        "05b9492d-470b-473a-91d7-05a9de0758c7",
+        "f1780e25-5c33-4a86-8800-11467fe6f1c9",
         "59bf340c-986e-4dd6-ba89-d2184fb0e96b",
         "8faf3bf2-2427-4c8e-adaf-076b53e12105",
         "95bca7ef-28f3-40a2-b7df-715140a35723",

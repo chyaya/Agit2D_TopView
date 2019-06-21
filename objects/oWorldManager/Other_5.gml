@@ -2,6 +2,8 @@
 
 if(m_DontSave)
 	return;
+	
+sWorldManager_Respawn(true);
 
 var json = SaveInstances();
 var file = file_text_open_write(SAVE_FILENAME);

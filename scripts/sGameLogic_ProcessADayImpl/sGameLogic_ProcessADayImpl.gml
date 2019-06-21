@@ -11,3 +11,9 @@
 //sGameLogic_Respawn(oCow, 2, 5);
 //sGameLogic_Respawn(oRobot, 2, 15);
 //sGameLogic_Respawn(oRobot2, 1, 10);
+
+
+with(oWorldManager)
+{
+	sWorldManager_Respawn();
+}
