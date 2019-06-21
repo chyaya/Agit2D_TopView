@@ -1,11 +1,11 @@
 var journalId = argument0;
-var prevId = journalId - 1;
+var nextId = journalId + 1;
 
-for(; prevId > 0; --prevId)
+for(; nextId < array_length_1d(m_JournalVisible); ++nextId)
 {
-	if(m_JournalVisible[prevId] > 0)
+	if(m_JournalVisible[nextId] > 0)
 	{
-		return prevId;
+		return nextId;
 	}
 }
 
