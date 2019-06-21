@@ -18,6 +18,8 @@ if(false == m_PauseTime)
 		sGameLogic_ProcessADay();	
 	
 		//show_debug_message("It's another day!");
+		
+		++m_CurrentDay;
 	}
 
 	m_LastTimeInDay = m_TimeInDay;

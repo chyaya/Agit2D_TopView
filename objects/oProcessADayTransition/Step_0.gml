@@ -18,12 +18,12 @@ if(m_Phase == CLOSE)
 		sGameLogic_ProcessADayImpl();
 		
 		
-		switch(m_EventId)
-		{
-		case Event.RobotInvade:
-			sGameLogic_Respawn(oRobotBeacon, 1, 10);
-			break;
-		}
+		//switch(m_EventId)
+		//{
+		//case Event.RobotInvade:
+		//	sGameLogic_Respawn(oRobotBeacon, 1, 10);
+		//	break;
+		//}
 		
 		
 		with(oPlayerController.m_PlayerObject)

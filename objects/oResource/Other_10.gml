@@ -1,4 +1,5 @@
-// Inherit the parent event
+/// @description Dead
+
 event_inherited();
 
 with(oPlayerController.m_PlayerObject)

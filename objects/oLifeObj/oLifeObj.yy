@@ -155,6 +155,48 @@
             "value": "0",
             "varName": "m_IsResource",
             "varType": 3
+        },
+        {
+            "id": "81aed096-9170-4606-8978-41c2bd95fa32",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "False",
+            "varName": "m_Respawn",
+            "varType": 3
+        },
+        {
+            "id": "db817f19-da91-48d7-8ece-fe116ca54c54",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "m_RespawnDelayMin",
+            "varType": 1
+        },
+        {
+            "id": "3047d924-bbad-45e7-877d-a03da01a2cee",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "2",
+            "varName": "m_RespawnDelayMax",
+            "varType": 1
         }
     ],
     "solid": false,
