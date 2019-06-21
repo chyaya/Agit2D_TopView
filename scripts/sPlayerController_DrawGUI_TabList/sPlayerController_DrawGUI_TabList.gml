@@ -1,11 +1,6 @@
 var viewW = view_wport[0];
 var viewH = view_hport[0];
 
-draw_set_alpha(0.5);
-draw_set_colour(c_black);
-
-draw_rectangle(0, 0, viewW, viewH, false);
-
 draw_set_alpha(1);
 draw_set_colour(c_white);
 
@@ -16,7 +11,7 @@ var gapW = 10;
 var _x = (viewW - Tab.MAX*boxW - (Tab.MAX - 1)*gapW)/2;
 var _y = 100;
 
-var names = ["Inventory", "Construct"];
+var names = ["Inventory", "Construct", "Map"];
 
 for(var i = 0; i < Tab.MAX; ++i)
 {

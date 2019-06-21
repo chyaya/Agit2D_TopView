@@ -4,11 +4,14 @@ show_debug_message("Init Player Controller");
 if(global.UseFOW)
 	sFOW_InitInstance(12, x, y, true);
 
-if(false == variable_instance_exists(id, "m_PlayerObject"))
+if(false == variable_instance_exists(id, "m_PlayerObject")
+	|| m_PlayerObject == noone
+	|| instance_exists(m_PlayerObject) == false)
 {
 	if(instance_exists(oPlayer) == false)
 	{
-		show_message("no player ghost");	
+		show_message("there is no player object!");
+		game_end();
 	}
 
 	m_PlayerObject = instance_find(oPlayer, 0);

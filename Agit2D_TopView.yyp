@@ -2671,6 +2671,14 @@
             }
         },
         {
+            "Key": "70f66cad-ebc8-40e5-bbc8-b7f692c62c50",
+            "Value": {
+                "id": "66c7970c-8459-478a-b168-78dd55824d76",
+                "resourcePath": "scripts\\sPlayerController_DrawGUI_Tab_Map\\sPlayerController_DrawGUI_Tab_Map.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "71188983-a6e8-48cd-8676-f964bd7eb56e",
             "Value": {
                 "id": "23efbaaf-f83b-44ae-ae5e-c95f7e6b4157",
@@ -5971,6 +5979,7 @@
         "b890f3c3-8641-4086-a25d-7ae9cc199130",
         "8af089ba-fbe2-4981-9501-5291ba29fc71",
         "5c579908-a355-4531-b33d-f3b8bb497f1f",
+        "70f66cad-ebc8-40e5-bbc8-b7f692c62c50",
         "d81c55c8-9588-433a-a7e3-ffa57fefd929",
         "9ea9b941-6fae-44b8-bfaf-8b9741c0a157",
         "603339dc-148b-48eb-ae54-540c16e32422",

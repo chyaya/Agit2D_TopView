@@ -1,6 +1,7 @@
 enum Tab {
 	Inventory,
 	Construct,
+	Map,
 	
 	MAX
 }
@@ -77,3 +78,5 @@ for(var i = 1; i < array_length_1d(global.Construct_Result); ++i)
 
 
 m_PlayerObject = noone;
+
+m_WorldMapPin = ds_list_create();
