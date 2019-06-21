@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "071a2bb2-d535-4de5-a3e9-81c9af92ecf6",
+            "Value": {
+                "id": "8b8c9ae9-a404-49d2-a2fb-eac717a6ace2",
+                "resourcePath": "scripts\\sPlayerController_GetNextVisibleJournalIndex\\sPlayerController_GetNextVisibleJournalIndex.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "072b884c-8832-42c2-b864-5d9f7b70f145",
             "Value": {
                 "id": "df0249fa-3559-4aad-be3f-c33ffe0dec2d",
@@ -1439,6 +1447,14 @@
             }
         },
         {
+            "Key": "36448316-6c75-4b0f-9af3-8e7a2e388098",
+            "Value": {
+                "id": "228ef69f-c126-4458-be4a-681549c31a7e",
+                "resourcePath": "scripts\\sPlayerController_DrawGUI_Tab_Journal\\sPlayerController_DrawGUI_Tab_Journal.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "371a9b9b-9e93-48f4-8dc7-e297edb9ab08",
             "Value": {
                 "id": "ab203552-41b7-432f-b543-eb99b9207373",
@@ -1660,6 +1676,14 @@
                 "id": "cb3bcdc6-956a-4e60-a9e3-d21aabde0121",
                 "resourcePath": "tilesets\\tileset0\\tileset0.yy",
                 "resourceType": "GMTileSet"
+            }
+        },
+        {
+            "Key": "46936318-f0ce-4c2b-a1e2-cc69a0375849",
+            "Value": {
+                "id": "15b4be80-9833-4ef7-b6fc-0374ef836896",
+                "resourcePath": "scripts\\Prop_AddJournal\\Prop_AddJournal.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -2439,6 +2463,14 @@
             }
         },
         {
+            "Key": "651a0227-df95-4931-b2e8-cb0eabd052e5",
+            "Value": {
+                "id": "348f6182-46bd-43fa-b39f-95f5bd8d3d0b",
+                "resourcePath": "scripts\\sPlayerController_GetPrevVisibleJournalIndex\\sPlayerController_GetPrevVisibleJournalIndex.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "65e5b5ec-b276-4eda-baf6-621a4cb4c0b1",
             "Value": {
                 "id": "02102d26-eb1c-4404-8af3-a5a195907250",
@@ -2834,7 +2866,7 @@
             "Key": "7946d58f-5c13-4e69-b059-3d4ab4342a5b",
             "Value": {
                 "id": "31dc2c1a-5ad7-4fa3-9e94-4ec0aa531a1c",
-                "resourcePath": "scripts\\Prop_Events\\Prop_Events.yy",
+                "resourcePath": "scripts\\Prop_Journals\\Prop_Journals.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3332,6 +3364,14 @@
                 "id": "babe348d-dbd5-4b72-81e0-32cfb0634203",
                 "resourcePath": "extensions\\Developer_Console\\Developer_Console.yy",
                 "resourceType": "GMExtension"
+            }
+        },
+        {
+            "Key": "8f45a38a-59a3-41c7-97b6-e38ceaee7ac5",
+            "Value": {
+                "id": "1203d1d5-e07e-48e3-a5b8-7ac5b1d5e376",
+                "resourcePath": "scripts\\sPlayerController_GetVisibleJournalList\\sPlayerController_GetVisibleJournalList.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3932,6 +3972,14 @@
                 "id": "4fdd5a78-02c0-4ffc-88f9-c11a1d9e072a",
                 "resourcePath": "sprites\\sprWorkbench\\sprWorkbench.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "aae28141-5a26-43a4-82d2-e67866aa5ecd",
+            "Value": {
+                "id": "688b351c-00e1-411b-8648-b7fdf0f1a8e3",
+                "resourcePath": "scripts\\sGameLogic_BeforeItemAdd\\sGameLogic_BeforeItemAdd.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -5159,6 +5207,14 @@
             }
         },
         {
+            "Key": "de304e96-208a-406a-a852-12b157cc4d0e",
+            "Value": {
+                "id": "4a37ca72-5376-48bb-8586-a1a430feb529",
+                "resourcePath": "scripts\\sPlayerController_FindVisibleJournalIndex\\sPlayerController_FindVisibleJournalIndex.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "deb0a3a6-05f6-4aa0-b5cf-7e0f8b8ffee8",
             "Value": {
                 "id": "8982ef13-2d6a-48fb-91f7-075cf4c0a6f8",
@@ -5284,6 +5340,14 @@
                 "id": "3faed004-b544-4856-8b42-bf5a57c4dd33",
                 "resourcePath": "sprites\\spr_selected_trans\\spr_selected_trans.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e3d0ce2d-1eae-47bb-9ef9-f06fcb827610",
+            "Value": {
+                "id": "d51f5d34-e2d2-4907-844f-71ee9e57dab8",
+                "resourcePath": "scripts\\sPlayerController_GUI_Journal\\sPlayerController_GUI_Journal.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -5903,6 +5967,14 @@
             }
         },
         {
+            "Key": "fde1b4a9-68bc-456d-8107-8700c90209fb",
+            "Value": {
+                "id": "2f037cd0-25e3-49e0-bbe2-e10732999a56",
+                "resourcePath": "views\\fde1b4a9-68bc-456d-8107-8700c90209fb.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "fe22ace5-9b81-4812-9768-5f384c0b583a",
             "Value": {
                 "id": "2c7e79f9-3540-44a8-b8ab-ca7b94a6cdc3",
@@ -5937,6 +6009,7 @@
         "92f7735b-86c3-4d3a-ae65-8d37d53d3e0e",
         "fa7df919-7208-4f81-a487-a9866e98c184",
         "c6b38ad7-7331-413d-995a-b00174ad3854",
+        "aae28141-5a26-43a4-82d2-e67866aa5ecd",
         "56436457-4aa3-455c-aadd-c8281d38bff2",
         "b95ceab0-f28b-494f-b9c8-905e2bd13d7d",
         "85dcb2d2-6327-47e2-98bc-e7c09774aec7",
@@ -5979,6 +6052,7 @@
         "b890f3c3-8641-4086-a25d-7ae9cc199130",
         "8af089ba-fbe2-4981-9501-5291ba29fc71",
         "5c579908-a355-4531-b33d-f3b8bb497f1f",
+        "36448316-6c75-4b0f-9af3-8e7a2e388098",
         "70f66cad-ebc8-40e5-bbc8-b7f692c62c50",
         "d81c55c8-9588-433a-a7e3-ffa57fefd929",
         "9ea9b941-6fae-44b8-bfaf-8b9741c0a157",
@@ -5986,10 +6060,15 @@
         "b5d32c6e-f616-4011-882d-e1c0daaf1ef8",
         "10d879a3-19c8-4f0c-a15b-210b99224c5a",
         "47d71769-9146-4cf7-a9d9-07d8bda30a3b",
+        "e3d0ce2d-1eae-47bb-9ef9-f06fcb827610",
         "c16fb558-df62-4083-97a3-fd73236afdb9",
         "c827a856-e5f7-45b0-8682-d0cc1a428c8b",
         "cc5c24ff-275b-447d-b5c6-5b726472ae92",
         "e4e2a8f6-2926-40d0-9081-27e57b512f6b",
+        "8f45a38a-59a3-41c7-97b6-e38ceaee7ac5",
+        "651a0227-df95-4931-b2e8-cb0eabd052e5",
+        "071a2bb2-d535-4de5-a3e9-81c9af92ecf6",
+        "de304e96-208a-406a-a852-12b157cc4d0e",
         "b55b4d0a-9398-4113-9805-b2b31e19cc4a",
         "9b6a6937-0a48-4a36-a530-eb8112309d09",
         "1edf4a5c-a473-4c5d-a9dc-0c0eefcce50d",
@@ -6071,6 +6150,7 @@
         "f8d56df8-0736-48dc-93a3-510613b6fe77",
         "4947352a-db17-44ee-8869-a255d501e238",
         "7946d58f-5c13-4e69-b059-3d4ab4342a5b",
+        "46936318-f0ce-4c2b-a1e2-cc69a0375849",
         "e12fcfe4-f759-449b-8c62-84ea89809e58",
         "1f002dd3-f2fb-4c78-91d3-31bec3b54364",
         "0e273861-5e65-41a4-b182-2936c1c25814",

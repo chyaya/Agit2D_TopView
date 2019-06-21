@@ -18,7 +18,8 @@
         "49dd994d-baf5-45b9-b201-25dd9734ebf1",
         "ed7f05ed-c0f9-4560-ab15-00f6004c7823",
         "bab52cd9-619b-461c-a492-6aa9bef5b007",
-        "97eb3e58-97e8-4f96-ade8-b1886a3c9871"
+        "97eb3e58-97e8-4f96-ade8-b1886a3c9871",
+        "fde1b4a9-68bc-456d-8107-8700c90209fb"
     ],
     "filterType": "GMScript",
     "folderName": "PlayerController",

@@ -198,7 +198,9 @@ case Mode.Bag:
 	case Tab.Construct:
 		sPlayerController_GUI_Construct();
 		break;
-		
+	case Tab.Journal:
+		sPlayerController_GUI_Journal();
+		break;
 	}
 	break;
 case Mode.UseBuilding:

@@ -9,7 +9,8 @@
         "e504bbaa-4ef9-4e37-b545-4ef56aaecd19",
         "92f7735b-86c3-4d3a-ae65-8d37d53d3e0e",
         "fa7df919-7208-4f81-a487-a9866e98c184",
-        "c6b38ad7-7331-413d-995a-b00174ad3854"
+        "c6b38ad7-7331-413d-995a-b00174ad3854",
+        "aae28141-5a26-43a4-82d2-e67866aa5ecd"
     ],
     "filterType": "GMScript",
     "folderName": "GameLogic",

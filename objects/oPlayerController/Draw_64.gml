@@ -27,9 +27,12 @@ if(m_Mode == Mode.Bag)
 	case Tab.Construct:
 		sPlayerController_DrawGUI_Tab_ConstructList();
 		break;
-	case Tab.Map:
-		sPlayerController_DrawGUI_Tab_Map();
+	case Tab.Journal:
+		sPlayerController_DrawGUI_Tab_Journal();
 		break;
+	//case Tab.Map:
+	//	sPlayerController_DrawGUI_Tab_Map();
+	//	break;
 	}
 	
 	sPlayerController_DrawGUI_TabList();

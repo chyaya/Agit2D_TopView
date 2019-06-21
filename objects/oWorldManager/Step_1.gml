@@ -25,7 +25,7 @@ if(false == m_PauseTime)
 	m_LastTimeInDay = m_TimeInDay;
 }
 
-while(ds_list_size(m_NextEvents) < 8)
-{
-	ds_list_add(m_NextEvents, Event.RobotInvade);
-}
+//while(ds_list_size(m_NextEvents) < 8)
+//{
+//	ds_list_add(m_NextEvents, Event.RobotInvade);
+//}

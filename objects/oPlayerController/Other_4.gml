@@ -29,6 +29,7 @@ m_PlayerObjectY = m_PlayerObject.y;
 m_Mode = Mode.Move;
 m_CurTab = Tab.Inventory;
 m_SelectedConstructId = 1;
+m_SelectedJournalId = 1;
 
 m_WallMap = layer_tilemap_get_id("Tiles");
 

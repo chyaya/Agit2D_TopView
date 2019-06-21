@@ -3,6 +3,12 @@ if(m_ActiveTime > current_time)
 
 with(other)
 {
+	if(false == sGameLogic_BeforeItemAdd(other.m_ItemId))
+	{
+		instance_destroy(other);
+		exit;
+	}
+	
 	if(sInven_AddItem(m_Inven_Bag, other.m_ItemId, 1) == 0)
 	{
 		var itemName = global.Item_Text[other.m_ItemId];
