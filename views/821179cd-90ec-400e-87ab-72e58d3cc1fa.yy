@@ -24,7 +24,9 @@
         "279090f6-a53c-4015-80b1-77f201c9bb2a",
         "620aea27-9bad-451c-9298-a86a84d30602",
         "d9ea9fb5-79d9-4c16-85f0-f65b5901be08",
-        "098257f6-aa9f-4687-9bd6-2c1beb3d6bfe"
+        "098257f6-aa9f-4687-9bd6-2c1beb3d6bfe",
+        "8956a990-a06f-49a4-a354-623cfd313b0b",
+        "12b4889a-1e8d-449e-9193-7e7114fe9a9a"
     ],
     "filterType": "GMSprite",
     "folderName": "origin",

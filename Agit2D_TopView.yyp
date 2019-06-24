@@ -487,6 +487,14 @@
             }
         },
         {
+            "Key": "0e74b5ce-2ae2-46b7-86cc-f355b48cecb9",
+            "Value": {
+                "id": "f8d0c4b9-a398-4dc8-b72c-a01bfbfa3a82",
+                "resourcePath": "sprites\\sprMines\\sprMines.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0e7ff925-215c-4be8-b9e6-259e3ec0b30e",
             "Value": {
                 "id": "35286abc-cab0-481f-8e99-45c98a6aa41e",
@@ -651,6 +659,14 @@
             "Value": {
                 "id": "6eb2457b-ddee-4402-9ffd-393ff70db87e",
                 "resourcePath": "sprites\\sprScorpion\\sprScorpion.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "12b4889a-1e8d-449e-9193-7e7114fe9a9a",
+            "Value": {
+                "id": "b0eea3bb-9dcf-49f7-92c9-d7ca4bfab406",
+                "resourcePath": "sprites\\sprite226\\sprite226.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -908,14 +924,6 @@
                 "id": "18b7d71a-b404-40a2-abe2-17fb1bf4729c",
                 "resourcePath": "scripts\\sInven_GetTotalSlotNum\\sInven_GetTotalSlotNum.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "1ee792a0-fa89-466a-9544-b1b64d9ba3ad",
-            "Value": {
-                "id": "a4c6e360-bcbf-4195-aa48-0411c5b69119",
-                "resourcePath": "objects\\oLaunchingPad\\oLaunchingPad.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -1335,6 +1343,14 @@
             }
         },
         {
+            "Key": "31d54450-684a-41e5-85a4-b791f5d0a94c",
+            "Value": {
+                "id": "43e373c0-f66d-47a5-900b-4cdfd7c2bc9b",
+                "resourcePath": "objects\\oRocketDebris\\oRocketDebris.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3216d493-c550-407f-8b11-8e3ec3caf6c6",
             "Value": {
                 "id": "f9083115-514e-498b-9f5a-3d0d77ea2177",
@@ -1459,6 +1475,14 @@
             "Value": {
                 "id": "ab203552-41b7-432f-b543-eb99b9207373",
                 "resourcePath": "sprites\\sprLaunchingPad\\sprLaunchingPad.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "373a1842-237e-4ec2-ab38-9c008f6f6205",
+            "Value": {
+                "id": "d3ce437d-fb87-45db-af20-2afe7fad5594",
+                "resourcePath": "sprites\\sprDebris\\sprDebris.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1650,7 +1674,7 @@
             "Key": "431010fc-cc55-4254-8d08-c2b3252e7ab1",
             "Value": {
                 "id": "766fdf5f-9c5a-4749-8967-54e3e69a758b",
-                "resourcePath": "sprites\\sprRocketStep_4\\sprRocketStep_4.yy",
+                "resourcePath": "sprites\\sprLaunchingPadDebris\\sprLaunchingPadDebris.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3295,6 +3319,14 @@
             }
         },
         {
+            "Key": "8956a990-a06f-49a4-a354-623cfd313b0b",
+            "Value": {
+                "id": "96ac5883-82c8-40df-8474-a02825e0b783",
+                "resourcePath": "sprites\\sprite225\\sprite225.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "89d597e1-112c-4b33-aaa2-1502c6eb3d89",
             "Value": {
                 "id": "a11ccf1d-e4b8-4fb4-9110-688eee38c3c6",
@@ -3499,6 +3531,14 @@
             "Value": {
                 "id": "36dece2e-56f2-461d-96fd-788fa7c9ca91",
                 "resourcePath": "sprites\\sprGUI_GamepadB\\sprGUI_GamepadB.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "92ac2c3e-6d87-410f-ab95-78ea9e20cd61",
+            "Value": {
+                "id": "f408b632-545a-4c98-a20b-10e2692a9a34",
+                "resourcePath": "sprites\\sprWareHouse\\sprWareHouse.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4348,6 +4388,14 @@
                 "id": "fdf87105-5abd-40e4-9127-5bf742f4fa5f",
                 "resourcePath": "scripts\\BuildSaveDataFromInstance\\BuildSaveDataFromInstance.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b639503a-da79-4931-9c00-ae5b048b0e2d",
+            "Value": {
+                "id": "f14a7714-72d6-40a7-a6a2-863e49ca056d",
+                "resourcePath": "objects\\oWareHouse\\oWareHouse.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -5759,6 +5807,14 @@
             }
         },
         {
+            "Key": "eed47571-5541-4cef-a7e2-9978409cc5ec",
+            "Value": {
+                "id": "e107ba88-b736-4689-9d13-ff881e118ffc",
+                "resourcePath": "objects\\oDebris\\oDebris.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ef351d94-65fc-45c9-80be-b8f44c67c431",
             "Value": {
                 "id": "ebb07f85-7e5d-410b-899b-e23310540e9a",
@@ -5844,6 +5900,14 @@
                 "id": "e0aa2eac-1a2f-4978-8614-50dd14929eab",
                 "resourcePath": "views\\f2e8df11-7e5b-471a-a1e9-c7e69a98720b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f3188874-216f-4c29-8768-505f269fd690",
+            "Value": {
+                "id": "8dac0063-5a5e-45ec-90b8-11e05d325e12",
+                "resourcePath": "objects\\oMines\\oMines.yy",
+                "resourceType": "GMObject"
             }
         },
         {

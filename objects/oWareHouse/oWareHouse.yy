@@ -1,29 +1,29 @@
 {
-    "id": "1ee792a0-fa89-466a-9544-b1b64d9ba3ad",
+    "id": "b639503a-da79-4931-9c00-ae5b048b0e2d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oLaunchingPad",
+    "name": "oWareHouse",
     "eventList": [
         {
-            "id": "b9f7a737-d356-4278-a154-3ef4aafa149a",
+            "id": "9b1a1c52-7cc1-4e1b-80b3-9bd42cb1d239",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "1ee792a0-fa89-466a-9544-b1b64d9ba3ad"
+            "m_owner": "b639503a-da79-4931-9c00-ae5b048b0e2d"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "f638df74-e1b3-49ee-9646-58fd75acb71f",
+            "id": "5c38b9db-5739-4c01-bc44-88dfe687f4c9",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
-            "objectId": "f1a3b0d1-b175-4e5a-9201-4515c58dfdb7",
-            "propertyId": "b443090f-23b9-45b5-85f1-c9c6ccd3b28c",
-            "value": "로켓 발사대"
+            "objectId": "47099ade-3615-4ea2-9301-b2e7b3f768f1",
+            "propertyId": "ecb97ee2-a940-49f1-97c3-59abda905c43",
+            "value": "10000"
         }
     ],
     "parentObjectId": "840371a1-5cb5-46d7-b26f-09d0de3c0cec",
@@ -42,6 +42,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "371a9b9b-9e93-48f4-8dc7-e297edb9ab08",
+    "spriteId": "92ac2c3e-6d87-410f-ab95-78ea9e20cd61",
     "visible": true
 }

@@ -1,24 +1,24 @@
 {
-    "id": "9b61154c-7202-4d0d-94d5-58ac1368aee9",
+    "id": "eed47571-5541-4cef-a7e2-9978409cc5ec",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "oPanta",
+    "name": "oDebris",
     "eventList": [
         {
-            "id": "23fa0bea-9522-44c7-817b-4cc63550d5a8",
+            "id": "bab61158-e6b1-4f07-88c0-25b6797d2b84",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
-            "m_owner": "9b61154c-7202-4d0d-94d5-58ac1368aee9"
+            "m_owner": "eed47571-5541-4cef-a7e2-9978409cc5ec"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [
         {
-            "id": "2a93f010-046e-43ae-8d72-a922137437ca",
+            "id": "1cbd2341-7395-4afc-ad0a-85808e867628",
             "modelName": "GMOverriddenProperty",
             "mvc": "1.0",
             "objectId": "47099ade-3615-4ea2-9301-b2e7b3f768f1",
@@ -42,6 +42,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "c9850f80-2ccb-484d-b3ad-a4f0ee93b5f6",
+    "spriteId": "373a1842-237e-4ec2-ab38-9c008f6f6205",
     "visible": true
 }
