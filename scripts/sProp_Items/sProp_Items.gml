@@ -15,7 +15,9 @@ enum Item
 	RoughLeather,
 	RobotPart,
 	RobotBlackbox,
-	
+	Rocksalt,
+	Milk,
+	Water,
 	
 	//굽기
 	Fruit,
@@ -112,6 +114,11 @@ inv_create_item(Item.Fiber, sprFiber, "섬유", 100, "식물성 섬유", noone, 
 inv_create_item(Item.RoughLeather, sprRoughLeather, "동물가죽", 100, "거친 동물 가죽", noone, noone, noone, 0);
 inv_create_item(Item.RobotPart, sprRobotParts, "로봇 부품", 100, "로봇에게서 떨어져나온 부품", noone, noone, noone, 0);
 inv_create_item(Item.RobotBlackbox, sprRobotBlackbox, "블랙박스", 100, "기계의 기록이 저장되어있다", noone, noone, noone, 0);
+inv_create_item(Item.Rocksalt, sprRockSalt, "암염", 100, "요리에 사용 할 수 있는 암염이다.", noone, noone, noone, 0);
+inv_create_item(Item.Milk, sprMilk, "우유", 100, "갓짠 신선한 우유이다.", sItem_Eat_Satiety_OnUse, noone, noone, 2);
+inv_create_item(Item.Water, sprWater, "물", 100, "음용이 가능한 물이다.", sItem_Eat_Satiety_OnUse, noone, noone, 1);
+
+
 
 inv_create_item(Item.Fruit, sprFruit, "열매", 100, "포만감 + 15", sItem_Eat_Satiety_OnUse, noone, noone, 15);
 inv_create_item(Item.BakedFruit, sprBakedFruit, "구운 열매", 100, "포만감 + 25", sItem_Eat_Satiety_OnUse, noone, noone, 25);
@@ -119,6 +126,9 @@ inv_create_item(Item.Apple, sprApple, "사과", 10, "포만감 + 30", sItem_Eat_
 inv_create_item(Item.BakedApple, sprBakedApple, "구운 사과", 10, "포만감 + 50", sItem_Eat_Satiety_OnUse, noone, noone, 50);
 inv_create_item(Item.Meat, sprMeat, "고기", 100, "생명력 + 5", sItem_Eat_Health_OnUse, noone, noone, 5);
 inv_create_item(Item.BakedMeat, sprBakedMeat, "구운 고기", 100, "생명력 + 10", sItem_Eat_Health_OnUse, noone, noone, 10);
+
+
+
 
 
 inv_create_item(Item.WoodenTool, sprWoodenTool, "나무도구", 1, "채집 / 채광 공격력 1 증가합니다.", noone, noone, sItem_Tool_OnQuickSlot, 1);

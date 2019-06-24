@@ -14,7 +14,9 @@
         "5c34fb40-2770-4506-bc9c-a552eb452187",
         "c15e0488-0423-4275-93bd-f551e5154c8d",
         "53907038-9cb3-430b-88e0-d9c582b5dbdf",
-        "c87abb1f-5851-4211-b4d6-5261db1981b2"
+        "c87abb1f-5851-4211-b4d6-5261db1981b2",
+        "a35f09dc-67b2-4d8f-b602-5c2ba3227e0d",
+        "709a5e53-f7cd-4a1c-8761-3581a72eb7e4"
     ],
     "filterType": "GMSprite",
     "folderName": "Item_Food",

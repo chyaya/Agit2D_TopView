@@ -2703,6 +2703,14 @@
             }
         },
         {
+            "Key": "709a5e53-f7cd-4a1c-8761-3581a72eb7e4",
+            "Value": {
+                "id": "be465d4b-ed7d-4cfd-b33d-c8ae8aef2c97",
+                "resourcePath": "sprites\\sprGrain\\sprGrain.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "70f66cad-ebc8-40e5-bbc8-b7f692c62c50",
             "Value": {
                 "id": "66c7970c-8459-478a-b168-78dd55824d76",
@@ -3852,6 +3860,14 @@
                 "id": "0a688422-ff73-4982-ab70-786ed5b1ccc5",
                 "resourcePath": "scripts\\sPlayerController_DrawGUI_Minimap\\sPlayerController_DrawGUI_Minimap.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a35f09dc-67b2-4d8f-b602-5c2ba3227e0d",
+            "Value": {
+                "id": "a513442b-0795-4e74-a13e-fed9e5eaa4fb",
+                "resourcePath": "sprites\\sprWater\\sprWater.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
