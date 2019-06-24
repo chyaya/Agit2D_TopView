@@ -4,6 +4,7 @@ enum Construct
 {
 	NONE,
 	
+	SleepingBag,
 	Bonfire,
 	Workbench,
 	Blast,
@@ -25,6 +26,7 @@ enum Construct
 
 Prop_AddConstruct(Construct.NONE, noone, "", noone, [], [], noone);
 
+Prop_AddConstruct(Construct.SleepingBag, sprSleepingBag, "침낭", oSleepingBag, [Item.Fiber], [3], noone);
 Prop_AddConstruct(Construct.Bonfire, sprBonfire, "모닥불", oBonfire, [Item.Wood, Item.Stone], [2, 1], noone);
 Prop_AddConstruct(Construct.Workbench, sprWorkbench, "작업대", oWorkbench, [Item.Wood], [4], oBonfire);
 Prop_AddConstruct(Construct.Blast, sprBlast, "용광로", oBlastFurnace, [Item.Stone, Item.Coal], [10, 3], oWorkbench);

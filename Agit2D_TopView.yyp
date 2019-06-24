@@ -1535,6 +1535,14 @@
             }
         },
         {
+            "Key": "3b947fa4-ab06-4bba-83e4-305659eee738",
+            "Value": {
+                "id": "4f765601-9117-43e6-8645-868418719e69",
+                "resourcePath": "sprites\\sprSleepingBag\\sprSleepingBag.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3ce46e14-5ebd-4d6f-a414-8c54111383e6",
             "Value": {
                 "id": "462e05ca-1fe4-410d-ba9b-bc4785a5c5f2",
@@ -5348,6 +5356,14 @@
                 "id": "7afe507c-6b18-4420-ad0f-c436ab5c0d30",
                 "resourcePath": "sprites\\sprDebug\\sprDebug.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e0bd4053-149d-4d7f-97ac-cb1fd4957c9f",
+            "Value": {
+                "id": "757271ff-23ec-47ba-b275-11663dca4e00",
+                "resourcePath": "objects\\oSleepingBag\\oSleepingBag.yy",
+                "resourceType": "GMObject"
             }
         },
         {

@@ -9,3 +9,9 @@ m_InteractionObject = noone;
 
 m_PlayerObjectX = m_PlayerObject.x;
 m_PlayerObjectY = m_PlayerObject.y;
+
+//if(m_QuickSlotMap != noone)
+//{
+//	ds_map_destroy(m_QuickSlotMap);
+//	m_QuickSlotMap = noone;
+//}

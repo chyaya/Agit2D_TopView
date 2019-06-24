@@ -4,7 +4,14 @@ if(false == m_InputEnable)
 if(true == m_Win)
 	return;
 
-if(sUtil_GamePad_PressAnyButton() != 0)
+if(false == instance_exists(oPlayer))
 {
-	room_goto(room_Random);
+	if(sUtil_GamePad_PressAnyButton() != 0)
+	{
+		sGameLogic_PlayerRespawn();
+
+		instance_destroy();
+		
+		m_InputEnable = false;
+	}
 }

@@ -41,7 +41,7 @@ if(loadFromFile)
 		m_DontSave = true;
 		
 		file_delete(SAVE_FILENAME);
-		game_restart();
+		game_end();
 		return;
 	}
 }

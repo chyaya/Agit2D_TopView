@@ -3,28 +3,31 @@ var viewH = view_hport[0];
 
 with(m_PlayerObject)
 {
-	var _slotW = 64;
-	var _slotH = 64;
-	var _slotGap = 10;
-
-	var _startX = (viewW - ((_slotW+_slotGap)*ds_map_size(m_QuickSlotMap)-_slotGap))/2;
-	var _startY = viewH - _slotH - 20;
-
-	var i = 0;
-	for (var k = ds_map_find_first(m_QuickSlotMap); !is_undefined(k); k = ds_map_find_next(m_QuickSlotMap, k))
+	if(m_QuickSlotMap != noone)
 	{
-		var v = m_QuickSlotMap[? k];
-	
-		var _x = _startX + i*(_slotW + _slotGap);
-		var _y = _startY;
+		var _slotW = 64;
+		var _slotH = 64;
+		var _slotGap = 10;
 
-		if(m_SelectedQuickSlotItemId == k)
+		var _startX = (viewW - ((_slotW+_slotGap)*ds_map_size(m_QuickSlotMap)-_slotGap))/2;
+		var _startY = viewH - _slotH - 20;
+
+		var i = 0;
+		for (var k = ds_map_find_first(m_QuickSlotMap); !is_undefined(k); k = ds_map_find_next(m_QuickSlotMap, k))
 		{
-			NineSliceBoxStretch(spr_selected_trans, _x, _y, _slotW, _slotH, 3);
-		}
-
-		draw_sprite_stretched(global.Item_Sprite[k], 0, _x, _y, _slotW, _slotH);
+			var v = m_QuickSlotMap[? k];
 	
-		++i;
+			var _x = _startX + i*(_slotW + _slotGap);
+			var _y = _startY;
+
+			if(m_SelectedQuickSlotItemId == k)
+			{
+				NineSliceBoxStretch(spr_selected_trans, _x, _y, _slotW, _slotH, 3);
+			}
+
+			draw_sprite_stretched(global.Item_Sprite[k], 0, _x, _y, _slotW, _slotH);
+	
+			++i;
+		}
 	}
 }
