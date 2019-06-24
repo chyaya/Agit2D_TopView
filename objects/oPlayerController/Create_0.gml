@@ -80,9 +80,11 @@ for(var i = 1; i < array_length_1d(global.Construct_Result); ++i)
 }
 
 m_JournalVisible = [];
+m_JournalComplete = [];
 for(var i = 1; i < array_length_1d(global.Journal_Text); ++i)
 {
 	m_JournalVisible[i] = false;
+	m_JournalComplete[i] = false;
 }
 
 m_JournalVisible[Journal.Prologue] = true;

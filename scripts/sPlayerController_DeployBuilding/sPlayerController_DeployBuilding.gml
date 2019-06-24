@@ -49,3 +49,5 @@ for(var i = 1; i < array_length_1d(global.Construct_Require_Building); ++i)
 		}
 	}
 }
+
+sGameLogic_AfterConstruct(constructId);

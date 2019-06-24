@@ -3919,6 +3919,14 @@
             }
         },
         {
+            "Key": "a41256c4-d81e-4862-b2f1-75d6edfedad8",
+            "Value": {
+                "id": "96246d08-e6f3-490a-8f4b-265da54f9729",
+                "resourcePath": "scripts\\sGameLogic_AfterConstruct\\sGameLogic_AfterConstruct.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a530773b-7cd9-4ec5-9341-5df8af2dc348",
             "Value": {
                 "id": "bfa91573-21a3-4a91-b44d-df1850729dbc",
@@ -6074,6 +6082,7 @@
         "fa7df919-7208-4f81-a487-a9866e98c184",
         "c6b38ad7-7331-413d-995a-b00174ad3854",
         "aae28141-5a26-43a4-82d2-e67866aa5ecd",
+        "a41256c4-d81e-4862-b2f1-75d6edfedad8",
         "8238bd81-8e6b-4aed-ab44-395c73c46e25",
         "a20128ec-fbd6-4b9e-afcf-57891dc9722e",
         "56436457-4aa3-455c-aadd-c8281d38bff2",
