@@ -5,13 +5,6 @@ gml_pragma("global", "SaveMeta();");
 
 global.g_SaveMeta = ds_map_create();
 
-// Character
-global.g_SaveMeta[?oPlayer] = ["x", "y"];
-global.g_SaveMeta[?oRobot] = ["x", "y"];
-global.g_SaveMeta[?oRobot2] = ["x", "y"];
-global.g_SaveMeta[?oChicken] = ["x", "y"];
-global.g_SaveMeta[?oCow] = ["x", "y"];
-
 // Building
 global.g_SaveMeta[?oBonfire] = ["x", "y", "m_ConstructId"];
 global.g_SaveMeta[?oWorkbench] = ["x", "y", "m_ConstructId"];
@@ -26,11 +19,16 @@ global.g_SaveMeta[?oDefenseTower] = ["x", "y", "m_ConstructId"];
 global.g_SaveMeta[?oWatchTower] = ["x", "y", "m_ConstructId"];
 
 // Resource
-global.g_SaveMeta[?oTree] = ["x", "y"];
-global.g_SaveMeta[?oRockGray] = ["x", "y"];
-global.g_SaveMeta[?oRockBlack] = ["x", "y"];
-global.g_SaveMeta[?oRockYellow] = ["x", "y"];
-global.g_SaveMeta[?oRockBlue] = ["x", "y"];
-global.g_SaveMeta[?oColaCan] = ["x", "y"];
-global.g_SaveMeta[?oGrass2] = ["x", "y"];
-global.g_SaveMeta[?oGrass] = ["x", "y"];
+for(var i = 0; object_exists(i); ++i)
+{
+	if(object_is_ancestor(i, oResource))
+	{
+		show_debug_message("SaveMeta: " + object_get_name(i));
+		global.g_SaveMeta[?i] = ["x", "y"];	
+	}
+	else if(object_is_ancestor(i, oPawn))
+	{
+		show_debug_message("SaveMeta: " + object_get_name(i));
+		global.g_SaveMeta[?i] = ["x", "y"];	
+	}
+}
