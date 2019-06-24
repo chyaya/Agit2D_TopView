@@ -18,13 +18,7 @@ if(false == variable_instance_exists(id, "m_PlayerObject")
 	m_PlayerObject.m_AI_Control = false;
 }
 
-m_CurrentInven = m_PlayerObject.m_Inven_Bag;
-m_CurrentInvenSlot = 1;
-
-m_InteractionObject = noone;
-
-m_PlayerObjectX = m_PlayerObject.x;
-m_PlayerObjectY = m_PlayerObject.y;
+sPlayerController_SetPlayer(m_PlayerObject);
 
 m_Mode = Mode.Move;
 m_CurTab = Tab.Inventory;

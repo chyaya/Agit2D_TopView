@@ -1,5 +1,4 @@
-
-if(m_GameOver == false)
+if(false == instance_exists(oGameOver))
 {
 	if(keyboard_check(ord("W")))
 	{

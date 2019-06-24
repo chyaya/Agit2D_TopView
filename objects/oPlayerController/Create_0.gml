@@ -82,8 +82,10 @@ for(var i = 1; i < array_length_1d(global.Construct_Result); ++i)
 m_JournalVisible = [];
 for(var i = 1; i < array_length_1d(global.Journal_Text); ++i)
 {
-	m_JournalVisible[i] = true;
+	m_JournalVisible[i] = false;
 }
+
+m_JournalVisible[Journal.Prologue] = true;
 
 m_PlayerObject = noone;
 

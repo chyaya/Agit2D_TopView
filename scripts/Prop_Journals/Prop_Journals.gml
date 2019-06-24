@@ -15,11 +15,11 @@ enum Journal
 }
 
 
-Prop_AddJournal(Journal.NONE, "", "", []);
+Prop_AddJournal(Journal.NONE, "", "", "", []);
 
-Prop_AddJournal(Journal.Prologue, "파괴된 세계",
-@"우리는 왜 이곳에 있는가?
-",
+Prop_AddJournal(Journal.Prologue, "오늘은 어디서 자야할까?",
+@"날이 추워지기 전에 침낭을 만들어야겠어",
+@"침낭 만들기",
 []);
 
 Prop_AddJournal(Journal.GoldenTicket, "엘리우시스행 티켓",
@@ -27,8 +27,8 @@ Prop_AddJournal(Journal.GoldenTicket, "엘리우시스행 티켓",
 
 '엘리우시스에서 곧 만나자 -엄마가'
 
-라고 씌여있다.
-",
+라고 씌여있다.",
+@"엘리우시스 우주공항으로 가기",
 []);
 
 Prop_AddJournal(Journal.Blueprint, "한-칼슨 연구소",
@@ -36,5 +36,6 @@ Prop_AddJournal(Journal.Blueprint, "한-칼슨 연구소",
 
 버려진 우주선에는 '한-칼슨'이라는 연구소의 로고가 보인다.
 
-그래, 연구소에 가면 무슨 방법이 있을거야.
-", []);
+그래, 연구소에 가면 무슨 방법이 있을거야.",
+@"한-칼슨 연구소로 가기",
+[]);

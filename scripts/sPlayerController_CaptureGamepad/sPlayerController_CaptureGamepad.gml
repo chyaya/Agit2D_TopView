@@ -2,7 +2,7 @@
 
 if(gamepad_get_device_count() > 0)
 {
-	if(m_GameOver == false)
+	if(false == instance_exists(oGameOver))
 	{
 		if(gamepad_axis_value(0, gp_axislv) < -AXIS_THRESHOLD)
 		{

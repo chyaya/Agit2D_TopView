@@ -1,14 +1,3 @@
-//if(m_GameOver == false)
-//{
-//	m_GameOver = true;
-	
-//	if(m_PlayerObject != noone)
-//	{
-//		m_PlayerObject.m_CurHealth = 0;
-//	}
-//}
-
-
 m_Actions[ACTION_A] = Action.NONE;
 m_Actions[ACTION_B] = Action.NONE;
 m_Actions[ACTION_X] = Action.NONE;

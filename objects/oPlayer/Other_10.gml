@@ -11,8 +11,9 @@ with(oPlayerController)
 	}
 	
 	m_PlayerObject = noone;
-		
-	m_GameOver = true;
+	
+	sGameLogic_GameOver(false);
+	
 	m_Mode = Mode.Move;		
 }
 

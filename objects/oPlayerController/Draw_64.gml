@@ -41,6 +41,10 @@ else if(m_Mode == Mode.UseBuilding)
 {
 	sPlayerController_DrawGUI_UseBuilding_Craft();
 }
+else
+{
+	sPlayerController_DrawGUI_HUD_Journal();
+}
 
 sPlayerController_DrawGUI_Actions();
 

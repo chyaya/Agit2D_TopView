@@ -4,5 +4,5 @@
 // Inherit the parent event
 event_inherited();
 
-oPlayerController.m_GameOver = true;
-oPlayerController.m_GameOver_Win = true;
+//oPlayerController.m_GameOver = true;
+//oPlayerController.m_GameOver_Win = true;

@@ -1479,6 +1479,22 @@
             }
         },
         {
+            "Key": "38d2b542-75e6-4294-8bdd-7246b6d326fa",
+            "Value": {
+                "id": "7448d0ad-8f56-411d-bcc2-8d7962ef709d",
+                "resourcePath": "objects\\oGameOver\\oGameOver.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "39c4730b-5b86-443d-b35a-092053557c96",
+            "Value": {
+                "id": "21b67fed-945c-4d9e-a774-20ea792b92b1",
+                "resourcePath": "scripts\\sPlayerController_CurrentJournalIndex\\sPlayerController_CurrentJournalIndex.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "3a15d771-c050-47b2-bb48-7e5aeb404c39",
             "Value": {
                 "id": "c101b55d-277e-431e-b85d-a0ad83ac52f3",
@@ -2115,6 +2131,14 @@
             "Value": {
                 "id": "c8b8d787-d9e6-41a1-a8af-8e67656eba9e",
                 "resourcePath": "scripts\\sUtil_DirToAngle\\sUtil_DirToAngle.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "567274ea-aad0-495e-83ea-91928ca9e42f",
+            "Value": {
+                "id": "18fec39f-546e-4d28-b3dc-f50b5e5aea42",
+                "resourcePath": "scripts\\sPlayerController_DrawGUI_HUD_Journal\\sPlayerController_DrawGUI_HUD_Journal.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3079,6 +3103,14 @@
             }
         },
         {
+            "Key": "8238bd81-8e6b-4aed-ab44-395c73c46e25",
+            "Value": {
+                "id": "b8cca46e-c01f-4c2d-bfc1-5dfe2611553d",
+                "resourcePath": "scripts\\sGameLogic_GameOver\\sGameLogic_GameOver.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8247ee1d-2fc0-4b87-b2fd-9415167d9648",
             "Value": {
                 "id": "2ff9bdcd-3f44-4438-83ca-b1bf4de1bc09",
@@ -3823,6 +3855,14 @@
             }
         },
         {
+            "Key": "a20128ec-fbd6-4b9e-afcf-57891dc9722e",
+            "Value": {
+                "id": "3b74e70b-3e23-4a26-8408-cb139fa1c7ed",
+                "resourcePath": "scripts\\sGameLogic_PlayerRespawn\\sGameLogic_PlayerRespawn.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a2c3886c-34ce-4a12-a00a-2d6ad2ae2ab2",
             "Value": {
                 "id": "72483cad-8160-4d05-9a30-ddbd9aea4470",
@@ -4276,6 +4316,14 @@
                 "id": "27e80189-1013-4d0b-be95-880c7237d5da",
                 "resourcePath": "sprites\\sprManAction\\sprManAction.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b7f82b65-af86-490f-b8e0-c5d03c79c7d6",
+            "Value": {
+                "id": "96ce7feb-635b-4dfb-841b-9e35f037957a",
+                "resourcePath": "scripts\\sPlayerController_SetPlayer\\sPlayerController_SetPlayer.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -6010,6 +6058,8 @@
         "fa7df919-7208-4f81-a487-a9866e98c184",
         "c6b38ad7-7331-413d-995a-b00174ad3854",
         "aae28141-5a26-43a4-82d2-e67866aa5ecd",
+        "8238bd81-8e6b-4aed-ab44-395c73c46e25",
+        "a20128ec-fbd6-4b9e-afcf-57891dc9722e",
         "56436457-4aa3-455c-aadd-c8281d38bff2",
         "b95ceab0-f28b-494f-b9c8-905e2bd13d7d",
         "85dcb2d2-6327-47e2-98bc-e7c09774aec7",
@@ -6029,6 +6079,7 @@
         "4c0698c6-11d7-4a46-8d43-122cbef09a56",
         "431670b5-6c1a-4123-9bcc-e98e036f5261",
         "51987040-c25b-48b7-aae6-ed65189cada1",
+        "b7f82b65-af86-490f-b8e0-c5d03c79c7d6",
         "ebe8c012-704f-4282-bb73-9a8a0fd5ebd9",
         "18092258-e9e2-480b-a61a-24ac0424da87",
         "7cce86a3-e092-47fa-88f6-3cf92d6df0a1",
@@ -6058,6 +6109,7 @@
         "9ea9b941-6fae-44b8-bfaf-8b9741c0a157",
         "603339dc-148b-48eb-ae54-540c16e32422",
         "b5d32c6e-f616-4011-882d-e1c0daaf1ef8",
+        "567274ea-aad0-495e-83ea-91928ca9e42f",
         "10d879a3-19c8-4f0c-a15b-210b99224c5a",
         "47d71769-9146-4cf7-a9d9-07d8bda30a3b",
         "e3d0ce2d-1eae-47bb-9ef9-f06fcb827610",
@@ -6069,6 +6121,7 @@
         "651a0227-df95-4931-b2e8-cb0eabd052e5",
         "071a2bb2-d535-4de5-a3e9-81c9af92ecf6",
         "de304e96-208a-406a-a852-12b157cc4d0e",
+        "39c4730b-5b86-443d-b35a-092053557c96",
         "b55b4d0a-9398-4113-9805-b2b31e19cc4a",
         "9b6a6937-0a48-4a36-a530-eb8112309d09",
         "1edf4a5c-a473-4c5d-a9dc-0c0eefcce50d",
