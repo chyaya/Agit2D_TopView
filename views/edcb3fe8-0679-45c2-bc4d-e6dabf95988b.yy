@@ -17,7 +17,8 @@
         "7f725a07-bd9e-4f2c-894c-e5366a1f026a",
         "93fac0b4-b296-4174-a939-90db8266e7f6",
         "f7f85963-8e29-4483-8f0b-58b1f39e3f60",
-        "bcbc5895-6009-4a88-acd7-c536b9ceb1c1"
+        "bcbc5895-6009-4a88-acd7-c536b9ceb1c1",
+        "7ad6f549-5698-434b-8068-576493fab96d"
     ],
     "filterType": "GMObject",
     "folderName": "Resource",

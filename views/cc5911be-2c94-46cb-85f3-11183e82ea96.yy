@@ -16,7 +16,8 @@
         "4ec4964a-508b-4218-8ae3-3ad00ab38d26",
         "20efc6e9-df67-44ff-bfe1-78fbc7fffb7a",
         "d628fd0f-4771-49fe-afb0-3f2c7cb61286",
-        "4cd5e69d-9fc5-4d0d-95ae-282e4ab5c179"
+        "4cd5e69d-9fc5-4d0d-95ae-282e4ab5c179",
+        "5b380de7-1976-4fea-a9d1-d5bb0dfa9fba"
     ],
     "filterType": "GMSprite",
     "folderName": "resource",
