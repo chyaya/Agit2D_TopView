@@ -20,5 +20,5 @@ m_OpenTime = 0.5;
 
 if(false == variable_instance_exists(id, "m_EventId"))
 {
-	m_EventId = Event.NONE;
+	m_EventId = 0;//Event.NONE;
 }
