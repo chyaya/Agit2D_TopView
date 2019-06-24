@@ -24,8 +24,35 @@ case Action.RemoveItem:
 		assert_equal(result, 0);
 	}
 	break;
+case Action.TakeItem:
+	var count = sInven_GetItemCount(m_CurrentInven, m_CurrentInvenSlot);
+	var itemId = sInven_GetItemId(m_CurrentInven, m_CurrentInvenSlot);
+
+	if(sInven_AddItem(m_PlayerObject.m_Inven_Bag, itemId, count, true) == 0)
+	{
+		sInven_AddItem(m_PlayerObject.m_Inven_Bag, itemId, count);
+		sInven_RemoveItemByPos(m_CurrentInven, m_CurrentInvenSlot, count);
+	}
+
+	break;
 case Action.OpenBag:
 	m_Mode = Mode.Bag;
+	
+	with(m_PlayerObject)
+	{
+		sInven_DisconnectInven(m_Inven_Equip);
+		sInven_DisconnectInven(m_Inven_Bag);
+		sInven_ConnectInvens(m_Inven_Equip, m_Inven_Bag);
+	}
+	
+	with(oPlayerController)
+	{
+		if(m_CurrentInven != m_PlayerObject.m_Inven_Equip
+			&& m_CurrentInven != m_PlayerObject.m_Inven_Bag)
+		{
+			m_CurrentInven = m_InteractionObject.m_Inven_Storage;
+		}
+	}
 	break;
 case Action.CloseBag:
 	m_Mode = Mode.Move;
@@ -56,6 +83,22 @@ case Action.Deploy:
 	break;
 case Action.UseBuilding:
 	m_Mode = Mode.UseBuilding;
+	
+	if(object_is_ancestor(m_InteractionObject.object_index, oBuildingStorage))
+	{
+		with(m_PlayerObject)
+		{
+			sInven_DisconnectInven(m_Inven_Equip);
+			sInven_DisconnectInven(m_Inven_Bag);
+			sInven_ConnectInvens(m_Inven_Bag, other.m_InteractionObject.m_Inven_Storage);
+		}
+	
+		with(oPlayerController)
+		{
+			m_CurrentInven = m_PlayerObject.m_Inven_Bag;
+		}	
+	}
+	
 	break;
 case Action.UnuseBuilding:
 	m_Mode = Mode.Move;

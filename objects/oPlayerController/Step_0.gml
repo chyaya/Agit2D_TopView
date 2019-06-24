@@ -222,11 +222,9 @@ case Mode.UseBuilding:
 				}
 			}
 		}
-		else
+		else with(oPlayerController)
 		{
-			other.m_Actions[ACTION_A] = Action.NONE;
-			other.m_Actions[ACTION_X] = Action.NONE;
-			other.m_Actions[ACTION_Y] = Action.NONE;
+			sPlayerController_GUI_Inventory();
 		}
 	}
 	

@@ -4,7 +4,16 @@
     "mvc": "1.0",
     "name": "oLaunchingPad",
     "eventList": [
-        
+        {
+            "id": "b9f7a737-d356-4278-a154-3ef4aafa149a",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "1ee792a0-fa89-466a-9544-b1b64d9ba3ad"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": [

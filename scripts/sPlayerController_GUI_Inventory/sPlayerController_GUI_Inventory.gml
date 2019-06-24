@@ -80,12 +80,18 @@ with(m_PlayerObject)
 	itemId = sInven_GetItemId(other.m_CurrentInven, other.m_CurrentInvenSlot);
 }
 
-if(other.m_CurrentInven == m_PlayerObject.m_Inven_Bag && global.Item_OnUse[itemId] != noone)
+if(m_CurrentInven == m_PlayerObject.m_Inven_Bag)
 {
-	other.m_Actions[ACTION_A] = Action.UseItem;
+	if(global.Item_OnUse[itemId] != noone)
+		m_Actions[ACTION_A] = Action.UseItem;
+}
+else
+{
+	if(itemId > 0)
+		m_Actions[ACTION_A] = Action.TakeItem;
 }
 
-if(other.m_CurrentInven == m_PlayerObject.m_Inven_Bag && itemId != Item.NONE)
+if(m_CurrentInven == m_PlayerObject.m_Inven_Bag && itemId != Item.NONE)
 {
-	other.m_Actions[ACTION_Y] = Action.RemoveItem;
+	m_Actions[ACTION_Y] = Action.RemoveItem;
 }
