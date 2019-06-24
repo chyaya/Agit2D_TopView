@@ -1,6 +1,8 @@
 var action = argument0;
 
-if(m_InteractionObject != noone && object_is_ancestor(m_InteractionObject.object_index, oBuildingCraft))
+if(m_Mode == Mode.UseBuilding
+	&& m_InteractionObject != noone
+	&& object_is_ancestor(m_InteractionObject.object_index, oBuildingCraft))
 {
 	var craftId = m_InteractionObject.m_SelectedCraftId;
 	var maxCount = sPlayerController_Craft_MaxCraftCount(craftId);
