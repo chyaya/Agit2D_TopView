@@ -23,7 +23,7 @@ with(m_InteractionObject)
 	draw_set_halign(fa_center);
 	draw_set_font(fontGUINormal);
 	
-	sUtil_DrawTextShadow(boxX + boxW/2, boxY + boxH/2, global.Construct_Text[m_ConstructId]);
+	sUtil_DrawTextShadow(boxX + boxW/2, boxY + boxH/2, m_Name);
 
 
 	var _w = 400;

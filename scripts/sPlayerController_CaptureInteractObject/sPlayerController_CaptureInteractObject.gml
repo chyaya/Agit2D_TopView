@@ -11,7 +11,10 @@ for (var i = 0; i < interactionObjectNum; ++i;)
 	if(curObj == m_PlayerObject)
 		continue;
 	
-	if(object_is_ancestor(curObj.object_index, oBuildingCraft) == true)
+	if(object_is_ancestor(curObj.object_index, oBuildingStorage) == true)
+	{
+	}
+	else if(object_is_ancestor(curObj.object_index, oBuildingCraft) == true)
 	{
 		if(curObj.m_CraftingCount > 0)
 			continue;

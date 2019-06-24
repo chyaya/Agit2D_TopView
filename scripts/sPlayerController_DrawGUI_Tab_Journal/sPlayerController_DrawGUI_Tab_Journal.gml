@@ -22,7 +22,7 @@ draw_set_halign(fa_left);
 
 draw_set_font(fontGUINormal);
 
-draw_text(materialX + 20, materialY + 20, global.Journal_Desc[m_SelectedJournalId])
+draw_text(materialX + 20, materialY + 20, global.Journal_Desc[m_SelectedJournalId] + "\n\n[목표]\n" + global.Journal_Condition[m_SelectedJournalId]);
 
 var journalList = sPlayerController_GetVisibleJournalList();
 

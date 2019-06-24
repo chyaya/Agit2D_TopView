@@ -59,7 +59,8 @@ case Mode.Move:
 		m_Actions[ACTION_B] = Action.OpenBag;	
 		
 		if(m_InteractionObject != noone
-			&& object_is_ancestor(m_InteractionObject.object_index, oBuildingCraft))
+			&& (object_is_ancestor(m_InteractionObject.object_index, oBuildingCraft)
+			|| object_is_ancestor(m_InteractionObject.object_index, oBuildingStorage)))
 		{
 			m_Actions[ACTION_A] = Action.UseBuilding;
 		}
@@ -194,28 +195,38 @@ case Mode.Bag:
 	break;
 case Mode.UseBuilding:
 	m_Actions[ACTION_B] = Action.UnuseBuilding;
-	m_Actions[ACTION_A] = Action.SelectCraft_One;
-	m_Actions[ACTION_X] = Action.SelectCraft_HalfOfAll;
-	m_Actions[ACTION_Y] = Action.SelectCraft_All;
-	
+		
 	with(m_InteractionObject)
 	{
-		if(other.m_Input_AxisL_Step)
+		if(object_is_ancestor(object_index, oBuildingCraft))
 		{
-			if(other.m_Input_AxisL_Up || other.m_Input_DPad_Up)
+			other.m_Actions[ACTION_A] = Action.SelectCraft_One;
+			other.m_Actions[ACTION_X] = Action.SelectCraft_HalfOfAll;
+			other.m_Actions[ACTION_Y] = Action.SelectCraft_All;
+			
+			if(other.m_Input_AxisL_Step)
 			{
-				var prevId = sBuilding_GetPrevVisibleCraftIndex(other.m_CraftVisible, m_SelectedCraftId);
+				if(other.m_Input_AxisL_Up || other.m_Input_DPad_Up)
+				{
+					var prevId = sBuilding_GetPrevVisibleCraftIndex(other.m_CraftVisible, m_SelectedCraftId);
 		
-				if(prevId > 0)
-					m_SelectedCraftId = prevId;
-			}
-			else if(other.m_Input_AxisL_Down || other.m_Input_DPad_Down)
-			{
-				var nextId = sBuilding_GetNextVisibleCraftIndex(other.m_CraftVisible, m_SelectedCraftId);
+					if(prevId > 0)
+						m_SelectedCraftId = prevId;
+				}
+				else if(other.m_Input_AxisL_Down || other.m_Input_DPad_Down)
+				{
+					var nextId = sBuilding_GetNextVisibleCraftIndex(other.m_CraftVisible, m_SelectedCraftId);
 		
-				if(nextId > 0)
-					m_SelectedCraftId = nextId;
+					if(nextId > 0)
+						m_SelectedCraftId = nextId;
+				}
 			}
+		}
+		else
+		{
+			other.m_Actions[ACTION_A] = Action.NONE;
+			other.m_Actions[ACTION_X] = Action.NONE;
+			other.m_Actions[ACTION_Y] = Action.NONE;
 		}
 	}
 	

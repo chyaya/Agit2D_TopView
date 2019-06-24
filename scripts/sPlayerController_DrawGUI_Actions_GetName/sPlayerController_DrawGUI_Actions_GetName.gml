@@ -1,11 +1,6 @@
 var action = argument0;
 
-if(action != Action.SelectCraft_All
-	&& action != Action.SelectCraft_HalfOfAll)
-{
-	return m_ActionName[action];
-}
-else
+if(m_InteractionObject != noone && object_is_ancestor(m_InteractionObject.object_index, oBuildingCraft))
 {
 	var craftId = m_InteractionObject.m_SelectedCraftId;
 	var maxCount = sPlayerController_Craft_MaxCraftCount(craftId);
@@ -18,5 +13,9 @@ else
 		return m_ActionName[action] + "(" + string(maxCount) + ")";
 	}
 
+	return m_ActionName[action];
+}
+else
+{
 	return m_ActionName[action];
 }

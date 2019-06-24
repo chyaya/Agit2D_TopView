@@ -39,7 +39,14 @@ if(m_Mode == Mode.Bag)
 }
 else if(m_Mode == Mode.UseBuilding)
 {
-	sPlayerController_DrawGUI_UseBuilding_Craft();
+	if(object_is_ancestor(m_InteractionObject.object_index, oBuildingCraft))
+	{
+		sPlayerController_DrawGUI_UseBuilding_Craft();
+	}
+	else
+	{
+		sPlayerController_DrawGUI_UseBuilding_Storage();
+	}
 }
 else
 {
