@@ -27,13 +27,19 @@ case Action.RemoveItem:
 case Action.TakeItem:
 	var count = sInven_GetItemCount(m_CurrentInven, m_CurrentInvenSlot);
 	var itemId = sInven_GetItemId(m_CurrentInven, m_CurrentInvenSlot);
-
-	if(sInven_AddItem(m_PlayerObject.m_Inven_Bag, itemId, count, true) == 0)
+	
+	if(sGameLogic_BeforeItemAdd(itemId))
 	{
-		sInven_AddItem(m_PlayerObject.m_Inven_Bag, itemId, count);
+		if(sInven_AddItem(m_PlayerObject.m_Inven_Bag, itemId, count, true) == 0)
+		{
+			sInven_AddItem(m_PlayerObject.m_Inven_Bag, itemId, count);
+			sInven_RemoveItemByPos(m_CurrentInven, m_CurrentInvenSlot, count);
+		}
+	}
+	else
+	{
 		sInven_RemoveItemByPos(m_CurrentInven, m_CurrentInvenSlot, count);
 	}
-
 	break;
 case Action.OpenBag:
 	m_Mode = Mode.Bag;

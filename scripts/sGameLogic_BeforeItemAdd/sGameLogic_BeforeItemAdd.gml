@@ -14,6 +14,7 @@ with(oPlayerController)
 		return false;
 	case Item.BluePrint:
 		m_JournalVisible[Journal.Cardkey] = true;	
+		m_JournalComplete[Journal.GoldenTicket] = true;	
 		
 		m_Mode = Mode.Bag;
 		m_CurTab = Tab.Journal;
@@ -22,6 +23,7 @@ with(oPlayerController)
 		return false;
 	case Item.Drone:
 		m_JournalVisible[Journal.RocketPart] = true;	
+		m_JournalComplete[Journal.Cardkey] = true;	
 		
 		m_Mode = Mode.Bag;
 		m_CurTab = Tab.Journal;
