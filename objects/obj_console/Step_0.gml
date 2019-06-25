@@ -106,6 +106,24 @@ if console_submit(my_console) {
 		
 		file_text_close(file);
 	}
+	else if console_cmd(my_console, "invinsible")
+	{
+		if(false == instance_exists(oPlayerController.m_PlayerObject))
+			exit;
+		
+		var boolean = false;
+		
+		if(console_value_count(my_console) == 0)
+		{
+			boolean = !oPlayerController.m_PlayerObject.m_Invinsible;
+		}
+		else
+		{
+			boolean = floor(real(console_value(my_console, 1))) > 0 ? true : false;
+		}
+		
+		oPlayerController.m_PlayerObject.m_Invinsible = boolean;
+	}	
 }
 
 /* */
