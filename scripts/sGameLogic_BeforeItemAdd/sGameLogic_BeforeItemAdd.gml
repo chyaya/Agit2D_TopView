@@ -12,7 +12,7 @@ with(oPlayerController)
 		m_SelectedJournalId = Journal.GoldenTicket;
 		
 		return false;
-	case Item.BluePrint:
+	case Item.EntryCard:
 		m_JournalVisible[Journal.Cardkey] = true;	
 		m_JournalComplete[Journal.GoldenTicket] = true;	
 		
@@ -21,7 +21,7 @@ with(oPlayerController)
 		m_SelectedJournalId = Journal.Cardkey;
 		
 		return false;
-	case Item.Drone:
+	case Item.AIDrone:
 		m_JournalVisible[Journal.RocketPart] = true;	
 		m_JournalComplete[Journal.Cardkey] = true;	
 		

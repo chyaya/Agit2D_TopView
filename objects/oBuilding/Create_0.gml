@@ -8,5 +8,9 @@ if(false == variable_instance_exists(id, "m_ConstructId"))
 {
 	m_ConstructId = 0;
 }
+else
+{
+	m_Name = global.Construct_Text[m_ConstructId];
+}
 
 //sprite_index = global.Construct_Sprite[m_ConstructId];
