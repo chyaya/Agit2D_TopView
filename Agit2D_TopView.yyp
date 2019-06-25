@@ -1623,6 +1623,14 @@
             }
         },
         {
+            "Key": "415487a5-7426-42d1-b741-a65d48dacd79",
+            "Value": {
+                "id": "79bfe788-0877-4b49-8eae-033e777e954b",
+                "resourcePath": "scripts\\sGameLogic_BeforeUseBuilding\\sGameLogic_BeforeUseBuilding.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "417a9259-cbbc-4979-a544-f3ea2d630c0c",
             "Value": {
                 "id": "4526d2b7-f913-4cb8-9e36-675bb26403df",
@@ -6202,6 +6210,7 @@
         "fa7df919-7208-4f81-a487-a9866e98c184",
         "c6b38ad7-7331-413d-995a-b00174ad3854",
         "aae28141-5a26-43a4-82d2-e67866aa5ecd",
+        "415487a5-7426-42d1-b741-a65d48dacd79",
         "a41256c4-d81e-4862-b2f1-75d6edfedad8",
         "8238bd81-8e6b-4aed-ab44-395c73c46e25",
         "a20128ec-fbd6-4b9e-afcf-57891dc9722e",

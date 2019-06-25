@@ -60,7 +60,9 @@ case Mode.Move:
 		
 		if(m_InteractionObject != noone
 			&& (object_is_ancestor(m_InteractionObject.object_index, oBuildingCraft)
-			|| object_is_ancestor(m_InteractionObject.object_index, oBuildingStorage)))
+			|| object_is_ancestor(m_InteractionObject.object_index, oBuildingStorage)
+			|| m_InteractionObject.object_index == oRocketStep
+			))
 		{
 			m_Actions[ACTION_A] = Action.UseBuilding;
 		}
@@ -198,7 +200,11 @@ case Mode.UseBuilding:
 		
 	with(m_InteractionObject)
 	{
-		if(object_is_ancestor(object_index, oBuildingCraft))
+		if(object_index == oRocketStep)
+		{
+			sGameLogic_GameOver(true);
+		}
+		else if(object_is_ancestor(object_index, oBuildingCraft))
 		{
 			other.m_Actions[ACTION_A] = Action.SelectCraft_One;
 			other.m_Actions[ACTION_X] = Action.SelectCraft_HalfOfAll;
