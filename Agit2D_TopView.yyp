@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "0c9396f9-2f97-4373-b3f0-bb3688eaf789",
+            "Value": {
+                "id": "c49c103d-31ee-43ce-9421-65d57fde9191",
+                "resourcePath": "sprites\\sprScorpionDead\\sprScorpionDead.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0ca6f711-533b-4581-8282-dc687c2e1522",
             "Value": {
                 "id": "cbad25bb-2cd9-40da-9f3a-dd8347d42ad1",
@@ -631,6 +639,14 @@
             }
         },
         {
+            "Key": "11f10df1-1576-4491-83ea-9d143f298648",
+            "Value": {
+                "id": "0dc52f3c-993f-4871-a746-642029fab9bd",
+                "resourcePath": "views\\11f10df1-1576-4491-83ea-9d143f298648.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "1225e6ed-5307-4638-9e3d-e6af6b0f39bc",
             "Value": {
                 "id": "aca3d88a-6ac6-4eeb-834f-0b80877ef63a",
@@ -658,7 +674,7 @@
             "Key": "126af7fb-bf0f-4ea8-b5d0-97c39de90aba",
             "Value": {
                 "id": "6eb2457b-ddee-4402-9ffd-393ff70db87e",
-                "resourcePath": "sprites\\sprScorpion\\sprScorpion.yy",
+                "resourcePath": "sprites\\sprScorpionMove\\sprScorpionMove.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2775,6 +2791,14 @@
             }
         },
         {
+            "Key": "6fdda725-4462-4627-9010-c145ff08c89e",
+            "Value": {
+                "id": "e2887d23-c033-4c81-8d6b-add20c1e50fb",
+                "resourcePath": "objects\\oRobotTubo\\oRobotTubo.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "703329cb-6564-44d5-bb2d-e2683e83f7cc",
             "Value": {
                 "id": "38e0f1ed-f2d4-4cb3-bde8-add0826df634",
@@ -3519,6 +3543,14 @@
             }
         },
         {
+            "Key": "902560c7-6a87-49f1-9aac-297df9d9034a",
+            "Value": {
+                "id": "1e8b684e-7cc1-41e8-85fc-f782c50710b3",
+                "resourcePath": "sprites\\sprScorpionIdle2\\sprScorpionIdle2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "91784f1c-e0e5-4808-a27c-40e98c10f2ba",
             "Value": {
                 "id": "99cef941-037e-49f3-bb27-09fe66b2bf76",
@@ -3579,6 +3611,14 @@
             "Value": {
                 "id": "a9746a51-af51-4b23-8f9b-6146cfd9a1a5",
                 "resourcePath": "sprites\\sprGhostDead\\sprGhostDead.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "93104360-e8ca-4f4c-8039-d18b34435153",
+            "Value": {
+                "id": "20352da5-2798-4ade-96c6-10ef57c6dbd3",
+                "resourcePath": "sprites\\sprRobotTubodle\\sprRobotTubodle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3668,6 +3708,14 @@
                 "id": "741d83ae-e603-4cb0-a954-ab8ee94144da",
                 "resourcePath": "objects\\o_shader_end\\o_shader_end.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "96580733-786c-4a9b-9346-25ee21042384",
+            "Value": {
+                "id": "1dbb78fc-3be3-412a-9b5f-c61dfcc653ce",
+                "resourcePath": "sprites\\sprScorpionIdle\\sprScorpionIdle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4330,7 +4378,15 @@
             "Key": "b167304e-e23e-4eeb-a59b-b72bf5645cc9",
             "Value": {
                 "id": "d4762f4e-c790-42ac-b279-f96eb35584be",
-                "resourcePath": "sprites\\sprite116\\sprite116.yy",
+                "resourcePath": "sprites\\TOLIcon_2\\TOLIcon_2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b25b6aff-8224-4e9a-8e07-43ec39d0fd42",
+            "Value": {
+                "id": "6639cea8-2c93-47e0-817f-e34de4c8cb0a",
+                "resourcePath": "sprites\\sprRobotTuboMove\\sprRobotTuboMove.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5402,7 +5458,7 @@
             "Key": "dd61226e-0314-427e-b4d7-affa37668666",
             "Value": {
                 "id": "59df0ca0-dd3d-4037-ad5c-6b9054c046d7",
-                "resourcePath": "sprites\\sprite115\\sprite115.yy",
+                "resourcePath": "sprites\\TOLIcon_1\\TOLIcon_1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6194,7 +6250,7 @@
             "Key": "fda170e5-e2a1-41fb-b264-a363b3e5abdc",
             "Value": {
                 "id": "ee794dec-1997-40e3-8d07-9d81a9e9eeb3",
-                "resourcePath": "sprites\\sprite130\\sprite130.yy",
+                "resourcePath": "sprites\\TOLIcon_3\\TOLIcon_3.yy",
                 "resourceType": "GMSprite"
             }
         },

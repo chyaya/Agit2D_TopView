@@ -2,7 +2,7 @@
     "id": "126af7fb-bf0f-4ea8-b5d0-97c39de90aba",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "sprScorpion",
+    "name": "sprScorpionMove",
     "For3D": false,
     "HTile": false,
     "VTile": false,
@@ -54,8 +54,8 @@
             "visible": true
         }
     ],
-    "origin": 4,
-    "originLocked": false,
+    "origin": 9,
+    "originLocked": true,
     "playbackSpeed": 15,
     "playbackSpeedType": 0,
     "premultiplyAlpha": false,
@@ -66,5 +66,5 @@
     "type": 0,
     "width": 18,
     "xorig": 9,
-    "yorig": 6
+    "yorig": 9
 }
