@@ -36,7 +36,7 @@ Prop_AddJournal(Journal.Cardkey, "한-칼슨 연구소",
 
 그래, 연구소에 가면 무슨 방법이 있을거야.",
 @"한-칼슨 연구소로 가기",
-[]);
+[oLap]);
 
 Prop_AddJournal(Journal.RocketPart, "로켓 만들기",
 @"연구소에서 발견한 작은 드론은 자신을 J2라고 소개했다.

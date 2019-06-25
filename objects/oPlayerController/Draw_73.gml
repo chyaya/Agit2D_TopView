@@ -29,7 +29,7 @@ if(m_Mode == Mode.DeployBuilding)
 
 var journalId = sPlayerController_CurrentJournalIndex();
 
-var len = 150;
+var len = 120;
 var targets = global.Journal_Targets[journalId];
 
 //with(oSleepingBag)

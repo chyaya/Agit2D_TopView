@@ -4,6 +4,8 @@ if(false == m_InputEnable)
 if(true == m_Win)
 	return;
 	
-sGameLogic_PlayerRespawn();
+//sGameLogic_PlayerRespawn();
+
+game_restart();
 
 instance_destroy();

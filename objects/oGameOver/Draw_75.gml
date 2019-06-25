@@ -26,7 +26,7 @@ else
 		var s = floor(current_time/500) % 2;
 
 		if(s == 0)
-			draw_text(view_wport[0]/2, view_hport[0]/2 + 100, "PRESS ANY KEY TO RESPAWN")
+			draw_text(view_wport[0]/2, view_hport[0]/2 + 100, "PRESS ANY KEY TO RESTART")
 	}
 }
 	

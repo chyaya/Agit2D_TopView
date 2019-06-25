@@ -8,7 +8,8 @@ if(false == instance_exists(oPlayer))
 {
 	if(sUtil_GamePad_PressAnyButton() != 0)
 	{
-		sGameLogic_PlayerRespawn();
+		//sGameLogic_PlayerRespawn();
+		game_restart();
 
 		instance_destroy();
 		
