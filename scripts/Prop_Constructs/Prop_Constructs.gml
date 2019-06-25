@@ -41,7 +41,7 @@ Prop_AddConstruct(Construct.WatchTower, sprWatchTower, "감시타워", oWatchTow
 Prop_AddConstruct(Construct.GPSTransmitter,sprGPSTransmitter, "GPS 발신기", oGPSTransmitter, [Item.ElectricWire, Item.Semiconductor ], [1, 2], oRobotMaker);
 //Prop_AddConstruct(Construct.TypeAHangar, sprTypeAHangar, "TypeA 로봇 보관함", oTypeAHangar, [Item.TypeAHangar], [1], oRobotMaker);
 Prop_AddConstruct(Construct.TestExosuit, sprExosuitIdle, "테스트 엑소슈트", oExosuit, [Item.Aluminium], [1], noone);
-Prop_AddConstruct(Construct.RocketStep, sprLaunchingPad, "로켓 발사대", oRocketStep, [Item.BluePrint, Item.NavigationSystem, Item.Drone, Item.Propellant], [1, 1, 1, 1], noone);
+Prop_AddConstruct(Construct.RocketStep, sprLaunchingPad, "로켓 발사대", oRocketStep, [Item.RocketEngine, Item.NavigationSystem, Item.Propellant], [1, 1, 1,], noone);
 
 
 

@@ -943,6 +943,14 @@
             }
         },
         {
+            "Key": "1f1bfe6c-0942-4d29-b048-99676bfa7861",
+            "Value": {
+                "id": "44b90bf5-4bb3-46b3-a396-ed877303ad08",
+                "resourcePath": "objects\\oCarcass\\oCarcass.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1fd6a40c-6304-403a-9140-a1f71a2b76bc",
             "Value": {
                 "id": "696d7d6c-2ee7-4553-a64f-4aeae51874f8",
@@ -979,6 +987,14 @@
             "Value": {
                 "id": "7141ef68-0f21-4d97-a9d9-93e01819a9e7",
                 "resourcePath": "sprites\\sprRockSaltRock\\sprRockSaltRock.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "21ae7c97-aa59-4fc7-a8ea-ce78a681740d",
+            "Value": {
+                "id": "ee715c0e-ae5a-4d6f-8506-82108359d719",
+                "resourcePath": "sprites\\sprRocketEngine\\sprRocketEngine.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2202,7 +2218,7 @@
             "Key": "57293b47-6b1e-4976-a2de-26b76991bc3c",
             "Value": {
                 "id": "1ae45648-2dba-47c1-9b7c-f739a080e7d0",
-                "resourcePath": "objects\\oRockSalt\\oRockSalt.yy",
+                "resourcePath": "objects\\oRockPink\\oRockPink.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2523,6 +2539,14 @@
             "Value": {
                 "id": "a500e99b-638b-432e-878a-d5e3d67b868e",
                 "resourcePath": "sprites\\sprRobotParts\\sprRobotParts.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "63e3c6ed-abe0-44ff-899e-b1268278802b",
+            "Value": {
+                "id": "2929cd85-ddd9-4c85-9f00-aa0458a770d5",
+                "resourcePath": "sprites\\sprEntryCard\\sprEntryCard.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3447,14 +3471,6 @@
             }
         },
         {
-            "Key": "8d05b480-5f49-4117-b613-9158f3750532",
-            "Value": {
-                "id": "93242084-1097-42d5-a0b1-4ff5bdd9a65d",
-                "resourcePath": "objects\\oBluePrint\\oBluePrint.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "8d425326-68de-40ae-b884-1bcc23f80aa2",
             "Value": {
                 "id": "eefbe642-b2f2-45cf-ac04-15ea5aa38146",
@@ -4324,6 +4340,14 @@
                 "id": "70414cb3-7988-4679-afc0-fe88d0192cd0",
                 "resourcePath": "views\\b39870d8-c063-4a93-9f1d-6ec3c07cae3f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b3c9f499-9f50-409e-ab9f-5e9fca2a3859",
+            "Value": {
+                "id": "267760e1-5dad-4429-83e5-7761b7a66f2e",
+                "resourcePath": "sprites\\sprCarcass\\sprCarcass.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -5331,6 +5355,14 @@
             "Value": {
                 "id": "93fc4dd6-1e1c-4973-964b-1948758d00b1",
                 "resourcePath": "objects\\oScorpion\\oScorpion.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dbd63e5a-4035-4cd5-abf0-1991f4084a25",
+            "Value": {
+                "id": "dfbb827c-3fdf-404f-8317-3e84eca9940c",
+                "resourcePath": "objects\\oLap\\oLap.yy",
                 "resourceType": "GMObject"
             }
         },

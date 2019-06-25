@@ -93,9 +93,10 @@ enum Item
 	
 	//로봇 제조기 
 	GoldenTicket,
-	BluePrint,
+	EntryCard,
+	RocketEngine,
 	NavigationSystem,
-	Drone,
+	AIDrone,
 	Propellant,
 	
 	
@@ -120,12 +121,12 @@ inv_create_item(Item.Water, sprWater, "물", 100, "음용이 가능한 물이다
 
 
 
-inv_create_item(Item.Fruit, sprFruit, "열매", 100, "포만감 + 15", sItem_Eat_Satiety_OnUse, noone, noone, 15);
-inv_create_item(Item.BakedFruit, sprBakedFruit, "구운 열매", 100, "포만감 + 25", sItem_Eat_Satiety_OnUse, noone, noone, 25);
-inv_create_item(Item.Apple, sprApple, "사과", 10, "포만감 + 30", sItem_Eat_Satiety_OnUse, noone, noone, 30);
-inv_create_item(Item.BakedApple, sprBakedApple, "구운 사과", 10, "포만감 + 50", sItem_Eat_Satiety_OnUse, noone, noone, 50);
-inv_create_item(Item.Meat, sprMeat, "고기", 100, "생명력 + 5", sItem_Eat_Health_OnUse, noone, noone, 5);
-inv_create_item(Item.BakedMeat, sprBakedMeat, "구운 고기", 100, "생명력 + 10", sItem_Eat_Health_OnUse, noone, noone, 10);
+inv_create_item(Item.Fruit, sprFruit, "열매", 100, "포만감 + 15", sItem_Eat_Satiety_OnUse, noone, noone, 2);
+inv_create_item(Item.BakedFruit, sprBakedFruit, "구운 열매", 100, "포만감 + 25", sItem_Eat_Satiety_OnUse, noone, noone, 4);
+inv_create_item(Item.Apple, sprApple, "사과", 10, "포만감 + 30", sItem_Eat_Satiety_OnUse, noone, noone, 5);
+inv_create_item(Item.BakedApple, sprBakedApple, "구운 사과", 10, "포만감 + 50", sItem_Eat_Satiety_OnUse, noone, noone, 10);
+inv_create_item(Item.Meat, sprMeat, "고기", 100, "생명력 + 5", sItem_Eat_Health_OnUse, noone, noone, 10);
+inv_create_item(Item.BakedMeat, sprBakedMeat, "구운 고기", 100, "생명력 + 10", sItem_Eat_Health_OnUse, noone, noone, 20);
 
 
 
@@ -189,7 +190,8 @@ inv_create_item(Item.InfiniteTrackParts, sprInfiniteTrackParts, "궤도부품", 
 inv_create_item(Item.FourleggedwalkingParts, sprFourleggedwalkingParts, "사족보행부품", 100, "충격에는 강하지만, 지형에 영향을 많이 받는다.", noone, noone, noone, 0);
 
 inv_create_item(Item.GoldenTicket, sprGoldenTicket, "엘레시우스 우주항공 티켓", 1, "오래된 엘레시우스 우주항공 티켓", noone, noone, noone, 0);
-inv_create_item(Item.BluePrint, sprBulePrint, "로켓제작 설계도", 1, "로켓을 제작 방법이 있는 설계도", noone, noone, noone, 0);
+inv_create_item(Item.EntryCard, sprEntryCard, "엘레시우스 로켓 연구소 출입카드", 1, "엘레시우스 로켓 연구소에 출입이 가능한 등록카드", noone, noone, noone, 0);
+inv_create_item(Item.RocketEngine, sprRocketEngine, "로켓 엔진", 1, "대기권 밖까지 나갈 수 있는 추진력을 가진 엔진", noone, noone, noone, 0);
 inv_create_item(Item.NavigationSystem, sprNavigationSystem, "자동항법 장치", 1, "목적지까지 로켓을 운행해주는 항법장치, 도착지는 엘레시우스로 설정되어 있다.", noone, noone, noone, 0);
-inv_create_item(Item.Drone, sprDrone, "로켓 제작 드론", 1, "로켓 제작에 특화되어 있는 드론", noone, noone, noone, 0);
+inv_create_item(Item.AIDrone, sprDrone, "AI드론", 1, "AI에 의해 스스로 움직이는 드론.", noone, noone, noone, 0);
 inv_create_item(Item.Propellant, sprLiquidPropellant, "액화 추진체", 1, "로켓의 연료로 사용되는 액화 추진체", noone, noone, noone, 0);

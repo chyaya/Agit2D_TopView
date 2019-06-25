@@ -12,7 +12,8 @@
         "0b8c8879-5c8b-4850-8419-195c1fd77a4a",
         "0681c360-5e25-4f2d-a2db-2769b32c1a5f",
         "92ac2c3e-6d87-410f-ab95-78ea9e20cd61",
-        "373a1842-237e-4ec2-ab38-9c008f6f6205"
+        "373a1842-237e-4ec2-ab38-9c008f6f6205",
+        "b3c9f499-9f50-409e-ab9f-5e9fca2a3859"
     ],
     "filterType": "GMSprite",
     "folderName": "Rocket",
