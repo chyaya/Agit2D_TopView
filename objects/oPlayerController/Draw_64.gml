@@ -39,7 +39,11 @@ if(m_Mode == Mode.Bag)
 }
 else if(m_Mode == Mode.UseBuilding)
 {
-	if(object_is_ancestor(m_InteractionObject.object_index, oBuildingCraft))
+	if(m_InteractionObject.object_index == oRocketStep)
+	{
+		
+	}
+	else if(object_is_ancestor(m_InteractionObject.object_index, oBuildingCraft))
 	{
 		sPlayerController_DrawGUI_UseBuilding_Craft();
 	}

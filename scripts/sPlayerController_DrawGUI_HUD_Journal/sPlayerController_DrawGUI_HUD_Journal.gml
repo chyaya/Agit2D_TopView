@@ -17,3 +17,5 @@ sUtil_DrawTextShadow(text_x, text_y, global.Journal_Text[journalId]);
 
 draw_set_colour(c_white);
 sUtil_DrawTextShadow(text_x, text_y + 50, global.Journal_Condition[journalId]);
+
+

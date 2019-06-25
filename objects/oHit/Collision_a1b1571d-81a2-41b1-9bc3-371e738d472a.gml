@@ -19,6 +19,9 @@ if(other.object_index == oGhost)
 if(other.m_CurHealth <= 0)
 	return;
 	
+if(other.m_Invinsible)
+	return;
+	
 var damage = other.m_IsResource ? m_GatheringDamage : m_CombatDamage;
 
 with(other)

@@ -27,13 +27,19 @@ case Action.RemoveItem:
 case Action.TakeItem:
 	var count = sInven_GetItemCount(m_CurrentInven, m_CurrentInvenSlot);
 	var itemId = sInven_GetItemId(m_CurrentInven, m_CurrentInvenSlot);
-
-	if(sInven_AddItem(m_PlayerObject.m_Inven_Bag, itemId, count, true) == 0)
+	
+	if(sGameLogic_BeforeItemAdd(itemId))
 	{
-		sInven_AddItem(m_PlayerObject.m_Inven_Bag, itemId, count);
+		if(sInven_AddItem(m_PlayerObject.m_Inven_Bag, itemId, count, true) == 0)
+		{
+			sInven_AddItem(m_PlayerObject.m_Inven_Bag, itemId, count);
+			sInven_RemoveItemByPos(m_CurrentInven, m_CurrentInvenSlot, count);
+		}
+	}
+	else
+	{
 		sInven_RemoveItemByPos(m_CurrentInven, m_CurrentInvenSlot, count);
 	}
-
 	break;
 case Action.OpenBag:
 	m_Mode = Mode.Bag;
@@ -50,7 +56,7 @@ case Action.OpenBag:
 		if(m_CurrentInven != m_PlayerObject.m_Inven_Equip
 			&& m_CurrentInven != m_PlayerObject.m_Inven_Bag)
 		{
-			m_CurrentInven = m_InteractionObject.m_Inven_Storage;
+			m_CurrentInven = m_PlayerObject.m_Inven_Bag;
 		}
 	}
 	break;
@@ -78,10 +84,16 @@ case Action.Deploy:
 	}
 	else
 	{
-		sUtil_CreateNotify(_x, _y, "I can't build there.", 0, -30)	
+		sUtil_CreateNotify(_x, _y, "여기에 놓을 수 없어", 0, -30)	
 	}
 	break;
 case Action.UseBuilding:
+	if(false == sGameLogic_BeforeUseBuilding(m_InteractionObject))
+	{
+		sUtil_CreateNotify(m_PlayerObjectX, m_PlayerObjectY, "아무일도 일어나지 않았어", 0, -30)	
+		break;
+	}
+
 	m_Mode = Mode.UseBuilding;
 	
 	if(object_is_ancestor(m_InteractionObject.object_index, oBuildingStorage))
@@ -95,7 +107,7 @@ case Action.UseBuilding:
 	
 		with(oPlayerController)
 		{
-			m_CurrentInven = m_PlayerObject.m_Inven_Bag;
+			m_CurrentInven = m_InteractionObject.m_Inven_Storage;
 		}	
 	}
 	

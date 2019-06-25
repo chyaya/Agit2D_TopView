@@ -197,6 +197,20 @@
             "value": "2",
             "varName": "m_RespawnDelayMax",
             "varType": 1
+        },
+        {
+            "id": "a4912f2b-a159-445e-b705-660d38f7ba49",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "0",
+            "varName": "m_Invinsible",
+            "varType": 3
         }
     ],
     "solid": false,
