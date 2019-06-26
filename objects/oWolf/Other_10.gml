@@ -1,7 +1,7 @@
 /// @description Dead
 event_inherited();
 
-sGameLogic_CreateItem(x, y, Item.RoughLeather, random_range(4, 6));
+sGameLogic_CreateItem(x, y, Item.RoughLeather, random_range(2, 3));
 
-if(random(100) <= 15)
-	sGameLogic_CreateItem(x, y, Item.Meat, 2);
+if(random(100) <= 5)
+	sGameLogic_CreateItem(x, y, Item.Meat, 1);

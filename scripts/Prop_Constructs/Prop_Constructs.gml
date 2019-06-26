@@ -9,6 +9,7 @@ enum Construct
 	Workbench,
 	Blast,
 	BuildLap,
+	kitchen,
 	TinkerShop,
 	RobotMixer,
 	RobotMaker,
@@ -31,6 +32,7 @@ Prop_AddConstruct(Construct.Bonfire, sprBonfire, "모닥불", oBonfire, [Item.Wo
 Prop_AddConstruct(Construct.Workbench, sprWorkbench, "작업대", oWorkbench, [Item.Wood], [4], oBonfire);
 Prop_AddConstruct(Construct.Blast, sprBlast, "용광로", oBlastFurnace, [Item.Stone, Item.Coal], [10, 3], oWorkbench);
 Prop_AddConstruct(Construct.BuildLap, sprBuildLap, "축성연구소", oBuildLap, [Item.StoneBrick, Item.IronStone, Item.Aluminium], [5, 3, 4], oBlastFurnace);
+Prop_AddConstruct(Construct.kitchen, sprKitchen, "부엌", oKitchen, [Item.Wood, Item.IronStone, Item.Aluminium], [5, 3, 4], oBlastFurnace);
 Prop_AddConstruct(Construct.TinkerShop, sprTinkerShop, "세공소", oTinkerShop, [Item.Wood, Item.IronIngot], [6, 2], oBlastFurnace);
 Prop_AddConstruct(Construct.RobotMixer, sprRobotMixer, "정밀분쇄기", oRobotMixer, [Item.IronIngot, Item.Aluminium, Item.Pipe], [2, 6, 2], oTinkerShop);
 Prop_AddConstruct(Construct.RobotMaker, sprRobotMaker, "로봇제조기", oRobotMaker, [Item.Aluminium, Item.Semiconductor, Item.ElectricWire], [20, 5, 5], oRobotMixer);

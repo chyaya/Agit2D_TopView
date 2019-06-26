@@ -48,6 +48,19 @@ enum Craft
 	DefenseTower,
 	WatchTower,
 	
+	//부엌
+	FruitFry,
+	AppleFry,
+	Salad,
+	FruitMochi,
+	AppleBread,
+	Cheese,
+	FriedEgg,
+	boiledEgg,
+	EggFriedRice,
+	MeatStew,
+	Steak,
+	
 	//세공소 
 	Thread,
 	Cotton,
@@ -120,6 +133,18 @@ Prop_AddCraft(Craft.CastleWall, Item.CastleWall, 10000, [Item.StoneBrick, Item.I
 Prop_AddCraft(Craft.CastleDoor, Item.CastleDoor, 10000, [Item.Wood, Item.IronIngot, Item.Bolt], [4, 1, 10], noone);
 Prop_AddCraft(Craft.DefenseTower, Item.DefenseTower, 10000, [Item.StoneBrick, Item.IronIngot, Item.IronShell], [4, 2, 3], noone);
 Prop_AddCraft(Craft.WatchTower, Item.WatchTower, 10000, [Item.StoneBrick, Item.IronIngot, Item.Semiconductor], [4, 3, 2], noone);
+
+Prop_AddCraft(Craft.FruitFry, Item.FruitFry, 10000, [Item.Fruit, Item.CookingOil], [4, 1], noone);
+Prop_AddCraft(Craft.AppleFry, Item.AppleFry, 10000, [Item.Apple, Item.Vegetable, Item.CookingOil], [3, 1, 1], noone);
+Prop_AddCraft(Craft.Salad, Item.Salad, 10000, [Item.Vegetable, Item.Fruit, Item.Rocksalt, Item.CookingOil], [2, 2, 1, 1], noone);
+Prop_AddCraft(Craft.FruitMochi, Item.FruitMochi, 10000, [Item.Fruit, Item.Apple, Item.Grain, Item.Water], [3, 3, 3, 2], noone);
+Prop_AddCraft(Craft.AppleBread, Item.AppleBread, 10000, [Item.Apple, Item.Grain, Item.Milk, Item.Water], [4, 3, 3, 2], noone);
+Prop_AddCraft(Craft.Cheese, Item.Cheese, 10000, [Item.Milk, Item.Rocksalt], [4, 1], noone);
+Prop_AddCraft(Craft.FriedEgg, Item.FriedEgg, 10000, [Item.Egg, Item.Rocksalt, Item.CookingOil], [1, 2, 1], noone);
+Prop_AddCraft(Craft.boiledEgg, Item.boiledEgg, 10000, [Item.Egg, Item.Water, Item.Rocksalt], [2, 4, 1], noone);
+Prop_AddCraft(Craft.EggFriedRice, Item.EggFriedRice, 10000, [Item.Grain, Item.Egg, Item.Rocksalt, Item.CookingOil], [3, 1, 1, 1], noone);
+Prop_AddCraft(Craft.MeatStew, Item.MeatStew, 10000, [Item.Meat, Item.BlackPepper, Item.Water], [2, 1, 3], noone);
+Prop_AddCraft(Craft.Steak, Item.Steak, 10000, [Item.Meat, Item.BlackPepper, Item.Rocksalt, Item.CookingOil], [2, 1, 1, 1], noone);
 
 Prop_AddCraft(Craft.Thread, Item.Thread, 1000, [Item.Fiber, Item.Stone], [1, 1], noone);
 Prop_AddCraft(Craft.Cotton, Item.Cotton, 1000, [Item.Fiber, Item.Aluminium, Item.Thread], [1, 1, 1], noone);

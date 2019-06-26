@@ -1127,6 +1127,14 @@
             }
         },
         {
+            "Key": "2789bb73-b648-4385-ad62-30ed3a0d0a10",
+            "Value": {
+                "id": "bd9052cb-62d2-495c-9bb2-060d2348f76c",
+                "resourcePath": "objects\\oKitchen\\oKitchen.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "279090f6-a53c-4015-80b1-77f201c9bb2a",
             "Value": {
                 "id": "a647deaf-3f9d-4a25-85db-9a64749b4c14",
@@ -4647,6 +4655,14 @@
             }
         },
         {
+            "Key": "ba6c817e-c59e-4198-99c9-f0715f43e5d6",
+            "Value": {
+                "id": "a6331804-75ca-4d88-a159-874bcbcf82fb",
+                "resourcePath": "objects\\oVegetableTree\\oVegetableTree.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bab52cd9-619b-461c-a492-6aa9bef5b007",
             "Value": {
                 "id": "78cbcd94-c5f8-4f5a-bc6b-ce492bf9e7c4",
@@ -5556,6 +5572,14 @@
                 "id": "59df0ca0-dd3d-4037-ad5c-6b9054c046d7",
                 "resourcePath": "sprites\\TOLIcon_1\\TOLIcon_1.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ddcbc882-1183-44de-9f51-4ef63daaf604",
+            "Value": {
+                "id": "46ba0cf0-e0eb-45e2-8333-ab6e127ba638",
+                "resourcePath": "objects\\oGrass_Pepper\\oGrass_Pepper.yy",
+                "resourceType": "GMObject"
             }
         },
         {

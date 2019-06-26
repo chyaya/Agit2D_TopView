@@ -32,6 +32,22 @@
             "objectId": "47099ade-3615-4ea2-9301-b2e7b3f768f1",
             "propertyId": "81aed096-9170-4606-8978-41c2bd95fa32",
             "value": "True"
+        },
+        {
+            "id": "cc953f8a-85e9-49bc-9277-5cf2483f8b9f",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "47099ade-3615-4ea2-9301-b2e7b3f768f1",
+            "propertyId": "db817f19-da91-48d7-8ece-fe116ca54c54",
+            "value": "2"
+        },
+        {
+            "id": "9ba9bea1-00d6-4fec-bc98-bfe61c4a7707",
+            "modelName": "GMOverriddenProperty",
+            "mvc": "1.0",
+            "objectId": "47099ade-3615-4ea2-9301-b2e7b3f768f1",
+            "propertyId": "3047d924-bbad-45e7-877d-a03da01a2cee",
+            "value": "4"
         }
     ],
     "parentObjectId": "91a524ca-27ee-4f4e-adff-01a6f43758bd",
