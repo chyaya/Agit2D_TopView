@@ -15,17 +15,43 @@ enum Item
 	RoughLeather,
 	RobotPart,
 	RobotBlackbox,
-	Rocksalt,
+		
+	//음식 
+	Fruit,
+	Apple,
+	Vegetable,
+	Grain,
 	Milk,
+	BlackPepper,
+	
+	Egg,
+	Meat,
+	
+	CookingOil,
 	Water,
+	Rocksalt,
 	
 	//굽기
-	Fruit,
 	BakedFruit,
-	Apple,
 	BakedApple,
-	Meat,
+	BakedVegetable,
+	BakedEgg,
 	BakedMeat,
+	
+	//포만감 요리 
+	FruitFry,
+	AppleFry,
+	Salad,
+	FruitMochi,
+	AppleBread,
+	Cheese,
+		
+	//회복 요리
+	FriedEgg,
+	boiledEgg,
+	EggFriedRice,
+	MeatStew,
+	Steak,	
 
 	//작업대 
 	WoodenTool,
@@ -115,22 +141,43 @@ inv_create_item(Item.Fiber, sprFiber, "섬유", 100, "식물성 섬유", noone, 
 inv_create_item(Item.RoughLeather, sprRoughLeather, "동물가죽", 100, "거친 동물 가죽", noone, noone, noone, 0);
 inv_create_item(Item.RobotPart, sprRobotParts, "로봇 부품", 100, "로봇에게서 떨어져나온 부품", noone, noone, noone, 0);
 inv_create_item(Item.RobotBlackbox, sprRobotBlackbox, "블랙박스", 100, "기계의 기록이 저장되어있다", noone, noone, noone, 0);
+
+
+
+
+inv_create_item(Item.Fruit, sprFruit, "열매", 100, "포만감 + 3", sItem_Eat_Satiety_OnUse, noone, noone, 3);
+inv_create_item(Item.Apple, sprApple, "사과", 10, "포만감 + 4", sItem_Eat_Satiety_OnUse, noone, noone, 4);
+inv_create_item(Item.Vegetable, sprVegetable, "야채", 10, "포만감 + 6", sItem_Eat_Satiety_OnUse, noone, noone, 6);
+inv_create_item(Item.Grain, sprGrain, "밀", 10, "포만감 + 6", sItem_Eat_Satiety_OnUse, noone, noone, 6);
+inv_create_item(Item.Milk, sprMilk, "우유", 100, "포만감 + 5", sItem_Eat_Satiety_OnUse, noone, noone, 5);
+inv_create_item(Item.BlackPepper, sprBlackPepper, "후추", 100, "요리에 사용하는 향식료, 맛이 매우 좋아진다.", noone, noone, noone, 0);
+
+
+inv_create_item(Item.Meat, sprEgg, "계란", 100, "생명력 + 8", sItem_Eat_Health_OnUse, noone, noone, 8);
+inv_create_item(Item.Meat, sprMeat, "고기", 100, "생명력 + 10", sItem_Eat_Health_OnUse, noone, noone, 10);
+
+
 inv_create_item(Item.Rocksalt, sprRockSalt, "암염", 100, "요리에 사용 할 수 있는 암염이다.", noone, noone, noone, 0);
-inv_create_item(Item.Milk, sprMilk, "우유", 100, "갓짠 신선한 우유이다.", sItem_Eat_Satiety_OnUse, noone, noone, 2);
-inv_create_item(Item.Water, sprWater, "물", 100, "음용이 가능한 물이다.", sItem_Eat_Satiety_OnUse, noone, noone, 1);
+inv_create_item(Item.Water, sprWater, "물", 100, "포만감 + 1", sItem_Eat_Satiety_OnUse, noone, noone, 1)
+inv_create_item(Item.Water, sprCookingOil, "기름", 100, "음용이 가능한 물이다.", noone, noone, noone, 1)
 
+inv_create_item(Item.BakedFruit, sprBakedFruit, "구운 열매", 10, "포만감 + 4", sItem_Eat_Satiety_OnUse, noone, noone, 5);
+inv_create_item(Item.BakedApple, sprBakedApple, "구운 사과", 10, "포만감 + 10", sItem_Eat_Satiety_OnUse, noone, noone, 7);
+inv_create_item(Item.BakedVegetable, sprBakedVegetable, "구운 야채", 10, "생명력 + 7", sItem_Eat_Satiety_OnUse, noone, noone, 7);
+inv_create_item(Item.BakedEgg, sprBakedEgg, "구운 계란", 10, "생명력 + 10", sItem_Eat_Health_OnUse, noone, noone, 10);
+inv_create_item(Item.BakedMeat, sprBakedMeat, "구운 고기", 10, "생명력 + 15", sItem_Eat_Health_OnUse, noone, noone, 15);
 
-
-inv_create_item(Item.Fruit, sprFruit, "열매", 100, "포만감 + 15", sItem_Eat_Satiety_OnUse, noone, noone, 2);
-inv_create_item(Item.BakedFruit, sprBakedFruit, "구운 열매", 100, "포만감 + 25", sItem_Eat_Satiety_OnUse, noone, noone, 4);
-inv_create_item(Item.Apple, sprApple, "사과", 10, "포만감 + 30", sItem_Eat_Satiety_OnUse, noone, noone, 5);
-inv_create_item(Item.BakedApple, sprBakedApple, "구운 사과", 10, "포만감 + 50", sItem_Eat_Satiety_OnUse, noone, noone, 10);
-inv_create_item(Item.Meat, sprMeat, "고기", 100, "생명력 + 5", sItem_Eat_Health_OnUse, noone, noone, 10);
-inv_create_item(Item.BakedMeat, sprBakedMeat, "구운 고기", 100, "생명력 + 10", sItem_Eat_Health_OnUse, noone, noone, 20);
-
-
-
-
+inv_create_item(Item.FruitFry, sprBakedMeat, "열매 볶음", 1, "생명력 + 12", sItem_Eat_Satiety_OnUse, noone, noone, 12);
+inv_create_item(Item.AppleFry, sprBakedMeat, "사과 볶음", 1, "생명력 + 28", sItem_Eat_Satiety_OnUse, noone, noone, 28);
+inv_create_item(Item.Salad, sprBakedMeat, "샐러드", 1, "생명력 + 38", sItem_Eat_Satiety_OnUse, noone, noone, 38);
+inv_create_item(Item.FruitMochi, sprBakedMeat, "과일떡", 1, "생명력 + 47", sItem_Eat_Satiety_OnUse, noone, noone, 47);
+inv_create_item(Item.AppleBread, sprBakedMeat, "사과빵", 1, "생명력 + 75", sItem_Eat_Satiety_OnUse, noone, noone, 75);
+inv_create_item(Item.Cheese, sprBakedMeat, "치즈", 1, "생명력 + 42", sItem_Eat_Satiety_OnUse, noone, noone, 42);
+inv_create_item(Item.FriedEgg, sprBakedMeat, "계란후라이", 1, "생명력 + 13", sItem_Eat_Health_OnUse, noone, noone, 13);
+inv_create_item(Item.boiledEgg, sprBakedMeat, "삶은 계란", 1, "생명력 + 23", sItem_Eat_Health_OnUse, noone, noone, 23);
+inv_create_item(Item.EggFriedRice, sprBakedMeat, "계란볶음밥", 1, "생명력 + 52", sItem_Eat_Health_OnUse, noone, noone, 52);
+inv_create_item(Item.MeatStew, sprBakedMeat, "미트스튜", 1, "생명력 + 74", sItem_Eat_Health_OnUse, noone, noone, 78);
+inv_create_item(Item.Steak, sprBakedMeat, "스테이크", 1, "생명력 + 80", sItem_Eat_Health_OnUse, noone, noone, 80);
 
 inv_create_item(Item.WoodenTool, sprWoodenTool, "나무도구", 1, "채집 / 채광 공격력 1 증가합니다.", noone, noone, sItem_Tool_OnQuickSlot, 1);
 inv_create_item(Item.CopperTool, sprCopperTool, "구리도구", 1, "채집 / 채광 공격력 2 증가합니다.", noone, noone, sItem_Tool_OnQuickSlot, 2);

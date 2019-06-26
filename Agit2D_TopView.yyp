@@ -1095,14 +1095,6 @@
             }
         },
         {
-            "Key": "25c17575-b54f-4f85-96cf-92618c1d63e2",
-            "Value": {
-                "id": "84a377fb-9b2c-476c-80df-fadd96d2e62b",
-                "resourcePath": "sprites\\sprCheese\\sprCheese.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "25ccd3a4-2549-46d1-93f5-36c5f8411026",
             "Value": {
                 "id": "f06fd401-0474-4435-ae8b-617759748745",
@@ -1503,6 +1495,14 @@
             }
         },
         {
+            "Key": "37165200-6aeb-4877-b7ec-5c926c643cdf",
+            "Value": {
+                "id": "44699b21-d46c-42f4-a09a-f9a184a8cb7a",
+                "resourcePath": "sprites\\sprAppleBread\\sprAppleBread.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "371a9b9b-9e93-48f4-8dc7-e297edb9ab08",
             "Value": {
                 "id": "ab203552-41b7-432f-b543-eb99b9207373",
@@ -1543,6 +1543,14 @@
             }
         },
         {
+            "Key": "39bfdd4f-efb3-454f-b51b-4c68afb6dbe8",
+            "Value": {
+                "id": "268194f8-6a8e-4fe1-9785-23e209be8676",
+                "resourcePath": "sprites\\sprEgg\\sprEgg.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "39c4730b-5b86-443d-b35a-092053557c96",
             "Value": {
                 "id": "21b67fed-945c-4d9e-a774-20ea792b92b1",
@@ -1564,6 +1572,14 @@
                 "id": "e396e986-e9fd-4e65-a87c-dff5814f180b",
                 "resourcePath": "scripts\\sGameLogic_FindSpawnPos\\sGameLogic_FindSpawnPos.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3aa48f34-6b34-4de5-8a63-d00efce55c04",
+            "Value": {
+                "id": "756da3c1-ba49-4fbe-a3ae-9ec61d9e4355",
+                "resourcePath": "sprites\\sprAppleFry\\sprAppleFry.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1924,6 +1940,14 @@
                 "id": "b2f1757a-acaa-421f-b3f0-af879793788a",
                 "resourcePath": "scripts\\sUtil_Camera_WorldToScreen\\sUtil_Camera_WorldToScreen.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4c41d1a2-ae8d-4c8d-9a28-04e55f503e1f",
+            "Value": {
+                "id": "ba71818c-29d1-4326-a149-a7729300baa0",
+                "resourcePath": "sprites\\sprFruitFry\\sprFruitFry.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2751,6 +2775,14 @@
             }
         },
         {
+            "Key": "6e205147-4314-45d6-a31d-fa78388d5850",
+            "Value": {
+                "id": "8dfb3e73-0bf6-4e66-8fa4-cf39a27ace59",
+                "resourcePath": "sprites\\sprEggFriedRice\\sprEggFriedRice.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6e47c173-4c80-47d4-85cc-81575a435e9e",
             "Value": {
                 "id": "76c09c8d-c698-4101-8669-15364ea5de57",
@@ -2939,6 +2971,14 @@
             "Value": {
                 "id": "6e7e7fc7-98b0-40c1-8593-a52d00e2ff87",
                 "resourcePath": "sprites\\sprGPSTransmitter\\sprGPSTransmitter.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "766f2d57-5c1f-4e03-98b2-f71fc817bcf6",
+            "Value": {
+                "id": "4bb94779-6403-4edd-bde2-03001aac6e8f",
+                "resourcePath": "sprites\\sprFriedEgg\\sprFriedEgg.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3295,6 +3335,14 @@
             }
         },
         {
+            "Key": "854f8480-cd03-45a3-b9bb-b2b4cc23c25c",
+            "Value": {
+                "id": "fca2b5c9-4890-4b0f-8e69-9fa1d646df2a",
+                "resourcePath": "sprites\\sprMeatStew\\sprMeatStew.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "857d94b9-8aaf-4086-94d3-65d0ca0f2251",
             "Value": {
                 "id": "44df03b5-1165-485d-bb31-c5a96fd1c3ab",
@@ -3511,11 +3559,27 @@
             }
         },
         {
+            "Key": "8d6ef782-0e48-4265-8582-f40d2cae7fb2",
+            "Value": {
+                "id": "418981c3-425f-4b18-bf1b-ee141ea4fb77",
+                "resourcePath": "sprites\\sprBakedEgg\\sprBakedEgg.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8d9027e7-2335-4e36-892a-df2bd2657d1d",
             "Value": {
                 "id": "babe348d-dbd5-4b72-81e0-32cfb0634203",
                 "resourcePath": "extensions\\Developer_Console\\Developer_Console.yy",
                 "resourceType": "GMExtension"
+            }
+        },
+        {
+            "Key": "8e9536dc-36bb-4d62-b1d8-8096a0e923ba",
+            "Value": {
+                "id": "cf3d6365-bba7-4f0c-b08c-1515b6cfbf85",
+                "resourcePath": "sprites\\sprCheese\\sprCheese.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4615,6 +4679,14 @@
             }
         },
         {
+            "Key": "bc780ce0-b90c-4eab-8573-2f878aa0de45",
+            "Value": {
+                "id": "62f19025-5a7c-4f39-a7bd-50acb5715642",
+                "resourcePath": "sprites\\sprboiledEgg\\sprboiledEgg.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bc8079e8-b51c-4c25-9c87-5795cf133995",
             "Value": {
                 "id": "c23a6a39-784d-4f07-be8e-89351f4a12ca",
@@ -4722,7 +4794,15 @@
             "Key": "c15e0488-0423-4275-93bd-f551e5154c8d",
             "Value": {
                 "id": "a153af09-94c0-49a2-88f8-a1182dc45cc8",
-                "resourcePath": "sprites\\sprPepper\\sprPepper.yy",
+                "resourcePath": "sprites\\sprBlackPepper\\sprBlackPepper.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c167d028-8643-4f9e-88fd-102bdb2dcdde",
+            "Value": {
+                "id": "f4f8287e-6af4-4f41-8279-84a82b6d07ec",
+                "resourcePath": "sprites\\sprBakedVegetable\\sprBakedVegetable.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4978,7 +5058,7 @@
             "Key": "c87abb1f-5851-4211-b4d6-5261db1981b2",
             "Value": {
                 "id": "308aba38-d3b7-4251-a800-561c743a27c0",
-                "resourcePath": "sprites\\sprite212\\sprite212.yy",
+                "resourcePath": "sprites\\sprVegetableTree\\sprVegetableTree.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5191,6 +5271,14 @@
             }
         },
         {
+            "Key": "d0943511-251e-40f4-b65f-3a9cf1d07d41",
+            "Value": {
+                "id": "dc396c7c-daea-4abd-9f4a-4c58587c7863",
+                "resourcePath": "sprites\\sprSalad\\sprSalad.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d0be277a-c399-4a51-83cb-473cc5c2f7b4",
             "Value": {
                 "id": "342cb541-cd6e-47e3-a3b4-b80eb875009e",
@@ -5356,6 +5444,14 @@
                 "id": "57ef5ca3-dcb8-4c46-8347-cd0f88afcda7",
                 "resourcePath": "scripts\\sPlayerController_DrawGUI_UseBuilding_Craft\\sPlayerController_DrawGUI_UseBuilding_Craft.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d8505ad7-0e51-4c7f-b0e2-fca99b62b312",
+            "Value": {
+                "id": "35ab085c-4201-46e9-9cb7-f58cc6d57365",
+                "resourcePath": "sprites\\sprGrassBlackPepper\\sprGrassBlackPepper.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -6007,6 +6103,14 @@
             }
         },
         {
+            "Key": "f369e900-d3c3-4fdc-969a-82542fad7b9b",
+            "Value": {
+                "id": "da231255-559e-4ccd-8165-18eb427de276",
+                "resourcePath": "sprites\\sprVegetable\\sprVegetable.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f3c80fc0-5970-4785-96f4-397413b7635c",
             "Value": {
                 "id": "43deca13-7cf1-4243-8610-177e90e9a835",
@@ -6039,6 +6143,14 @@
             }
         },
         {
+            "Key": "f5afd5f8-f358-4f9e-a969-f4430da66143",
+            "Value": {
+                "id": "7cbe8355-fead-48aa-936d-3f89b8d8d42e",
+                "resourcePath": "sprites\\sprSteak\\sprSteak.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f6751163-a34d-494e-a533-16efdd975a4a",
             "Value": {
                 "id": "48aeef4c-ef63-40f3-9590-964f503ae456",
@@ -6063,11 +6175,27 @@
             }
         },
         {
+            "Key": "f6b9abb4-b99e-4446-8580-069c1d292afd",
+            "Value": {
+                "id": "c052f0ba-509a-45ad-a423-e5793bc390a0",
+                "resourcePath": "sprites\\sprFruitMochi\\sprFruitMochi.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f6ff6d53-1e6d-4cae-a008-7e3c81532ce2",
             "Value": {
                 "id": "e978e0f3-a5e6-4c53-bec6-919736596e10",
                 "resourcePath": "scripts\\sItem_Armor_OnEquip\\sItem_Armor_OnEquip.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "f756a6c3-12bd-4331-9197-53e111005d2d",
+            "Value": {
+                "id": "6dcffe94-0f90-4b20-a722-0544d0d4b1d1",
+                "resourcePath": "sprites\\sprCookingOil\\sprCookingOil.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
